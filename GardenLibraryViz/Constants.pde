@@ -1,0 +1,22 @@
+// Run status:
+int LOADING        = 0;
+int LOAD_EMOTIONS  = 1;
+int LOAD_LANGUAGES = 2;
+int LOAD_BOOKS     = 3;
+int GROUP_BY_LANG  = 4;
+int BUILD_HISTORY  = 5;
+int GROUP_BY_EMO   = 6;
+int FINISH_INIT    = 7;
+int RUNNING        = 8;
+
+// Constants for view mode
+int MODE_BOOKSHELF = 0;
+int MODE_WHEEL     = 1;
+int MODE_HISTORY   = 2;
+
+// Constants for zoom level
+int VIEW_ALL  = 0;
+int VIEW_LANG = 1;
+int VIEW_EMO  = 1;
+int VIEW_BOOK = 2;
+

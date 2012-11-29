@@ -1,0 +1,7 @@
+3	amusing	01ff3d
+7	bizarre	f9e73a
+4	boring	fe8f27
+5	depressing	ff1412
+2	exciting	eb73f2
+1	inspiring	9900df
+6	sentimental	0b17f3

@@ -1,0 +1,15 @@
+DEFAULT	http://www.thegardenlibrary.org/communities.htm
+AMH	http://www.thegardenlibrary.org/communities.htm
+ARB	http://www.thegardenlibrary.org/communities.htm
+BEN	http://www.thegardenlibrary.org/communities.htm
+ENG	http://www.thegardenlibrary.org/communities.htm
+FRE	http://www.thegardenlibrary.org/communities.htm
+HEB	http://www.thegardenlibrary.org/communities.htm
+HIN	http://www.thegardenlibrary.org/communities.htm
+NEP	http://www.thegardenlibrary.org/communities.htm
+RUS	http://www.thegardenlibrary.org/communities.htm
+SPA	http://www.thegardenlibrary.org/communities.htm
+TAG	http://www.thegardenlibrary.org/communities.htm
+THA	http://www.thegardenlibrary.org/communities.htm
+TIR	http://www.thegardenlibrary.org/communities.htm
+TUR	http://www.thegardenlibrary.org/communities.htm
