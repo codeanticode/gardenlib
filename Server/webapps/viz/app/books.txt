@@ -1,0 +1,3720 @@
+1	ENG013	Julia Gregson	East of the Sun	1760	NULL
+2	ENG001	Pearl S Buck	Dragon Seed	1760	NULL
+3	ENG017	Tim Winton	Cloudstreet	1760	NULL
+4	ENG015	Spock, Benjamin,	Baby and child care /	1760	NULL
+5	ENG011	Wood, Barbara,	Green city in the sun /	1760	NULL
+6	ENG028	Richard Sapir & Warren Murphy	Destroyer #1: Created, The Destroyer	1760	NULL
+7	ENG024	Barbara Taylor Bradford	The Heir	1760	NULL
+8	ENG032	Jack Zipes	Arabian Nights	1760	NULL
+9	ENG035	Twain, Mark,	Adventures of Huckleberry Finn /	1760	NULL
+10	ENG058	Daniel Defoe	Robinson Crusoe	1760	NULL
+11	ENG050	Lawrence, D. H.	Sons and lovers /	1760	NULL
+12	ENG033	Twain, Mark,	The mysterious stranger and other stories /	1760	NULL
+13	ENG047	Brothers Grimm	Grimms' Fairy Tales	1760	NULL
+14	ENG014	Chaucer, Geoffrey,	The Canterbury tales :	1760	NULL
+15	ENG041	Herman Melville	Moby Dick	1760	NULL
+16	ENG038	Collins, Larry.	O Jerusalem.	1760	NULL
+17	ENG042	Wodehouse, P. G.	Psmith journalist /	1760	NULL
+18	ENG055	William Makepeace Thackeray	Vanity Fair	1760	NULL
+19	ENG066	Sheldon, Sidney,	The sands of time /	1760	NULL
+20	ENG065	Rice, Anne,	Interview with the vampire	1760	NULL
+21	ENG071	Sitchin, Zecharia.	The wars of gods and men /	1760	NULL
+22	ENG077	Stone, Robert,	Children of light /	1760	NULL
+23	ENG052	James Fenimore cooper	The Last Mohicans	1760	NULL
+24	ENG075	Wodehouse, P. G.	The heart of a goof	1760	NULL
+25	ENG073	Wodehouse, P. G.	Aunts aren't gentlemen /	1760	NULL
+26	ENG078	Hugh Barron	Doll Baby	1760	NULL
+27	ENG070	Esquivel, Laura,	Like water for chocolate :	1760	NULL
+28	ENG067	Andrews, V. C.	Lightning strikes /	1760	NULL
+29	ENG049	Carroll, Lewis,	Through the looking glass.	1760	NULL
+30	ENG062	Réage, Pauline.	Story of O /	1760	NULL
+31	ENG074	P.G. Wodehouse	The Clicking of Cuthbert	1760	NULL
+32	ENG068	Elizabeth Villars	Lipstick on his Collar	1760	NULL
+33	ENG063	Wodehouse, P. G.	Pigs have wings /	1760	NULL
+34	ENG060	Wodehouse, P. G.	A Pelican at Blandings /	1760	NULL
+35	ENG061	Wodehouse, P. G.	Uneasy money /	1760	NULL
+36	ENG059	Wodehouse, P. G.	Money in the bank /	1760	NULL
+37	ENG057	Wodehouse, P. G.	Do butlers burgle banks? /	1760	NULL
+38	ENG056	Wodehouse, P. G.	The girl on the boat	1760	NULL
+39	ENG040	Austen, Jane	Emma	1760	NULL
+40	ENG020	Nncy Horan	Loving Frank	1760	NULL
+41	ENG005	Rice, Anne,	Interview with the vampire	1760	NULL
+42	ENG004	Pearse, Lesley.	Father unknown.	1760	NULL
+43	ENG006	Cohen, Amy,	The late bloomer's revolution :	1760	NULL
+44	ENG003	West, Michael.	Seven detective stories /	1760	NULL
+45	ENG002	Greene, Graham,	Under the garden /	1760	NULL
+46	ENG021	Rendell, Ruth,	Piranha to scurfy /	1760	NULL
+47	ENG029	Savage, Elizabeth,	The girls from the five great valleys :	1760	NULL
+48	ENG072	Marano, Michael.	Dawn song /	1760	NULL
+49	ENG022	Siddons, Anne Rivers.	Sweetwater Creek	1760	NULL
+50	ENG082	Deighton, Len,	MAMista /	1760	NULL
+51	ENG007	Brown, Dan,	The Da Vinci code :	1760	NULL
+52	ENG023	Roth, Henry.	Call it sleep /	1760	NULL
+53	ENG088	Spillane, Mickey	The erection set	1760	NULL
+54	ENG046	Tan, Amy.	The Joy Luck Club /	1760	NULL
+55	ENG094	Fast, Howard,	The establishment /	1760	NULL
+56	ENG089	Goodkind, Terry.	Blood of the fold /	1760	NULL
+57	ENG103	Archer, Jeffrey,	Twelve red herrings /	1760	NULL
+58	ENG118	Klass, Philip J.	UFOs explained	1760	NULL
+59	ENG114	Lee, Howard.	Kung-fu /	1760	NULL
+60	ENG115	George Orwell	Animal Farm	1760	NULL
+61	ENG113	Begley, Louis.	Wartime lies /	1760	NULL
+62	ENG108	Spillane, Mickey,	The twisted thing	1760	NULL
+63	ENG144	Twain, Mark,	Adventures of Huckleberry Finn (Tom Sawyer's companion) /	1760	NULL
+64	ENG095	Murphy, Warren.	Grandmaster /	1760	NULL
+65	ENG126	Diehl, William.	Hooligans.	1760	NULL
+66	ENG131	Ripley, Alexandra.	Scarlett :	1760	NULL
+67	ENG129	Michael Roberts	The Faber Book of Modern Verse	1760	NULL
+68	ENG146	Woolf, Virginia,	Mrs. Dalloway /	1760	NULL
+69	ENG127	Lee, Harper.	To kill a mockingbird /	1760	NULL
+70	ENG145	Greeley, Andrew M.,	Love song	1760	NULL
+71	ENG133	Wouk, Herman,	Inside, outside	1760	NULL
+72	ENG128	Meir Shalev	The Blue Mountain	1760	NULL
+73	ENG177	Krauss, Nicole.	The history of love /	1760	NULL
+74	ENG156	Carr, Caleb,	The alienist	1760	NULL
+75	ENG093	Shakespeare	Twelfth Night	1760	NULL
+76	ENG179	Tolkien, J. R. R. (John Ronald Reuel),	SMITH OF WOOTTON MAJOR & FARMER GILES OF HAM	1760	NULL
+77	ENG178	O'Neill, Nena.	Open marriage;	1760	NULL
+78	ENG171	Clarke, Brenda,	Winter landscape.	1760	NULL
+79	ENG164	Freedman, J. F.	The disappearance /	1760	NULL
+80	ENG167	Bradford, Barbara Taylor,	Love in another town	1760	NULL
+81	ENG180	Plain, Belva.	Secrecy /	1760	NULL
+82	ENG159	Goodkind, Terry.	Wizard's first rule /	1760	NULL
+83	ENG148	King, Stephen	The Tommyknockers	1760	NULL
+84	ENG130	Diamant, Anita.	The red tent	1760	NULL
+85	ENG116	McCullough, Colleen.	The ladies of Missalonghi	1760	NULL
+86	ENG132	Melville, Herman,	Moby Dick /	1760	NULL
+87	ENG087	Sapir, Richard.	Slave safari /	1760	NULL
+88	ENG165	Cook, Robin,	Invasion	1760	NULL
+89	ENG034	Barry Neil Kaufman	Son rise	1760	NULL
+90	ENG026	Eban, Abba Solomon,	My country :	1760	NULL
+91	ENG123	Ali, Monica,	Brick lane :	1760	NULL
+92	ENG092	Guest, Lynn,	The sword of Hachiman :	1760	NULL
+93	ENG105	Lathen, Emma.	Come to dust /	1760	NULL
+94	ENG139	Braver, Gary.	Elixir	1760	NULL
+95	ENG031	JEREMEY R. GEFFEN	THE JOURNEY THROUGH CANCER	1760	NULL
+96	ENG155	Delinsky, Barbara.	An accidental woman	1760	NULL
+97	ENG173	Deighton, Len,	Winter	1760	NULL
+98	ENG158	Cornwell, Patricia Daniels.	Unnatural exposure /	1760	NULL
+99	ENG112	Beauman, Sally.	Dark angel	1760	NULL
+100	ENG184	Spillane, Mickey,	The deep	1760	NULL
+101	ENG018	KATE MORTON	THE FORGOTTEN GARDEN	1760	NULL
+102	ENG083	Clavell, James.	Tai-Pan	1760	NULL
+103	ENG283	Adelaide, Debra.	The household guide to dying	1760	NULL
+104	ENG161	Keyes, Marian.	Last Chance Saloon	1760	NULL
+105	ENG008	O'Brien, Edna.	Mrs. Reinhardt and other stories	1760	NULL
+106	ENG307	Thomas Sowell	late talking children	1760	NULL
+107	ENG168	King, Stephen,	Needful things /	1760	NULL
+108	ENG091	Lustbader, Eric.	French kiss.	1760	NULL
+109	ENG030	Bowden, Mark,	Black hawk down	1760	NULL
+110	ENG090	Shelley, Mary Wollstonecraft,	Frankenstein, or, The modern Prometheus	1760	NULL
+111	ENG027	NICHOLAS SPARKS	THE LUCKY ONE	1760	NULL
+112	ENG085	Lowe, Gordon R.	The growth of personality;	1760	NULL
+113	ENG009	Keller, Werner,	The Bible as history	1760	NULL
+114	ENG188	Marshall Macao	K'ing Kung-Fu	1760	NULL
+115	ENG152	NAOMI RAGEN	SOTAH	1760	NULL
+116	ENG162	Cornwell, Patricia Daniels.	Isle of dogs /	1760	NULL
+117	ENG285	Singer, June Flaum.	The president's women /	1760	NULL
+118	ENG247	Ridpath, Michael.	Free to trade	1760	NULL
+119	ENG170	Chang, Jung,	Wild swans :	1760	NULL
+120	ENG259	LUDLUM	THE MATLOCK PAPER	1760	NULL
+121	ENG300	Allende, Isabel.	Paula	1760	NULL
+122	ENG192	Byatt, A. S.	Possession :	1760	NULL
+123	ENG250	Wodehouse, P. G.	Heavy weather	1760	NULL
+124	ENG280	Lauren St John	Rainbow's End	1760	NULL
+125	ENG204	LESLIE CHARTERIS	ENTER THE SAINT	1760	NULL
+126	ENG310	Cyrulnik, Boris.	Talking of love on the edge of a precipice /	1760	NULL
+127	ENG248	Gruenfeld, Lee.	All fall down	1760	NULL
+128	ENG069	Peter Cheyney	Calling Mr. Callaghan	1760	NULL
+129	ENG190	Lowry, Lois.	The giver /	1760	NULL
+130	ENG271	James Jackson	Blood Rock	1760	NULL
+131	ENG182	Charteris, Leslie.	The Saint and the fiction makers	1760	NULL
+132	ENG217	Wingrove, David.	Chung Kuo	1760	NULL
+133	ENG220	Green, Hannah,	I never promised you a rose garden.	1760	NULL
+134	ENG289	Collins, Jackie.	Hollywood wives /	1760	NULL
+135	ENG316	Mikhail Bulgakov	The Master and Margarita	1760	NULL
+136	ENG257	Wouk, Herman,	The hope	1760	NULL
+137	ENG212	Goldsborough, Robert.	The last coincidence /	1760	NULL
+138	ENG258	Andrews, Virginia,	Heart song	1760	NULL
+139	ENG019	SIMON MOTEFIORE	SASHENKA	1760	NULL
+140	ENG097	Seierstad, Åsne,	The bookseller of Kabul	1760	NULL
+141	ENG187	Shea, Robert.	Shiké :	1760	NULL
+142	ENG016	Roth, Philip.	Everyman /	1760	NULL
+143	ENG012	Simonton, O. Carl.	Getting well again	1760	NULL
+144	ENG246	Stephen King	The Tommy Knockers	1760	NULL
+145	ENG224	Brown, Dan,	Angels & demons /	1760	NULL
+146	ENG321	Dunmore, Helen,	Counting the stars /	1760	NULL
+147	ENG010	Susannah Bates	Honor & Evie	1760	NULL
+148	ENG318	Barclay, Alex	Blood Runs Cold	1760	NULL
+149	ENG295	Scott, Robyn.	Twenty chickens for a saddle :	1760	NULL
+150	ENG319	Brett, Peter V	The Painted Man	1760	NULL
+151	ENG276	Barbara Taylor Bradford	Find Everything to Gain	1760	NULL
+152	ENG292	Jennifer Cody Epstein	The Painter of Shanghai	1760	NULL
+153	ENG286	McCabe, Pat,	Winterwood /	1760	NULL
+154	ENG238	Hopkins, Tom.	How to master the art of selling	1760	NULL
+155	ENG227	Bradford, Barbara Taylor.	The women in his life.	1760	NULL
+156	ENG320	Stone, Nick,	Mr. Clarinet :	1760	NULL
+157	ENG234	Cussler, Clive	Raise the Titanic!	1760	NULL
+158	ENG265	Stone, Merlin.	When God was a woman /	1760	NULL
+159	ENG239	Clancy, Tom,	Red storm rising /	1760	NULL
+160	ENG189	Harris, Thomas,	Hannibal rising	1760	NULL
+161	ENG219	Mahoney, Dan.	Detective first grade /	1760	NULL
+162	ENG303	Crichton, Michael,	Timeline	1760	NULL
+163	ENG254	Grafton, Sue	'M' is for malice	1760	NULL
+164	ENG110	Grisham, John.	The chamber /	1760	NULL
+165	ENG221	Collection of essays	A Testament to the wilderness /	1760	NULL
+166	ENG245	Rendell, Ruth,	Blood lines :	1760	NULL
+167	ENG222	Andrews, V. C.	Melody /	1760	NULL
+168	ENG291	Rhodes, Elvi.	The golden girls /	1760	NULL
+169	ENG214	Stevenson, Robert Louis,	Dr. Jekyll and Mr. Hyde /	1760	NULL
+170	ENG228	Higgins, Jack,	Storm warning /	1760	NULL
+171	ENG215	Simmel, Johannes Mario.	The caesar code /	1760	NULL
+172	ENG186	Spillane, Mickey,	One lonely night	1760	NULL
+173	ENG237	MacLean, Alistair	Caravan to Vaccares	1760	NULL
+174	ENG252	Montano, Paulo.	The collection	1760	NULL
+175	ENG194	Hesse, Hermann	Narcissus and Goldmund	1760	NULL
+176	ENG203	Murphy, Warren; Sapir, Richard	The destroyer /	1760	NULL
+177	ENG185	Ludlum, Robert,	The Matarese circle /	1760	NULL
+178	ENG044	Nick Carter	The sign of the Prayer Shawl	1760	NULL
+179	ENG275	Gardner, John E.	Icebreaker /	1760	NULL
+180	ENG236	Puzo, Mario,	Fools die :	1760	NULL
+181	ENG211	Sapir, Richard & Murphy, Warren	The Destroyer, 28	1760	NULL
+182	ENG253	Menegas, Peter.	The doll hospital.	1760	NULL
+183	ENG264	Michener, James A	The Drifters	1760	NULL
+184	ENG231	Michaels, Fern.	Texas fury	1760	NULL
+185	ENG198	Anderson, Sherwood,	The portable Sherwood Anderson /	1760	NULL
+186	ENG195	Allende, Isabel.	Ine?s of my soul /	1760	NULL
+187	ENG240	Clavell, James.	Noble house	1760	NULL
+188	ENG368	Heilpern, John.	Conference of the birds	1760	NULL
+189	ENG315	Grenville, Kate.	Lilian's story	1760	NULL
+190	ENG232	Kerouac, Jack,	On the road	1760	NULL
+191	ENG242	Cheyney, Peter,	Dark Bahama	1760	NULL
+192	ENG249	Shaleṿ, Tseruyah.	Love life	1760	NULL
+193	ENG260	Churchill, Randolph S.	The six day war,	1760	NULL
+194	ENG268	Cornwell, Patricia.	Hornet's nest.	1760	NULL
+195	ENG233	Andrews, V. C.	Music in the night	1760	NULL
+196	ENG223	Shaw, Bernard,	Pygmalion :	1760	NULL
+197	ENG262	Watts, Alan,	Nature, man and woman	1760	NULL
+198	ENG311	Santis, Pablo de,	The Paris enigma	1760	NULL
+199	ENG273	Sitchin, Zecharia.	The 12th planet /	1760	NULL
+200	ENG191	Hailey, Elizabeth Forsythe.	Life sentences /	1760	NULL
+201	ENG314	Sheldon, Sidney.	The sands of time	1760	NULL
+202	ENG317	Katy Regan	One Thing Led to Another	1760	NULL
+203	ENG230	Wallace, Irving,	The R document	1760	NULL
+204	ENG308	Bradford, Barbara Taylor,	Act of will	1760	NULL
+205	ENG229	Garcia-Aguilera, Carolina.	Bloody shame :	1760	NULL
+206	ENG207	Silone, Ignazio,	Bread and wine /	1760	NULL
+207	ENG043	Leslie Charteris	Senor Saint	1760	NULL
+208	ENG235	Aricha, Amos,	Hour of the clown	1760	NULL
+209	ENG297	Andrews, V. C.	Unfinished symphony	1760	NULL
+210	ENG244	Follett, Ken,	On wings of eagles	1760	NULL
+211	ENG272	Toffler, Alvin.	Future shock /	1760	NULL
+212	ENG045	Saul, John.	When the wind blows	1760	NULL
+213	ENG270	Clancy, Tom,	Debt of honor /	1760	NULL
+214	ENG256	MacDonald, Sara.	Listening to voices	1760	NULL
+215	ENG183	James, Henry,	The turn of the screw, and other stories /	1760	NULL
+216	ENG169	Mickey Spillane	Return of The Hood	1760	NULL
+217	ENG243	Pease, William D.	Playing the dozens	1760	NULL
+218	ENG208	Clavell, James.	King Rat :	1760	NULL
+219	ENG200	King, Stephen,	Skeleton crew /	1760	NULL
+220	ENG225	MacInnes, Helen,	Prelude to terror	1760	NULL
+221	ENG288	Howatch, Susan,	Sins of the fathers /	1760	NULL
+222	ENG263	Adler, Elizabeth	The property of a lady /	1760	NULL
+223	ENG302	MacInnes, Helen,	Cloak of darkness /	1760	NULL
+224	ENG202	Sanders, Lawrence,	The dream lover /	1760	NULL
+225	ENG451	Heyer, Georgette,	The convenient marriage /	1760	NULL
+226	ENG473	Greene, Graham.	Journey without maps /	1760	NULL
+227	ENG474	Buber, Martin	The tales of Rabbi Nachman /	1760	NULL
+228	ENG475	Singer, Isaac Bashevis,	The slave /	1760	NULL
+229	ENG076	Dyer, Wayne W.,	Real magic :	1760	NULL
+230	ENG462	Grafton, Sue.	"L" is for lawless /	1760	NULL
+231	ENG193	Phillip Rock	Dirty Harry	1760	NULL
+232	ENG255	Hill, Reginald,	Born guilty /	1760	NULL
+233	ENG206	Marshall Macao	king kungfu	1760	NULL
+234	ENG209	Marshall McLuhan	The Medium is the Massage	1760	NULL
+235	ENG261	Helen MacInnes	Ride a Pale Horse	1760	NULL
+236	ENG279	Seymour, Miranda,	Carrying on /	1760	NULL
+237	ENG197	Cervantes Saavedra, Miguel de,	The adventures of Don Quixote /	1760	NULL
+238	ENG218	Herbert van Thal (editor)	Horror Stories	1760	NULL
+239	ENG282	Howatch, Susan,	The dark shore /	1760	NULL
+240	ENG269	Garner, James Finn.	Once upon a more enlightened time	1760	NULL
+241	ENG370	Mosco, Maisie.	Out of the ashes	1760	NULL
+242	ENG313	Too, Lillian.	Children	1760	NULL
+243	ENG372	Debby Holt	Love Affairs for Grown-ups	1760	NULL
+244	ENG135	Patchett, Ann.	Bel canto	1760	NULL
+245	ENG431	Patterson, James,	The beach house	1760	NULL
+246	ENG196	Richard Sapir & Warren Murphy	The Destroyer #27	1760	NULL
+247	ENG054	Chevalier, Tracy.	Burning bright	1760	NULL
+248	ENG120	MacLean, Alistair,	River of death	1760	NULL
+249	ENG201	Richard Sapir & Warren Murphy	The Dstroyer #16	1760	NULL
+250	ENG378	Hough, Emerson,	North of 36	1760	NULL
+251	ENG371	Ludlum, Robert,	The Matarese circle /	1760	NULL
+252	ENG181	John Updike	Rabbit Run	1760	NULL
+253	ENG147	Segal, Erich,	Love story /	1760	NULL
+254	ENG175	De Silva, Colin,	Taj.	1760	NULL
+255	ENG100	Kellerman, Jonathan.	Over the edge	1760	NULL
+256	ENG373	Spencer, LaVyrle.	The endearment	1760	NULL
+257	ENG213	Robert J. Schroeder (editor)	The New Underground Theatre	1760	NULL
+258	ENG053	Thomas, Dylan,	Adventures in the skin trade	1760	NULL
+259	ENG375	Rees, Nigel,	Talent.	1760	NULL
+260	ENG251	Cornwell, Patricia.	All that remains /	1760	NULL
+261	ENG380	Habe, Hans,	The mission;	1760	NULL
+262	ENG341	Trollope, Joanna.	A Spanish lover.	1760	NULL
+263	ENG350	Krantz, Judith.	Scruples :	1760	NULL
+264	ENG416	Michael, Judith.	Inheritance.	1760	NULL
+265	ENG439	D.M. Perkins	Deep Throat	1760	NULL
+266	ENG322	Clark, Mary Higgins.	I'll be seeing you :	1760	NULL
+267	ENG364	Greenberg, Joanne,	Age of consent.	1760	NULL
+268	ENG353	Jacob Sonntag (editor)	New writing from Israel 1976 :	1760	NULL
+269	ENG366	MacInnes, Helen,	Prelude to terror	1760	NULL
+270	ENG340	Shute, Nevil,	A town like Alice /	1760	NULL
+271	ENG435	Vargas Llosa, Mario.	A fish in the water :	1760	NULL
+272	ENG334	Jack Dunn Trop	You Don't Have to be Sick!	1760	NULL
+273	ENG441	William Shakespeare	The Complete Works	1760	NULL
+274	ENG455	None	History from 1880	1760	NULL
+275	ENG454	Blake, William,	Selected poems /	1760	NULL
+276	ENG419	García Márquez, Gabriel,	Love in the time of cholera /	1760	NULL
+277	ENG445	Auel, Jean M.	The plains of passage /	1760	NULL
+278	ENG329	Sherman, Arnold,	When God Judged and Men Died :	1760	NULL
+279	ENG443	Yehuda L. Bailer & Estelle Fink (commentrary)	Jewish life in art and tradition :	1760	NULL
+280	ENG467	Ali, Ameer.	The Spirit of Islam :	1760	NULL
+281	ENG434	Martin Buber	Tales of the Hasidim	1760	NULL
+282	ENG436	Bellow, Saul	Mr. Sammler's planet	1760	NULL
+283	ENG461	Ehrlichman, John.	The China card /	1760	NULL
+284	ENG354	Mitford, Nancy,	The pursuit of love & Love in a cold climate :	1760	NULL
+285	ENG426	Vargas Llosa, Mario,	The Feast of the Goat /	1760	NULL
+286	ENG098	Murphy, Warren.	Rain of terror /	1760	NULL
+287	ENG466	Blair, Leona.	A world of difference.	1760	NULL
+288	ENG622	King, Stephen,	The drawing of the three /	1760	NULL
+289	ENG369	Brown, Sandra,	Tempest in Eden /	1760	NULL
+290	ENG111	Mickey Spillane	The Delta Factor	1760	NULL
+291	ENG102	Walker, Alice,	The color purple /	1760	NULL
+292	ENG336	Broner, E. M.	A weave of women /	1760	NULL
+293	ENG592	Fast, Howard,	The Hessian /	1760	NULL
+294	ENG374	Gerald Green	The Healers	1760	NULL
+295	ENG568	NULL	Zionism.	1760	NULL
+296	ENG388	Eric van Lustbader	Shalows of Night	1760	NULL
+297	ENG614	Kinsella, Sophie.	Shopaholic & sister /	1760	NULL
+298	ENG379	James Fenimore Cooper	The Last of the Moicans	1760	NULL
+299	ENG138	Churchill, Randolph S.	The six day war,	1760	NULL
+300	ENG141	Papas, William.	Instant Greek /	1760	NULL
+301	ENG572	Wiesel Elie	The Town Beyond the wall	1760	NULL
+302	ENG598	Kipling, Rudyard,	Kim /	1760	NULL
+303	ENG389	Carlos Castaneda	Journey to Ixtlan	1760	NULL
+304	ENG142	Goodwin, Suzanne.	Daughters /	1760	NULL
+305	ENG595	Shakespeare William	Henry IV, Part One	1760	NULL
+306	ENG376	Briskin, Jacqueline.	The onyx.	1760	NULL
+307	ENG565	Lagerkvist, Pär,	The sibyl /	1760	NULL
+308	ENG150	Berg, Carol.	Restoration /	1760	NULL
+309	ENG117	Isaiah Ben-Dasan	The Japanese and the Jews	1760	NULL
+310	ENG571	William Shakespear	Hamlet	1760	NULL
+311	ENG096	Ali, Monica,	Brick lane :	1760	NULL
+312	ENG458	Golden, Arthur,	Memoirs of a geisha :	1760	NULL
+313	ENG081	Crichton, Michael,	Jurassic Park /	1760	NULL
+314	ENG574	Alan Russel (ed.)	1988 Guiness book of world records	1760	NULL
+315	ENG106	Stewart, Fred Mustard,	The glitter and the gold /	1760	NULL
+316	ENG586	Mayle, Peter.	Anything considered /	1760	NULL
+317	ENG587	Martin Cruz Smith	Gorky Park	1760	NULL
+318	ENG119	Ahern, Cecelia,	PS, I love you /	1760	NULL
+319	ENG570	Golden, Arthur,	Memoirs of a geisha /	1760	NULL
+320	ENG121	Michener, James A.	Caravans :	1760	NULL
+321	ENG124	Wendy Doniger o'Flaherty (introduction)	Hindu myths :	1760	NULL
+322	ENG578	Uspenski{breve}i, P. D.	In search of the miraculous :	1760	NULL
+323	ENG612	Jaffe, Rona.	An American love story /	1760	NULL
+324	ENG387	Spillane, Mickey,	Survival ... zero!	1760	NULL
+325	ENG584	Bettebao Lord	Spring Moon	1760	NULL
+326	ENG385	Allen, Charlotte Vale,	Meet me in time /	1760	NULL
+327	ENG332	David Lynch	The Photoguide to Colour	1760	NULL
+328	ENG579	Hesse, Karen.	A time of angels /	1760	NULL
+329	ENG425	Guillaume, Alfred,	Islam /	1760	NULL
+330	ENG576	Khalil Gibran	The Broken Wings	1760	NULL
+331	ENG363	Feist, Raymond E.	Silverthorn /	1760	NULL
+332	ENG477	John Saul	Sleepwalk	1760	NULL
+333	ENG585	McBride, James,	The color of water :	1760	NULL
+334	ENG377	Cheever, John	Oh, what a paradise it seems /	1760	NULL
+335	ENG590	Alan Lawrence Sitomer	Homeboyz	1760	NULL
+336	ENG333	Epstein, Isidore,	Judaism :	1760	NULL
+337	ENG594	Alexander McCall Smith	The Right Attitude to Rain	1760	NULL
+338	ENG381	Stephen King	Gerald's Game	1760	NULL
+339	ENG349	Fast, Howard,	The immigrants /	1760	NULL
+340	ENG345	Desmond Bagley	The Snow Tiger	1760	NULL
+341	ENG413	Michener, James A.	Hawaii	1760	NULL
+342	ENG151	Stephen Birmingham	Shades of Fortunes	1760	NULL
+343	ENG051	Mendelson, Charlotte,	Daughters of Jerusalem /	1760	NULL
+344	ENG398	The Salamander	Morris West	1760	NULL
+345	ENG290	Jiang, Rong,	Wolf totem /	1760	NULL
+346	ENG583	Meyer W. Weisgal	The Odyssey of an Optimist	1760	NULL
+347	ENG399	Updike, John.	Toward the end of time /	1760	NULL
+348	ENG553	Ruth Bondy	Mission Survival	1760	NULL
+349	ENG406	Olden, Marc.	Giri /	1760	NULL
+350	ENG405	Kazuo Ishiguro	Never Let Me Go	1760	NULL
+351	ENG393	Warren Murphy and Molly Cochran	High Priest	1760	NULL
+352	ENG407	Nick Carter	Hour of the Wolf	1760	NULL
+353	ENG401	Michael Campbell	Lord Dismiss Us	1760	NULL
+354	ENG384	Haddon, Mark.	The curious incident of the dog in the night-time.	1760	NULL
+355	ENG414	O'Brian, Patrick,	The commodore /	1760	NULL
+356	ENG284	Matsen, Bradford.	Titanic's last secrets :	1760	NULL
+357	ENG293	Brunonia Barry	The Lace Reader	1760	NULL
+358	ENG277	Sarah May	The Rise and Fall of a Domestic Diva	1760	NULL
+359	ENG304	Dr. Israel Eldad &Moshe Auman (editors)	Chronicles News of the Past	1760	NULL
+360	ENG305	Dr. Israel Eldad &Moshe Auman (editors)	Chronicles News of the Past	1760	NULL
+361	ENG274	Kate Grenville	The Lieutenant	1760	NULL
+362	ENG309	Jessie Keane	Dirty Game	1760	NULL
+363	ENG386	Terry Goodkind	Faith of the Fallen	1760	NULL
+364	ENG397	James Clavell	Tai-Pan	1760	NULL
+365	ENG390	Eric Van Lustbader	The Ninja	1760	NULL
+366	ENG403	Micky Spillane	The Snake	1760	NULL
+367	ENG412	Chaim Potok	The Chosen	1760	NULL
+368	ENG500	Barfoot, Joan.	Duet for three /	1760	NULL
+369	ENG611	John Le Carre	The Night Manager	1760	NULL
+370	ENG624	Thomas Mann	Joseph and his brothers	1760	NULL
+371	ENG573	Garrison Keillor	Lake Wobegon days	1760	NULL
+372	ENG559	Scott Fitzgerald	Tender is the Night	1760	NULL
+373	ENG510	Catherine Hapka	Uncharted	1760	NULL
+374	ENG449	Elia Kazan	The Anatolian	1760	NULL
+375	ENG476	Isaac Basheyis Singer	A Friend of Kafka and Other Stories	1760	NULL
+376	ENG125	William Shakespeare	The Tragedy of King Lear	1760	NULL
+377	ENG450	T.S. Eliot	The Family Reunion	1760	NULL
+378	ENG502	McLinn, Patricia.	Prelude to a wedding.	1760	NULL
+379	ENG149	Dick Francis	Hot Money	1760	NULL
+380	ENG418	Simmel	The Cain Conspiracy	1760	NULL
+381	ENG440	T.E. Lawrence	Seven Pillars of Wisdom	1760	NULL
+382	ENG417	Raymond Van Over (ed.)	I Ching	1760	NULL
+383	ENG048	Sarah Walers	The Night Watch	1760	NULL
+384	ENG326	Muriel James	Born to Win	1760	NULL
+385	ENG482	Danielle Steel	Jewels	1760	NULL
+386	ENG569	Alexander Solzhenitsyn	The First Circle	1760	NULL
+387	ENG464	Jonathan Kellerman	The Butcher's Theatre	1760	NULL
+388	ENG404	Marianne Fredriksson	Elisabet's Daughter	1760	NULL
+389	ENG560	Scott Turow	Presumed Innocent	1760	NULL
+390	ENG537	Walter Laqueur	The Struggle for the Middle East	1760	NULL
+391	ENG497	Gordon Korman	Schooled	1760	NULL
+392	ENG546	Gordon Korman	The Juvie Three	1760	NULL
+393	ENG517	Rider Haggard	King Solomon's Mines	1760	NULL
+394	ENG485	Jack Higgins	Passage by Night	1760	NULL
+395	ENG492	Eisenberg Lisa	More Quickie Comebacks	1760	NULL
+396	ENG479	John Knittel	Terra Magna	1760	NULL
+397	ENG505	Katy Hall	101 Telephone Jokes	1760	NULL
+398	ENG557	Harold Bloomfield	Making Peace with Your Prents	1760	NULL
+399	ENG550	Kenneth Koch	Rose, Where did you get that red?	1760	NULL
+400	ENG533	Ian McEwan	Atonement	1760	NULL
+401	ENG542	Stephen Coonts	Saucer	1760	NULL
+402	ENG556	Evelyn Anthony	The Secret Thread	1760	NULL
+403	ENG552	Evelyn Wilde Mayerson	Well & Truly	1760	NULL
+404	ENG491	Boris Pasternak	Doctor Zhivago	1760	NULL
+405	ENG499	Judith Krantz	Till we Meet Again	1760	NULL
+406	ENG483	J.C. O'neill	Paul's Letter to the Romans	1760	NULL
+407	ENG494	William Golding	Lord of the Flies	1760	NULL
+408	ENG480	Barbara Taylor	Bradford	1760	NULL
+409	ENG507	Liv Ullman	Changing	1760	NULL
+410	ENG535	Aviva Hellman	To Touch a Dream	1760	NULL
+411	ENG501	Iris Murdoch	The Bell	1760	NULL
+412	ENG516	Simon Winchester	The Surgeon of Crowthorne	1760	NULL
+413	ENG536	Michael Walsh	As Time Goes By	1760	NULL
+414	ENG529	Joy Fielding	Mad River Road	1760	NULL
+415	ENG493	Danielle Steel	Message from Nam	1760	NULL
+416	ENG508	Lisa Eisenberg	101 School Jokes	1760	NULL
+417	ENG561	Barbara Delinsky	Family Tree	1760	NULL
+418	ENG558	Graham Greene	Loser Takes All	1760	NULL
+419	ENG514	Christopher Webb	Eusebius	1760	NULL
+420	ENG503	Ridley Pearson	Probable Cause	1760	NULL
+421	ENG512	Cronin A.J.	The Citadel	1760	NULL
+422	ENG549	Harold Robbins	The Raiders	1760	NULL
+423	ENG484	Tim Cahill	Jaguars Ripped my Flesh	1760	NULL
+424	ENG498	Avi,	Hard gold :	1760	NULL
+425	ENG488	John Grisham	The Client	1760	NULL
+426	ENG489	Van Wormer, Laura,	West end /	1760	NULL
+427	ENG509	N.B. Grace	High School Musical 3	1760	NULL
+428	ENG487	Whitham, Cynthia.	Win the whining war & other skirmishes :	1760	NULL
+429	ENG532	NULL	Jackues Lipschitz	1760	NULL
+430	ENG496	Redfield, James.	The celestine prophecy :	1760	NULL
+431	ENG504	Henry James	The Portrait of a Lady	1760	NULL
+432	ENG543	Rosellen Brown	Tender Mercies	1760	NULL
+433	ENG216	Dominique Lapierre	The City of Joy	1760	NULL
+434	ENG486	Ed McBain	There Was A Little Girl	1760	NULL
+435	ENG528	Leo Tolstoy	War and Peace	1760	NULL
+436	ENG511	Nicola Thorne	Champagne Gold	1760	NULL
+437	ENG540	Montesquieu	The Persian Letters	1760	NULL
+438	ENG513	Junichiro Tanizaki	Some Prefer Nettles	1760	NULL
+439	ENG495	Alan Lawrence Sitomer	The Secret Story of Sonia Rodriguez	1760	NULL
+440	ENG630	Botsotso	Jozi spoken word special edition	1760	NULL
+441	ENG607	Adele Geras	A Hidden Life	1760	NULL
+442	ENG600	John Grisham	The Street Lawyer	1760	NULL
+443	ENG544	John Casey	Spartina	1760	NULL
+444	ENG591	Ridley Pearson	Kingdom Keepers II	1760	NULL
+445	ENG601	Richard Lourie	First Loyalty	1760	NULL
+446	ENG610	Lawrence Sanders	The Eight Commandment	1760	NULL
+447	ENG627	Harlan Coben	Back Spin	1760	NULL
+448	ENG616	Arthur Hailey	The Evening News	1760	NULL
+449	ENG524	Paul Reiser	Couplehood	1760	NULL
+450	ENG609	Reader's Digest	Condensed Books Anthology	1760	NULL
+451	ENG626	Elizabeth Buchan	Consider the Lily	1760	NULL
+452	ENG545	Virginia Woolf	The Waves	1760	NULL
+453	ENG538	NULL	History until 1880	1760	NULL
+454	ENG541	Sue Townsend	The Growing pains of Adrian Mole	1760	NULL
+455	ENG567	Jodi Picoult	Nineteen Minutes	1760	NULL
+456	ENG547	Iain Pears	An Instance of the Fingerpost	1760	NULL
+457	ENG604	Chalotte Bingham	The Enchanted	1760	NULL
+458	ENG356	Anne Tyler	A Patchwork Planet	1760	NULL
+459	ENG629	Hermann Hesse	Narcissus and Goldmund	1760	NULL
+460	ENG581	Madge Swindells	Song of the Wind	1760	NULL
+461	ENG589	Brenda Butler	Sky Crash	1760	NULL
+462	ENG628	Mickey Spillane	The By-Pass Control	1760	NULL
+463	ENG562	Jeffery Deaver	The Bone Collector	1760	NULL
+464	ENG596	Umberto Eco	The Name of the Rose	1760	NULL
+465	ENG564	Robin Cook	Blindsight	1760	NULL
+466	ENG328	Pamela Wallace	Small Town Girls	1760	NULL
+467	ENG522	Rick Riordan	The Titan's Curse	1760	NULL
+468	ENG521	Rick Riordan	The Sea of Monsters	1760	NULL
+469	ENG520	Rick Riordan	The Lightning Thief	1760	NULL
+470	ENG563	Andre Dubus III	House of Sand and Fog	1760	NULL
+471	ENG605	Isaac Bashevis Singer	The Seance	1760	NULL
+472	ENG603	Sarah Caudwell	Thus Was Adonis Murdered	1760	NULL
+473	ENG593	Larry Collins	Fall From Grace	1760	NULL
+474	ENG619	David Yoo	Stop Me If you've heard this one before	1760	NULL
+475	ENG327	Kiran Desai	The Inheritance of Loss	1760	NULL
+476	ENG615	Dave Barry	Science Fair	1760	NULL
+477	ENG599	Kahlil Gibran	A Tear and A Smile	1760	NULL
+478	ENG617	Alan Spence	The Magic Flute	1760	NULL
+479	ENG472	Evelyn Anthony	The Avenue of the dead	1760	NULL
+480	ENG337	Gabriel Chevallier	Clochemerle	1760	NULL
+481	ENG625	Joanne Greenberg	In This Sign	1760	NULL
+482	ENG575	Alan Furst	Dark Star	1760	NULL
+483	ENG602	Michael Korda	The Fortune	1760	NULL
+484	ENG582	Dick Francis	10 Lb. Penalty	1760	NULL
+485	ENG526	Lionel Davidson	The Night of Wenceslas	1760	NULL
+486	ENG551	Carlos Castaneda	Tales of Power	1760	NULL
+487	ENG352	Alexandre Dumas	The Three Musketeers	1760	NULL
+488	ENG554	Sandra Howard	Ursula's Story	1760	NULL
+489	ENG470	Hermann Hesse	Peter Camenzind	1760	NULL
+490	ENG523	Peter Fairclough	Three Gothic Novels	1760	NULL
+491	MAN173	Qian, Mu,	Zhuang lao tong bian /	NULL	NULL
+492	MAN074	Sun, Zhongling, | -	Zui xiang ji / | -	NULL	NULL
+493	MAN062	Yu, Hua,	Xiong di =	NULL	NULL
+494	MAN065	NULL	NULL	NULL	NULL
+495	MAN029	Feng, Youlan,	Zhongguo zhe xue jian shi /	NULL	NULL
+496	MAN152	Gu, Long. | -	Wu lin wai shi / | -	NULL	NULL
+497	MAN082	Qin, Yuan.	Tu jie guo ji xiang qi ru men /	NULL	NULL
+498	ENG448	Gunter Grass	Local Anaesthetic	1760	NULL
+499	ENG525	Susan Howatch	The Susan Howatch Collection	1760	NULL
+500	ENG400	Robert James Waller	Slow Waltz in Cedar Bend	1760	NULL
+501	ENG382	John Le Carre	A Perfect Spy	1760	NULL
+502	ENG409	Scott Turow	Reversible Errors	1760	NULL
+503	ENG299	Danielle Steel	Changes	1760	NULL
+504	ENG527	Sandra Brown	The Witness	1760	NULL
+505	ENG281	Vanora Bennett	Figures in Silk	1760	NULL
+506	ENG278	Lee, Janice Y.K.	The Piano Teacher	1760	NULL
+507	ENG298	Barbara Erskine	The Warrior's Princess	1760	NULL
+508	ENG468	Khalil Gibran	Prose Poems	1760	NULL
+509	ENG287	Andrew O'Hagan	Be Near Me	1760	NULL
+510	ENG469	Yadin, Yigael	The message of the scrolls	1760	NULL
+511	ENG428	Raphael, Chaim	A Feast of History	1760	NULL
+512	ENG107	Redfield, James.	The celestine prophecy :	1760	NULL
+513	ENG478	Spillane, Mickey,	Survival ... zero!	1760	NULL
+514	ENG140	Susan Goodwin	Lovers	1760	NULL
+515	ENG420	Walter Lubeck	The Complete Reiki Handbook	1760	NULL
+516	ENG429	Hardy, Thomas	Jude the Obscure	1760	NULL
+517	ENG408	Spillane, Mickey	The erection set	1760	NULL
+518	ENG411	Spillane, Mickey	Day of the Guns	1760	NULL
+519	ENG174	Lawrence Durreell	Clea	1760	NULL
+520	ENG410	Greene, Graham	Travels with my Aunt	1760	NULL
+521	ENG430	Dante Alighieri	The Divine Comedy 1	1760	NULL
+522	ENG154	Michael, Judith	A Ruling Passion	1760	NULL
+523	ENG597	Marc Behm	The Eye of the Beholder	1760	NULL
+524	ENG402	Mickey Spillane	Vengeance Is Mine	1760	NULL
+525	ENG422	Feist, Raymond E.	Magician Master	1760	NULL
+526	ENG157	Thomas Harris	The Silence of the Lambs	1760	NULL
+527	ENG452	Fisher, Seymour	Understanding the Female Orgasm	1760	NULL
+528	ENG134	Noel Barber	The Wedding and the Laughter	1760	NULL
+529	ENG471	Gay Courter	Flowers in the Blood	1760	NULL
+530	ENG122	Anna Murdoch	Family Business	1760	NULL
+531	ENG453	Michael Crichton	Disclosure	1760	NULL
+532	ENG465	Julie Ellis	Loyalties	1760	NULL
+533	ENG424	Arundhati Roy	The God of Small Things	1760	NULL
+534	ENG618	Coben, Harlan	The Final Detail	1760	NULL
+535	ENG160	F. Paul Wilson	Sibs	1760	NULL
+536	ENG456	Hesse, Hermann	Demian	1760	NULL
+537	ENG438	Jackie Collins	Lovers & Gamblers	1760	NULL
+538	ENG137	Jackie Collins	Hollywood Husbands	1760	NULL
+539	ENG457	Hemingway, Ernest	A Farewell to Arms	1760	NULL
+540	ENG463	Danielle Steel	The Promise	1760	NULL
+541	ENG153	Connelly, Michael	Chasing The Dime	1760	NULL
+542	ENG506	Jeffery Deaver	The Coffin Dancer	1760	NULL
+543	ENG136	Allerton, Jay	Mothers and Daughters	1760	NULL
+544	ENG109	Evelyn Kahn	The Wayward Winds	1760	NULL
+545	ENG172	Jack London	Martin Eden	1760	NULL
+546	ENG166	Francis, Dick	The Edge	1760	NULL
+547	ENG432	Jong, Erica	Fanny	1760	NULL
+548	ENG460	Christine Hella Cott	Prefume and Lace	1760	NULL
+549	ENG176	Richard Sapir & Warren Murphy	The Destroyer Murder Ward	1760	NULL
+550	ENG423	Dubro, Alec and Kaplan, David E.	Yakuza	1760	NULL
+551	ENG459	John Grisham	The Street Lawyer	1760	NULL
+552	ENG163	William Shakespeare	The Tempest	1760	NULL
+553	ENG104	Howatch, Susan	The Wheel of Fortune	1760	NULL
+554	ENG437	Damon Runyon	From First to Last	1760	NULL
+555	ENG577	Melissa De La Cruz	Revelations	1760	NULL
+556	ENG427	Vachss, Andrew	Footsteps of the Hawk	1760	NULL
+557	ENG296	Moni Mohsin	The End of Innocence	1760	NULL
+558	ENG588	Alan Clark	Diaries	1760	NULL
+559	ENG421	Faith Popcorn	The Popcorn Report	1760	NULL
+560	ENG606	Gila Berkowitz	The Brides	1760	NULL
+561	ENG444	Sasha Fenton	Chinese Divinations	1760	NULL
+562	ENG446	Leo Marks	Between Silk and Cyanide	1760	NULL
+563	ENG036	Wodehouse, P.G.	Joy in the Morning	1760	NULL
+564	ENG339	Belva Plain	Harvest	1760	NULL
+565	ENG442	Sally Beauman	Dark Angel	1760	NULL
+566	ENG335	C P Snow	Homecomings	1760	NULL
+567	ENG343	Anais Nin	The Diary of Anais Nin	1760	NULL
+568	ENG357	Austen, Jane	Northanger Abbey	1760	NULL
+569	ENG391	Spillane, Mickey	The Twisted Thing	1760	NULL
+570	ENG355	Zev Vilnay	Legends of Jerusalem	1760	NULL
+571	ENG396	Papernick, Jon	The Ascent of Eli Israel	1760	NULL
+572	ENG362	Howard, Stephanie	Bride for a Price	1760	NULL
+573	ENG394	Mickey Spillane	The Body Lovers	1760	NULL
+574	ENG312	Peacock, Caro	Death at Dawn	1760	NULL
+575	MAN132	NULL	NULL	NULL	NULL
+576	ENG392	Dick Francis	Blood Sport	1760	NULL
+577	ENG325	Grisham, Jon	The Rain Maker	1760	NULL
+578	ENG306	de Villiers, Peter A. and Jill G.	Early Language	1760	NULL
+579	MAN157	NULL	NULL	NULL	NULL
+580	ENG346	John Gary	Men are from Mars Women are from Venus	1760	NULL
+581	ENG347	Rice, Scott	It was a Dark and Stormy Night: The Final Conflict	1760	NULL
+582	ENG037	Arthur Conan Doyle	Sherlock Holmes	1760	NULL
+583	ENG360	Roth, Philip	Operation Shylock	1760	NULL
+584	MAN147	NULL	NULL	NULL	NULL
+585	ENG039	Wodehouse, P.G.	Summer Lightning	1760	NULL
+586	ENG433	Emil Schurer	A history of the Jewish People	1760	NULL
+587	ENG330	Steinberg, Milton	Basic Judaism	1760	NULL
+588	ENG025	Cosby, Bill	Time Flies	1760	NULL
+589	ENG359	Cohen, J.M and M.J	The Penguin Dictionary of Modern Quotations	1760	NULL
+590	ENG324	George V. Higgins	Sandra Nichols Found Dead	1760	NULL
+591	MAN071	NULL	The Essence of Judaism	NULL	NULL
+592	ENG323	Kenny Kemp	Flight of the Titans	1760	NULL
+593	MAN110	Dan Brown	The DaVinci Code	NULL	NULL
+594	ENG331	Katherine Arthur	Signs of Love	1760	NULL
+595	ENG365	Mann, Thomas	Little Herr Friedemann	1760	NULL
+596	ENG383	Herman Wouk	Inside Outside	1760	NULL
+597	ENG344	Kerr, Barbara A.	Smart Girls, Gifted Women	1760	NULL
+598	MAN115	Luxun Zawenxuan	NULL	NULL	NULL
+599	ENG351	Archer, Jeffrey	The Prodigal Daughter	1760	NULL
+600	ENG099	Stephen King	The Stand	1760	NULL
+601	ENG367	Reich, Wilhelm	Listen, Little Man!	1760	NULL
+602	ENG080	Danielle Steel	Loving	1760	NULL
+603	MAN113	Alexandre Dumas	Le Comte de Monte-Cristo	NULL	NULL
+604	ENG342	Westmacott, Mary (Christie, Agatha)	Unfinished Portrait	1760	NULL
+605	ENG348	Doerr, Harriet	Stones for Ibarra	1760	NULL
+606	ENG358	Dorothy Simpson	Last Seen Alive	1760	NULL
+607	MAN179	NULL	36	NULL	NULL
+608	ENG361	Lurie, Alison	The Truth about Lorin Jones	1760	NULL
+609	ENG338	Lerner, Daniel	The Passing of Traditional Society	1760	NULL
+610	MAN200	NULL	17	NULL	NULL
+611	ENG084	Pulitzer, Roxanne	Twins	1760	NULL
+612	MAN123	NULL	11	NULL	NULL
+613	MAN142	NULL	NULL	NULL	NULL
+614	MAN130	NULL	3	NULL	NULL
+615	MAN117	NULL	Changhe	NULL	NULL
+616	MAN094	NULL	Yanyuxiaocidian	NULL	NULL
+617	MAN131	NULL	NULL	NULL	NULL
+618	MAN180	NULL	7	NULL	NULL
+619	MAN149	NULL	NULL	NULL	NULL
+620	MAN018	Yuhua Zuopin Xilie	<Chinese Title>	NULL	NULL
+621	MAN019	yuhua zuopin xilie	<Chinese Title>	NULL	NULL
+622	MAN015	Yuhua Zuopin Xilie	<Chinese Title>	NULL	NULL
+623	MAN017	Yuhua Zuopin Xilie	<Chinese Title>	NULL	NULL
+624	MAN021	yuhua zuopin xilie	<chinese title.	NULL	NULL
+625	MAN020	Yuhua Zuopin Xilie	<Chinese Title>	NULL	NULL
+626	MAN012	yuhua zuopin xilie	<chinese title>	NULL	NULL
+627	MAN016	Yuhua Zuopin Xilie	<Chinese Title>	NULL	NULL
+628	MAN013	yuhua zuopin xilie	<chinese title.	NULL	NULL
+629	MAN176	NULL	35	NULL	NULL
+630	MAN161	<chinese author>	<chinese title>	NULL	NULL
+631	MAN070	NULL	NULL	NULL	NULL
+632	MAN008	<chinese author>	<chinese title>	NULL	NULL
+633	MAN026	NULL	NULL	NULL	NULL
+634	MAN138	NULL	NULL	NULL	NULL
+635	MAN011	NULL	NULL	NULL	NULL
+636	MAN144	NULL	NULL	NULL	NULL
+637	MAN080	Kundera, Milan	<Chinese Title.	NULL	NULL
+638	MAN009	NULL	NULL	NULL	NULL
+639	MAN079	<chinese name>	<chinese title>	NULL	NULL
+640	MAN010	NULL	NULL	NULL	NULL
+641	MAN135	NULL	NULL	NULL	NULL
+642	MAN055	NULL	NULL	NULL	NULL
+643	MAN028	<chinese name>	<chinese title>	NULL	NULL
+644	MAN057	NULL	Bukebuzhi De Liang Quian Ge Wenxue Changshi	NULL	NULL
+645	MAN058	NULL	NULL	NULL	NULL
+646	MAN024	<chinese author>	<chinese title>	NULL	NULL
+647	MAN025	NULL	NULL	NULL	NULL
+648	MAN041	NULL	NULL	NULL	NULL
+649	MAN043	Longling Miku	NULL	NULL	NULL
+650	MAN056	NULL	NULL	NULL	NULL
+651	MAN035	NULL	5	NULL	NULL
+652	MAN037	NULL	7	NULL	NULL
+653	MAN036	NULL	6	NULL	NULL
+654	MAN038	NULL	8	NULL	NULL
+655	MAN203	NULL	23	NULL	NULL
+656	MAN046	Huangpizi Fen	NULL	NULL	NULL
+657	MAN054	NULL	NULL	NULL	NULL
+658	MAN053	<chinese name>	<chinese title>	NULL	NULL
+659	MAN033	NULL	NULL	NULL	NULL
+660	MAN052	<Chinese Name>	<Chinese Title>	NULL	NULL
+661	MAN044	NULL	NULL	NULL	NULL
+662	MAN032	<Chinese Name>	<Chinese Title>	NULL	NULL
+663	MAN040	NULL	Famous Chinese Short Stories	NULL	NULL
+664	MAN039	NULL	The Vermilion Gate	NULL	NULL
+665	MAN042	NULL	NULL	NULL	NULL
+666	MAN060	<Chinese Author>	<Chinese Title>	NULL	NULL
+667	MAN108	China Legal Publishing House	NULL	NULL	NULL
+668	MAN095	NULL	NULL	NULL	NULL
+669	MAN051	<Chinese Author>	<Chinese Title>	NULL	NULL
+670	MAN162	NULL	My Country and My People	NULL	NULL
+671	MAN097	NULL	NULL	NULL	NULL
+672	MAN093	NULL	39	NULL	NULL
+673	MAN168	NULL	NULL	NULL	NULL
+674	MAN167	NULL	NULL	NULL	NULL
+675	MAN169	NULL	NULL	NULL	NULL
+676	MAN112	Gao Xing	NULL	NULL	NULL
+677	MAN096	NULL	NULL	NULL	NULL
+678	MAN114	NULL	1587, A Year of No Significance	NULL	NULL
+679	MAN111	NULL	NULL	NULL	NULL
+680	MAN103	NULL	NULL	NULL	NULL
+681	MAN099	NULL	28	NULL	NULL
+682	MAN049	Guanshan, Wuxia	<Chinese Title>	NULL	NULL
+683	MAN118	NULL	NULL	NULL	NULL
+684	MAN050	<Chinese Author>	<Chinese Title>	NULL	NULL
+685	MAN102	NULL	29	NULL	NULL
+686	MAN034	<Chinese Author>	<Chinese Title>	NULL	NULL
+687	MAN105	NULL	NULL	NULL	NULL
+688	MAN106	Italo Calvino	NULL	NULL	NULL
+689	MAN031	<Chinese Author>	<Chinese Title>	NULL	NULL
+690	MAN163	NULL	On the Wisdom of America	NULL	NULL
+691	MAN104	NULL	NULL	NULL	NULL
+692	MAN048	Xiangxi, Nuqing	<Chinese Title>	NULL	NULL
+693	MAN119	NULL	NULL	NULL	NULL
+694	MAN045	Shengong, Runlun	<Chinese Title>	NULL	NULL
+695	MAN171	NULL	NULL	NULL	NULL
+696	MAN116	NULL	NULL	NULL	NULL
+697	MAN059	<Chinese Author>	<Chinese Title>	NULL	NULL
+698	MAN023	NULL	NULL	NULL	NULL
+699	MAN047	Guixu, Nanhai	<Chinese Title>	NULL	NULL
+700	MAN160	NULL	NULL	NULL	NULL
+701	MAN136	NULL	NULL	NULL	NULL
+702	MAN064	NULL	NULL	NULL	NULL
+703	MAN067	NULL	NULL	NULL	NULL
+704	MAN003	NULL	NULL	NULL	NULL
+705	MAN063	NULL	NULL	NULL	NULL
+706	MAN089	NULL	NULL	NULL	NULL
+707	MAN086	NULL	NULL	NULL	NULL
+708	MAN085	NULL	ISRAEL	NULL	NULL
+709	MAN004	NULL	NULL	NULL	NULL
+710	MAN075	NULL	NULL	NULL	NULL
+711	MAN083	NULL	NULL	NULL	NULL
+712	MAN088	NULL	Moment in Peking	NULL	NULL
+713	MAN151	NULL	1588	NULL	NULL
+714	MAN076	Charles Dickens	Oliver Twist	NULL	NULL
+715	MAN002	NULL	NULL	NULL	NULL
+716	MAN001	NULL	NULL	NULL	NULL
+717	MAN006	NULL	NULL	NULL	NULL
+718	MAN005	NULL	NULL	NULL	NULL
+719	MAN078	NULL	NULL	NULL	NULL
+720	MAN066	NULL	NULL	NULL	NULL
+721	MAN073	NULL	NULL	NULL	NULL
+722	MAN069	NULL	31	NULL	NULL
+723	MAN068	NULL	NULL	NULL	NULL
+724	MAN090	NULL	NULL	NULL	NULL
+725	MAN007	NULL	NULL	NULL	NULL
+726	MAN181	Milan Kundera	L'insoutenable legerete de letre	NULL	NULL
+727	MAN109	NULL	NULL	NULL	NULL
+728	MAN081	John Crowley	New Essays on Winesburg, Ohio	NULL	NULL
+729	MAN172	NULL	NULL	NULL	NULL
+730	MAN146	NULL	Jerusalem	NULL	NULL
+731	MAN159	NULL	NULL	NULL	NULL
+732	MAN125	NULL	4	NULL	NULL
+733	MAN182	NULL	32	NULL	NULL
+734	MAN188	NULL	34	NULL	NULL
+735	MAN210	NULL	12	NULL	NULL
+736	MAN185	NULL	33	NULL	NULL
+737	MAN201	NULL	1	NULL	NULL
+738	MAN195	NULL	21	NULL	NULL
+739	MAN061	NULL	8	NULL	NULL
+740	MAN209	NULL	25	NULL	NULL
+741	MAN183	NULL	29	NULL	NULL
+742	MAN191	NULL	16	NULL	NULL
+743	MAN207	NULL	5	NULL	NULL
+744	MAN198	NULL	22	NULL	NULL
+745	MAN189	NULL	31	NULL	NULL
+746	MAN194	NULL	19	NULL	NULL
+747	MAN126	NULL	26	NULL	NULL
+748	MAN186	NULL	30	NULL	NULL
+749	MAN197	NULL	18	NULL	NULL
+750	MAN192	NULL	15	NULL	NULL
+751	MAN129	NULL	9	NULL	NULL
+752	MAN128	NULL	20	NULL	NULL
+753	FRE019	Alan Fisher	La Traversee de Terioki	NULL	NULL
+754	MAN204	NULL	2	NULL	NULL
+755	MAN177	NULL	6	NULL	NULL
+756	FRE021	Max Gallo	Une affaire publique	NULL	NULL
+757	MAN156	NULL	NULL	NULL	NULL
+758	FRE023	NULL	Plexus	NULL	NULL
+759	MAN145	NULL	Stories of the Jews	NULL	NULL
+760	FRE005	J.M.G Le Clezio	Revolutions	NULL	NULL
+761	FRE022	NULL	plexus	NULL	NULL
+762	MAN101	NULL	NULL	NULL	NULL
+763	MAN154	NULL	NULL	NULL	NULL
+764	FRE026	NULL	Plexus	NULL	NULL
+765	FRE004	Victor Hugo	Les Miserables	NULL	NULL
+766	MAN107	NULL	NULL	NULL	NULL
+767	MAN120	NULL	NULL	NULL	NULL
+768	FRE006	Albert Camus	L'Homme Revolte	NULL	NULL
+769	FRE025	NULL	Plexus	NULL	NULL
+770	MAN092	NULL	NULL	NULL	NULL
+771	MAN091	NULL	Brothers	NULL	NULL
+772	FRE001	Isaac Bashevis Singer	Ennemies	NULL	NULL
+773	MAN139	NULL	NULL	NULL	NULL
+774	MAN141	NULL	NULL	NULL	NULL
+775	FRE024	NULL	Plexus	NULL	NULL
+776	FRE015	Shakespeare	Trois comedies	NULL	NULL
+777	MAN133	NULL	NULL	NULL	NULL
+778	FRE030	Jean Diwo	Les violons du roi	NULL	NULL
+779	MAN122	NULL	14	NULL	NULL
+780	MAN127	NULL	10	NULL	NULL
+781	FRE017	Noel Calef	Ascenseur pour l'echafaud	NULL	NULL
+782	MAN206	NULL	24	NULL	NULL
+783	FRE012	Thoma Mann	La mort a venice	NULL	NULL
+784	MAN148	NULL	NULL	NULL	NULL
+785	FRE002	Pierre Salinger	Le Scoop	NULL	NULL
+786	FRE016	Dominique Lapierre	Plus grands que l'amour	NULL	NULL
+787	MAN098	NULL	NULL	NULL	NULL
+788	MAN158	NULL	NULL	NULL	NULL
+789	FRE028	Richard Burgin	Conversations avec Isaac Bashevis Singer	NULL	NULL
+790	FRE020	Jack michonik	La Descendance	NULL	NULL
+791	MAN027	NULL	NULL	NULL	NULL
+792	MAN124	NULL	28	NULL	NULL
+793	FRE009	Balzac	Le Lys dans la vallee	NULL	NULL
+794	MAN137	Alexandre Dumas	Le Comte de Monte Cristo	NULL	NULL
+795	FRE046	Agatha Christie	Dix petits negres	NULL	NULL
+796	MAN134	NULL	NULL	NULL	NULL
+797	FRE060	Stendahl	rouge et le noir	NULL	NULL
+798	MAN121	NULL	27	NULL	NULL
+799	FRE040	Paul Guth	Le naif aux quarante enfants	NULL	NULL
+800	MAN165	NULL	NULL	NULL	NULL
+801	FRE035	H. H. Kirst	La Nuit Generaux	NULL	NULL
+802	MAN143	NULL	NULL	NULL	NULL
+803	FRE039	Paul Geraldy	Coi e Moi suivi de Vous Et Moi	NULL	NULL
+804	MAN022	NULL	NULL	NULL	NULL
+805	FRE044	Alphonse Allais	Plaisir d'humour	NULL	NULL
+806	MAN140	NULL	NULL	NULL	NULL
+807	FRE054	Alfred Grosser	Le Crime et la Memoire	NULL	NULL
+808	MAN072	NULL	NULL	NULL	NULL
+809	MAN155	NULL	NULL	NULL	NULL
+810	FRE058	Romain Gary (Emile Ajar)	La vie devant soi	NULL	NULL
+811	MAN164	NULL	The Importance of Living	NULL	NULL
+812	FRE108	Isaac Bashevis Singer	Yentl	NULL	NULL
+813	FRE065	Marcel Pagnol	Topaze	NULL	NULL
+814	MAN087	NULL	NULL	NULL	NULL
+815	MAN174	NULL	NULL	NULL	NULL
+816	FRE062	Umberto Eco	Baudolino	NULL	NULL
+817	MAN150	NULL	NULL	NULL	NULL
+818	FRE052	Mircea Eliade	Mythes, reves et mysteres	NULL	NULL
+819	MAN170	NULL	NULL	NULL	NULL
+820	MAN166	NULL	NULL	NULL	NULL
+821	FRE066	Sir Arthur Conan Doyle	Sherlock Holmes	NULL	NULL
+822	FRE091	Daniel Odier	Ming	NULL	NULL
+823	FRE072	Jean-Paul Sartre	Reflexions sur la Question Juive	NULL	NULL
+824	FRE097	Hermann Hesse	Narcisse et Goldmund	NULL	NULL
+825	FRE045	Sir Arthur Doyle	Archives sur sherlock Holmes	NULL	NULL
+826	Fre073	Daphne du Maurier	L'auberge de la Jamaique	NULL	NULL
+827	FRE093	amos Oz	La Boite Noire	NULL	NULL
+828	FRE094	Alexandere Dumas	Georges	NULL	NULL
+829	FRE090	Fred Uhlman	Il fait beau a Paris aujourd'hui	NULL	NULL
+830	FRE084	Avraham B. Yehoshua	Monsieur Mani	NULL	NULL
+831	FRE031	Laurie Clowin	Comment se dire adieu?	NULL	NULL
+832	FRE096	Andre Chouraqui	Ce Quw Je Crois	NULL	NULL
+833	FRE042	Henri Troyat	L'araigne	NULL	NULL
+834	FRE061	Joseph Kessel	Le Lion	NULL	NULL
+835	FRE048	Jean Cocteau	La Machine Infernale	NULL	NULL
+836	FRE049	yves courriere	Joseph Kessel ou sur la piste du lion	NULL	NULL
+837	FRE056	Jean Des Cars	Elisabeth D'autriche	NULL	NULL
+838	FRE055	Romain Gary	Education europeenne	NULL	NULL
+839	FRE099	Henri Charriere	Papillion	NULL	NULL
+840	FRE105	Anne Frank	journal de Anne Frank	NULL	NULL
+841	Fre071	Francoise Sagan	Chateau en Suede	NULL	NULL
+842	FRE082	vicki baum	Lac aux Dames	NULL	NULL
+843	FRE103	Henri Troyat	Etrangers sur la Terre	NULL	NULL
+844	FRE050	charles baudelaire	les fleurs du mal et autres poemes	NULL	NULL
+845	FRE068	Marcel Pagnol	La gloire de mon pere	NULL	NULL
+846	FRE069	Georges Friedmann	Leibniz et Spinoza	NULL	NULL
+847	FRE053	Somerset Maugham	La lune et soixante-quinze centimes	NULL	NULL
+848	FRE057	Roger Nimier	Historie d'un Amour	NULL	NULL
+849	FRE063	Gabriel Chevallier	Clochemerle	NULL	NULL
+850	FRE087	Jaroslav Hasek	La Brave soldat Chveik	NULL	NULL
+851	FRE107	Amos Oz	Une historie d'amour et de tenebres	NULL	NULL
+852	FRE088	Romain Gary	Les cerfs-volants	NULL	NULL
+853	FRE077	Jean Poul Sartre	Lage de raison	NULL	NULL
+854	FRE101	Romain Rolland	L'Ame enchantee	NULL	NULL
+855	FRE095	Dan Greenburg	Comment devenir une Mere Juive en dis lecons	NULL	NULL
+856	FRE100	Voltaire	Le Siecle de Louis XIV 2	NULL	NULL
+857	FRE104	Dostoievski	Les Freres Karamazov	NULL	NULL
+858	FRE080	Selma Lagerlof	Le merveilleux voyage de Nil Hogersson a travers la Suede	NULL	NULL
+859	FRE083	Karen Blixen	Le dinner de Babette	NULL	NULL
+860	FRE092	Noa Gordon	Le Dernier Juif	NULL	NULL
+861	FRE076	Nathalie Sarraute	Les fruits d'or	NULL	NULL
+862	FRE098	Gaston Leroux	Le parfum de la dame en noir	NULL	NULL
+863	FRE085	Johannes Mario Simmel	Et Jimmy se rendit a larc-en-ciel	NULL	NULL
+864	FRE074	Jean de la Fontaine	Fables	NULL	NULL
+865	SPA040	Enrique Jardiel Poncela	Amor Se Escribe Sin Hache	5703	NULL
+866	SPA057	Silvina Bullrich	Bodas De Cristal	5703	NULL
+867	SPA069	Poldy Bird	Guentos De Amor	5703	NULL
+868	SPA022	Pablo Giussani	montoneros	5703	NULL
+869	SPA048	Julio Cortazar	Todos Los Fuego El Fuego	5703	NULL
+870	SPA086	Isaac Bashevis Singer	Enemigos Una historia de amor	5703	NULL
+871	SPA010	Lawrence Sanders	Crimenes Capitales	5703	NULL
+872	SPA006	Avery Corman	A Los Cincuenta Anos	5703	NULL
+873	SPA031	harold robbins	los insaciables	5703	NULL
+874	FRE033	Michael Underwood	Accident de Parcours	NULL	NULL
+875	FRE003	Helene Carrere d'Encausse	Le malheur russe	NULL	NULL
+876	SPA045	Irving Wallace	El Complot	5703	NULL
+877	SPA042	Aldous Huxley	Ciego en Gaza	5703	NULL
+878	spa043	carl bernstein\ bob woodward	todos los hombres del presidente	5703	NULL
+879	SPA110	Janusz Korczak	Si yo volviera a ser Nino	5703	NULL
+880	SPA106	William Peter Blatty	El Exorcista	5703	NULL
+881	SPA079	Howard Fast	Max	5703	NULL
+882	spa041	Richard bach	Nada es azar	5703	NULL
+883	SPA095	Juan Soldao	Cuentos folkloricos de la Argentina	5703	NULL
+884	spa007	howard fast	El angel caido	5703	NULL
+885	SPA100	Danielle Steel	El Precio Del Amor	5703	NULL
+886	spa046	Eduardo Gudino Kieffer	sera por eso que la quiero tanto	5703	NULL
+887	SPA025	Robin Cook	Medico Interno	5703	NULL
+888	SPA080	Maria Angelica Bosco	En la estela de un secuestro	5703	NULL
+889	SPA021	Schalom Aleijem	Monologos	5703	NULL
+890	spa105	isaac bashevis singer	el esclavo	5703	NULL
+891	SPA109	Eduardo Gudino Kieffer	mombres se Mujer	5703	NULL
+892	SPA027	Norma Klein	Volver a la Vida	5703	NULL
+893	SPA005	Rosamunde Pilcher	Los buscadores de conchas	5703	NULL
+894	SPA075	Jacqeline Susann	Dolores	5703	NULL
+895	SPA108	Danielle Steel	El Precio Del Amor	5703	NULL
+896	SPA076	Patrick Suskind	El perfume	5703	NULL
+897	SPA089	Herman Wouk	Este es mi Dios	5703	NULL
+898	spa047	frank g. slaughter	hospital de sangre	5703	NULL
+899	SPA107	knut Hamsun	un Vagabundo Toca con Sordina	5703	NULL
+900	SPA009	Hector Vallaco	El Arbol	5703	NULL
+901	SPA038	Danielle Steel	Cinco Dias en Paris	5703	NULL
+902	spa145	danielle steel	la bailarina	5703	NULL
+903	SPA013	Abelardo Arias	El gran cobarde	5703	NULL
+904	spa001	william karz	el guateque	5703	NULL
+905	SPA085	Danielle Steel	La Rueda del Deseo	5703	NULL
+906	SPA082	Biatriz Guido	Escandalos Y Soledades	5703	NULL
+907	SPA011	Curzio Malaparte	Sodoma y Gomora	5703	NULL
+908	SPA049	Leopoldo Alas	La Regenta	5703	NULL
+909	spa096	jesus zarate	la carcel	5703	NULL
+910	SPA099	Rene Barjavel	Los Caminos A Katmandu	5703	NULL
+911	SPA074	Evan Hunter	Feliz ano nuevo, Herbie	5703	NULL
+912	SPA078	Issac Asomov	Yo, Robot	5703	NULL
+913	SPA032	Gerald Di Pego - Bernhardt J. Hurwood	Nacida inocente	5703	NULL
+914	SPA056	Tomas Salvador	Cuerda de Presos	5703	NULL
+915	SPA052	Michael Barak	El Enigma	5703	NULL
+916	SPA039	Bernardo Verbitsky	Calles de tango	5703	NULL
+917	SPA103	Guy des Cars	Te Amare Eternamente	5703	NULL
+918	SPA097	Isabel Allende	Hija de la fortuna	5703	NULL
+919	SPA004	Tom Clancy	La Caza Del Submarino Ruso	5703	NULL
+920	SPA067	Dan Brown	El Codigo Da Vinci	5703	NULL
+921	SPA028	Scholem Aleijem	Realidad y fantasia	5703	NULL
+922	spa112	mary higgins clark	en defensa propia	5703	NULL
+923	SPA071	Dan Brown	Angeles y Demonios	5703	NULL
+924	SPA037	Benito Lynch	Los Caranchos de La Florida	5703	NULL
+925	spa127	j. n. forkel	juan sebastian bach	5703	NULL
+926	SPA055	Isabel Allende	Retrato en Sepia	5703	NULL
+927	SPA012	Gunter Grass	Anos de Perro	5703	NULL
+928	SPA102	Leo Buscaglia	Vivir, Amar Y Aprender	5703	NULL
+929	SPA030	Robin Cook	Los Archivos de Salem	5703	NULL
+930	SPA053	David Morrell	La hermandad de la piedra	5703	NULL
+931	SPA002	Hellen Ferro	Muertes Paralelas	5703	NULL
+932	spa125	julia alvarez	en el tiempo de las mariposas	5703	NULL
+933	SPA003	Danielle Steel	Secretos	5703	NULL
+934	SPA081	Danielle Steel	Calidoscopio	5703	NULL
+935	SPA033	Pier Paolo Pasolini	Teorema	5703	NULL
+936	SPA070	Dominique Dallayrac	Nollores yo me ancargo	5703	NULL
+937	SPA029	Scholem Aleijem	Stempeniu	5703	NULL
+938	spa168	otto morales benitez	aguja de marear	5703	NULL
+939	SPA014	Maxence van der Meersch	Leed en mi Corazon	5703	NULL
+940	SPA094	Silvina Bullrich	Los Pasajeros del Jardin	5703	NULL
+941	SPA026	Vance Packard	Los Buscadores De Prestigio	5703	NULL
+942	SPA062	Danielle Steel	La Mansion	5703	NULL
+943	spa116	stephen king	quatro estacoes	5703	NULL
+944	SPA015	Leon Uris	Topaz	5703	NULL
+945	SPA064	Antonio di Benedetto	Absurdos	5703	NULL
+946	SPA093	Katherine Mansfield	Cuentos	5703	NULL
+947	SPA077	Lawrence Durrell	La Celda De Prospero	5703	NULL
+948	SPA073	Stuart Woods	Oculto en la Profundidad	5703	NULL
+949	SPA088	Jose Maria Monner Sans	Breves Recuerdos de un Largo Preterito	5703	NULL
+950	SPA054	Antonio Munoz Molina	El invierno en Lisboa	5703	NULL
+951	SPA020	P.D James	Declaracion Peligrosa	5703	NULL
+952	SPA104	Nancy Price	Durmiendo con su enemigo	5703	NULL
+953	SPA016	Barbara Taylor Bradford	Voces del corazon	5703	NULL
+954	SPA124	Francois Truffaut	El Hombre Que Amaba Las Mujeres	5703	NULL
+955	SPA018	R. Fontanarrosa	No se si he Sido Claro	5703	NULL
+956	SPA165	Benito Perez Galdos	Trafalgar	5703	NULL
+957	SPA156	Agusti Bartra	Antologia de la Poesia Norteamericana	5703	NULL
+958	SPA092	John Hejinian	Sala de urgencias	5703	NULL
+959	SPA058	Geoffrey Parrinder	La Brujeria	5703	NULL
+960	SPA164	Helena de la Espriella de Escobar	Aquellos anos Turbulentos	5703	NULL
+961	SPA060	Khalil Gibran	El Profeta	5703	NULL
+962	SPA072	VIRGINIA WOOLF	Tres guineas	5703	NULL
+963	SPA143	Pablo Neruda	Canto General	5703	NULL
+964	SPA044	Moshe Shamir	Rey De Carne Y Hueso	5703	NULL
+965	SPA019	Susana march	Algo Muere Cada Dia	5703	NULL
+966	SPA144	Jean-Jacques Servan-Schreiber	El Desafio Americano	5703	NULL
+967	SPA169	Franz Kafka	El Proceso	5703	NULL
+968	SPA068	Helen Fielding	Bridget jones: Sobrevivire	5703	NULL
+969	SPA066	Alejandro Solyenitzin	Cuentos en miniatura	5703	NULL
+970	SPA126	Casanova	Confidencias Intimas de un Gran Seductor	5703	NULL
+971	SPA118	Jose Saramago	El hombre Duplicado	5703	NULL
+972	SPA177	Isabel Allende	La casa de los Espiritus	5703	NULL
+973	SPA101	Carlos Fuentes	Orquideas a la luz de la luna	5703	NULL
+974	SPA117	Len Deighton	Adios Mickey Mouse	5703	NULL
+975	SPA134	Pierre Pelot	La Jangada	5703	NULL
+976	SPA149	William A, Nolen	Romance do Cirurgiao	5703	NULL
+977	SPA120	Barbara Taylor Bradford	As Mulheres Na Vida Dele	5703	NULL
+978	SPA154	Gabriel Garcia Marquez	La mala hora	5703	NULL
+979	SPA162	Mario Vargas Llosa	La Orgia perpetua	5703	NULL
+980	SPA150	Truman Capote	A Sangue Frio	5703	NULL
+981	SPA161	Franz Kafka	La Metamorfosis	5703	NULL
+982	SPA179	Thomas Merton	Conjeturas de un espectador culpable	5703	NULL
+983	SPA130	D.H. Lawrence	La Serpiente Emplumada	5703	NULL
+984	SPA114	Robert Ludlum	El pacto de Holcorft	5703	NULL
+985	SPA087	Jorge Bucay	Cartas para Claudia	5703	NULL
+986	SPA151	Oriana Fallaci	Um Homem	5703	NULL
+987	SPA155	Leon Uris	Armageddon	5703	NULL
+988	SPA173	Julio Scherer Garcia	La piel y la entrana	5703	NULL
+989	SPA135	George Orwell	1984	5703	NULL
+990	SPA139	Jerzy Andrzejewski	Las Puertas del Paraiso	5703	NULL
+991	SPA140	Gorge Guillen	Obra Poetica	5703	NULL
+992	SPA170	Ernest Hemingway	Relatos	5703	NULL
+993	SPA167	Romulo Gallegos	Dona Barbara	5703	NULL
+994	SPA163	Oscar Lewis	Los Hijos de Sanches	5703	NULL
+995	SPA171	Arthur Golden	Memorias de una Geisha	5703	NULL
+996	SPA132	Robin Cook	Mutacion	5703	NULL
+997	SPA166	Jorge Ancizar Sordo	Manuel Ancizar	5703	NULL
+998	SPA153	Isaac Asimov	La edad de oro	5703	NULL
+999	SPA186	Bonifacio Lastra	Michele	5703	NULL
+1000	SPA148	Lawrence Durrell	Esprit de Corps	5703	NULL
+1001	SPA160	Sidney Sheldon	Mas alla de la medianoche	5703	NULL
+1002	SPA180	Amos Oz	Las Mujeres de Yoel	5703	NULL
+1003	SPA172	Anne Frank	O diario de Anne Frank	5703	NULL
+1004	SPA181	Judith Michael	Historias Primadas	5703	NULL
+1005	SPA159	Paula Perez Alonso	No se si casarme o comprarme un perro	5703	NULL
+1006	SPA183	Homero Aridjis	Mirandola dormir	5703	NULL
+1007	SPA113	John Gray	Los Hombres son de Marte, las mujeres son de Venus	5703	NULL
+1008	SPA182	Antonio Machado	Antonio Machado	5703	NULL
+1009	SPA141	Jorge Luis Borges	Histotia universal de la infamia	5703	NULL
+1010	SPA176	Wilbur Smith	Tentar al Diablo	5703	NULL
+1011	SPA178	Julio Cortazar	Ceremonias	5703	NULL
+1012	SPA175	John H. Ingram	Edgar A. Poe. Vida y obra	5703	NULL
+1013	SPA137	Jack Michonik	La Novela	5703	NULL
+1014	SPA185	Patricia Matthews	Violenta Tempestad de Amor	5703	NULL
+1015	SPA147	Gloria Sarro	Maria Antonieta	5703	NULL
+1016	SPA146	Jack Michonik	la insolita historia de christian White	5703	NULL
+1017	SPA128	Lajos Zilahy	Las Armas Miran Atras	5703	NULL
+1018	SPA189	Pier Paolo Pasolini	Petroleo	5703	NULL
+1019	SPA121	Daniel Easterman	Juicio Final	5703	NULL
+1020	SPA119	Hoberto Padilla	En mi jardin pastan los heroes	5703	NULL
+1021	SPA157	Amos Oz	Las voces de Israel	5703	NULL
+1022	SPA122	Marcos Aguinis	Asalto Al Paraiso	5703	NULL
+1023	SPA136	J. Michonik	Eldorado	5703	NULL
+1024	SPA158	Antonio Gala	La pasion turca	5703	NULL
+1025	rom030	alexander grin	colonia lanfyere	NULL	NULL
+1026	rom020	NULL	stafia familie canterville	NULL	NULL
+1027	ROM010	Mircea Eliade	Isabel si Apele Diavolului	NULL	NULL
+1028	rom029	george eliot	middlemarch-3	NULL	NULL
+1029	ROM012	george eliot	middlemarch-1	NULL	NULL
+1030	rom005	mircea aliade	nuvele inedite	NULL	NULL
+1031	ROM013	ROMULUS RUSAN	AMERICA OGARULUI CSNUSIU	NULL	NULL
+1032	ROM031	GEORGE SAND	BALTA DIAVOLULUI	NULL	NULL
+1033	ROM015	GEORGE ELIOT	MIDDLEMARCH-4	NULL	NULL
+1034	rom011	camille lemonner	sfirsitul familiei rassenfosse	NULL	NULL
+1035	ROM014	MARGARET MILLAR	IN FIECARE ZI E IARNA	NULL	NULL
+1036	rom006	douglass reeman	ataca si scufunda	NULL	NULL
+1037	ROM007	J.B.PRIESTLEY	PRIETENTI DE NADEJDE	NULL	NULL
+1038	ROM008	SIENKIEWICZ	POTOPUL-2	NULL	NULL
+1039	ROM072	MARIA BELLONCI	SECRETELE FAMILIEI GONZAGA	NULL	NULL
+1040	rom016	beth beechwood	hannah montana	NULL	NULL
+1041	ROM119	IPPOLITO NIEVO	MEMORIILE UNUI ITALIAN-2	NULL	NULL
+1042	ROM035	juan rulfo	pedro paramo	NULL	NULL
+1043	ROM071	IPPOLITO NIEVO	MEMORIILE UNUI ITALIAN-1	NULL	NULL
+1044	ROM112	ELIAS CANETTI	FACLA IN URECHE	NULL	NULL
+1045	ROM164	ALEXANDRE DUMAS	CONJURATII	NULL	NULL
+1046	ROM032	rafael sanchez ferlosio	riul jarama	NULL	NULL
+1047	ROM144	ALEX MUNTHE	CARTEA DE LA SAN MICHELE	NULL	NULL
+1048	ROM121	viktor astafiew	visul crestelor albe	NULL	NULL
+1049	ROM058	KNUT HAMSUN	ULTIMUL CAPITOL	NULL	NULL
+1050	ROM116	ANDRE MAUROIS	CEL TREL DUMAS-2	NULL	NULL
+1051	ROM125	E.LOVINESCU	BIZU	NULL	NULL
+1052	ROM115	tadeuz zelenski	marysienka si sobieski	NULL	NULL
+1053	ROM034	GEORGE ELIOT	MIDDLEMARCH-2	NULL	NULL
+1054	ROM109	dumenezeu sa te ocroteasca	moara de pe pad	NULL	NULL
+1055	ROM033	ANNE BRONTE	NECUNOSCUTA DE LA WILKFELL HALL	NULL	NULL
+1056	ROM118	BOGATASUL	GALSWORTHY	NULL	NULL
+1057	ROM070	heinrich alexander stroll	visual despre troia	NULL	NULL
+1058	ROM077	LILI PROMET	SAT FARA BARBATI	NULL	NULL
+1059	ROM018	michel zevaco	fausta	NULL	NULL
+1060	ROM073	ROMAIN GARY	GROAPA BUNEI SPERANTE	NULL	NULL
+1061	ROM107	pablo neruda	memorii	NULL	NULL
+1062	ROM025	george sand	tineretea lui etienne depardieu	NULL	NULL
+1063	ROM074	ROBERT-LOUIS STEVENSON	STRANIUL CAZ AL DR.JEKYLL SI AL LUI MR.HYDE	NULL	NULL
+1064	ROM147	patrick white	copacul omului	NULL	NULL
+1065	ROM076	MICHELE PRISCO	O SPIRALA DE CEATA	NULL	NULL
+1066	ROM098	Romanul Secolului	Ernesto Sabato despre eroi si morminte	NULL	NULL
+1067	Rom120	Henry Esmond	Thackeray	NULL	NULL
+1068	ROM009	SIENKIEWICZ	POTOPUL-4	NULL	NULL
+1069	Rom046	upton sinclair	regele carbune	NULL	NULL
+1070	ROM069	VICENTE BLASCO IBANEZ	CEI PATRU CAVALERI AI APOCALIPSULUI	NULL	NULL
+1071	Rom065	John Wain	O Iarna Printre Coline	NULL	NULL
+1072	ROM068	jane austen	manastirea northanger	NULL	NULL
+1073	ROM017	VALENTIN RASPUTIN	TRAIESTE SI IA AMINTE	NULL	NULL
+1074	ROM096	GASTO BOISSIER	CICERO SI PRIETENTII SAI	NULL	NULL
+1075	ROM067	iuri trifonov	batrinul	NULL	NULL
+1076	ROM126	HANS HELLMUT KIRST	PRETUL ADEVARULUI	NULL	NULL
+1077	Rom026	Joseph Conrad	Tarmul refugiului	NULL	NULL
+1078	ROM022	FRANCES BURNEY	EVELINA	NULL	NULL
+1079	ROM122	saul bellow	darul lui humboldt	NULL	NULL
+1080	ROM044	ANDRE MAUROIS	CEI TREI DUMAS-1	NULL	NULL
+1081	Rom043	Joe Heydecker,Johannes Leeb	Procesul De La Nurnberg	NULL	NULL
+1082	ROM024	QUINTUS CURTIUS RUFUS	VIATA SI LUI ALEXANDRU CEI MARE-2	NULL	NULL
+1083	ROM057	PHILLIPE HERIAT	FAMILIA BOUSSARDEL	NULL	NULL
+1084	Rom021	Manul Secolului	Truman Capote,alte glasuri, alte incaperi	NULL	NULL
+1085	ROM099	ALEXANDRE DUMAS	CEI PATRUZECI SI CINCI	NULL	NULL
+1086	ROM105	Louis Bromfield	Vin Ploile	NULL	NULL
+1087	ROM193	GUNTER DE BRUYN	PREMIUL	NULL	NULL
+1088	ROM149	STEPHEN CRANE	SEMNUL ROSU AL CURAJULUL	NULL	NULL
+1089	ROM089	HENRI ROCHEFORT	INTIMPLARI DIN VIATA MEA-2	NULL	NULL
+1090	ROM260	Iris Mordoch	Vlastarul cuvintelor	NULL	NULL
+1091	ROM132	THEODOR FONTANE	DOAMNA JENNY TREIEL	NULL	NULL
+1092	ROM056	John Galsworthy	Domeniul	NULL	NULL
+1093	ROM152	JEAN COUE	OMUL DE PE RIUL KWAI	NULL	NULL
+1094	ROM019	KLaus :ann	Fuga spre Nord	NULL	NULL
+1095	ROM157	JEAN JACQUES SERVAN SCHREIBER	SFIDAREA MONDIALA	NULL	NULL
+1096	ROM075	Mircea Eliade	In Toarcerea Din Rai	NULL	NULL
+1097	ROM220	ANDERSEN	CRAIASA ZAPEZII	NULL	NULL
+1098	ROM101	Erich Maria Remarque	Arcul de triumph	NULL	NULL
+1099	ROM221	BALTASAR GRACIAN	CRITICONUI 1-2	NULL	NULL
+1100	ROM038	Alexandre Herculano	Mascariciul	NULL	NULL
+1101	ROM217	GABRIEL CHEVALLIER	COLEGIUL SAINTE COLLINE	NULL	NULL
+1102	ROM097	Stefan Zweig	Maria Stuart vol.II	NULL	NULL
+1103	ROM047	W.Somerset Maugham	Honolulu	NULL	NULL
+1104	ROM041	mihnea gheorghiu	scene din viata lui shakespeare	NULL	NULL
+1105	ROM083	Morris West	A Doua Victorie	NULL	NULL
+1106	ROM028	Mihail Sebatian	Jurnal 1935-1944	NULL	NULL
+1107	ROM040	alexander Giese	precum zapada in desert	NULL	NULL
+1108	ROM023	Rafael Sanchez Ferloso	riul Jarama	NULL	NULL
+1109	ROM053	G.Topirceanu	Versuri Si Proza	NULL	NULL
+1110	ROM158	Henry Castillu	Furtuna din iulie	NULL	NULL
+1111	ROM002	Balastar Lopes	Chiquinho	NULL	NULL
+1112	ROM054	Nikos Kazantzakis	raport catre el greco	NULL	NULL
+1113	ROM259	sienkiewicz	potopul 3	NULL	NULL
+1114	ROM108	mircea eliade	aspecte ale mitului	NULL	NULL
+1115	ROM106	Alexandre Dumas	Pajul Ducelui de Savoia	NULL	NULL
+1116	ROM094	Irving Stone	bucuria vietii	NULL	NULL
+1117	ROM172	sienkiewicz	potopul 1	NULL	NULL
+1118	ROM063	Brian Glanville	Jelania Greierilor Captivi	NULL	NULL
+1119	ROM051	Itzhac Guttman Ben-Zvi	Adevaruri Tainuite Marturiile unui fiu de rabin	NULL	NULL
+1120	ROM060	Roman Rolland	Beethoven Marile Epoci Creatore	NULL	NULL
+1121	ROM184	Henry James	Potirul de Aur	NULL	NULL
+1122	ROM175	George Simenon	comisarul maigret a fost pradat	NULL	NULL
+1123	ROM197	Jaroslaw Iwaskiewicz	Povestiri muzicale	NULL	NULL
+1124	ROM161	Alexandre Dumas	Cavalerul de Mauleon	NULL	NULL
+1125	ROM153	nicolae iorga	privelisti din tara	NULL	NULL
+1126	ROM218	Paul Feval	Cocosatul	NULL	NULL
+1127	ROM169	Alexandre Dumas	Contesa de Charny 1	NULL	NULL
+1128	ROM267	Walter Scott	Guy Mannering	NULL	NULL
+1129	ROM168	Gina Sebastian Alcalay	Poate milne	NULL	NULL
+1130	ROM183	Benjamin Disraeli	Sybil	NULL	NULL
+1131	ROM001	J.b priestley	prieteni de nadejde 2	NULL	NULL
+1132	ROM196	Fustel de Coulanges	cetatea antica	NULL	NULL
+1133	ROM086	Thomas Mann	Doctor Faustus	NULL	NULL
+1134	ROM254	Aldous Huxley	Punct Contrapunct 2	NULL	NULL
+1135	ROM239	George Sand	Povestea Vietii Mele 1	NULL	NULL
+1136	ROM235	Cloude Spoak	Marianne Frumoasa Mea	NULL	NULL
+1137	ROM004	Emmanuel Robles	O Primavara Italia	NULL	NULL
+1138	ROM160	Dimitris Psathas	Madam Sousou	NULL	NULL
+1139	ROM145	Lino Aldani	Noapte Buna, Sofia	NULL	NULL
+1140	ROM187	Henryk Sienkiewicz	Potoul	NULL	NULL
+1141	ROM255	Perpessicius	Opere 2	NULL	NULL
+1142	ROM163	Herve Bazin	Tipat De Cucuvea	NULL	NULL
+1143	ROM042	Graham Greene	Miezul Lucrurilor	NULL	NULL
+1144	ROM111	Serge Deville	Lichidati Reichsprotektorul!	NULL	NULL
+1145	ROM066	Ken Kesey	Zbor Duasupra Unui Cuib De Cuci	NULL	NULL
+1146	ROM199	Kenneth Allsop	Chicago Sub Teroare	NULL	NULL
+1147	ROM134	A. J. Cronin	Drumul lui Shannon	NULL	NULL
+1148	ROM127	Albert Blankert	Johannes Vermeer din Delft	NULL	NULL
+1149	ROM049	Georges Courteline	Domnii Hirtogari	NULL	NULL
+1150	ROM223	Juan Garcia Hortelano	Furtuna de Vara	NULL	NULL
+1151	ROM137	Frans G. Bengtsson	Vikingii	NULL	NULL
+1152	ROM173	Alex Haley	Radacini	NULL	NULL
+1153	ROM167	Liana Maxy	Punctele Mele Cardinale	NULL	NULL
+1154	ROM245	Aurelian Baltaretu	Milenii de Istorie	NULL	NULL
+1155	ROM048	Henri Rochefort	Intimplari Din Vita Mea	NULL	NULL
+1156	ROM200	San-Antonio	Am Onoarea Sa Va Pun la Punct	NULL	NULL
+1157	ROM214	Lawrence Durrell	Justine	NULL	NULL
+1158	ROM135	Jokai Mor	Fiii Omului Cu Inima de Piatra - 1	NULL	NULL
+1159	ROM138	Maurice Baring	Leaganul Pisicii	NULL	NULL
+1160	ROM190	Margarita Wallmann	NULL	NULL	NULL
+1161	ROM198	Alexandre Dumas	Fiica Marchizului	NULL	NULL
+1162	ROM003	Ralph De Boissiere	Giuvaerul Coroanei	NULL	NULL
+1163	ROM213	Jokai Mor	Fiii Omului Cu Inima de Piatra - 2	NULL	NULL
+1164	ROM148	W, Somerset Maugham	Julia	NULL	NULL
+1165	ROM050	George Blond	Furiosii Domnului	NULL	NULL
+1166	ROM061	Henri de Regnier	Sarpele Cu Doua Capete	NULL	NULL
+1167	ROM166	Rudyard Kipling	Domnia-Sa Preacinstitul elefant	NULL	NULL
+1168	ROM226	Gib I. Mihaescu	Vedenia	NULL	NULL
+1169	ROM202	J, Lucas-Dubreton	Viata de Fiecare zi la Florenta pe Vremea Familiei Medici	NULL	NULL
+1170	ROM195	Fustel de Coulalges	Cetatea Antica	NULL	NULL
+1171	ROM178	Alexandre Dumas	Doctorul Misterios	NULL	NULL
+1172	ROM229	Efraim Kishon	Actori, Ageamii si Sufleori	NULL	NULL
+1173	ROM055	Andre Parrot	Aventura Arheologica	NULL	NULL
+1174	ROM201	Marie Chaix	Tacerile Sau Viata Unei Femei	NULL	NULL
+1175	ROM216	Dimitris Hatzis	Doua Carti Intr-Una Singura	NULL	NULL
+1176	ROM154	Michel Zevaco	Fausta Invinsa	NULL	NULL
+1177	ROM231	John Cowper Powys	Cercul Nebunilor	NULL	NULL
+1178	ROM205	Jacques Madaule	Istoria Frantei	NULL	NULL
+1179	ROM155	Arnold Bennett	Hilda Lesways	NULL	NULL
+1180	ROM140	Thomas Hardy	Padourenii	NULL	NULL
+1181	ROM146	Marcel Jullian	Batalia Angliei	NULL	NULL
+1182	ROM236	Daniel Defoe	Moll Fladers	NULL	NULL
+1183	ROM131	Henry Castillou	Furtuna din Iulie	NULL	NULL
+1184	ROM080	Thomas Mann	Iosii si Fratii Sai	NULL	NULL
+1185	ROM194	Iris Murdoch	Marea, Marea	NULL	NULL
+1186	ROM232	Francesco domenico Guerrazzi	Isabella Orsini	NULL	NULL
+1187	ROM170	Anthony Trollope	Primul Ministru 1	NULL	NULL
+1188	ROM188	Walker Percy	Mirajul Fericirii	NULL	NULL
+1189	ROM186	Italo Calvino	Strabunii Nostri	NULL	NULL
+1190	ROM230	P. G. Woodenhouse	Fulger in Plina Vara	NULL	NULL
+1191	ROM104	Mircea Eliade	Maitreyi	NULL	NULL
+1192	ROM165	George Eliot	Adam Bede	NULL	NULL
+1193	ROM084	Ludovic Bruckstein	Scorbura	NULL	NULL
+1194	ROM204	Stefan Zweig	Maria Stuart 1	NULL	NULL
+1195	ROM079	Jacques Robichon	Ziua "z" In Africa	NULL	NULL
+1196	ROM238	Jacques Madaule	Istoria Frantei	NULL	NULL
+1197	ROM087	Manuel Scorzables	Cintecul loi Agapito Roble	NULL	NULL
+1198	ROM078	Josef Skvorecky	Tristetea Locotenentului Boruvka	NULL	NULL
+1199	ROM162	Henry James	Ce Stia Maisie	NULL	NULL
+1200	ROM090	Anne Bronte	Necunoscuta de la Wildfell Hall	NULL	NULL
+1201	ROM091	jacques chabannes	intilnirea n-a mai avut loc	NULL	NULL
+1202	ROM171	Las Cases	Memorialul din Sfinta-elena	NULL	NULL
+1203	ROM253	Yves Gandon	Domnul Miracle	NULL	NULL
+1204	ROM128	Philip Gosse	Istoria Pirateriei	NULL	NULL
+1205	ROM250	Charles Portis	Adevaratul Curaj	NULL	NULL
+1206	ROM185	Guy de Maupassant	Pierre si Jean	NULL	NULL
+1207	ROM182	Balzac	Opere Alese	NULL	NULL
+1208	ROM179	Mario Soldati	Cele Doua Orase	NULL	NULL
+1209	ROM228	willibald Alexis	Pantalonii cavalerului von Bredow	NULL	NULL
+1210	ROM242	Stefan Heym	Relatare Despre Regele David	NULL	NULL
+1211	ROM243	Alexandre Dumas	Conjuratii	NULL	NULL
+1212	ROM246	Liana Maxy	Batrinul Ieri Si Nenascutul Miine	NULL	NULL
+1213	ROM206	Lytton Strachey	Elisabeta si Essex	NULL	NULL
+1214	ROM234	Josef Toman, Miroslava Tomanova	SOCRATE	NULL	NULL
+1215	ROM270	Anthony Trollope	Intoarcerea lui Phineas Finn	NULL	NULL
+1216	ROM244	Rene Victor Pilhes	Imprecatorul	NULL	NULL
+1217	ROM240	Andre Dhotel	Viviane. In Lumea Larga	NULL	NULL
+1218	ROM215	Manuel Scorza	Calaretul Fara Somn	NULL	NULL
+1219	ROM237	Yves Gandon	Inflacarata Egle	NULL	NULL
+1220	ROM192	John Fowles	Iubita Locotenentului Francez	NULL	NULL
+1221	ROM248	Iannis Maris	Moartea lui Timoteus Konstas	NULL	NULL
+1222	ROM123	J. B. Priestley	Prieteni de Nadejde	NULL	NULL
+1223	ROM247	Mircea Eliade	Santier	NULL	NULL
+1224	ROM180	Karl Gjelerup	Pelerinul Kamannita	NULL	NULL
+1225	ROM103	Aldous Huxley	Surisul Giocondei	NULL	NULL
+1226	ROM261	Joe Alex	Acolo Unde e Stapina Primavara	NULL	NULL
+1227	ROM139	August Strindberg	Vrajitoarea Razbunarea Insula Fericitilor	NULL	NULL
+1228	ROM052	Lion Feuchtwanger	Falsul Nero	NULL	NULL
+1229	ROM222	Simon Vestdijk	Calatorie in Jamaica	NULL	NULL
+1230	ROM233	Emmanuel Robles	Inaltimile Orasului	NULL	NULL
+1231	ROM088	William Faulkner	Sartoris	NULL	NULL
+1232	ROM082	Flavius Iosephus	ISTORIA	NULL	NULL
+1233	ROM177	Cornelius Ryan	Un Pod Prea Indepartat	NULL	NULL
+1234	ROM156	Emile Zola	Gervaise	NULL	NULL
+1235	ROM241	J. B. Priestley	Prieteni de Nadejde	NULL	NULL
+1236	ROM142	Edith Wharton	casa Veseliei	NULL	NULL
+1237	ROM209	Alessandro Manzoni	Doamna din Monza Istoria Coloanei Infame	NULL	NULL
+1238	ROM129	Mark Twain	Jurnalul lui Adam si al Evei	NULL	NULL
+1239	ROM136	Karel Capek	Destinul Unui Compozitor	NULL	NULL
+1240	ROM130	J. M. G. Le Clezio	Procesul Verbal	NULL	NULL
+1241	ROM208	Alexander Dumas	Doctorul Misterios 2	NULL	NULL
+1242	ROM251	Vincente Blasco Ibanez	Printre portocali	NULL	NULL
+1243	ROM212	k. J. Benes	Viata Furata	NULL	NULL
+1244	ROM133	Partea a Treia	Baltasar Gracian	NULL	NULL
+1245	ROM211	Aldous Huxley	Punct Contrapunct	NULL	NULL
+1246	ROM249	Genevieve Duboscq	La Revendere Genevieve	NULL	NULL
+1247	ROM203	I. Schechter	O Viata Automati	NULL	NULL
+1248	ROM227	Cornelius Ryan	Ziua Cea Mai Lunga	NULL	NULL
+1249	ROM225	Lope de Vega	Steaua Sevillei	NULL	NULL
+1250	ROM159	Emole Gaboriau	Afacerea Boiscoran	NULL	NULL
+1251	ROM207	Virgil Carianopol	Scriitori Care Au Devenit Amintiri	NULL	NULL
+1252	ROM224	Jorge Luis Borges	Cartea De Nisip	NULL	NULL
+1253	ROM189	Bernard Simiot	Suez	NULL	NULL
+1254	ROM151	Nodar Dumbadze	Legea Eternitatii	NULL	NULL
+1255	FRE111	Alexandra David-Neel	Magie D'Amour et Magie Noire	NULL	NULL
+1256	ARA053	NULL	NULL	NULL	NULL
+1257	ARA007	NULL	NULL	NULL	NULL
+1258	ARA056	NULL	NULL	NULL	NULL
+1259	ARA012	NULL	NULL	NULL	NULL
+1260	ARA009	NULL	NULL	NULL	NULL
+1261	ARA059	NULL	NULL	NULL	NULL
+1262	ARA032	NULL	NULL	NULL	NULL
+1263	ARA047	NULL	NULL	NULL	NULL
+1264	ARA057	NULL	NULL	NULL	NULL
+1265	ARA045	NULL	NULL	NULL	NULL
+1266	ARA058	NULL	NULL	NULL	NULL
+1267	ARA049	NULL	NULL	NULL	NULL
+1268	ARA015	NULL	NULL	NULL	NULL
+1269	ARA014	NULL	NULL	NULL	NULL
+1270	ARA035	NULL	NULL	NULL	NULL
+1271	ARA031	NULL	NULL	NULL	NULL
+1272	ARA060	NULL	NULL	NULL	NULL
+1273	ARA001	NULL	NULL	NULL	NULL
+1274	ARA003	NULL	NULL	NULL	NULL
+1275	ARA044	NULL	NULL	NULL	NULL
+1276	ARA034	NULL	NULL	NULL	NULL
+1277	ARA006	NULL	NULL	NULL	NULL
+1278	ARA016	NULL	NULL	NULL	NULL
+1279	ARA002	NULL	NULL	NULL	NULL
+1280	ARA005	NULL	NULL	NULL	NULL
+1281	ARA017	NULL	NULL	NULL	NULL
+1282	ARA011	NULL	NULL	NULL	NULL
+1283	ARA043	NULL	NULL	NULL	NULL
+1284	ARA008	NULL	NULL	NULL	NULL
+1285	ARA018	NULL	NULL	NULL	NULL
+1286	ARA055	NULL	NULL	NULL	NULL
+1287	ARA019	NULL	NULL	NULL	NULL
+1288	ARA054	NULL	NULL	NULL	NULL
+1289	ARA040	NULL	NULL	NULL	NULL
+1290	ARA046	Dan Brown	THe De Vinci Code	NULL	NULL
+1291	ARA039	NULL	NULL	NULL	NULL
+1292	ARA013	NULL	NULL	NULL	NULL
+1293	ARA037	NULL	NULL	NULL	NULL
+1294	ARA048	NULL	NULL	NULL	NULL
+1295	ARA010	NULL	NULL	NULL	NULL
+1296	ARA036	NULL	NULL	NULL	NULL
+1297	ARA042	NULL	NULL	NULL	NULL
+1298	THA115	NULL	NULL	6026	NULL
+1299	THA118	NULL	NULL	6026	NULL
+1300	THA006	NULL	Dhama from Achan Thong 2	6026	NULL
+1301	THA033	NULL	NULL	6026	NULL
+1302	THA010	NULL	NULL	6026	NULL
+1303	THA021	NULL	NULL	6026	NULL
+1304	THA018	NULL	NULL	6026	NULL
+1305	THA024	NULL	NULL	6026	NULL
+1306	THA016	NULL	NULL	6026	NULL
+1307	THA001	NULL	NULL	6026	NULL
+1308	THA057	NULL	NULL	6026	NULL
+1309	THA060	NULL	NULL	6026	NULL
+1310	THA009	NULL	NULL	6026	NULL
+1311	THA020	NULL	NULL	6026	NULL
+1312	THA054	NULL	NULL	6026	NULL
+1313	ARA020	NULL	NULL	NULL	NULL
+1314	THA023	NULL	NULL	6026	NULL
+1315	THA026	NULL	NULL	6026	NULL
+1316	THA012	Phra Thepsophon	A Buddhist Worldview	6026	NULL
+1317	THA155	NULL	NULL	6026	NULL
+1318	THA175	NULL	NULL	6026	NULL
+1319	THA116	NULL	NULL	6026	NULL
+1320	THA017	NULL	NULL	6026	NULL
+1321	THA172	NULL	NULL	6026	NULL
+1322	THA154	NULL	NULL	6026	NULL
+1323	THA157	NULL	NULL	6026	NULL
+1324	THA168	NULL	NULL	6026	NULL
+1325	THA171	NULL	NULL	6026	NULL
+1326	THA170	NULL	NULL	6026	NULL
+1327	THA173	NULL	NULL	6026	NULL
+1328	THA174	NULL	NULL	6026	NULL
+1329	THA177	NULL	NULL	6026	NULL
+1330	THA178	NULL	NULL	6026	NULL
+1331	THA160	NULL	NULL	6026	NULL
+1332	THA163	NULL	NULL	6026	NULL
+1333	THA014	NULL	NULL	6026	NULL
+1334	THA159	NULL	NULL	6026	NULL
+1335	THA162	NULL	NULL	6026	NULL
+1336	THA165	NULL	NULL	6026	NULL
+1337	THA053	NULL	NULL	6026	NULL
+1338	THA156	NULL	NULL	6026	NULL
+1339	THA063	NULL	NULL	6026	NULL
+1340	THA072	NULL	NULL	6026	NULL
+1341	THA066	NULL	NULL	6026	NULL
+1342	THA113	NULL	NULL	6026	NULL
+1343	THA106	NULL	NULL	6026	NULL
+1344	THA050	Stephen  King	Dolores Claiborne	6026	NULL
+1345	THA069	Suriyothai	NULL	6026	NULL
+1346	THA056	NULL	NULL	6026	NULL
+1347	THA059	NULL	NULL	6026	NULL
+1348	THA002	NULL	NULL	6026	NULL
+1349	THA152	NULL	NULL	6026	NULL
+1350	THA169	NULL	NULL	6026	NULL
+1351	THA176	NULL	NULL	6026	NULL
+1352	THA039	NULL	Dhamma from Achan Thong 3	6026	NULL
+1353	THA035	NULL	NULL	6026	NULL
+1354	THA038	NULL	NULL	6026	NULL
+1355	THA055	NULL	NULL	6026	NULL
+1356	THA052	NULL	NULL	6026	NULL
+1357	THA049	NULL	NULL	6026	NULL
+1358	THA030	NULL	NULL	6026	NULL
+1359	THA036	NULL	NULL	6026	NULL
+1360	THA027	NULL	NULL	6026	NULL
+1361	THA110	NULL	NULL	6026	NULL
+1362	THA075	NULL	NULL	6026	NULL
+1363	THA119	Chaichon Locharernkul	In My Beloved Country	6026	NULL
+1364	THA107	NULL	He Who Rides a Tiger	6026	NULL
+1365	THA058	NULL	NULL	6026	NULL
+1366	THA037	NULL	NULL	6026	NULL
+1367	THA031	NULL	NULL	6026	NULL
+1368	THA040	NULL	NULL	6026	NULL
+1369	THA034	NULL	NULL	6026	NULL
+1370	THA043	NULL	NULL	6026	NULL
+1371	THA046	NULL	NULL	6026	NULL
+1372	THA047	NULL	NULL	6026	NULL
+1373	THA025	Toru Fujisawa	Wild Base Ballers	6026	NULL
+1374	THA044	NULL	NULL	6026	NULL
+1375	ARA038	NULL	NULL	NULL	NULL
+1376	SPA191	Dones x Dones	Feministes contra la guerra	5703	NULL
+1377	SPA187	Julio Cortazar	Los Relatos	5703	NULL
+1378	SPA188	Agatha Christie	Quinta colonna	5703	NULL
+1379	SPA190	Julio Cortazar	62/Modelo para armar	5703	NULL
+1380	FRE112	Pham-Chau-Ai	Une Pierre Dans La Bouche	NULL	NULL
+1381	THA051	NULL	#7	6026	NULL
+1382	THA045	NULL	NULL	6026	NULL
+1383	THA179	NULL	#14	6026	NULL
+1384	THA153	NULL	NULL	6026	NULL
+1385	THA008	NULL	NULL	6026	NULL
+1386	THA028	NULL	#1	6026	NULL
+1387	THA015	NULL	NULL	6026	NULL
+1388	THA013	NULL	NULL	6026	NULL
+1389	THA011	NULL	NULL	6026	NULL
+1390	THA007	NULL	The Cat	6026	NULL
+1391	THA004	NULL	comic book	6026	NULL
+1392	THA019	NULL	NULL	6026	NULL
+1393	THA029	NULL	NULL	6026	NULL
+1394	THA151	NULL	#3	6026	NULL
+1395	THA180	NULL	NULL	6026	NULL
+1396	THA164	NULL	NULL	6026	NULL
+1397	THA003	NULL	NULL	6026	NULL
+1398	THA005	NULL	Summerland	6026	NULL
+1399	THA112	NULL	comic book	6026	NULL
+1400	THA109	NULL	comic book	6026	NULL
+1401	THA022	NULL	NULL	6026	NULL
+1402	THA161	NULL	NULL	6026	NULL
+1403	THA158	NULL	NULL	6026	NULL
+1404	THA041	NULL	comic book	6026	NULL
+1405	THA042	NULL	NULL	6026	NULL
+1406	THA032	NULL	#22	6026	NULL
+1407	THA048	NULL	NULL	6026	NULL
+1408	ROM113	irving stone	agonie si extaz	NULL	NULL
+1409	ROM150	Len Deighton	Bombardierul 2	NULL	NULL
+1410	ROM219	Honore De Balzac	Suanii	NULL	NULL
+1411	ROM114	John Galsworthy	Florea Intunecata	NULL	NULL
+1412	ROM176	Gilles Perrault	Ziua Cea Mare 6 iunie 1944	NULL	NULL
+1413	ROM059	irving stone	agonie si extaz	NULL	NULL
+1414	ROM181	Eyvind Johnson	Racoarea Tarmurilor	NULL	NULL
+1415	ROM257	SIENKIEWICZ	POTOPUL-4	NULL	NULL
+1416	ROM036	Michel Zevaco	Cavalerii Pardaillan	NULL	NULL
+1417	ROM143	Warwick Deeping	Sorrell si Fiul	NULL	NULL
+1418	CHEB004	Yossi Abolafia	A dog a cat and a man	1216	NULL
+1419	CHEB125	J.K. Rowling	Harry Potter	1216	NULL
+1420	CHEB167	L.Frank Baum	The Wonderful Wizard of Oz	1216	NULL
+1421	CHEB151	J.K. Rowling	Harry Potter	1216	NULL
+1422	CHEB152	Michelle Paver	Wolf Brother	1216	NULL
+1423	ROM262	gerard de nerval	Insemnarile Unui Calator Entuziast	NULL	NULL
+1424	ROM263	MIRCEA ELIADE	MEMORII JURNALE	NULL	NULL
+1425	ROM265	zenon kosidowski	povestiri biblice	NULL	NULL
+1426	CHEB074	Galila Ron Feder Amit	The wicked plot of the nicotins	1216	NULL
+1427	CHEB075	Galila Ron Feder Amit	Where is Chush Hash the snake?	1216	NULL
+1428	CHEB076	Galila Ron Feder Amit	Role Model	1216	NULL
+1429	CHEB105	Roland J.McKinney	Famous Old Masters of painting	1216	NULL
+1430	ROM266	Jaques Madaule	Istoria Frantei	NULL	NULL
+1431	CHEB087	Dudik Halperin	The Man that sung about the Mouse	1216	NULL
+1432	CHEB008	Datia Ben Dor	That's the way it is in Hebrew	1216	NULL
+1433	CHEB014	Meir Shalev	How the ancient man , just by chance, invented the ROman Kebab	1216	NULL
+1434	CHEB055	Meir Shalev	My Father alway embarrases me	1216	NULL
+1435	CHEB103	Ema Chichester Clarck	Hakenguru hakahol shel Maya	1216	NULL
+1436	CHEB174	Time Life - hasifria Halimudit Leyeladim	Mezeg Haavir	1216	NULL
+1437	CHEB177	NULL	Herschale	1216	NULL
+1438	CHEB067	C.S. Lewis	The Magician's Nephew	1216	NULL
+1439	CHEB068	J.K. Rowling	Harry Potter	1216	NULL
+1440	CHEB056	Patrick MacDonnell	The Gift of Nothing	1216	NULL
+1441	CHEB065	Roald Dahl	James and the Giant Peach	1216	NULL
+1442	CHEB064	Enid Blyton	Five Go To Mystery Moor	1216	NULL
+1443	CHEB013	Yossi Abolaffia	Hatrktor Beargaz hachol	1216	NULL
+1444	CHEB127	NULL	Snowhite	1216	NULL
+1445	CHEB126	NULL	Pinocchio	1216	NULL
+1446	CHEB069	NULL	Pinocchio's Adventures	1216	NULL
+1447	CHEB073	Uzi Weil	Einaim	1216	NULL
+1448	CHEB088	Shira Geffen & Etgar Keret	A Moonless Night	1216	NULL
+1449	CHEB009	Jack Kent	A Dragon - it doesnt exist	1216	NULL
+1450	CHEB131	Jonathan Swift	Gulliver	1216	NULL
+1451	CHEB128	NULL	Cinderella	1216	NULL
+1452	CHEB086	Ronit Chaham	Avanim Tovot	1216	NULL
+1453	CHEB006	Chaya Shenhav	Elik Belik	1216	NULL
+1454	CHEB027	Jonathan Yavin	When I Grow Up	1216	NULL
+1455	CHEB022	Naama Benziman	The Tall Hat	1216	NULL
+1456	CHEB019	Yael EIchilov	Lemi Hi Doma	1216	NULL
+1457	CHEB053	Dov Elbaum	The Octopus and the Sea Horse	1216	NULL
+1458	CHEB018	David Grossman	Giraffa Velishon	1216	NULL
+1459	CHEB024	Nira Harel	A selection of Stories	1216	NULL
+1460	CHEB030	Meir Shalev	Roni and Nomi and Jacob	1216	NULL
+1461	CHEB001	Datia Ben Dor	A Selection of Stories, poems and Tunes	1216	NULL
+1462	CHEB037	Noga Algom	Sheela Shel Suala	1216	NULL
+1463	CHEB039	Ephraim Sidon	Megilat Esther	1216	NULL
+1464	CHEB032	Meir Shalev	Hadoda Michal	1216	NULL
+1465	CHEB119	J.K. Rowling	Harry Potter	1216	NULL
+1466	CHEB036	Jonathan Yavin	Achla Ach	1216	NULL
+1467	CHEB118	J.K. Rowling	Harry Potter	1216	NULL
+1468	CHEB041	Emma Chichester Clarck	It was you, Blue Kangaroo	1216	NULL
+1469	CHEB083	Tami Shem Tov	Only Galia Can See Them	1216	NULL
+1470	CHEB115	Erich Kastner	Pitsponet and Anton	1216	NULL
+1471	CHEB116	Erich Kastner	Emil and the twins	1216	NULL
+1472	CHEB117	Erich Kastner	Emil and the detectives	1216	NULL
+1473	CHEB061	Tamar Borenstain lazar	kofiko	1216	NULL
+1474	CHEB084	Jan Meire	little fiir adventures	1216	NULL
+1475	CHEB062	Ernstine Koch	lala	1216	NULL
+1476	CHEB063	Yehonatan Geffen	ALLERGY	1216	NULL
+1477	CHEB085	Eleanor Farjeon	The Glass Slipper	1216	NULL
+1478	CHEB058	Lamblan Simon	My First Uncycolopedia	1216	NULL
+1479	CHEB016	Goni Mardor-Savir	Dan's Magic Angel	1216	NULL
+1480	CHEB098	Miriam Ruth	Yael's House	1216	NULL
+1481	CHEB155	Pual Gallico	Love of Seven Dolls	1216	NULL
+1482	CHEB079	Charles Dickens	The Adventures of Oliver Twist	1216	NULL
+1483	CHEB157	Ian Falconer	Olivia	1216	NULL
+1484	CHEB021	Shira Geffen & Etgar Keret	A Moonless Night	1216	NULL
+1485	CHEB042	Lea Goldberge	hamefuzar mcfar azar	1216	NULL
+1486	CHEB005	Ephraim Sidon	Bigdey Hamelech Hahadashim	1216	NULL
+1487	CHEB023	NULL	Hagada Shel Pessach	1216	NULL
+1488	CHEB097	Rodari G'iani	Slicha, Taut Basipur	1216	NULL
+1489	CHEB010	David Grossman	Haach Hchadash shel Itamar	1216	NULL
+1490	CHEB156	Dorit Orgad	Bonibim	1216	NULL
+1491	CHEB130	NULL	Kipa Aduma	1216	NULL
+1492	CHEB011	David Grossman	Itamar Pogesh Arnav	1216	NULL
+1493	CHEB012	David Grossman	Itamar Metayel Al Hakirot	1216	NULL
+1494	CHEB100	קור דויד	סיפורי לילה טוב	1216	NULL
+1495	CHEB020	Yael EIchilov	Lemi Hi Doma	1216	NULL
+1496	CHEB035	Jonathan Yavin	ksheaba Haya Atzuv	1216	NULL
+1497	CHEB090	Amira Ofek	Al ktshe Hmazleg	1216	NULL
+1498	CHEB102	Rimona De Nour	Alfa - Bita Family	1216	NULL
+1499	CHEB038	Yossi Abolaffia & Ephraim Sidon	Maale Hakarchot	1216	NULL
+1500	CHEB029	Lennart Hellsing	Hadlaat Hamuflaa	1216	NULL
+1501	CHEB082	Avram Mendelson	Masa habubut to Israel	1216	NULL
+1502	CHEB034	Astrid Lindgren & Ingrid Nyman	Mi Mekir et Bilbi bat gerev?	1216	NULL
+1503	CHEB057	Haia Shenhav	Ma na'ase aim G'inger	1216	NULL
+1504	CHEB165	Time Life - Hasyfria Halimudit leyeladim	Mekomot mefursamom baolam	1216	NULL
+1505	CHEB173	Time lIfe - Hasifriya Halimudit Leyeladim	Haolam Sheanu Haim Bo	1216	NULL
+1506	CHEB099	Shula Modan	Lhyad Habyit	1216	NULL
+1507	CHEB172	Time Life - Hasifriya Halimudit Leyeladim	Eich Dvarim Ovdim	1216	NULL
+1508	CHEB059	TIme Life - Hasifriya Halimudit Leyeladim	Shamaim Vearettz	1216	NULL
+1509	CHEB060	Taiim Laif	Haguf Shelanu	1216	NULL
+1510	CHEB110	Mirik Snir	Ktantanim	1216	NULL
+1511	CHEB154	Doc' Aharon Bloch	Al Banim veal Banot	1216	NULL
+1512	CHEB107	Yannetz Levi	Harpatkaot dod Arie Bearvot ROmania	1216	NULL
+1513	CHEB048	Astrid Lindgren & Bjorn Berg	Taalulav shel Emil	1216	NULL
+1514	CHEB080	Yehiam Padan	Adama, Yam, Shamaim	1216	NULL
+1515	CHEB015	David Mckee	Benc'hi Vehadubon ha'avud	1216	NULL
+1516	CHEB026	Hanoch Piven & Narda Ben Yaakov	Puff & Puff	1216	NULL
+1517	CHEB175	Time Life - Hasifriya Halimudit Leyeladim	Dvarim  Sheefshar Laasot Levad	1216	NULL
+1518	CHEB043	Dan Pegis	Habeisa c'hhithapsa	1216	NULL
+1519	CHEB169	Time Life - Hasifriya Halimudit Leyeladim	Chayot Befeula	1216	NULL
+1520	CHEB120	Matama Kashti	Tali Tal	1216	NULL
+1521	CHEB168	Lewis Carroll	Alice's Adventures in Wonderland	1216	NULL
+1522	CHEB045	Gabriel Zoran	Morad Hazamir	1216	NULL
+1523	CHEB050	Neta Harari Navon	Where was i?	1216	NULL
+1524	CHEB047	Ruth Itzhaki	Roim Sipur	1216	NULL
+1525	CHEB051	Meir Shalev	Grandpa Aaron and his Rain	1216	NULL
+1526	CHEB166	Time Life - hasifriya Halimudit Leyeladim	Yedideinu Baalei Hchaim	1216	NULL
+1527	cheb031	Munro Leaf	The Story of Ferdinand	1216	NULL
+1528	CHEB164	Time Life - Hasifriya Halimudit Leyeladim	Tzeadim RIshonim bemada	1216	NULL
+1529	CHEB124	Gil Bond	Hachamanit	1216	NULL
+1530	CARA001	Gil Bond	Hachamanit	1145	NULL
+1531	CHEB054	Etgar Keret and Shira Geffen	Lila bli Yareach	1216	NULL
+1532	CHEB044	Zohar Aviv	havera shel hayal	1216	NULL
+1533	CHEB072	Mirjam Pressler	Kshehamazal ba tzarich Lehazmin oto lashevet	1216	NULL
+1534	CHEB033	Nira Harel	Efshar Lehashir Hodaa	1216	NULL
+1535	CHEB089	Tikva Sarig	Eliyaho Hanavie hene hu ba	1216	NULL
+1536	CHEB113	Jea-Jacques Sempe & Rene Goscinny	Nicolla Hakatan	1216	NULL
+1537	CHEB002	Jonathan Yavin	Ahacla Ah	1216	NULL
+1538	CHEB108	Wilhelm Busch	Max & Moritz	1216	NULL
+1539	CHEB071	Yaakov Shavit	Yeled Mafteach	1216	NULL
+1540	CHEB070	Uriel Ofek	Sheva tachanot Veod Tachana	1216	NULL
+1541	CHEB007	Emma Chichester Clark	hakengeru hacahol chel maia	1216	NULL
+1542	CHEB066	Wilhelm Busch	Max & Moritz	1216	NULL
+1543	CHEB046	Beverly Cleary	Pere	1216	NULL
+1544	CHEB163	Nahun Gutman & Mia Meir	Ani hev Letzayer	1216	NULL
+1545	CHEB159	NULL	Yavan Haatika	1216	NULL
+1546	CHEB161	Walt Disney	Mulan	1216	NULL
+1547	CHEB123	NULL	Habait Sheli	1216	NULL
+1548	CHEB052	Efraim Sidon	Berechit	1216	NULL
+1549	CHEB122	NULL	Ma Yodim	1216	NULL
+1550	CHEB121	NULL	Olam Katan Vetzivoni	1216	NULL
+1551	CHEB025	Michel Bedard	Barvazim	1216	NULL
+1552	CHEB077	Galila Ron Feder	Mered Hachashmonaim	1216	NULL
+1553	CHEB160	Mike Venezia	Leonardo da Vinci	1216	NULL
+1554	CHEB158	Ora Ayal	Boker Ba	1216	NULL
+1555	CHEB017	David Grosman	Itamar Zayad Hahlomot	1216	NULL
+1556	CHEB153	Dr. Aharon Bloch	od Al Banim Veal Banot	1216	NULL
+1557	CHEB091	SHira Geffen	Al Ale Veal Alona	1216	NULL
+1558	CHEB081	DIna Dzatelovski	Haaviron shel Yaron	1216	NULL
+1559	CHEB078	Galila Ron Feder Amit	Mirdaf Bemaarechet Haikul	1216	NULL
+1560	CHEB092	L.Frank Baum	The Wonderful Wizard of Oz	1216	NULL
+1561	CHEB101	Norit Zarchi	Eim Eima Sheli lo yechola le'eov oti, me cavar baolam yaslich beze?	1216	NULL
+1562	CHEB111	NULL	Noni	1216	NULL
+1563	CHEB162	Sosana Zachor	Sloshet hadubim	1216	NULL
+1564	CHEB180	Atara Ofek	Bara	1216	NULL
+1565	CHEB178	Moris Nil	Atlas - Pelei Tevel	1216	NULL
+1566	CHEB179	J. Ames, R. Wailler and Z. Harper	Pelai Ha'aim	1216	NULL
+1567	CHEB171	Taiim Liif	Devarim Babait vebesvivato	1216	NULL
+1568	CHEB170	Taiim Liif	Diozaorim	1216	NULL
+1569	CHEB176	Prop. David Hen, Dr.Emilia Tarkel and Maia Stavie	Hasiporim	1216	NULL
+1570	CENG160	Lucy Ruggles	Tales From Halloweentown	1202	NULL
+1571	CENG986	Katherine Marsh	The Night Tourist	1202	NULL
+1572	CENG085	Catherine Hapka	Wildfire	1202	NULL
+1573	CENG173	M.I.Mcallister	The Mistmantle Chronicles	1202	NULL
+1574	CENG154	N.B.Grace	High School Musical	1202	NULL
+1575	CENG164	Denise Chevalier	The World According to Denise	1202	NULL
+1576	CENG161	Cathy East Dubowski	Full House Michelle	1202	NULL
+1577	CENG024	Tony Ross	I Want My Potty	1202	NULL
+1578	CENG025	Gregg & Evan Spiridellis	Are You Grumphy, Santa?	1202	NULL
+1579	CENG023	Tony Ross	I Want To Be	1202	NULL
+1580	CENG158	Lee Bennett Hopkins and Misha Arenstein	Do You Know What Day Tomorrow Is?	1202	NULL
+1581	CENG181	N.B.Grace	High School Musical	1202	NULL
+1582	CENG022	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1583	CENG021	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1584	CENG089	N.B.Grace	High School Musical 2	1202	NULL
+1585	CENG148	NULL	Tinker Bell and Friends	1202	NULL
+1586	CENG087	M.I.Mcallister	The Mistmantle Chronicles	1202	NULL
+1587	CENG182	Catherine Hapka	High School Musical	1202	NULL
+1588	CENG043	Alice Alfonsi	Hannah Montana	1202	NULL
+1589	CENG030	NULL	All Dogs Go To Heaven	1202	NULL
+1590	CENG007	Irene Trimble	Up	1202	NULL
+1591	CENG006	Jasmine Jones	Up	1202	NULL
+1592	CENG032	Helen Perelman	High School Musical	1202	NULL
+1593	CENG031	N.B.Grace	High School Musical	1202	NULL
+1594	CENG042	Ann Lloyd	Hannah Montana	1202	NULL
+1595	CENG020	Marsha Winborn	Inside Sesame Street	1202	NULL
+1596	CENG183	Alice Alfonsi	High School Musical	1202	NULL
+1597	CENG001	NULL	High School Musical Senior Year	1202	NULL
+1598	CENG018	Lisa Ann Marsoli	Cinderella's Fairy-Tale Wedding	1202	NULL
+1599	CENG070	Doreen Rappaport	Abe's Honest Words	1202	NULL
+1600	CENG170	Dave Barry and Ridley Pearson	Peter and the Starcatchers	1202	NULL
+1601	CENG168	Dave Barry and Ridley Pearson	Peter and the Secret of Rundoon	1202	NULL
+1602	CENG041	Beth Beechwood	Hannah Montana	1202	NULL
+1603	CENG044	Alice Alfonsi	The Cheetah Girls 2	1202	NULL
+1604	CENG045	M.C.King	The Suite Life of Zack & Cody	1202	NULL
+1605	CENG069	Jennifer Liberts Weinberg	Disney Princess	1202	NULL
+1606	CENG071	NULL	Robert F. Kennedy, JR'S American Heroes	1202	NULL
+1607	CENG073	Justine Korman	101 Dalmatians	1202	NULL
+1608	CENG072	Elzbieta	Dikou and the Mysterious Moon Sheep	1202	NULL
+1609	CENG005	Lisa Marsoli	Up	1202	NULL
+1610	CENG003	Tennant Redbank	Up	1202	NULL
+1611	CENG141	Fran Posner	Disney Princess	1202	NULL
+1612	CENG147	NULL	Tinker Bell and Friends	1202	NULL
+1613	CENG151	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1614	CENG093	Roald Dahl	Matilda	1202	NULL
+1615	CENG126	M. C. King	Hannah Montana	1202	NULL
+1616	CENG125	Laurie McElroy	Hannah Montana	1202	NULL
+1617	CENG102	Beth Beechwood	The Game Plan	1202	NULL
+1618	CENG036	Beth Beechwood & N. B. Grace	High School Musical	1202	NULL
+1619	CENG035	Catherine Hapka	High School Musical	1202	NULL
+1620	CENG034	Helen Perelman	High School Musical	1202	NULL
+1621	CENG033	N. B. Grace	High School Musical	1202	NULL
+1622	CENG124	Irene Trimble	Pirates of the Caribbean	1202	NULL
+1623	CENG121	Rob Kidd	Pirates of the Caribbean Legends of the Brethren Court	1202	NULL
+1624	CENG122	Rob Kidd	Pirates of the Caribbean Legends of the Brethren Court	1202	NULL
+1625	CENG100	Whoopi Goldberg	Sugar Plum Ballerinas	1202	NULL
+1626	CENG127	Heather Alexander	Hannah Montana	1202	NULL
+1627	CENG097	Fiona Rosenbloom	We Are So Crashing Your Bar Mitzvah!!	1202	NULL
+1628	CENG049	kim ostrow	Lizzie Mcguire When moms attack	1202	NULL
+1629	CENG052	Kirsten Larsen	Lizzie Mcguire The Rise and Fall of the Kate Empire	1202	NULL
+1630	CENG051	Kirsten Larsen	Lizzie Mcguire Lizzie Goes Wild	1202	NULL
+1631	CENG050	Kiki Thrope	Lizzie Mcguire Totally Crushed	1202	NULL
+1632	CENG058	Disney Fairies	Tinker Bell and Friends	1202	NULL
+1633	CENG057	Disney Fairies	Tinker Bell and Friends	1202	NULL
+1634	CENG186	robert louis tevenson	the strange case of Dr. jekyll and Mr. Hyde	1202	NULL
+1635	CENG187	robert louis stevenson	treasure island	1202	NULL
+1636	CENG056	Disney Fairies	Tinker Bell and Friends	1202	NULL
+1637	CENG162	NULL	cinderella	1202	NULL
+1638	CENG165	NULL	bedtime stories	1202	NULL
+1639	CENG159	NULL	beauty and the beast	1202	NULL
+1640	CENG123	IRENE TRIMBLE	Pirates of the Caribbean	1202	NULL
+1641	CENG156	NULL	snow white and the seven dwarfs	1202	NULL
+1642	CENG095	Mark Twain	The Adventures of Tom Sawyer	1202	NULL
+1643	CENG131	NULL	Crush-tastic	1202	NULL
+1644	CENG067	Christine Peymani	Bratz	1202	NULL
+1645	CENG153	NULL	the little mermaid	1202	NULL
+1646	CENG185	Daniel Defoe	Robinson Crusoe	1202	NULL
+1647	CENG066	Christine Peymani	Bratz	1202	NULL
+1648	CENG065	Christine Peymani	Bratz	1202	NULL
+1649	CENG149	rick riordan	the titan's curse	1202	NULL
+1650	CENG064	Rachel Elliot	Bratz	1202	NULL
+1651	CENG196	Catherine Daly	One Ridonculous Adventure	1202	NULL
+1652	CENG048	Irene Trimble	Wall	1202	NULL
+1653	CENG130	NULL	truth or dare	1202	NULL
+1654	CENG046	Lisa Papademetriou	Cars	1202	NULL
+1655	CENG129	NULL	super sneak	1202	NULL
+1656	CENG061	Lisa Papademetriou	Cars	1202	NULL
+1657	CENG200	sylvia branzei	grossology and you	1202	NULL
+1658	CENG145	Lisa Papademetriou	Rani in the Mermaid Lagoon	1202	NULL
+1659	CENG060	Leslie Goldman	Toy Story 2	1202	NULL
+1660	CENG201	shakespeare	romeo & juliet	1202	NULL
+1661	CENG059	Irene Trimble	Wall	1202	NULL
+1662	CENG133	NULL	keeping secrets	1202	NULL
+1663	CENG104	Disney	Baby Donald's Day at the Beach	1202	NULL
+1664	CENG132	NULL	Hold on Tight	1202	NULL
+1665	CENG198	glenn mccoy	i see santa everywhere	1202	NULL
+1666	CENG199	fiona macdonald	the viking codex	1202	NULL
+1667	CENG136	Beath Beechwood and N.B. Grace	get your vote on!	1202	NULL
+1668	CENG204	simon bartram	pumpkin moon	1202	NULL
+1669	CENG002	Suzzane Harper	Hannah Montana	1202	NULL
+1670	CENG194	Louis Untermeyer	Asop's Fables	1202	NULL
+1671	CENG016	NULL	5 minute adventure stories	1202	NULL
+1672	CENG017	NULL	5 Minute Friendship Stories	1202	NULL
+1673	CENG115	Rob Kidd	Jack Sparron	1202	NULL
+1674	CENG015	NULL	5 minute princess stories	1202	NULL
+1675	CENG174	R.K.Narayan	Grandmother's Tale	1202	NULL
+1676	CENG063	patricia hermes	my secret valentine	1202	NULL
+1677	CENG013	Chuck Dixon and Steve Epting	el Cazador	1202	NULL
+1678	CENG004	Apple Jordan	Bird's Best Friend	1202	NULL
+1679	CENG077	NULL	Bambi	1202	NULL
+1680	CENG014	NULL	the playground	1202	NULL
+1681	CENG180	Rohald Dahl	The BFG	1202	NULL
+1682	CENG079	NULL	Cinderella	1202	NULL
+1683	CENG076	denis huot	the elephant peaceful giant	1202	NULL
+1684	CENG202	Andrea Posner-Sanchez	Actual Fairy Tales	1202	NULL
+1685	CENG177	Marguerite Henry	Justin Morgan Had a Horse	1202	NULL
+1686	CENG094	Joan W.Blos	Lottie's Circus	1202	NULL
+1687	CENG190	Mandy Ross	Feed Me!	1202	NULL
+1688	CENG074	NULL	sleeping beauty	1202	NULL
+1689	CENG008	Annie Auerbach	Beware of Dug	1202	NULL
+1690	CENG193	Disney	My Very First Encyclopedia	1202	NULL
+1691	CENG171	NULL	Gingerbread Man	1202	NULL
+1692	CENG075	NULL	snow white and the seven dwarfs	1202	NULL
+1693	CENG088	Alice Alfonsi	poetry in motion	1202	NULL
+1694	CENG205	Brown Watson	My abc	1202	NULL
+1695	CENG078	NULL	badtime stories	1202	NULL
+1696	CENG195	Jeff Kurtti	What the Sea Teaches Us	1202	NULL
+1697	CENG090	Elizabeth Lenhard	The return of a queen	1202	NULL
+1698	CENG040	Disney Fairies	Tinker Bell and Friends	1202	NULL
+1699	CENG039	Disney Fairies	Tinker Bell and Friends	1202	NULL
+1700	CENG139	N.B. Grace	Battle of the Bands	1202	NULL
+1701	CENG135	Alice Alfonsi	Hanna Montana Face-off	1202	NULL
+1702	CENG038	Disney Faries	Tinker Bell and Friends	1202	NULL
+1703	SPA210	luis de caralt	la viuda couderc	5703	NULL
+1704	CENG134	Laurie McElroy	Hanna Montana Super Sneak	1202	NULL
+1705	SPA250	Gay Talese	Honraras a tu padre	5703	NULL
+1706	CENG037	Disney Fairies	Tinker Bell and Friends	1202	NULL
+1707	SPA206	luis de caralt	el osito felpudo	5703	NULL
+1708	CENG092	Roald Dahl	James and the Giant Peach	1202	NULL
+1709	SPA204	Jorge Bucay	Recuentos para Demian	5703	NULL
+1710	CENG138	Alice Alfonsi	Poetry in Motion	1202	NULL
+1711	CENG172	Nancy Parent	Pretty Princesses	1202	NULL
+1712	CENG155	Lemony Snicket	The Bad Beginning	1202	NULL
+1713	CENG157	Suzzane Americaner	Clubhouse Christmas	1202	NULL
+1714	SPA245	marguerite yourcenar	alexis	5703	NULL
+1715	CENG106	Virginia Miller	Go to Bed	1202	NULL
+1716	CENG178	Alice Alfonsi	Witch	1202	NULL
+1717	SPA207	Eduardo Gudino Kieffer	Sera por eso que la quiero tanto	5703	NULL
+1718	CENG096	Laura Ingalls Wilder	Little House on the Prairie	1202	NULL
+1719	CENG140	Catherine Hapka	High School Musical	1202	NULL
+1720	CENG099	Ann Lloyd	National Treasure	1202	NULL
+1721	CENG175	Gail Herman	Dulcie's Taste of Magic	1202	NULL
+1722	SPA244	jennie ostrosky	el abecedario la ciudad y los dias	5703	NULL
+1723	CENG179	William Joyce	Be My Pal!	1202	NULL
+1724	SPA270	Gabriel Garcia Marquez	El amor en los tiempos del colera	5703	NULL
+1725	CENG111	Alice Alfonsi	Witch	1202	NULL
+1726	CENG184	N.B. Grace	High School Musical	1202	NULL
+1727	SPA247	celia amoros puente	mujer	5703	NULL
+1728	SPA205	Jorge Amado	dona flor y sus dos maridos	5703	NULL
+1729	CENG112	NULL	Witch Secrets	1202	NULL
+1730	CENG192	Laurent de Brunhoff	Babar Treasure Map	1202	NULL
+1731	SPA265	manuel vicent	balada de cain	5703	NULL
+1732	CENG105	Nancy Parent	The Horse Neighs	1202	NULL
+1733	CENG163	Priscilla Burris	Bedtime	1202	NULL
+1734	CENG019	NULL	Rhymes With Duck	1202	NULL
+1735	SPA253	Sigmund Freud	Tres ensayos sobre teoria sexual	5703	NULL
+1736	CENG053	Tammie Lyon	Little Red Hen	1202	NULL
+1737	SPA268	arnold toynbee arthur koestler	la vida despues de la muerte	5703	NULL
+1738	CENG203	David Bauman	Disney's Hercules	1202	NULL
+1739	SPA243	sempe	todo se complica	5703	NULL
+1740	CENG029	Wendy Edelson	Red Riding Hood	1202	NULL
+1741	CENG191	NULL	My Very First Encyclopedia with Winnie the Pooh and Friends	1202	NULL
+1742	CENG189	Rick Brown	What's in There?	1202	NULL
+1743	SPA267	Isser Harel	La casa de la calle Garibaldi	5703	NULL
+1744	CENG028	Ben Mahan	Old Macdonald had a Farm	1202	NULL
+1745	CENG128	Beth Beechwood	Hanna Montana	1202	NULL
+1746	SPA266	ricardo flores	reunion cumbre extraordinaria	5703	NULL
+1747	CENG055	Laurent de Burnhoff	Babar the Lost Medal	1202	NULL
+1748	SPA214	Leonor Calvera	Camila o'gorman o el amor y el poder	5703	NULL
+1749	CENG068	Caroline Davis	My Words	1202	NULL
+1750	SPA269	julio cortazar	rayuela	5703	NULL
+1751	SPA216	Federico Andahazi	el anatomista	5703	NULL
+1752	CENG176	Laurenr de Brunhoff	Babar Dress Up Day	1202	NULL
+1753	CENG054	Rick Brown	What's Up There?	1202	NULL
+1754	SPA256	sigmund freud	moises y la religion monoteista y otros escritos sobre judaismo y antisemitismo	5703	NULL
+1755	SPA217	Fernando Sanchez Drago	Carta de Jesus al Pada	5703	NULL
+1756	CENG166	John Patience	Woof Woof Who's There?	1202	NULL
+1757	SPA252	sempe	el gran panico	5703	NULL
+1758	CENG080	Eoin Colfer	Artemis Fowl	1202	NULL
+1759	SPA208	Jaim Herzog	las guerras arabe-israelies	5703	NULL
+1760	CENG026	Willabel I. Tong	Numbers	1202	NULL
+1761	SPA257	sempe	nada es simple	5703	NULL
+1762	CENG081	Eoin Colfer	Artemis Fowl	1202	NULL
+1763	CENG082	Eoin Colfer	Artemis Fowl	1202	NULL
+1764	CENG197	Fredrick Warne	Jemima Puddle-duck's numbers	1202	NULL
+1765	SPA224	Eliseo Bayo	De que viven y por que no mueren los espanoles	5703	NULL
+1766	CENG083	Eoin Colfer	Artemis Fowl	1202	NULL
+1767	CENG084	Eoin Colfer	Artemis Fowl	1202	NULL
+1768	SPA241	NULL	los suenos	5703	NULL
+1769	CENG108	Lisa Marsoli	Cars	1202	NULL
+1770	SPA251	Juan Carlos Martelli	los tigres de la memoria	5703	NULL
+1771	CENG142	M.C. King	Jump in!	1202	NULL
+1772	CSPA079	Silver Dolphin	ioh,no!ies Hipo!	NULL	NULL
+1773	SPA197	abba eban	legado	5703	NULL
+1774	CENG143	NULL	Enchanted	1202	NULL
+1775	CSPA063	N.B.Grace	High School Musical 3	NULL	NULL
+1776	SPA200	Fernando Sorrentino	36 cuentos argentinos con humor	5703	NULL
+1777	CENG101	Catherine Hapka	Wildfire	1202	NULL
+1778	SPA246	gunther buchheim	submarino	5703	NULL
+1779	CSPA062	Lisa Papademetriou	Rani en la Laguna de las Sirenas	NULL	NULL
+1780	CENG091	Antoine De Saint Exupery	The Little Prince	1202	NULL
+1781	CSPA061	Julio Verne	Capitan de 15 Anos	NULL	NULL
+1782	SPA249	nahum goldmann	adonde va israel	5703	NULL
+1783	SPA195	Quino	bien, gracias. y usted?	5703	NULL
+1784	CENG116	Rob Kidd	Pirates of the Caribbean	1202	NULL
+1785	CSPA064	Un Sastrecillo Valiente	La Flautista de Hamelin	NULL	NULL
+1786	SPA262	mark haddon	el curioso incidente del perro a medianoche	5703	NULL
+1787	CENG137	Helen Perelman	High School Musical Stories from East High	1202	NULL
+1788	CSPA065	Cathy Hapka	Lost pericolo di Estinzione	NULL	NULL
+1789	CENG146	Kimberly Morris	TinkerBell	1202	NULL
+1790	CSPA066	Joaquin Aguirre Bellver	El JUglar Del Cid	NULL	NULL
+1791	CENG150	Rick Riordan	Percy Jackson & The Olympians	1202	NULL
+1792	CSPA009	Laura Lee Hope	LOs Gemelos y el Circo Enigmatico	NULL	NULL
+1793	SPA222	carol easton	jacqueline du pre	5703	NULL
+1794	SPA261	Beatriz Oberlander	Jerusalen la ciudad santa de las tres religiones	5703	NULL
+1795	CSPA003	L.Crismer	Eraze uua vez	NULL	NULL
+1796	CENG120	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1797	CENG119	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1798	SPA255	Gloria Rootshtain	Cocinando con una experta	5703	NULL
+1799	SPA201	alejo carpentier	los pasos perdidos	5703	NULL
+1800	CSPA072	Marcella Grez	Cuentos de Hadas	NULL	NULL
+1801	CENG117	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1802	CSPA069	Tony Wolf	Historias del Bosque y de Gnomos	NULL	NULL
+1803	SPA259	sigmund freud	escritos sobre la histeria	5703	NULL
+1804	CENG114	Irene Trimble	Pirates of the Caribbean	1202	NULL
+1805	SPA199	Gloria Rootshtain	Cocinando con una experta	5703	NULL
+1806	CENG144	Kirsten Larsen	Lily's Pesky Plant	1202	NULL
+1807	SPA196	ruben tizziani	noches sin lunas ni soles	5703	NULL
+1808	CSPA068	Vezio Melegari	La Ciudad	NULL	NULL
+1809	SPA202	Andres Amoros	Diario cultural	5703	NULL
+1810	CENG188	Rick Riordan	Percy Jackson & The Olympians	1202	NULL
+1811	SPA198	santiago ramon y cajal	mi infancia y juventud	5703	NULL
+1812	CSPA067	JULIE SYKES,JANE CHAPMAN	LOS POLLITOS De Dora	NULL	NULL
+1813	CENG113	Elizabeth Lenhard	Witch	1202	NULL
+1814	SPA263	Jonathan swift	los viajes de gulliver	5703	NULL
+1815	CENG167	NULL	Busy Little Bee	1202	NULL
+1816	SPA209	federico garcia lorca	romancero gitano	5703	NULL
+1817	CSPA006	Emma Harrison	High School Musical	NULL	NULL
+1818	CENG152	NULL	Pooh First Songs	1202	NULL
+1819	SPA193	Mordillo	Mordillo cartoons	5703	NULL
+1820	CENG103	Alice Alfonsi	College Road Trip	1202	NULL
+1821	CARA042	NULL	NULL	1145	NULL
+1822	SPA218	stefan grayek	tres dias de combate	5703	NULL
+1823	CARA030	NULL	31	1145	NULL
+1824	SPA248	Jorge Manzur	el simulador	5703	NULL
+1825	CENG169	Dave Barry	Peter and the Shadow Thieves	1202	NULL
+1826	CARA025	NULL	28	1145	NULL
+1827	CARA023	NULL	40	1145	NULL
+1828	SPA242	erna c schlesinger	mil preguntas y respuestas sobre judaismo	5703	NULL
+1829	SPA260	Eugene B. Borowitz	para comprender el judaismo	5703	NULL
+1830	CENG107	Nancy Parent	Pinocchio	1202	NULL
+1831	CARA029	NULL	19	1145	NULL
+1832	SPA254	henry milller	primavera negra	5703	NULL
+1833	CARA033	NULL	5	1145	NULL
+1834	CENG109	Ellen Titlebaum	Beauty and the Beast	1202	NULL
+1835	CARA035	NULL	61	1145	NULL
+1836	CENG110	Stewart Cowley	The Stolen Treasure	1202	NULL
+1837	CARA032	NULL	69	1145	NULL
+1838	CARA034	NULL	59	1145	NULL
+1839	CENG118	Rob Kidd	Pirates of the Caribbean Jack Sparrow	1202	NULL
+1840	CARA002	NULL	67	1145	NULL
+1841	CARA037	NULL	31	1145	NULL
+1842	CENG098	Whoopi Goldberg	Sugar Plum Ballerinas	1202	NULL
+1843	CARA010	NULL	26	1145	NULL
+1844	CARA058	NULL	64	1145	NULL
+1845	CARA041	NULL	63	1145	NULL
+1846	CARA031	NULL	NULL	1145	NULL
+1847	CENG009	NULL	Hanna Montana	1202	NULL
+1848	CARA024	NULL	29	1145	NULL
+1849	CARA028	NULL	NULL	1145	NULL
+1850	CARA026	NULL	NULL	1145	NULL
+1851	CARA027	NULL	16	1145	NULL
+1852	CARA020	NULL	7	1145	NULL
+1853	CARA005	NULL	27	1145	NULL
+1854	CARA040	NULL	72	1145	NULL
+1855	CARA022	NULL	NULL	1145	NULL
+1856	CARA019	NULL	NULL	1145	NULL
+1857	CARA036	NULL	58	1145	NULL
+1858	CARA038	NULL	70	1145	NULL
+1859	CARA039	NULL	57	1145	NULL
+1860	CARA003	NULL	14	1145	NULL
+1861	CARA007	NULL	9	1145	NULL
+1862	CARA004	NULL	6	1145	NULL
+1863	CARA006	NULL	18	1145	NULL
+1864	CARA009	Saint exupary	The Little Prince	1145	NULL
+1865	CARA018	NULL	NULL	1145	NULL
+1866	CARA017	NULL	NULL	1145	NULL
+1867	CARA013	NULL	NULL	1145	NULL
+1868	CARA014	NULL	NULL	1145	NULL
+1869	CARA021	NULL	NULL	1145	NULL
+1870	CARA016	NULL	NULL	1145	NULL
+1871	CTHA004	NULL	NULL	NULL	NULL
+1872	CTHA003	NULL	NULL	NULL	NULL
+1873	CTHA002	NULL	NULL	NULL	NULL
+1874	CENG211	NULL	NULL	1202	NULL
+1875	CTHA001	NULL	NULL	NULL	NULL
+1876	CTHA005	NULL	NULL	NULL	NULL
+1877	SPA017	NULL	NULL	5703	NULL
+1878	SPA227	Nikos Kazantzakis	La Ultima Tentacion	5703	NULL
+1879	SPA229	Scholem Aleijem	Tercera Clase	5703	NULL
+1880	CSPA029	NULL	NULL	NULL	NULL
+1881	CSPA030	NULL	NULL	NULL	NULL
+1882	CSPA024	NULL	NULL	NULL	NULL
+1883	CSPA005	NULL	NULL	NULL	NULL
+1884	CSPA075	NULL	NULL	NULL	NULL
+1885	SPA221	Saloman Lewinsky, Jonatn Barzel, Eliahu Sorek, Jona Kranz	Operacion Uganda	5703	NULL
+1886	CSPA078	NULL	NULL	NULL	NULL
+1887	CSPA027	NULL	NULL	NULL	NULL
+1888	CSPA018	NULL	NULL	NULL	NULL
+1889	SPA232	Enrique Medina	Transparente	5703	NULL
+1890	CSPA026	NULL	NULL	NULL	NULL
+1891	CSPA004	NULL	NULL	NULL	NULL
+1892	CSPA016	NULL	NULL	NULL	NULL
+1893	CSPA011	NULL	NULL	NULL	NULL
+1894	CSPA002	NULL	NULL	NULL	NULL
+1895	CSPA008	NULL	NULL	NULL	NULL
+1896	CSPA081	NULL	NULL	NULL	NULL
+1897	SPA230	Georges Simenon	Obras Completas	5703	NULL
+1898	CSPA077	NULL	NULL	NULL	NULL
+1899	CSPA007	NULL	NULL	NULL	NULL
+1900	CSPA073	NULL	NULL	NULL	NULL
+1901	CSPA021	NULL	NULL	NULL	NULL
+1902	SPA226	Jose Martinez Ruiz Azorin	Las Confesiones De Un Pequeno Filosofo	5703	NULL
+1903	CSPA071	NULL	NULL	NULL	NULL
+1904	CSPA015	NULL	NULL	NULL	NULL
+1905	CSPA020	NULL	NULL	NULL	NULL
+1906	SPA225	William Faulkner	Gambito De Caballo	5703	NULL
+1907	CSPA014	NULL	NULL	NULL	NULL
+1908	CSPA083	NULL	NULL	NULL	NULL
+1909	CSPA023	NULL	NULL	NULL	NULL
+1910	SPA223	James Joyce	Dublineses	5703	NULL
+1911	CSPA001	NULL	NULL	NULL	NULL
+1912	CSPA082	NULL	NULL	NULL	NULL
+1913	CSPA010	NULL	NULL	NULL	NULL
+1914	CSPA013	NULL	NULL	NULL	NULL
+1915	SPA264	O. Henry	Aguafuertes Norteamericanas	5703	NULL
+1916	spa211	Robert Ludlum	El Circulo Matarese	5703	NULL
+1917	CSPA085	NULL	NULL	NULL	NULL
+1918	CENG212	NULL	NULL	1202	NULL
+1919	SPA228	Albeto Mendez	Los Girasoles Ciegos	5703	NULL
+1920	SPA231	Maria Esther De Miguel	El General El Pintor Y La Dama	5703	NULL
+1921	SPA234	Marcos Aguinis	La Gesta Del Marrano	5703	NULL
+1922	SPA233	Senor Dios, Soy Anna	Fym	5703	NULL
+1923	SPA237	Martin Buber	Cuentos Jasidicos	5703	NULL
+1924	SPA213	Ramon Plaza	Pata De Palo	5703	NULL
+1925	SPA212	Umberto Eco	El Nombre De La Rosa	5703	NULL
+1926	SPA258	Jorge Luis Borges	Discusion	5703	NULL
+1927	SPA220	Fedor Dostoyevski	Humillados Y Ofendiidos	5703	NULL
+1928	SPA219	Daniel Defoe	Robinson Crusoe	5703	NULL
+1929	SPA271	Georges Simenon	Obras Completas	5703	NULL
+1930	SPA236	Fernando Sorrentino	17 Cuentos Fantasticos Argentinos	5703	NULL
+1931	CSPA070	NULL	Mis Primeras Palabras	NULL	NULL
+1932	SPA240	Carlos Boccardo	Fontanarrosa, De Penal	5703	NULL
+1933	CSPA012	NULL	Animales De Granja	NULL	NULL
+1934	CSPA074	NULL	Monstruos Divertidos	NULL	NULL
+1935	SPA274	Carlos Boccardo	Crist Dos	5703	NULL
+1936	SPA239	Rupen Berberian, Luis Lasserre	Memorias De Un Gato	5703	NULL
+1937	SPA238	Adelia Vieyra	Cronicas De Un Indiano En La Corte De Carlos V	5703	NULL
+1938	SPA235	Por Frederick Forsyth	Odessa	5703	NULL
+1939	SPA215	Alison Lurie	La Verdad Sobre Lorin Jones	5703	NULL
+1940	CFRE014	disney	365 nouvelles histoires pour le soir	NULL	NULL
+1941	CFRE012	La Pretite Sirene	NULL	NULL	NULL
+1942	CSPA080	Lara Jones	El Dia Especial De Lupe	NULL	NULL
+1943	CFRE011	NULL	La Belle Au Bois Dormant	NULL	NULL
+1944	CFRE010	NULL	Cendrillon	NULL	NULL
+1945	CFRE013	Jean-Hugues Malineau, Jean-Charles Rousseau	Dis, papa...	NULL	NULL
+1946	CFRE009	NULL	Blabche Neige Et Les Sept Nains	NULL	NULL
+1947	CFRE001	Jean-Hugues Malineau & Jean-Charles Rousseau	Dis, Maman	NULL	NULL
+1948	CFRE008	NULL	La Belle Et La Bete	NULL	NULL
+1949	CSPA028	Hebe Solves	Cuentos Casi Reales	NULL	NULL
+1950	CFRE007	NULL	Chicken Little	NULL	NULL
+1951	CFRE006	NULL	Peter Pan Retour Au Pays Imaginaire	NULL	NULL
+1952	CFRE003	Disney	Pinocchio, le pantin au grand coeur	NULL	NULL
+1953	CFRE005	Jeanne Failevic	Peter Pan	NULL	NULL
+1954	CSPA076	Keith Faulkner & Jonathan Lambert	Tic Tac!	NULL	NULL
+1955	CFRE004	Disney	Super Picsou Geant	NULL	NULL
+1956	CSPA019	Laura Lee Hope	Los Gemelos Y La Trampa De Asfalto	NULL	NULL
+1957	CSPA022	Laura Lee Hope	La Familia Bobbsey En La Isla Del Volcan	NULL	NULL
+1958	CSPA025	Aldo O. Tibaudin	El Juguete Del Rey	NULL	NULL
+1959	CFRE002	Disney	La Petite Sirene	NULL	NULL
+1960	CARA059	NULL	NULL	1145	NULL
+1961	SPA277	Federico Garcia Lorca	bodas de sangre yerma	5703	NULL
+1962	SPA280	Abba Eban	mi pueblo	5703	NULL
+1963	RENG002	A. Alcalay	Dicitionary - English to Hebrew	5277	NULL
+1964	RHEB001	A. Alcalay	Dicitionary - English to Hebrew	NULL	NULL
+1965	RENG004	R. Alkalay	Dicitionary English to Hebrew	5277	NULL
+1966	RHEB002	R. Alkalay	Dicitionary English to Hebrew	NULL	NULL
+1967	RFRE001	NULL	La Sainte Bible	NULL	NULL
+1968	RSPA002	NULL	Santas Escrituras	NULL	NULL
+1969	RSPA001	NULL	Santas Escrituras	NULL	NULL
+1970	RENG001	Funk & Wagnalls	Standard Dictionary of the English Language	5277	NULL
+1971	RENG003	NULL	Oxford Dictionary - English to Chinese	5277	NULL
+1972	RMAN001	NULL	Oxford Dictionary - English to Chinese	5309	NULL
+1973	RENG006	Arturo Cuyas	Dictionary - ENglish-Spanish Spanish English	5277	NULL
+1974	RSPA003	Arturo Cuyas	Dictionary - ENglish-Spanish Spanish English	NULL	NULL
+1975	RSPA005	NULL	Dictionary Spanish English Part II	NULL	NULL
+1976	RENG007	NULL	Dictionary Spanish English Part II	5277	NULL
+1977	RFRE002	Marc M. Cohn	Dictionnaire Francais Hebreu	NULL	NULL
+1978	RHEB004	Marc M. Cohn	Dictionnaire Francais Hebreu	NULL	NULL
+1979	RFRE004	NULL	Dictionnaire Francais - Espagnol Espanol - Frances	NULL	NULL
+1980	RENG008	Wessely, Giones, Tolhausen, Payn	Dicconario de Blsillo Ingles-Espanol y Espanol-Ingles	5277	NULL
+1981	RSPA006	Wessely, Giones, Tolhausen, Payn	Dicconario de Blsillo Ingles-Espanol y Espanol-Ingles	NULL	NULL
+1982	RHEB006	NULL	Dictionary - Hebrew Thai	NULL	NULL
+1983	RTHA002	NULL	Dictionary - Hebrew Thai	5360	NULL
+1984	RENG010	NULL	Thesaurus of English Words and Phrases	5277	NULL
+1985	RSPA007	NULL	Dictionnaire Francais - Espagnol Espanol - Frances	NULL	NULL
+1986	RENG012	Joyce M Hawkins	English reference Dictionary	5277	NULL
+1987	RHEB008	Even Shushan	School Dictionary - Hebrew	NULL	NULL
+1988	RHEB005	NULL	Dictionary - Hebrew Thai	NULL	NULL
+1989	RTHA001	NULL	Dictionary - Hebrew Thai	5360	NULL
+1990	RSPA004	DR. Juan Ducach	Dictionary - Spanish - Hebrew - L-Z	NULL	NULL
+1991	RHEB003	DR. Juan Ducach	Dictionary - Spanish - Hebrew - L-Z	NULL	NULL
+1992	RSPA009	NULL	Dictionary Spanish-English	NULL	NULL
+1993	RENG005	NULL	Dictionary - English	5277	NULL
+1994	RENG014	NULL	My First Dictionary - English-English-Hebrew	5277	NULL
+1995	RHEB012	NULL	My First Dictionary - English-English-Hebrew	NULL	NULL
+1996	RENG017  R	NULL	Dictionary English-Romanian	5277	NULL
+1997	RHEB009	R. Alcalay	Dictionary- Hebrew English	NULL	NULL
+1998	RENG013	R. Alcalay	Dictionary- Hebrew English	5277	NULL
+1999	RENG015  R	NULL	Dictionary English-Spanish	5277	NULL
+2000	RENG016	Funk & Wagnalls	Standard Dictionary of the English Language	5277	NULL
+2001	RMAN002	NULL	Dictionary - Chinese Chinese	5309	NULL
+2002	RART014	Gaston Diehl	Modigliani	5255	NULL
+2003	ART026	Jacques Lipchitz	Modigliani	NULL	NULL
+2004	RART021	Alfred Werner	Maurice Utrillo	5255	NULL
+2005	ART025	Joseph-Emile muller	Cezanne	NULL	NULL
+2006	ART024	John F. Matthews	El Greco	NULL	NULL
+2007	RART020	Andre Malraux	La Me'tamorphose Des Dieux	5255	NULL
+2008	ART023	Ezra Mendelson	painting a People: maurycy Gottlieb and Jewish Art	NULL	NULL
+2009	RART018	Franz Landsberger	Rembrandt, the Jews and the bible	5255	NULL
+2010	ART011	Rene Hoppenbrouwers	Rembrandt	NULL	NULL
+2011	ART003	Arnon Toussia-cohen	naked Repose	NULL	NULL
+2012	ART005	Jaime Sabartes	Picasso: Toreros	NULL	NULL
+2013	RART022	Georges Boudaille	Gauguin	5255	NULL
+2014	ART004	NULL	Materpieces of African Art	NULL	NULL
+2015	RART017	C. Sartorius	Mexico y los Mexicanos	5255	NULL
+2016	ART001	Robert Schmutzler	Art Nouveau	NULL	NULL
+2017	RART016	Marita Martinez del Rio de Redo	El Zocalo	5255	NULL
+2018	ART009	Leopold reidemeister	Museums Discovered	NULL	NULL
+2019	RART019	Pierre Gassier	Goya	5255	NULL
+2020	RENG011	Langenscheidt	Pocket Russian Dictionary - Russian-English English- Russian	5277	NULL
+2021	RRUS001	Langenscheidt	Pocket Russian Dictionary - Russian-English English- Russian	NULL	NULL
+2022	FRE113	Halldor Laxness	Station Atomique	NULL	NULL
+2023	RART013	Sandi Fellman	The Japanese Tattoo	5255	NULL
+2024	ART020	Andre Malraux	La Metamorphose Des Dieux	NULL	NULL
+2025	RART012	Michael Barr	Seek no Wonder but the Human Face	5255	NULL
+2026	ART006	NULL	Dosh	NULL	NULL
+2027	RART015	Jean- Paul Crespelle	Monet	5255	NULL
+2028	ART008	Volkmar Essers	Henri Matisse 1869-1954	NULL	NULL
+2029	ART007	NULL	Jacques Lipchitz	NULL	NULL
+2030	ART010	Gheorghe Leahu	BUCHAREST - the Little Paris	NULL	NULL
+2031	ART002	Piera Callegari	La Vita e L'arte di toulouse- Lautrec	NULL	NULL
+2032	RENG645	Oscar Wilde	The Happy Prince and Other Stories	5277	NULL
+2033	RENG640	Frank McCourt	Angela's Ashes	5277	NULL
+2034	RENG647	Lily Rooman	Little Big Book of Chakars	5277	NULL
+2035	RENG646	Isaac Asimov	Foundation and Empire	5277	NULL
+2036	RENG648	Jennifer Weiner	Goodnight Nobody	5277	NULL
+2037	RENG649	Jerome K. Jerome	Three Men in a Boat	5277	NULL
+2038	RENG642	Julia Alvarez	How the Garcia Girls Lost Their Accents	5277	NULL
+2039	RENG641	Paul Oster	Timbuktu	5277	NULL
+2040	RENG643	Candace Bushnell	Sex and The City	5277	NULL
+2041	RENG644	Rabindranath Tagore	Collected Poems and Plays of Rabindranath Tagore	5277	NULL
+2042	ENG301	Michener, James A.	Journey /	1760	NULL
+2043	MAN030	NULL	NULL	NULL	NULL
+2044	CENG047	Leslie Goldman	Toy Story 2	1202	NULL
+2045	CHEB197	Ester Shakine	Tika's Journey	1216	NULL
+2046	CHEB241	Zohar aviv	The brain force gang	1216	NULL
+2047	CHEB235	Maya Shimon-Tom	thoghts island	1216	NULL
+2048	CHEB239	Meital Caspi	Fonia	1216	NULL
+2049	CHEB233	Louise Rennison	Then he ate my boy enternance	1216	NULL
+2050	CHEB223	Chaya Daniel	An old lady	1216	NULL
+2051	CHEB227	David Apstein	Electronic arrest	1216	NULL
+2052	CHEB229	beth beechwood	hannah montana	1216	NULL
+2053	HIN054	NULL	NULL	2264	NULL
+2054	CHEB224	Stephania Zandberg- Rubinski	Chaya can	1216	NULL
+2055	HIN036	NULL	NULL	2264	NULL
+2056	HIN037	NULL	NULL	2264	NULL
+2057	HIN001	Khushwant Singh	Pakistan Mel	2264	NULL
+2058	HIN011	Hridyesh	Safed Ghora Kala Sawar	2264	NULL
+2059	HIN010	NULL	NULL	2264	NULL
+2060	HIN015	Diwan Jarmani Dass	Maharani	2264	NULL
+2061	NEP037	NULL	NULL	4383	NULL
+2062	NEP015	NULL	NULL	4383	NULL
+2063	NEP016	NULL	NULL	4383	NULL
+2064	NEP018	NULL	NULL	4383	NULL
+2065	NEP011	Ghana Shyam Rajkarnikar	Travel Accounts	4383	NULL
+2066	NEP012	NULL	NULL	4383	NULL
+2067	NEP013	NULL	NULL	4383	NULL
+2068	NEP014	NULL	NULL	4383	NULL
+2069	NEP008	NULL	NULL	4383	NULL
+2070	NEP009	NULL	NULL	4383	NULL
+2071	NEP010	NULL	NULL	4383	NULL
+2072	NEP035	NULL	NULL	4383	NULL
+2073	NEP005	NULL	NULL	4383	NULL
+2074	NEP007	NULL	NULL	4383	NULL
+2075	NEP031	NULL	NULL	4383	NULL
+2076	NEP029	Parashu Pradhan	Seetaharoo	4383	NULL
+2077	NEP028	NULL	NULL	4383	NULL
+2078	NEP023	NULL	NULL	4383	NULL
+2079	NEP021	NULL	NULL	4383	NULL
+2080	NEP045	Bill Clinton	My Life	4383	NULL
+2081	NEP025	NULL	NULL	4383	NULL
+2082	NEP046	NULL	NULL	4383	NULL
+2083	NEP043	NULL	NULL	4383	NULL
+2084	NEP042	NULL	NULL	4383	NULL
+2085	NEP044	Devendra Timla	World Famous Women & Their Works	4383	NULL
+2086	NEP048	NULL	NULL	4383	NULL
+2087	NEP047	NULL	NULL	4383	NULL
+2088	NEP040	Madhusudan Pandeya	Moral Principles of Mahatma Gandhi	4383	NULL
+2089	NEP022	NULL	NULL	4383	NULL
+2090	NEP024	NULL	NULL	4383	NULL
+2091	NEP026	NULL	NULL	4383	NULL
+2092	NEP039	Narendra Raj Prasai	Biography of Parijat	4383	NULL
+2093	NEP034	NULL	NULL	4383	NULL
+2094	NEP038	Ganeshman Singh	Autobigraphic Memoire	4383	NULL
+2095	NEP017	D.B. Thapa & A.B. Shrestha	Sex Education	4383	NULL
+2096	NEP019	NULL	NULL	4383	NULL
+2097	NEP003	NULL	NULL	4383	NULL
+2098	NEP006	Maxim Gorki	Mother	4383	NULL
+2099	NEP001	Dale Carnegie	How to Win Friends and Influence People	4383	NULL
+2100	NEP033	NULL	NULL	4383	NULL
+2101	NEP036	Herman Hesse	Siddhartha	4383	NULL
+2102	NEP004	NULL	NULL	4383	NULL
+2103	NEP032	NULL	A Walk to Freedom	4383	NULL
+2104	NEP020	Parkash Sayami	Film Craft & Technology	4383	NULL
+2105	HIN002	Munshi Prem Chand	Godaan	2264	NULL
+2106	HIN009	Dr. Radhakrishnan	Bhagavadgita	2264	NULL
+2107	HIN027	NULL	NULL	2264	NULL
+2108	HIN066	Pratap Seghal	Anhad Naad	2264	NULL
+2109	CHEB186	Oscar Wilde	The Happy Prince and Other Stories	1216	NULL
+2110	HIN053	NULL	NULL	2264	NULL
+2111	HIN029	NULL	Proven Ayurvedic Combinations	2264	NULL
+2112	HIN063	NULL	Panchtantra	2264	NULL
+2113	CHEB251	Amir Doron	Oded's miracle	1216	NULL
+2114	HIN045	NULL	NULL	2264	NULL
+2115	HIN030	NULL	NULL	2264	NULL
+2116	HIN056	NULL	NULL	2264	NULL
+2117	CHEB189	Jan Fearnley	Watch out, Wilf!	1216	NULL
+2118	HIN006	NULL	NULL	2264	NULL
+2119	CHEB297	Mark Twain	The adventures of Huckleberry Finn	1216	NULL
+2120	CHEB294	Mark Twain	The adventures of Huckleberry Finn	1216	NULL
+2121	CHEB192	Asi Winstein	Swan lake	1216	NULL
+2122	HIN047	Prem Chand	Ki Shreshth Kahaniyan	2264	NULL
+2123	CHEB254	ATARA OFEK	MY GAMES	1216	NULL
+2124	HIN021	NULL	NULL	2264	NULL
+2125	CHEB198	Nick Butterworth	A present for Freddie Small	1216	NULL
+2126	CHEB261	KENNETH GRAHAME	The Wind In The Willows	1216	NULL
+2127	HIN051	NULL	Experiments With Truth and Non-Violence	2264	NULL
+2128	HIN003	NULL	NULL	2264	NULL
+2129	CHEB258	Amos Ber, M.D. and Tali rosin	THE ISRAELI GUIDE TO PUBERTY	1216	NULL
+2130	HIN034	NULL	NULL	2264	NULL
+2131	HIN069	NULL	NULL	2264	NULL
+2132	CHEB262	VIKTOR HUGO	THE MISRABELS	1216	NULL
+2133	CHEB259	NURIT ZARCHI	OUTSIDER	1216	NULL
+2134	HIN040	NULL	NULL	2264	NULL
+2135	HIN039	Prabha Khetan	Peeli Aandhi	2264	NULL
+2136	CHEB245	YARIV SAIEG	MY FRIEND, THE PRIME MINISTER	1216	NULL
+2137	HIN038	Arundhati Roy	The Algebra if Infinite Justice	2264	NULL
+2138	HIN059	NULL	NULL	2264	NULL
+2139	HIN031	NULL	NULL	2264	NULL
+2140	HIN057	NULL	NULL	2264	NULL
+2141	CHEB291	MAYA DANK	THE HOLE FROM HATAFRAN STREET	1216	NULL
+2142	HIN026	NULL	NULL	2264	NULL
+2143	HIN041	NULL	NULL	2264	NULL
+2144	CHEB288	MOTI SHPITZER	RONI GOES TO THE DOCTOR	1216	NULL
+2145	HIN058	NULL	NULL	2264	NULL
+2146	HIN055	NULL	NULL	2264	NULL
+2147	HIN033	Malti Joshi	Noveletes and Stories	2264	NULL
+2148	CHEB285	YAEL SAHNAIE	NEMASHIM KMO KOHAVIM	1216	NULL
+2149	HIN052	Mahashweta Devi	NULL	2264	NULL
+2150	HIN050	NULL	NULL	2264	NULL
+2151	CHEB203	Amir Doron	Lean Neelam Toni?	1216	NULL
+2152	CHEB257	LEWIS CARROLL	ALICE'S ADVENTURES IN WONDERLAND	1216	NULL
+2153	CHEB282	ITZIK GONEN	MAMI, IT'S A COCKROACH !	1216	NULL
+2154	HIN025	Chetan Bhagat	The 3 Mistakes of My Life	2264	NULL
+2155	CHEB208	Rutie Shekel	Hamalachim Shel Tal	1216	NULL
+2156	HIN020	Shivani	Krishnakali	2264	NULL
+2157	HIN044	NULL	NULL	2264	NULL
+2158	CHEB276	SAMUEL ISRAELSTAM PROF.	GAMBO BOOM AND THE FLYING WOODEN HORSE	1216	NULL
+2159	CHEB132	Daniel Zuris	Natan Habir Hakatan	1216	NULL
+2160	HIN022	Sharatchandra	Devdas	2264	NULL
+2161	CHEB213	Nira Harel	Stories for Saturday Morning	1216	NULL
+2162	hin019	NULL	NULL	2264	NULL
+2163	HIN013	NULL	NULL	2264	NULL
+2164	HIN005	Arundhati Roy	Mamooli Cheezon Ka Devata	2264	NULL
+2165	HIN014	Munshi Premchand	Pratigya	2264	NULL
+2166	CHEB147	Maya Bar Mocha Gozaly	Piloni	1216	NULL
+2167	HIN032	NULL	NULL	2264	NULL
+2168	CHEB150	Miriam Yalan Shtekelis	I have a secret	1216	NULL
+2169	HIN035	K.M. Munshi	NULL	2264	NULL
+2170	CHEB183	Tally Segal Tiban	Spider-man 3	1216	NULL
+2171	HIN060	NULL	NULL	2264	NULL
+2172	HIN042	NULL	NULL	2264	NULL
+2173	HIN004	NULL	NULL	2264	NULL
+2174	CHEB279	ASSAF YAFE	THE H WHO RUN FROM THE HOLE	1216	NULL
+2175	CHEB146	Libi Daon	Yirmiyahu Street	1216	NULL
+2176	CHEB289	NURIT YUVAL	LIAT IS LOOKING FOR A FRIEND	1216	NULL
+2177	HIN016	Rajendra Yadav	Dus Pratinidhi Kahaniyan	2264	NULL
+2178	CHEB133	Julia Donaldson	The Princess And The Wizard	1216	NULL
+2179	HIN017	Himanshu Joshi	Dus Pratinidhi Kahaniyan	2264	NULL
+2180	CHEB211	MICHAL SHALEV	BOOLOO GOOLOO HATES GOING TO SLEEP	1216	NULL
+2181	CHEB210	African Youth in Israel	Kol Haolam Bamilim Shelanu	1216	NULL
+2182	HIN018	Taslima Nasrin	Chaar Kanya	2264	NULL
+2183	CHEB207	African Youth In Israel	Kol Hayeladim Shel Africa Tovim	1216	NULL
+2184	HIN049	NULL	NULL	2264	NULL
+2185	CHEB286	MIRYAM YALAN-SHTEKELIS	THERE'S A HOUSE FOR THE RABBIT	1216	NULL
+2186	CHEB232	Galila Ron-Feder-Amit	Being Anxious	1216	NULL
+2187	HIN012	Mannu Bhandari	Yahi Sach Hai (short stories)	2264	NULL
+2188	CHEB230	Ariel Hirschfeld	Where Is Time?	1216	NULL
+2189	CHEB188	Gadi Taub	Things I Keep From Yael	1216	NULL
+2190	HIN007	Hari Shankar Parsai	Vikalang Shraddha Ka Daur (satirical essays)	2264	NULL
+2191	HIN008	Rangeya Raghav	Meri Priya Kahaniyan (short stories)	2264	NULL
+2192	CHEB185	Yoram Levi Porat	Emtzaoni	1216	NULL
+2193	HIN046	NULL	NULL	2264	NULL
+2194	CHEB182	Dr. Seuss	My Many Colored Days	1216	NULL
+2195	HIN043	Ibne Insha	Urdu Ki Akhiri Kitab (satires)	2264	NULL
+2196	CHEB215	Rick Riordan	Percy Jackson and the Sea Monsters	1216	NULL
+2197	HIN024	NULL	NULL	2264	NULL
+2198	CHEB221	Rick Riordan	Percy Jackson and the Battle of the Labyrinth	1216	NULL
+2199	HIN023	Mannu Bhandari	Dus Pratinidhi Kahaniyan	2264	NULL
+2200	CHEB218	Rick Riordan	Percy Jackson and the Titan's Curse	1216	NULL
+2201	CHEB212	Rick Riordan	Percy Jackson and the Lightning Thief	1216	NULL
+2202	CHEB148	Raaya Blatman	The Yarons, A Happy Family	1216	NULL
+2203	CHEB280	ASSI VAINSHTEIN	BAT HATOCHEN	1216	NULL
+2204	CHEB145	Maya Bar Mucha	Maase Beshir	1216	NULL
+2205	CHEB144	Kuki Juki	Maya Bar Mucha	1216	NULL
+2206	HIN028	Chetan Bhagat	One Night @ the Call Centre	2264	NULL
+2207	CHEB149	Charles Kingsly	The Water Babys	1216	NULL
+2208	CHEB293	ETGAR KERET & RUTU MODAN	DAD RUNS AWAY WITH THE CIRCUS	1216	NULL
+2209	CHEB248	Galila Ron-Feder-Amit	Mitkefet Hacaloryot	1216	NULL
+2210	CHEB143	Maya Bar Mucha Gozaly	Tseva Hadmaot	1216	NULL
+2211	FRE119	Gabriel Garcia Marquez	L'amour aux Temps du Cholera	NULL	NULL
+2212	RHEB011	Dov Ben-Abba	Hebrew-English English-Hebrew Dictionary	NULL	NULL
+2213	FRE116	Albert Camus	L'etranger	NULL	NULL
+2214	CHEB246	Vivyan French	The Tiara Club at Silver Towers	1216	NULL
+2215	RENG018	Dov Ben-Abba	Hebrew-English English-Hebrew Dictionary	5277	NULL
+2216	FRE115	Irene Nemirovsky	Le Maitre des Ames	NULL	NULL
+2217	FRE118	Rene Dumont	Pour L'Afrique, J'Acc	NULL	NULL
+2218	CHEB243	Jim Benton	Jim Benton's Tales From Mackerel Middle School: Dear Dumb Diary - Book 1	1216	NULL
+2219	FRE120	Maurice Bernard Endrebe	Danger Intime	NULL	NULL
+2220	CHEB242	Maegot Scheffold	Tierarztin Tilly Tierlieb	1216	NULL
+2221	FRE126	Isaac Asimov	Le Club des Veufs Noirs	NULL	NULL
+2222	FRE114	Maurice Druon	La Chute des Corps	NULL	NULL
+2223	FRE117	F. Scott Fitzgerald	Tendre est la Nuit	NULL	NULL
+2224	CHEB214	Maegot Scheffold	Tierarztin Tilly Tierlieb	1216	NULL
+2225	FRE127	Julien Green	L'Autre	NULL	NULL
+2226	FRE124	Janos Szekely	L'enfant du Danube	NULL	NULL
+2227	CHEB191	Claude Delafosse	Hamechonit - Hamasait, Haofnoa vehaofanaim	1216	NULL
+2228	FRE123	Aharon Appelfeld	Histoire d'une Vie	NULL	NULL
+2229	CHEB236	Geronimo Stilton	Il Mistero Della Piramide Di Formaggio	1216	NULL
+2230	FRE122	Umberto Eco	L'ile du Jour d'Avant	NULL	NULL
+2231	RSPA012	A. Comay & D. Yarden	Espanol-Hebreo Hebreo-Espanol Diccionario	NULL	NULL
+2232	RHEB015	A. Comay & D. Yarden	Espanol-Hebreo Hebreo-Espanol Diccionario	NULL	NULL
+2233	FRE121	Jean M. Auel	Le Retour d'Ayla	NULL	NULL
+2234	CHEB238	Vivyan French	The Tiara Club at Silver Towers	1216	NULL
+2235	CHEB244	Marit Benisrael	Daughters of the Dragon	1216	NULL
+2236	FRE125	Jostein Gaarder	Le Monde de Sophie	NULL	NULL
+2237	CARA057	Barbara Meislin	No one can ever steal your rainbow	1145	NULL
+2238	CHEB249	Barbara Meislin	No one can ever steal your rainbow	1216	NULL
+2239	FRE148	Stendhal	Le Rouge et le Noir	NULL	NULL
+2240	CHEB247	Mark Twain	A Connecticut Yankee in King Arthur's Court	1216	NULL
+2241	CHEB237	Nurit Zarchi	Tanina	1216	NULL
+2242	CHEB250	Diana Wynne Jones	Archer's Goon	1216	NULL
+2243	CHEB240	Nurit Zarchi	Nurit Zarchi's Fantastic Book	1216	NULL
+2244	CHEB187	Thierry Robberecht  Philippe Goossens	Het Meisje Dat Terug in Mama's Buik Wilde	1216	NULL
+2245	NEP041	Hisila Yami and Dr. Baburam Bhattrai	A Collection of Political Essays	4383	NULL
+2246	CHEB234	Nurit Zarchi	The Pears and the Unicorn	1216	NULL
+2247	CHEB220	Crockett Johnson	Aharon Vehaiparon Hasagol	1216	NULL
+2248	CHEB217	Daniella Spigelman	Zoe's Journey	1216	NULL
+2249	CHEB231	Shula Modan	Habrogez shel Lior	1216	NULL
+2250	CHEB226	Frauka Nahrgang	De Teufelskicker - Holt euch den Cup!	1216	NULL
+2251	CHEB225	Tsvia Vilenski	Story Hour 1	1216	NULL
+2252	CHEB222	Av Thorbjorn Egner	Karius og Baktus	1216	NULL
+2253	CHEB281	Daniel Defoe	Robinson Crusoe	1216	NULL
+2254	CHEB260	Giora Pinhasi	Much Excitement at the Fire Department	1216	NULL
+2255	CHEB219	Levin Kipnis	Dad's Big Umbrella	1216	NULL
+2256	CHEB296	Ester Shtrite Wartzel	Min Hameitzar	1216	NULL
+2257	CHEB216	Shlomit Tsorfati	Ruby's Friend	1216	NULL
+2258	CHEB252	Erich Kastner	Erich Kastner Erzahlt	1216	NULL
+2259	CHEB181	Iris Shofman	I Will Overcome	1216	NULL
+2260	CENG270	Gail Carson Levine	Fairy Dust and the Quest for the Egg	1202	NULL
+2261	CHEB287	Erich Kastner	Punktchen Und Anton	1216	NULL
+2262	CENG258	Hans Andersen	Classic Fairy Tales	1202	NULL
+2263	CHEB290	Uri Sela	Yftach Hameluchlach	1216	NULL
+2264	CENG267	Hans Christian Andersen	Fairytales	1202	NULL
+2265	CHEB284	Frida Daniely	Boys Growing Up Is Not a Joke	1216	NULL
+2266	CENG264	Tot Age Bringsvaerd	The Little Troll	1202	NULL
+2267	CENG261	Grimm	Grimm's Fairy Tales	1202	NULL
+2268	CHEB201	Ayano Imai	The 108th Sheep	1216	NULL
+2269	CHEB307	J.K. Rowling	Harry Potter	1216	NULL
+2270	CENG229	Cynthia Rylant	Cinderella	1202	NULL
+2271	CHEB306	J.K. Rowling	Harry Potter	1216	NULL
+2272	CHEB205	Lotta Geffenblad	Aston Stenar	1216	NULL
+2273	CHEB305	J.K. Rowling	Harry Potter	1216	NULL
+2274	CHEB275	Yehoshua Orenshtein	Hatsipor Hakchula	1216	NULL
+2275	CHEB255	Aron Barr	The Three Little Pigs	1216	NULL
+2276	CHEB200	Gilles Bachelet	Mon Chat le Plus Bete du Monde	1216	NULL
+2277	CHEB204	Doron Schlefer	Money is not Everything	1216	NULL
+2278	CHEB270	IRIT MACHTEY	WHERE DID THE SUN GO?	1216	NULL
+2279	CHEB196	Dror Magen	NULL	1216	NULL
+2280	CHEB304	J.K. Rowling	Harry Potter	1216	NULL
+2281	CHEB303	Hayim Nahman Byalik	The Chickens And The Fox	1216	NULL
+2282	CHEB267	SIGAL MAGEN	KINGS MEAL	1216	NULL
+2283	CHEB302	Various	Folk Stories	1216	NULL
+2284	CHEB277	Daniel Defoe	Robinson Crusoe	1216	NULL
+2285	CHEB269	YARON LONDON	THEY LEFT ME ALONE	1216	NULL
+2286	CHEB199	Christine Naumann-Villemin	Le Tetine de Nina	1216	NULL
+2287	CHEB209	Demi	The Hungry Coat	1216	NULL
+2288	CHEB202	ROBI H.HARRIS	MAIL HARRY TO THE MOON !	1216	NULL
+2289	CHEB272	WALT DISNEY	BEAUTY AND THE BEAST	1216	NULL
+2290	CHEB278	WALT DISNEY	THE LION KING	1216	NULL
+2291	CHEB263	NAHUM GUTMAN	KING ZULU IN LOBENGULU COUNTRY	1216	NULL
+2292	CENG230	Kirsten Larsen	Lily's Pesky Plant	1202	NULL
+2293	CENG224	Kiki Thorpe	The Trouble with Tink	1202	NULL
+2294	CENG227	Laura Driscoll	Beck and the Great Berry Battle	1202	NULL
+2295	CHEB266	Galila ron feder	El Azmi	1216	NULL
+2296	CENG226	Gail Herman	Silvermist and the Ladybug Curse	1202	NULL
+2297	CHEB301	Lea Goldberg	Dira lehaskir	1216	NULL
+2298	CHEB264	Mark Haddon	The Curious Incident of the Dog in the Night-Time	1216	NULL
+2299	CHEB268	Eric Night	Lasi Chozeret Habayta	1216	NULL
+2300	CSPA088	Gail Herman	Silvermist y la maldicion de la mariquita	NULL	NULL
+2301	CHEB300	Yehudit Shemyon Dagan	Berale Berale	1216	NULL
+2302	CHEB193	Maya Bar Muha	Tituli	1216	NULL
+2303	CHEB273	Maayan Rimon	Yaar haotiyot Hakasoom	1216	NULL
+2304	CHEB295	Shula Modan	Koassim - Ma Ossim?	1216	NULL
+2305	CENG233	Disney	Flounder the Fearless	1202	NULL
+2306	CHEB274	Guinness	Guinness World Records 2001	1216	NULL
+2307	CFRE017	Mordillo	Opus 3	NULL	NULL
+2308	CENG252	Disney	Mix and Match	1202	NULL
+2309	CHEB184	Martina Loibl	Die Kleine Ballerina	1216	NULL
+2310	CENG215	Disney	Pirates of the Caribbean	1202	NULL
+2311	CHEB190	Jeanne Willis	Pashtidat Mamoota	1216	NULL
+2312	CFRE021	CLAUDE PONTI	Le petit frere	NULL	NULL
+2313	CFRE018	Claude Ponti	Tromboline et Foulbazar	NULL	NULL
+2314	CENG240	A.A. Wilne	Winnie-the-Pooh	1202	NULL
+2315	CHEB299	Moshe Levi	The 48th Soul	1216	NULL
+2316	CFRE015	Rebecca Dautremer	L'amoureux	NULL	NULL
+2317	CENG213	Beatrix Potter	The Tale of Two Bad Mice	1202	NULL
+2318	CHEB298	Hans Christian Andersen	Abarvazon Amechoar	1216	NULL
+2319	CENG255	Lorimer	Where Is My Dummy?	1202	NULL
+2320	CENG222	Julie Aigner Clark	Jane's Animal Expedition	1202	NULL
+2321	CHEB256	Naomi Novik	His Majesty's Dragon	1216	NULL
+2322	CHEB134	Oliver Jeffers	Lost and Found	1216	NULL
+2323	CENG239	Beth Beechwood	Hannah Montana	1202	NULL
+2324	CENG217	A.A. Milne	When We Were Very Young	1202	NULL
+2325	CHEB253	Eva Ebbotson	Journey To The River Sea	1216	NULL
+2326	CENG221	N.B.Grace	High School Musical 2	1202	NULL
+2327	CHEB135	Shosh Carmel	Saba Tas BaHalalit	1216	NULL
+2328	CHEB137	Laura Duksta	I Love You More	1216	NULL
+2329	CENG218	DISNEY	Annah Montana - Super Sneak	1202	NULL
+2330	CSPA084	Kiki Thorpe	Campanilla y el Regalo Perfecro para Terence	NULL	NULL
+2331	CHEB138	Meir Shalev	The Underplate	1216	NULL
+2332	CENG219	Disney	Disney Princess	1202	NULL
+2333	CENG243	Lara Bergen	A Masterpiece for Bess	1202	NULL
+2334	CENG234	Disney	High School Musical	1202	NULL
+2335	CHEB141	Brigitte Raab & Manuela Olten	WO WACHST DER PFEFFER	1216	NULL
+2336	CENG237	DISNEY	Why do Some Kids have Freckles	1202	NULL
+2337	CENG236	Amy Edgar	Winnie The Pooh's Bedtime Hummables	1202	NULL
+2338	CHEB140	Tamar Adar & Hava Baharav	In a little while I'll have a brother or a sister	1216	NULL
+2339	CFRE020	Disney	Princesse - 3 Histoires	NULL	NULL
+2340	CENG232	Syd Hoff	Sammy The Seal	1202	NULL
+2341	CENG238	Alice Alfonsi	Hannah Montana	1202	NULL
+2342	CHEB139	Marinella Barigazzi	DA GRANDE	1216	NULL
+2343	CENG228	Gail Carson Levine	Fairy Dust And The Quest For The Egg	1202	NULL
+2344	CENG249	Catherine Hapka	High School Musical - stories From East High 2	1202	NULL
+2345	CHEB142	Neta Grinblad	Kol Hachozlaarezim Krovim	1216	NULL
+2346	CFRE030	Catherine Zarcate & Olivier Charpentier	Le buffle et l'oiseau	NULL	NULL
+2347	CFRE027	Fred Bernard & Francois Roca	Ushi	NULL	NULL
+2348	CENG220	A.A.Milne	The House At Pooh Corner	1202	NULL
+2349	CFRE016	Disney	Le Livre de la Jungle	NULL	NULL
+2350	CHEB308	Rivka Magen	Goodbye Daddy	1216	NULL
+2351	CENG216	Disney	Truth Or Dare	1202	NULL
+2352	CFRE024	Claude Ponti	La Voiture	NULL	NULL
+2353	CFRE023	Antoine De Saint Exupřy	Le Petit Prince	NULL	NULL
+2354	eng637	NULL	cultivating a daily meditation	1760	NULL
+2355	CFRE026	Samivel	Le Joueur De Flute De Hemlin	NULL	NULL
+2356	CFRE029	S.Deraime	Prehistoire	NULL	NULL
+2357	CFRE025	Charles Perrault	Peau Dane	NULL	NULL
+2358	CFRE022	J.et W.Grimm	La Belle Au Bois Dormant	NULL	NULL
+2359	CFRE019	Maia Brami	Vis Ta Vie Nina	NULL	NULL
+2360	CHEB343	Simon James	מי גאון של אמא?	1216	NULL
+2361	CHEB346	Ursula Jones	ילדי המכשפה	1216	NULL
+2362	CHEB349	אזאר נאפיסי	תלתל והקול הירק	1216	NULL
+2363	CHEB352	אזאר נאפיסי	תלתל והקול הירק	1216	NULL
+2364	CHEB355	Mem Fox	כובע פלאים	1216	NULL
+2365	CHEB331	Martine Murray	מיכאלה אין דומה לה	1216	NULL
+2366	CHEB334	Keith Haring	קית' הרינג	1216	NULL
+2367	CHEB337	Joke Van Leeuwen	לוידע	1216	NULL
+2368	CHEB340	Deborah Freedman	קשקוש	1216	NULL
+2369	CHEB350	Disney	היפהפייה והיחפן	1216	NULL
+2370	CHEB353	Disney	הרקולס	1216	NULL
+2371	CHEB348	Nurit Shacham	איזה ביצה?	1216	NULL
+2372	CHEB345	Amy Krouse Rosenthal	אפון קטן	1216	NULL
+2373	CHEB332	Abigail Wheatly	הסיפור של אמנות הציור	1216	NULL
+2374	CHEB417	Sam MacBratney	Guess How Much I Love You	1216	NULL
+2375	CHEB358	Elizabeth Dalby	סודות עולם הטבע	1216	NULL
+2376	CHEB420	theodor h. gaster	the oldest stories in the world	1216	NULL
+2377	CHEB335	NULL	בעלי חיים: הטורפים	1216	NULL
+2378	CHEB448	אריך קסטנר	הכתה המעופפת	1216	NULL
+2379	CHEB453	אריך קסטנר	פצפונת ואנטון	1216	NULL
+2380	CHEB338	Christian Broutin & Jean-Pierre Verdet	תולדות כדור הארץ	1216	NULL
+2381	CHEB449	מיקי סלע	המיץ של פיץ	1216	NULL
+2382	CHEB341	NULL	בעלי החיים בונים בית	1216	NULL
+2383	CHEB344	Disney	שלגייה ושבעת הגמדים	1216	NULL
+2384	CHEB437	NULL	סיפורי פו הדב ב-5 דקות	1216	NULL
+2385	CHEB347	Disney/Pixar	מכוניות	1216	NULL
+2386	CHEB373	Disney	פיטר פן	1216	NULL
+2387	CHEB374	Disney	בולט	1216	NULL
+2388	CHEB356	Disney/Pixar	משפחת סופר-על	1216	NULL
+2389	HEB456	christine nostlinger	konrad	2242	NULL
+2390	CHEB359	Disney/Pixar	רטטוי	1216	NULL
+2391	CHEB442	???? ????	??????	1216	NULL
+2392	CHEB333	Disney/Pixar	וול-E	1216	NULL
+2393	CHEB444	???? ?????	??????? ???? ????	1216	NULL
+2394	CHEB360	Disney	102 כלבים וגנבים	1216	NULL
+2395	CHEB438	???? ?????? ????????	look before you leap!	1216	NULL
+2396	CHEB357	Disney/Pixar	מפלצות בע"מ	1216	NULL
+2397	CHEB436	NULL	5 minute bedtine stories	1216	NULL
+2398	CHEB432	???? ????-????	??? ????? ??????	1216	NULL
+2399	CHEB439	NULL	5 minute adventure stories	1216	NULL
+2400	CHEB440	chris van allsburg	zathura	1216	NULL
+2401	CHEB441	eli scheiber	all kindergarten kids	1216	NULL
+2402	CHEB421	conan doyle	the hound of baskervilles	1216	NULL
+2403	CHEB424	sami michael	letters go to the sea	1216	NULL
+2404	CHEB427	carlo collodi	le avventure di pinocchio	1216	NULL
+2405	CHEB316	steve parker	i love baby animals	1216	NULL
+2406	CHEB365	NULL	pinocchio	1216	NULL
+2407	CHEB364	NULL	lion king 2 - simba's pride	1216	NULL
+2408	CHEB323	erich kastner & walter trier	der gestiefelte kater	1216	NULL
+2409	CHEB309	dougal dixon	if dinosaurs were alive today	1216	NULL
+2410	CHEB328	wendy orr	nim at sea	1216	NULL
+2411	CHEB314	yannets levi	uncle leo's adventures in the sibiran jungle	1216	NULL
+2412	CHEB327	wendy orr	nim's island	1216	NULL
+2413	CHEB326	michael dak	my pet monsters	1216	NULL
+2414	CHEB363	NULL	toy story	1216	NULL
+2415	CHEB311	cornelia funke	der geheimnisvolle ritter namenlos	1216	NULL
+2416	CHEB317	rinat hoffer	have you seen ayelet?	1216	NULL
+2417	HEB473	???? ??? ??	????? ??????? ??????	2242	NULL
+2418	CARA079	???? ??? ??	????? ??????? ??????	1145	NULL
+2419	CAMH004	???? ??? ??	????? ??????? ??????	1140	NULL
+2420	CHEB476	sedat turhan	milet picture dictionary	1216	NULL
+2421	CENG244	sedat turhan	milet picture dictionary	1202	NULL
+2422	CHEB459	Erich Kastner	Emil Und Die Dedektive	1216	NULL
+2423	CENG241	mae astrid tobias	pumbakhayon	1202	NULL
+2424	CHEB394	Yona Tepper	Leaving Home	1216	NULL
+2425	CTAG001	mae astrid tobias	pumbakhayon	1387	NULL
+2426	CHEB397	???? ????	???? 19	1216	NULL
+2427	CENG242	mae astrid tobias	halikpon	1202	NULL
+2428	CTAG002	mae astrid tobias	halikpon	1387	NULL
+2429	CHEB462	Erich Kastner	Das Doppelte Lottchen	1216	NULL
+2430	CHEB465	Erich Kastner	Der 35.Mai	1216	NULL
+2431	HEB468	?"? ???? ????????	?????? ????	2242	NULL
+2432	HEB471	Arthur Koestler	Thieves In The Night	2242	NULL
+2433	CHEB390	Steve Parker	I Love Bugs	1216	NULL
+2434	CHEB428	Naama Benziman	The Tall Hat	1216	NULL
+2435	CHEB429	???? ????	????	1216	NULL
+2436	CHEB400	Chris Van Allsburg	The Widow's Broom	1216	NULL
+2437	CHEB310	NANCY TILLMAN	on the night you were born	1216	NULL
+2438	CHEB477	Erich Kastner	Erich Kastner Erzahlt	1216	NULL
+2439	CHEB480	Frantisek Langer	Bratrstvo Bileho Klice	1216	NULL
+2440	CHEB431	DISNEY	north america	1216	NULL
+2441	CHEB452	Orna Hadas	Take it Easy, Sis'	1216	NULL
+2442	ARA061	NULL	NULL	NULL	NULL
+2443	CHEB430	DISNEY	europe	1216	NULL
+2444	CHEB455	Erich Kastner	Emil und die Drei Zwillinge	1216	NULL
+2445	ARA070	NULL	NULL	NULL	NULL
+2446	CHEB435	DISNEY	africa	1216	NULL
+2447	ARA069	NULL	NULL	NULL	NULL
+2448	CHEB458	Christine Nostlinger	Nagle Einen Pudding An Die Wand	1216	NULL
+2449	ARA068	NULL	NULL	NULL	NULL
+2450	CHEB461	Herbert Gunter	Die Reise Zum Meer	1216	NULL
+2451	ARA067	NORMAN ISMAEL	THE BRIDEGROOM AND THE DEVIL	NULL	NULL
+2452	ARA066	NORMAN ISMAEL	THE BRIDEGROOM AND THE DEVIL	NULL	NULL
+2453	CHEB464	Augusto Macchetto and Paola Mulazzi	5 Minute Stories: Friendship	1216	NULL
+2454	CHEB433	disney	up, up, and away!	1216	NULL
+2455	CHEB467	NULL	More 5 Minute Princess Stories	1216	NULL
+2456	CHEB470	NULL	5 Minute Princess Stories	1216	NULL
+2457	ARA071	NULL	NULL	NULL	NULL
+2458	CHEB408	Michael Wright	Jake Stays Awake	1216	NULL
+2459	CHEB389	Steve Parker	I Love Sharks	1216	NULL
+2460	cheb398	בינה אופק	ברלה ברלה, צא החוצה	1216	NULL
+2461	CHEB385	Nava Macmel-Atir	It All Began with a Button	1216	NULL
+2462	CHEB411	Meir Shalev	the traktor in the sand box	1216	NULL
+2463	CHEB388	Albertine Germano Zullo	Marta et la Bicyclette	1216	NULL
+2464	CHEB414	MRIAM ROTH	mixed up yuval	1216	NULL
+2465	CHEB391	???? ????????	???,???? ????	1216	NULL
+2466	CHEB382	NULL	Jungle Book	1216	NULL
+2467	CHEB354	DISNEY	JUNGLE BOOK	1216	NULL
+2468	ARA075	NULL	NULL	NULL	NULL
+2469	CHEB387	???? ?????? ????????	A Hot Dog Day	1216	NULL
+2470	ARA074	NULL	NULL	NULL	NULL
+2471	ARA073	NULL	NULL	NULL	NULL
+2472	CHEB375	NULL	Alice in Wonderland	1216	NULL
+2473	ARA072	NULL	NULL	NULL	NULL
+2474	CHEB378	NULL	Finding Nemo	1216	NULL
+2475	ARA065	NULL	NULL	NULL	NULL
+2476	ARA064	NULL	NULL	NULL	NULL
+2477	ARA063	NULL	NULL	NULL	NULL
+2478	CHEB474	Pat Zonta	Jessica's X-Ray	1216	NULL
+2479	CHEB351	DISNEY	CHICKEN LITTLE	1216	NULL
+2480	ARA062	NULL	NULL	NULL	NULL
+2481	CHEB376	NULL	UP	1216	NULL
+2482	ARA081	NULL	NULL	NULL	NULL
+2483	CHEB366	DISNEY	THE MANY ADVENTURES OF WINNIE THE POOH	1216	NULL
+2484	ARA078	NULL	NULL	NULL	NULL
+2485	CHEB381	NULL	Brother Bear	1216	NULL
+2486	ARA077	NULL	NULL	NULL	NULL
+2487	CHEB367	DISNEY	TOY STORY 2	1216	NULL
+2488	CHEB380	NULL	TinkerBell	1216	NULL
+2489	ARA076	NULL	NULL	NULL	NULL
+2490	ARA089	NULL	NULL	NULL	NULL
+2491	CHEB379	Victor Hugo	The Hunchback of Notredame	1216	NULL
+2492	ARA088	NULL	NULL	NULL	NULL
+2493	CHEB368	DISNEY	DUMBO	1216	NULL
+2494	ARA087	NULL	NULL	NULL	NULL
+2495	CHEB384	NULL	Tarzan	1216	NULL
+2496	ARA086	NULL	NULL	NULL	NULL
+2497	CHEB383	NULL	Return to Never Land	1216	NULL
+2498	CHEB370	DISNEY	ARISTOCATS	1216	NULL
+2499	ARA085	NULL	NULL	NULL	NULL
+2500	ARA084	NULL	NULL	NULL	NULL
+2501	CHEB386	Steve Parker	I Love Dinosaurs	1216	NULL
+2502	ARA082	NULL	NULL	NULL	NULL
+2503	ARA083	NAZIA HIR	SHEVA	NULL	NULL
+2504	CHEB401	NULL	??? ??? ??????|??????? ??????? ???????	1216	NULL
+2505	CHEB371	DISNEY	BAMBI 2	1216	NULL
+2506	CHEB372	DISNEY	BAMBI	1216	NULL
+2507	CHEB404	Tamar Verete Zehavi	Aftershock	1216	NULL
+2508	CHEB377	DISNEY	ROBIN HOOD	1216	NULL
+2509	CHEB407	Uze Ben Cnaan	My Sister is the Greatest	1216	NULL
+2510	CHEB410	???? ????	????? ???????	1216	NULL
+2511	CHEB313	ELIZABETH BLUEMLE	MY FATHER THE DOG	1216	NULL
+2512	CHEB450	Jonathan Emmett	Bringing Down The Moon	1216	NULL
+2513	HEB443	MIRYAM YALAN SHTEKLIS	YALDOOT ISRAELIT	2242	NULL
+2514	HEB447	DISNEY	AMERICA HALATINIT	2242	NULL
+2515	CHEB315	JOHANNES MARIO SIMMEL	WEINEN STRENG VERBOTEN	1216	NULL
+2516	CHEB413	Gillian Rogerson	?????? ????	1216	NULL
+2517	HEB446	DISNEY	ASIA AND OCIANIA	2242	NULL
+2518	CHEB416	Mark Marshall	????? ???? ???? ??????	1216	NULL
+2519	CHEB324	MICHAEL DAK	THE CAT THAT HAD THE SHADOW OF A DOG	1216	NULL
+2520	HEB445	SHOLAMIT ZARFATI	HAKISIM SHEL SABA	2242	NULL
+2521	CHEB419	Theo	Oscar and Hoo	1216	NULL
+2522	CHEB325	ERICH KASTNER	DAS VERHEXTE TELEFON	1216	NULL
+2523	CHEB396	Brigitte Weninger	Einer Fur Alle- Alee Fur Einen	1216	NULL
+2524	CHEB361	DISNEY	ALLADIN	1216	NULL
+2525	CHEB393	Anna-Clara Tidholm	Knacka Pa	1216	NULL
+2526	NULL	בינה אופק	ברלה ברלה, צא החוצה	NULL	NULL
+2527	CHEB392	Gianni Rodari	Che Cosa Ci Vuole	1216	NULL
+2528	CHEB321	ELFIE DONNELLY	SERVUS OPA ICH LEISE	1216	NULL
+2529	NULL	NULL	????	NULL	NULL
+2530	CHEB318	LIMOR WINTER KRAEMER	HAMELECH KHOL YAKHOL	1216	NULL
+2531	NULL	NULL	????	NULL	NULL
+2532	CHEB336	DISNEY	LION KING	1216	NULL
+2533	CHEB342	DAVID SLONIM	HE CAME WITH A COUCH	1216	NULL
+2534	CHEB329	MIRI LESHEM	THE MAGICAL JOURNEY IN THE WORLD OF PAINTING	1216	NULL
+2535	TAG032	Martha Cecilia	Aagawin Kita Sa Kanya	5885	NULL
+2536	CHEB405	NAVA MAKMAL ATIR	?????? ?????? ????	1216	NULL
+2537	TAG052	Vanessa	Dedee &amp; Seth	5885	NULL
+2538	HEB423	NATHANIEL HAWTHORNE	ROSH NOTZA	2242	NULL
+2539	CHEB312	NULL	MON PREMIER LIVRE SUR LE CORPS HUMAIN	1216	NULL
+2540	HEB412	HELEN COOPER	KAMTZOOZ PILPEL	2242	NULL
+2541	CHEB320	JULIA DONALDSON	PRINCESS MIRROR BELLE AND THE FLYING HORSE	1216	NULL
+2542	TAG049	Vanessa	Inday, The Queen of  the Orient	5885	NULL
+2543	HEB425	DOSTOEVVSKY	HAGANAV HAYASHAR	2242	NULL
+2544	TAG092	Claudia Santiago	Marrying Dindo	5885	NULL
+2545	CHEB322	ERICH KASTNER	DER KLEINE MANN UND DIE KLEINE MISS	1216	NULL
+2546	HEB415	WATTY PIPER	HKATAR HACHACHOL SHEYACHOL	2242	NULL
+2547	Tag118	Martha Cecilia	With This Ring...	5885	NULL
+2548	SPA324	Robin Cook	Los Archivos de Salem	5703	NULL
+2549	CHEB402	GIANI RODARI	ANIMALI SENZA ZOO	1216	NULL
+2550	HEB422	ADMOND DE AMICIS	MY FATHER	2242	NULL
+2551	CHEB362	DISNEY	SLEEPING BEAUTY	1216	NULL
+2552	Tag091	Martha Cecilia	Nang Gabing Maging Akin Ka	5885	NULL
+2553	SPA318	Dylan Jones	Relacioes Sangrientas	5703	NULL
+2554	HEB426	DAVID SLONIM	HOO BA IM SAPA	2242	NULL
+2555	SPA319	Rodolfo Rabanal	En Otra Parte	5703	NULL
+2556	HEB418	GIANNI RODARI	SLICHA,TAOOT BASIPOR	2242	NULL
+2557	CHEB399	SHULAMIT SERFATY	GRANDPA'S POCKETS	1216	NULL
+2558	HEB395	NIRIT HAREL	SABA BAROCH- ROFE YELADIM	2242	NULL
+2559	HEB403	MEIR SHALEV	HAZALACHAT SHEMITACHAT	2242	NULL
+2560	SPA320	James Hadley Chase	El Secuestro de Miss Blandish	5703	NULL
+2561	CHEB319	KENNY KEMP	DAD WAS A CARPENTER	1216	NULL
+2562	CHEB339	THEO	OSCAR AND HOO	1216	NULL
+2563	SPA282	John Grisham	Tiempo de Matar	5703	NULL
+2564	SPA283	Berta Platas Fuller	Pasion en Miami	5703	NULL
+2565	TAG029	April Gonzaga	Things You'll Keep	5885	NULL
+2566	SPA288	Robert L. Stevenson	LaIsla del Tesoro	5703	NULL
+2567	SPA316	Candance Camp	La Decision de Juliet	5703	NULL
+2568	SPA317	Julio Cortazar	Rayuela	5703	NULL
+2569	Tag020	Camila	Sapagkat Ikau Si Luanna	5885	NULL
+2570	SPA303	Reinaldo Arenas	Otra Vez el Mar	5703	NULL
+2571	CHEB426	DAVID SLONIM	HE CAME WITH A COUCH	1216	NULL
+2572	SPA301	Alicia Gimenez Bartlett	Ritos de Muerte	5703	NULL
+2573	TAG024	Elizabeth Mcbride	I Wish You'll Be Mine	5885	NULL
+2574	SPA306	Harold Robbins	Un Dama Slitaria	5703	NULL
+2575	CHEB445	SHULAMIT SERFATY	GRANDPA'S POCKETS	1216	NULL
+2576	SPA278	Elaine Alberro	Solo Tuya	5703	NULL
+2577	SPA279	Rene Dzagoyan	Apocalipsis 2000	5703	NULL
+2578	SPA281	Eric Van Lustbader	Shan	5703	NULL
+2579	CHEB422	Edmondo De Amicis	L'Infermiere Di Tata	1216	NULL
+2580	SPA293	Marvin Albert	Vuelta a la Realidad	5703	NULL
+2581	SPA292	Wiliam Caunitz	Arena Negra	5703	NULL
+2582	CHEB415	Watty Piper	The Little Engine That Could	1216	NULL
+2583	SPA291	Frecerick Forsyth	El Cuarto Protocolo	5703	NULL
+2584	SPA290	Dick Fancis	Olimpiada en Moscu	5703	NULL
+2585	CHEB425	F.M. Dostoevsky	The Honest Thief	1216	NULL
+2586	SPA289	Diane Guest	Cancion de Cuna	5703	NULL
+2587	Tag039	Vanessa	Ang Lalaking Nagmahal Sa Akin|part 1	5885	NULL
+2588	CHEB423	Nathaniel Hawthorne	Feathertop	1216	NULL
+2589	SPA302	Ross Macdonald	Encontrar Una Victima	5703	NULL
+2590	TAG036	Yasmin Joo	Hadlangan Man Ng Tadhana	5885	NULL
+2591	SPA286	Charles Duchaussois	Flash	5703	NULL
+2592	CHEB409	HANA LIVNEH	THE MOST UNBELIEVEABLE ADVENTURES	1216	NULL
+2593	SPA287	Lynda Sandoval	Miradas de Amor	5703	NULL
+2594	TAG057	Heart Yngrid	Campus Girl: Gemme, The Cheerleader	5885	NULL
+2595	SPA305	Heinz G. Konsalik	Petroleo-Connection	5703	NULL
+2596	CHEB406	TODD PARR	IT'S OK TO BE DIFFERENT	1216	NULL
+2597	SPA304	Tom Clancy	La Caza del Submarino Ruso	5703	NULL
+2598	TAG047	Dawn Igloria	When Love Matters Most	5885	NULL
+2599	CHEB412	Helen Cooper	A Pipkin of Pepper	1216	NULL
+2600	SPA272	Max Brod	Kafka	5703	NULL
+2601	TAG056	Michelle Reid	The Passion Bargain	5885	NULL
+2602	SPA300	A. S. Neill	Hijos en Libertad	5703	NULL
+2603	SPA297	Nadine Gordimer	La Hija de Burger	5703	NULL
+2604	TAG028	Victoria Amor	Faith's Kiss	5885	NULL
+2605	SPA296	Trevanian	La Sancion del Eiger	5703	NULL
+2606	SPA294	Arthur Hailey	Hotel	5703	NULL
+2607	CHEB443	Various Poets	Israeli Childhood	1216	NULL
+2608	SPA307	Jack Higgins	El Solista	5703	NULL
+2609	SPA309	Miguel de Unamuno	Abel Sanchez	5703	NULL
+2610	CHEB446	Maureen Hunter-Bone and Thea Feldman	Asia and Oceania	1216	NULL
+2611	SPA310	Ray Bradbury	Fahrenheit 451	5703	NULL
+2612	TAG054	Mei Sanchez	The Boy Next Door	5885	NULL
+2613	SPA285	Frederick Forsyth	El Negociador	5703	NULL
+2614	CHEB447	Maueen Hunter-Bone and Thea Feldman	Latin America	1216	NULL
+2615	SPA284	Vassilis Vassilikos	Z	5703	NULL
+2616	SPA328	Judith Krantz	Prince Daisy	5703	NULL
+2617	CHEB403	Meir Shalev	The Underplate	1216	NULL
+2618	SPA298	Frederick Forsyth	Los Perros de la Guera	5703	NULL
+2619	SPA314	Peter Benchley	Tiburon	5703	NULL
+2620	SPA315	Laura Esquivel	Como Agua Para Chocolate210	5703	NULL
+2621	CHEB395	Nirit Har'el	Grandpa Baruch - The Children's Doctor	1216	NULL
+2622	SPA313	Harold Robbins	Los Suenos Mueren Primero	5703	NULL
+2623	SPA308	Uwe Johnson	Conjeturas Sobre Jakob	5703	NULL
+2624	SPA295	Lawrence Sanders	El Sexto Mandamiento	5703	NULL
+2625	CHEB418	Gianni Rodari	A Sbagliare Le Storie	1216	NULL
+2626	SPA330	David Morrell	Multiple Identidad	5703	NULL
+2627	SPA312	Jorge Asis	Flores Robadas en los Jardines de Quilmes	5703	NULL
+2628	SPA311	Norman Leigh	Trece Contra la Banca	5703	NULL
+2629	SPA299	Johm le Carre	La Gente de Smiley	5703	NULL
+2630	SPA327	Arthur C. Clarke & Paul Preuss	Venus Prime III	5703	NULL
+2631	SPA273	Wiliam Goldman	Magic	5703	NULL
+2632	SPA275	Larry Collins	Juego Mortal	5703	NULL
+2633	TAG009	Vanessa	Ang Lalaking Nagamahal Sa Akin 2	5885	NULL
+2634	SPA329	Patricia Grasso	Encadenada par Amor	5703	NULL
+2635	TAG025	Laurice Del Rio	Sa Bawat Patak Ng Luha	5885	NULL
+2636	CTAG011	Peggy Manuel	Lampus and the Snakes	1387	NULL
+2637	TAG019	Martha Cecilia	You'e Mine, Only Mine	5885	NULL
+2638	CENG250	Paggy Manuel	Melampus and the Snakes	1202	NULL
+2639	TAG022	Martha Cecilia	You Belong To My Heart	5885	NULL
+2640	ART028	NULL	SAnta Ana Church - A Historical Guide	NULL	NULL
+2641	TAG013	Dawn Igloria	Beloved Fugitive	5885	NULL
+2642	ART027	Isabel A. Nazareno	Discovering Manansala	NULL	NULL
+2643	ENG647	Alan Bennett	The Uncommon Reader	1760	NULL
+2644	TAG042	Sharmane Galvez	Minsan Sa Isang Panahon	5885	NULL
+2645	ART029	NULL	Pananaw - Philippine Journal of Visual Arts	NULL	NULL
+2646	TAG014	Claudia Santiago	Andrea's Prince	5885	NULL
+2647	CTAG014	Fran Ng	500 Words &amp; Pictures	1387	NULL
+2648	TAG012	Camilla	Sapat Na Ang Mahal Mo Ako	5885	NULL
+2649	CENG245	Fran Ng	500 Words &amp; Pictures	1202	NULL
+2650	TAG035	Sonia Francesca	Love, Lies and Alibis	5885	NULL
+2651	CTAG010	NULL	Ang Gintong Habihan	1387	NULL
+2652	TAG033	Noelle Arroyo	A Lifetime Affair	5885	NULL
+2653	CTAG004	Yolanda Guevarra Dolor	Si Pilantod - Ang Asong Tatlo ang Tuhod	1387	NULL
+2654	CTAG005	Yolanda Gueverra Dolor	Si Botbot Ang Asong Kulubot	1387	NULL
+2655	TAG023	Camilla	Ang Ambisyosang Nagmahal: Chiela	5885	NULL
+2656	CTAG003	Severino Reyes	Mga Kuwento ni Lola Basyang	1387	NULL
+2657	TAG046	Dawn Igloria	Zari's Destiny	5885	NULL
+2658	TAG043	Camilla	Theodora, The Random Wife	5885	NULL
+2659	CTAG006	Yolanda Guevarra Dolor	Si Jack Ang Asong Kalaban ng mga Bulaklak	1387	NULL
+2660	CTAG009	The Brothers Grimm	Sa Dako Pa Roon	1387	NULL
+2661	TAG040	Trish Wylie	Her Unexpected Baby	5885	NULL
+2662	CTAG012	Hans Christian Andersen	Noong Unang Panahon	1387	NULL
+2663	TAG027	Dawn Igloria	Blue Heart Lady	5885	NULL
+2664	CTAG015	Jomike Tejido	Tagu-Taguan	1387	NULL
+2665	CTAG007	Peggy Manuel	The Trojan Horse	1387	NULL
+2666	TAG021	Sheena Rose	Coloured Kisses	5885	NULL
+2667	CENG247	Peggy Manuel	The Trojan Horse	1202	NULL
+2668	TAG034	Victoria Amor	Rusho, My Chinky-Eyed Angel	5885	NULL
+2669	TAG053	April Gonzaga	Things You'll Keep	5885	NULL
+2670	CTAG008	Peggy Manuel	Odysseus and the Cyclops	1387	NULL
+2671	TAG060	Bernadette Licarte	You In My Life	5885	NULL
+2672	CENG248	Peggy Manuel	Odysseus and the Cyclops	1202	NULL
+2673	TAG015	Almira Jose	Unforgotten Love 2	5885	NULL
+2674	TAG051	Vanessa	Esmeralda McNally	5885	NULL
+2675	TAG016	Martha Cecilia	Mackenzie and James	5885	NULL
+2676	TAG017	Camilla	Back Into Cherene's Heart	5885	NULL
+2677	TAG030	Sonia Francesca	A Kiss In The Rain	5885	NULL
+2678	TAG055	Sharmaine Galvez	Say That You Love Me	5885	NULL
+2679	NULL	Sharmaine Galvez	Say That You Love Me	NULL	NULL
+2680	TAG001	Ella Rose	Diary ni Ella	5885	NULL
+2681	TAG026	Camilla	What About Love ?	5885	NULL
+2682	TAG113	Satur P. Apoyon	Ang Gakit ni Noebons	5885	NULL
+2683	TAG094	Martha Cecilia	Beloved Enemy	5885	NULL
+2684	TAG050	Sharmaine Galvez	Daan Patungo Sa Puso Ko	5885	NULL
+2685	NULL	Sharmaine Galvez	Daan Patungo Sa Puso Ko	NULL	NULL
+2686	TAG031	Sofia	Surrender to the Feeling	5885	NULL
+2687	TAG115	Camilla	Yasser Capistrano	5885	NULL
+2688	TAG112	Andrea Coronel	Butterscotch	5885	NULL
+2689	TAG048	Sharmaine Galvez	Isla Blanca	5885	NULL
+2690	TAG095	Sheena Rose	Paradise Kiss	5885	NULL
+2691	TAG109	Martha Cecilia	Kung Kaya Mo Nang Sabihing Mahal Mo Ako	5885	NULL
+2692	TAG045	Bernadette Licarte	You Make Me Feel Loved	5885	NULL
+2693	TAG038	Laurice del Rio	Ano Ang Hatid Ng Bukas?	5885	NULL
+2694	TAG106	Martha Cecilia	Be Still, My Heart	5885	NULL
+2695	TAG103	Martha Cecilia	Lavander Lace (Sweetheart 2)	5885	NULL
+2696	TAG044	Martha Cecilia	Sweetheart I	5885	NULL
+2697	Tag041	Martha Cecilia	Kiel 1	5885	NULL
+2698	NULL	Martha Cecilia	Kiel 1	NULL	NULL
+2699	TAG058	Camilla	Siguro Nga Ay Minahal Mo Ako Noon	5885	NULL
+2700	TAG100	Martha Cecilia	Akin Ka Noon, Ngayon At Kailanman	5885	NULL
+2701	TAG120	Victoria Amor	Arthur, My Dawn Breeze	5885	NULL
+2702	Tag059	Camilla	Bingles	5885	NULL
+2703	TAG117	Janelle Kim	Anything To Make You Mine	5885	NULL
+2704	TAG018	Laurice Del Rio	Kung Magising Akong Wala Ka Na	5885	NULL
+2705	TAG111	Camilla	Jaerillin	5885	NULL
+2706	TAG114	Camila	Karugtong Ng Isang Tula	5885	NULL
+2707	TAG108	Camilla	Unforgettable	5885	NULL
+2708	TAG105	Sheena Rose	Burn	5885	NULL
+2709	TAG102	Martha Cecilia	Apoy Sa Malamig Na Puso|126	5885	NULL
+2710	TAG099	Claudia Santiago	Nicole Loves Matthew	5885	NULL
+2711	TAG093	Raquel Panganiban	The Most Eligible Guy for Katya	5885	NULL
+2712	TAG096	Noelle Arroyo	Ang Kaibig-ibig Kong Boss	5885	NULL
+2713	TAG119	Martha Cecilia	Kiel 2	5885	NULL
+2714	TAG116	Sheila Mendoza	One Life, One Love	5885	NULL
+2715	TAG006	Vanessa	Ang Marikit Kong Mahal	5885	NULL
+2716	TAG008	Noelle Arroyo	Paano Susuklian Ang Pag-ibig?	5885	NULL
+2717	TAG110	Sheila Mendoza	A Destiny Named Benedict	5885	NULL
+2718	TAG011	Camilla	Noli, Apo Ka Nga Ni Eba!	5885	NULL
+2719	TAG010	Laurice del Rio	Paano Kita Mamahlin?	5885	NULL
+2720	TAG007	Vanessa	My Boss Penelope	5885	NULL
+2721	TAG107	Almira Jose	Unforgotten Love 1	5885	NULL
+2722	TAG004	Claudia Santiago	Pleaese Don't Ask Me	5885	NULL
+2723	TAG101	Sharmaine Galvez	Karugtong Ng Isang Kahapon	5885	NULL
+2724	TAG104	Dawn Igloria	Touch And Go	5885	NULL
+2725	TAG003	Martha Cecilia	Sweetheart 5 - All my Love	5885	NULL
+2726	TAG098	Camilla	Lovelee The Quween of Hearts	5885	NULL
+2727	TAG002	Martha Cecilia	Roses are Red, Violets are Blue	5885	NULL
+2728	TAG037	Camilla	All I Ask Of You	5885	NULL
+2729	AMH009	NULL	NULL	247	NULL
+2730	AMH001	NULL	NULL	247	NULL
+2731	AMH002	NULL	NULL	247	NULL
+2732	SPA276	Hebby Roman	Suenos de Verano	5703	NULL
+2733	AMH010	NULL	NULL	247	NULL
+2734	ENG636	M.M. SAHA	Healing Through Gems	1760	NULL
+2735	tag097	Cecilia, Martha	ganoon kita kamahal,	5885	NULL
+2736	AMH008	NULL	NULL	247	NULL
+2737	cheb478	אלן סנו	זהירות מפלצות	1216	NULL
+2738	cheb463	קןלט בונר	אצבעונית	1216	NULL
+2739	cheb479	אפרים סידון	הגשם	1216	NULL
+2740	cheb475	שירה פנפיקר	קלמנטיין	1216	NULL
+2741	cheb485	יואל כהן	חתול לילי	1216	NULL
+2742	cheb486	קורנליה פונקה	החברות הכי טובות בעולם	1216	NULL
+2743	cheb508	אנג'י סייג'	ספטימוס היפ	1216	NULL
+2744	cheb481	אנג'י סייג'	ספטימוס היפ	1216	NULL
+2745	cheb482	דב אלבוים	האריה הרעמתן והג'ירפה גם	1216	NULL
+2746	cheb493	טוני דיטרליצי	ג זה גזונק גדול	1216	NULL
+2747	cheb492	קתרינה ולקס	קושקוש	1216	NULL
+2748	cheb491	קווין הנקס	יום נפלא	1216	NULL
+2749	cheb472	קרולין מקלר	העולם, הישבן שלי, ועוד דברים גדולים ועגולים	1216	NULL
+2750	cheb494	בת שבע שפירא	התזמרת	1216	NULL
+2751	cheb469	אנג'י סייג'	ספטימוס היפ	1216	NULL
+2752	cheb495	שרה ליפקין	נפלאות	1216	NULL
+2753	cheb496	מרים פוזנר	גם אתם יכולים	1216	NULL
+2754	cheb497	שרית ילוב	טריקי מדליקי	1216	NULL
+2755	cheb498	יונה טפר, עפרה בן עמי	סיפורים עם כנפיים	1216	NULL
+2756	cheb466	סיגל גפן	דינוזאור	1216	NULL
+2757	cheb500	יעל זהבי	מרקם ספורים מהרי קוקז	1216	NULL
+2758	cheb487	לייווין פאם	אחות גדולה אחות קטנה	1216	NULL
+2759	cheb501	נורית זרחי	אם אמא שלי לא יכולה לאהוב אותי- מי כבר בעולם כולו יצליח בזה	1216	NULL
+2760	cheb488	ברברה מקלינטוק	אדל וסימון באמריקה	1216	NULL
+2761	cheb502	אריך קסטנר	פצפונת ואנטון	1216	NULL
+2762	cheb489	ברברה מקלינטוק	אדל וסימון	1216	NULL
+2763	cheb503	עילאי מלצר	פו הדב	1216	NULL
+2764	cheb454	רוב סקוטון	אופס החתול	1216	NULL
+2765	cheb504	אריק היל	פנוקי יוצא לטיול	1216	NULL
+2766	cheb451	גוסיני	עוד הרפתקאה של אסטריקס הגאלי	1216	NULL
+2767	cheb505	ז'ול ורן	מסביב העולם בשמונים יום	1216	NULL
+2768	cheb506	יעל בן ברוך	אי נהדר ושמו אפשר	1216	NULL
+2769	cheb457	דיוויד מלינג	הפרחחים	1216	NULL
+2770	cheb460	כריס רידל	בית המלאכה של בילי	1216	NULL
+2771	cheb507	ז'ול וורן	עשרים אלף מיל מתחת למים	1216	NULL
+2772	cheb509	סיגל גפן	משפחת סופר על	1216	NULL
+2773	eng539	Isabel Allende	portrait in sepia	1760	NULL
+2774	nep074	NULL	NULL	4383	NULL
+2775	Nep084	NULL	NULL	4383	NULL
+2776	NEP087	du saint exupery	le petit prince	4383	NULL
+2777	NEP090	NULL	NULL	4383	NULL
+2778	NEP089	NARAYAN WAGLE	PALPASA CAFE	4383	NULL
+2779	nep088	NULL	NULL	4383	NULL
+2780	nep086	NULL	NULL	4383	NULL
+2781	nep085	jaya bhundi	NULL	4383	NULL
+2782	nep082	NULL	adventures of a nepali frog	4383	NULL
+2783	nep081	NULL	NULL	4383	NULL
+2784	nep083	NULL	NULL	4383	NULL
+2785	nep080	shiva regmi	ateetka pana	4383	NULL
+2786	nep077	NULL	NULL	4383	NULL
+2787	nep075	NULL	NULL	4383	NULL
+2788	nep079	NULL	kamasutra	4383	NULL
+2789	nep076	NULL	NULL	4383	NULL
+2790	nep073	NULL	NULL	4383	NULL
+2791	nep072	NULL	NULL	4383	NULL
+2792	nep071	NULL	NULL	4383	NULL
+2793	nep069	NULL	NULL	4383	NULL
+2794	nep068	dr. dhurba chandra guatam	ghurmi	4383	NULL
+2795	nep067	NULL	NULL	4383	NULL
+2796	nep066	NULL	NULL	4383	NULL
+2797	nep065	NULL	NULL	4383	NULL
+2798	nep070	bimal bhaukajee	an anthology of nepali story	4383	NULL
+2799	nep064	NULL	NULL	4383	NULL
+2800	nep063	NULL	vignettes of nepal	4383	NULL
+2801	nep062	NULL	NULL	4383	NULL
+2802	nep061	NULL	taruni kheti	4383	NULL
+2803	nep057	NULL	NULL	4383	NULL
+2804	nep060	NULL	NULL	4383	NULL
+2805	nep050	NULL	basanti	4383	NULL
+2806	nep058	NULL	NULL	4383	NULL
+2807	nep054	NULL	NULL	4383	NULL
+2808	nep051	NULL	NULL	4383	NULL
+2809	nep053	NULL	NULL	4383	NULL
+2810	nep059	govinda raj bhattarai	sukaraatkaa paailaa	4383	NULL
+2811	nep056	NULL	hilary rodham clinton	4383	NULL
+2812	nep055	NULL	NULL	4383	NULL
+2813	nep049	madhav nirdosh	awasan	4383	NULL
+2814	nep052	NULL	NULL	4383	NULL
+2815	nep094	NULL	NULL	4383	NULL
+2816	nep093	NULL	NULL	4383	NULL
+2817	nep092	NULL	NULL	4383	NULL
+2818	nep091	NULL	NULL	4383	NULL
+2819	nep103	NULL	NULL	4383	NULL
+2820	nep095	NULL	NULL	4383	NULL
+2821	nep097	NULL	NULL	4383	NULL
+2822	nep096	NULL	the second sex	4383	NULL
+2823	nep098	NULL	NULL	4383	NULL
+2824	nep099	NULL	NULL	4383	NULL
+2825	nep100	NULL	NULL	4383	NULL
+2826	nep104	NULL	NULL	4383	NULL
+2827	nep102	NULL	the power of your subconscious mind	4383	NULL
+2828	nep101	NULL	NULL	4383	NULL
+2829	nep106	NULL	NULL	4383	NULL
+2830	nep107	NULL	NULL	4383	NULL
+2831	HIN071	Vikram Singh	Lakkarbagghe Shahar Men	2264	NULL
+2832	HIN070	Rajeev Garg & Poonam Sharma	Roge Nidan Yantra Aur Paddhatian	2264	NULL
+2833	HIN068	Mukesh Nadaan	sookti Sarovar	2264	NULL
+2834	hin067	Atal Bihari Vajpayee	Chuni Hui Kavitayen	2264	NULL
+2835	HIN087	Jagdish Joshi	Kahi Na Jaye Ka Kahiye	2264	NULL
+2836	HIN088	Europe Ki Shreshtha Kahaniyaan (Best of European Stories)	Bhadra Sen Puri	2264	NULL
+2837	HIN089	Dr. Chandrika Prasad Sharma	Atal Ji Ki America-Yaatra	2264	NULL
+2838	hin061	Kove Manisekaran	Kutrala Kurinji	2264	NULL
+2839	HIN090	Madhusudan Anand	Thoda Sa Ujala	2264	NULL
+2840	hin062	Virendra Kumar Gaur	Vishwa Mein Aatankwad	2264	NULL
+2841	HIN086	Alok Mehta	Patrakarita Ki Laxman Rekha	2264	NULL
+2842	hin064	Gopinath Srivastava	Samayik Sachitra Vigyan Kosh	2264	NULL
+2843	hin076	Shri Sharan	Swasthya-Vigyan Avam Prathmik Chikitsa	2264	NULL
+2844	HIN085	Jasbir Chawla	Punjab: Dararen Aur Dalal	2264	NULL
+2845	hin075	Gopinath Srivastava	Samayik Sachitra Vigyan Kosh	2264	NULL
+2846	hin074	NULL	NULL	2264	NULL
+2847	HIN083	Himanshu Joshi	Amar Shahid Ashaphakulla Khan	2264	NULL
+2848	hin073	Wang Shuying	Bharat-China Sanakritik Sambandh	2264	NULL
+2849	hin72	Shivanand Nautiyal	Bharat Ke Jeev Vihar	2264	NULL
+2850	HIN082	Bankimchandra	Anand Math (Novel)	2264	NULL
+2851	HIN084	NULL	NULL	2264	NULL
+2852	HIN081	Sunita Sharma	Atmgaurav Jinke Sanskar Mein Hai	2264	NULL
+2853	RHEB029	יובל אלעזרי	ארץ ישראל	NULL	NULL
+2854	cara085	NULL	NULL	1145	NULL
+2855	cara089	NULL	NULL	1145	NULL
+2856	HIN080	Sudhish Pachari	Doordarshan : Vikas Se Bazar Tak	2264	NULL
+2857	Cara088	NULL	NULL	1145	NULL
+2858	cara090	NULL	NULL	1145	NULL
+2859	HIN079	Vimala Kaushik	Neeti Aachar Parampara	2264	NULL
+2860	cara086	NULL	NULL	1145	NULL
+2861	cara087	NULL	NULL	1145	NULL
+2862	cara083	NULL	NULL	1145	NULL
+2863	RHEB030	עמי שמיר	אביב כרך 16	NULL	NULL
+2864	cara082	NULL	NULL	1145	NULL
+2865	cara80	NULL	NULL	1145	NULL
+2866	cara084	NULL	NULL	1145	NULL
+2867	RHEB027	עמי שמיר	אביב כרך 15	NULL	NULL
+2868	RHEB026	עמי שמיר	אביב כרך 13	NULL	NULL
+2869	RHEB025	עמי שמיר	אביב כרך 12	NULL	NULL
+2870	cara109	NULL	NULL	1145	NULL
+2871	hin078	NULL	Chhaya Rekha (Amitav Ghosh)	2264	NULL
+2872	RHEB024	עמי שמיר	אביב כרך 11	NULL	NULL
+2873	HIN121	Virendra Kumar	Ganit Ki Rochak Batein	2264	NULL
+2874	cara108	NULL	NULL	1145	NULL
+2875	cara107	NULL	NULL	1145	NULL
+2876	RHEB023	עמי שמיר	אביב כרך 10	NULL	NULL
+2877	cara106	NULL	NULL	1145	NULL
+2878	cara105	NULL	NULL	1145	NULL
+2879	RHEB022	עמי שמיר	אביב כרך 9	NULL	NULL
+2880	cara104	NULL	NULL	1145	NULL
+2881	hin077	NULL	NULL	2264	NULL
+2882	RHEB021	עמי שמיר	אביב כרך 8	NULL	NULL
+2883	RHEB020	עמי שמיר	אביב כרך 7	NULL	NULL
+2884	cara093	NULL	NULL	1145	NULL
+2885	cara092	NULL	NULL	1145	NULL
+2886	RHEB019	עמי שמיר	אביב כרך 6	NULL	NULL
+2887	cara091	NULL	NULL	1145	NULL
+2888	cara094	NULL	NULL	1145	NULL
+2889	RHEB018	עמי שמיר	אביב כרך 5	NULL	NULL
+2890	cara095	NULL	NULL	1145	NULL
+2891	HIN122	Bhaskaracharya	Bhartiya Ganit	2264	NULL
+2892	HIN174	shrilal shukla	umravnagar mein kuchh din	2264	NULL
+2893	cara102	NULL	NULL	1145	NULL
+2894	RHEB017	עמי שמיר	אביב כרך 4	NULL	NULL
+2895	cara101	NULL	NULL	1145	NULL
+2896	RHEB 016	עמי שמיר	אביב כרך 2	NULL	NULL
+2897	cara100	NULL	NULL	1145	NULL
+2898	HIN123	Shivsvarup Sahay	Sangrahalay Ki Or	2264	NULL
+2899	cara099	NULL	NULL	1145	NULL
+2900	HIN173	NULL	NULL	2264	NULL
+2901	RHEB014	עמי שמיר	אביב כרך 1	NULL	NULL
+2902	cara098	NULL	NULL	1145	NULL
+2903	cara097	NULL	NULL	1145	NULL
+2904	RHEB013	עמי שמיר	אביב כרך מפתח	NULL	NULL
+2905	cara096	NULL	NULL	1145	NULL
+2906	RHEB010	עמי שמיר	אביב כרך השלמות	NULL	NULL
+2907	HIN124	Sneh Thakore	Anubhutiyan	2264	NULL
+2908	cara120	NULL	NULL	1145	NULL
+2909	cara115	NULL	The young Moslem	1145	NULL
+2910	HIN172	Kailash Kumari Sahay	PRAVASI BHARTIYON KI HINDI-SEVA	2264	NULL
+2911	cara114	NULL	NULL	1145	NULL
+2912	cara113	NULL	NULL	1145	NULL
+2913	cara112	NULL	NULL	1145	NULL
+2914	HIN125	Madhav Gadkari	Indira Se Chandrashekhar	2264	NULL
+2915	164	NULL	NULL	NULL	NULL
+2916	cara111	NULL	NULL	1145	NULL
+2917	cara110	NULL	NULL	1145	NULL
+2918	HIN138	chitra mudgal	bayar unku mutthi mein	2264	NULL
+2919	HIN126	Yadunath Dash Mahapatra	Suryachhaya	2264	NULL
+2920	cara103	NULL	NULL	1145	NULL
+2921	cara119	NULL	NULL	1145	NULL
+2922	HIN139	NULL	NULL	2264	NULL
+2923	cara118	NULL	NULL	1145	NULL
+2924	HIN170	NULL	NULL	2264	NULL
+2925	HIN127	Rajendra Yadev	Ve Devta Nahin Hen	2264	NULL
+2926	cara117	NULL	NULL	1145	NULL
+2927	HIN128	Amartya Sen	Vikas Ki Dishayen	2264	NULL
+2928	cara116	NULL	NULL	1145	NULL
+2929	HIN140	Ganga Prasad Pandey	MAHADEVI KE SHRESTHA GEET	2264	NULL
+2930	cara150	NULL	NULL	1145	NULL
+2931	cara155	NULL	NULL	1145	NULL
+2932	HIN169	Krishan Chander	Ek Larki Hazar Deewane	2264	NULL
+2933	cara154	NULL	NULL	1145	NULL
+2934	CENG253	Beryl Johnston	Stories at Bedtime	1202	NULL
+2935	HIN141	Sahitya Akademi	deokinandan khatri	2264	NULL
+2936	cara163	NULL	NULL	1145	NULL
+2937	cara162	NULL	NULL	1145	NULL
+2938	CENG257	NULL	Dinosaurs Pop-Up Book	1202	NULL
+2939	cara161	NULL	NULL	1145	NULL
+2940	HIN168	Bharat Yayawar	Renu ki hasya-vyangya Kahaniyan	2264	NULL
+2941	HIN142	laxman prasad	bharat mein vigyan aur bhartiya vaigyanik	2264	NULL
+2942	cara158	NULL	NULL	1145	NULL
+2943	cara156	NULL	NULL	1145	NULL
+2944	HIN143	RAGHUNATH ANANAT MASHELKAR	VAIGYANIK BHARAT KA NIRMAN	2264	NULL
+2945	cara157	NULL	NULL	1145	NULL
+2946	CENG256	Manoj Publications	Thrilling Stories from the Arabian Nights	1202	NULL
+2947	cara159	NULL	NULL	1145	NULL
+2948	hin167	Sharad Joshi	YATRA TATRA SARVATRA	2264	NULL
+2949	HIN144	NULL	NULL	2264	NULL
+2950	cara160	NULL	NULL	1145	NULL
+2951	CENG254	J. C. Joshi	Tenali Rama	1202	NULL
+2952	cara137	NULL	NULL	1145	NULL
+2953	HIN145	NULL	NULL	2264	NULL
+2954	cara138	NULL	NULL	1145	NULL
+2955	hin166	NULL	NULL	2264	NULL
+2956	cara141	NULL	NULL	1145	NULL
+2957	HIN129	Triloki Nath Pande	Man Ke Rog Avam Unki Ayurvedic Chikitsa	2264	NULL
+2958	cara136	NULL	NULL	1145	NULL
+2959	HIN146	GOPINATH SRIVASTAVA	SAMAYIK SACHITRA VIGYAN KOSH	2264	NULL
+2960	cara135	NULL	NULL	1145	NULL
+2961	HIN137	Savitu	Mahasamar	2264	NULL
+2962	HIN147	BHARAT YAYAWAR	Mahavir Prasad Dwivedi Rachna Sanchayan	2264	NULL
+2963	cara134	NULL	NULL	1145	NULL
+2964	cara133	NULL	NULL	1145	NULL
+2965	cara132	NULL	NULL	1145	NULL
+2966	HIN148	NULL	NULL	2264	NULL
+2967	cara131	NULL	NULL	1145	NULL
+2968	HIN149	NULL	NULL	2264	NULL
+2969	HIN150	NULL	JAMES HADELY CHAISE	2264	NULL
+2970	CRUS013	NULL	NULL	NULL	NULL
+2971	CHEB550	אפרים סידון	בת הים הקטנה	1216	NULL
+2972	CRUS012	NULL	NULL	NULL	NULL
+2973	CHEB549	ג'יימס סטיבנסון	יש משהו מתחת למיטה שלי	1216	NULL
+2974	CHEB552	לאה גולדברג	כובע קסמים	1216	NULL
+2975	CRUS011	NULL	NULL	NULL	NULL
+2976	CHEB554	אנה אוביולס	מוצרט הקוסם הקטן	1216	NULL
+2977	CRUS010	NULL	NULL	NULL	NULL
+2978	CHEB553	ספר הג'ונגל	אנטוני גרסיה לורקה	1216	NULL
+2979	CHEB551	אפרים סידון	אלאדין	1216	NULL
+2980	CHEB543	שולה מודן	כועסים- מה עושים?	1216	NULL
+2981	CRUS009	NULL	NULL	NULL	NULL
+2982	CHEB536	נורית זרחי	להתראות באנטארטיקה	1216	NULL
+2983	CRUS007	NULL	NULL	NULL	NULL
+2984	CHEB539	יעל רוזמן	מעשה בשלושה גדיים	1216	NULL
+2985	CHEB540	דויד גרוסמן	אח חדש לגמרי	1216	NULL
+2986	HIN136	Vineeta Kumari	Kabir-Kavya Ke Sanskritik Sroat	2264	NULL
+2987	CHEB537	סיגל גפן	פו הדב ביריד האמנויות	1216	NULL
+2988	HIN130	C. M. Chaudhri	Bharat Mein Arthik Pryavaran	2264	NULL
+2989	CHEB538	ענת וגידי גוב	שאול הטרקטור	1216	NULL
+2990	CHEB534	חמי אורון	פילרפה ואני	1216	NULL
+2991	CHEB530	גליה שכטר	כנפי הקסם של אמא	1216	NULL
+2992	CHEB531	ג'רלדין מקורקרין	אל ארץ האגדות	1216	NULL
+2993	CHEB529	דיויד בנדיקטוס	בחזרה ליער מאה העצים	1216	NULL
+2994	CHEB528	דפנה בן-צבי	הצב מצב	1216	NULL
+2995	HIN131	Rajendra Prasad Singh	Bharatiya Sangeet Ka Samajshastriya Sandarbh	2264	NULL
+2996	CHEB527	מסדה	משלי אזופוס ולפונטיין	1216	NULL
+2997	CHEB526	NULL	PHBUEHU	1216	NULL
+2998	HIN132	Jose Risal	Muktisvapn	2264	NULL
+2999	CHEB522	גורדון וולק	דגים ורוקדים	1216	NULL
+3000	HIN133	Madanlal Madhu	Geet Ageet	2264	NULL
+3001	CHEB521	גוני מרדור-סביר	מלאך הקסם של דנה	1216	NULL
+3002	HIN134	J. K. Rowling	Harry Potter Aur Pars Patthar	2264	NULL
+3003	CHEB512	אלונה פרנקל	אגדה	1216	NULL
+3004	CHEB517	אהרן שמי , דני קרמן	כמו שאיש אחד חכם אמר פעם	1216	NULL
+3005	HIN135	Gopinath Srivastava	Samayik Sachitra Vigyan Kosh	2264	NULL
+3006	CHEB518	הנס כריסטיאן אנדרסן	בת הים הקטנה	1216	NULL
+3007	HIN164	Shivani	Pooton Vali	2264	NULL
+3008	HIN165	Radhacharan Gupt	Madhyakalin Bharatiya Ganit	2264	NULL
+3009	CHEB516	איטו אבירם	אני עושה קריירה	1216	NULL
+3010	HIN163	Premchand	Mansarowar	2264	NULL
+3011	CHEB511	ינץ לוי	הרפתקאות דוד אריה בערבות רומניה	1216	NULL
+3012	HIN162	Viyogi Hari	Hamari Parampara	2264	NULL
+3013	HIN161	Ramdarsh Mitra	Ghar Parivesh	2264	NULL
+3014	CHEB513	מיכאל דשא	מי מדליק את הברק	1216	NULL
+3015	HIN160	Giriraj Sharan Agrawal	Mansheeya Vyang Ekanki	2264	NULL
+3016	HIN159	Shashi Kumar Singh	Rajeev Gandhi	2264	NULL
+3017	HIN158	Vijay Kumar Malhotra	Kamal	2264	NULL
+3018	HIN157	Ram Darash Mishra	Babool Aur Cactus	2264	NULL
+3019	HIN156	N. S. Gahlot	Bharatiya Rajnitik Vyavastha	2264	NULL
+3020	HIN155	Hemant Shesh	Bharatiya Kala-Roop	2264	NULL
+3021	CRUS008	NULL	NULL	NULL	NULL
+3022	HIN154	M. P. Dube	Dharmnirapeshravad Aur Bharatiya Prajatantra	2264	NULL
+3023	CHEB519	פטרה זאכר	חיות בבית	1216	NULL
+3024	CRUS006	NULL	NULL	NULL	NULL
+3025	HIN153	Chandan Mitra	Bhrasht Samaj	2264	NULL
+3026	CHEB515	לוסי קזינס	מייסי משתובבת	1216	NULL
+3027	HIN152	Hemant Shesh	Bharatiya Kala-Roop	2264	NULL
+3028	CHEB542	חנה הורן	הלו, הלו אמא	1216	NULL
+3029	HIN151	Sudhira Pachauri	Durdarshan	2264	NULL
+3030	CHEB548	רות יצחקי	רואים סיפור	1216	NULL
+3031	CHEB547	עפרה גלברט-אבני	עמית כבר לא פוחדת	1216	NULL
+3032	CHEB524	מט"ל	הדאר	1216	NULL
+3033	CHEB546	מודן הוצאה לאור	ספר הג'ונגל	1216	NULL
+3034	RUS005	NULL	NULL	5375	NULL
+3035	CHEB545	מלי קליפה	משחקי הפעלה	1216	NULL
+3036	CRUS004	NULL	NULL	NULL	NULL
+3037	CHEB533	ניצנ נפתלי, נ.מלומד	תמונות מספרות	1216	NULL
+3038	CHEB525	ניצן ויסמן	מעשה בבאר ואבן ענקית	1216	NULL
+3039	CHEB523	אהוד מנור	חמישים מכשירים לילדים ממאדים	1216	NULL
+3040	CRUS001	NULL	NULL	NULL	NULL
+3041	CHEB520	דבורה עומר	אגדות היער המכשף	1216	NULL
+3042	CHEB514	ו.א. קולדוואל, א.נ. מאריל	קורות העולם	1216	NULL
+3043	CRUS002	NULL	NULL	NULL	NULL
+3044	CHEB544	פרנסס הדג'סון ברנט	לורד פונטלרוי הקטן	1216	NULL
+3045	CHEB541	שלמה אבס	מעשה באזני המן	1216	NULL
+3046	CHEB535	שולמית צרפתי	האגס מתוק מתוק	1216	NULL
+3047	CRUS003	NULL	NULL	NULL	NULL
+3048	CARA146	NULL	NULL	1145	NULL
+3049	CARA147	NULL	NULL	1145	NULL
+3050	CRUS014	NULL	NULL	NULL	NULL
+3051	CARA148	WALT DISNEY STORYBOARDS	WINNIE THE POOH	1145	NULL
+3052	CARA145	NULL	NULL	1145	NULL
+3053	CARA144	NULL	NULL	1145	NULL
+3054	CARA142	NULL	NULL	1145	NULL
+3055	CARA143	NULL	NULL	1145	NULL
+3056	CARA149	NULL	MATH BOOK	1145	NULL
+3057	CARA125	NULL	NULL	1145	NULL
+3058	CARA123	NULL	NULL	1145	NULL
+3059	CHEB499	NULL	NULL	1216	NULL
+3060	CARA129	NULL	NULL	1145	NULL
+3061	CARA128	NULL	NULL	1145	NULL
+3062	CAMH001	NULL	NULL	1140	NULL
+3063	CARA124	NULL	NULL	1145	NULL
+3064	CARA126	NULL	NULL	1145	NULL
+3065	CARA127	NULL	NULL	1145	NULL
+3066	CARA122	NULL	NULL	1145	NULL
+3067	CARA121	NULL	THE TROJAN HOURSE	1145	NULL
+3068	CARA130	NULL	NULL	1145	NULL
+3069	CARA140	NULL	COLOURING	1145	NULL
+3070	CARA139	NULL	COLOURING	1145	NULL
+3071	ARA030	NULL	NULL	NULL	NULL
+3072	Hin065	Sitakant Mahapatra	samay ka shesh naam	2264	NULL
+3073	ARA025	NULL	NULL	NULL	NULL
+3074	ARA029	שמעון בלס	אל- כרמל	NULL	NULL
+3075	cman001	Elad weingrod	like you, like me	1287	NULL
+3076	ARA028	NULL	NULL	NULL	NULL
+3077	cheb532	Elad Weingrod	Like you, Like me	1216	NULL
+3078	ARA027	Dr.Ghalib Anabsi	from the merits of al sham literature	NULL	NULL
+3079	ARA026	NULL	NULL	NULL	NULL
+3080	ARA024	Mustafa Kabha	Under the Eyes of the Censor	NULL	NULL
+3081	ARA023	NULL	NULL	NULL	NULL
+3082	fre131	Leonore Fleischer et Richard LaGravenese	LE ROI-PECEUR	NULL	NULL
+3083	ARA022	NULL	NULL	NULL	NULL
+3084	fre143	Primo Levi	Si c'est un homme	NULL	NULL
+3085	ARA021	elias khoury	mahmoud darwish and the story of the last collection of poems	NULL	NULL
+3086	fre132	Kamala Markandaya	le riz et la mousson	NULL	NULL
+3087	RARA002	NULL	arabic van dyck bible	5255	NULL
+3088	fre128	'Emile Zola	Pot-Bouille	NULL	NULL
+3089	RARA003	NULL	הברית החדשה בערבית	5255	NULL
+3090	RARA001	NULL	NULL	5255	NULL
+3091	fre129	Daniel Picouly	Le champ de personane	NULL	NULL
+3092	fre133	Gabriel Garc'ia M'arquez	De L'amour et autres de'mons	NULL	NULL
+3093	cheb484	דתיה בן דור	הסירסיר של תותי	1216	NULL
+3094	FRE137	Ryszard Kapuscinski	Ebene, aventures africaines	NULL	NULL
+3095	FRE136	Daniel Pennac	Au bonheur des ogres	NULL	NULL
+3096	FRE139	Daniel Pennac	La fee carabine	NULL	NULL
+3097	FRE147	Yasunari Kawabata	Les belles endormies	NULL	NULL
+3098	FRE150	Alaa El Aswany	L'immeubla Yacoubian	NULL	NULL
+3099	FRE140	Yasmina Khadra	L'attentat	NULL	NULL
+3100	FRE146	Heinrich Boll	Les enfants des morts	NULL	NULL
+3101	FRE130	Bernard Clavel	Les fruits de l'hiver	NULL	NULL
+3102	FRE149	Leonard Cohen	Poemes et chansons	NULL	NULL
+3103	CHEB555	דפנה בן צבי	הצב מצב בעמק הרפאים	1216	NULL
+3104	cheb510	מירי ברוך	שירים לקטנטנים	1216	NULL
+3105	cheb557	ענבל	נהגים קטנים	1216	NULL
+3106	cheb558	נעמי בן גור	פיקניק התה של אילת	1216	NULL
+3107	cheb559	שלומית כהן	הצימוקים הם ענבים עצובים	1216	NULL
+3108	cheb560	עשי וינשטיין	עולם האגדות -סינדרלה	1216	NULL
+3109	cheb561	שלומית כהן	מחשבות שאינן רוצות לישון	1216	NULL
+3110	cheb564	יוסי אלפי	ליאורה גרוסמן	1216	NULL
+3111	cheb566	ארנונה גדות	365 סיפורים	1216	NULL
+3112	cheb565	לוין קיפניס	עזה-פזיזה	1216	NULL
+3113	cheb569	דן פגיס	הביצה שהתחפשה	1216	NULL
+3114	cheb568	תמר פיש נחשון	מצחיקונת מספרת	1216	NULL
+3115	cheb563	מרים רות	מעשה בחמישה בלונים	1216	NULL
+3116	cheb562	מארק טווין	הרפתקואותיו של תום סויר	1216	NULL
+3117	cheb567	לוין קיפניס	הכלב הנאמן שלי	1216	NULL
+3118	cheb574	אנטוני בראון	גורילה	1216	NULL
+3119	cheb570	של סילברסטיין	העץ הנדיב	1216	NULL
+3120	cheb571	תלמה אליגון רוז	אלדין ומנורת הפלאים	1216	NULL
+3121	cheb573	ג'יימס הריוט	מוישה החתלתול	1216	NULL
+3122	cheb578	ענבל	נהגים קטנים	1216	NULL
+3123	cheb572	פיבי גילמן	עץ הבלונים	1216	NULL
+3124	cheb576	ענבל	נהגים קטנים הולכים לטייל	1216	NULL
+3125	cheb577	סוזי בודל	סלינה פומפרניקל והחתולה פלורה	1216	NULL
+3126	cheb575	נחום גוטמן	בארץ לובנגולו מלך זולו	1216	NULL
+3127	cheb582	רלף סטדמן	נקודה.קום	1216	NULL
+3128	cheb586	דורית אורגד	מי ינחש את שמי	1216	NULL
+3129	cheb580	NULL	NULL	1216	NULL
+3130	cheb588	רוזמרי ולס	הפתעה ליום הולדת	1216	NULL
+3131	cheb589	נירה הראל	כמה טוב שבאת	1216	NULL
+3132	cheb592	אין	אנג'לה אנקונדה כוח הקמח	1216	NULL
+3133	cheb585	פיטר מק-קרתי	הונדו ופביאן	1216	NULL
+3134	cheb593	ונדה גוג	מיליון חתולים	1216	NULL
+3135	cheb598	ויליאם סטייג	ורד וצהב	1216	NULL
+3136	cheb591	תמיר להב-רדלמסר	הפחדנים מרחוב אחד העם	1216	NULL
+3137	cheb600	לאה גולדברג	המפוזר מכפר אז"ר	1216	NULL
+3138	cheb599	אברהם חלפי	נילי וטלי ורוני טפשוני	1216	NULL
+3139	cheb590	פט האצ'ינס	יום הולדת שמח	1216	NULL
+3140	cheb596	אין	אנג'לה אנקונדה מורה צרורה	1216	NULL
+3141	cheb587	רותי ויטל גילעד	עד שמיאה תגיע	1216	NULL
+3142	cheb584	עדולה	צעצועים	1216	NULL
+3143	cheb610	תמיר ראונר	עיניים תנועה	1216	NULL
+3144	cheb583	ויליאם סטייג	ספינקי ברגז	1216	NULL
+3145	cheb601	חיה דניאל	אשה זקנה עם גבנת ומקל	1216	NULL
+3146	cheb595	NULL	ספריית העשרה לילדים	1216	NULL
+3147	cheb594	מרגרט ריי	בייגלה	1216	NULL
+3148	cheb602	תמיר ראונר	עיניים - חידות	1216	NULL
+3149	cheb612	תמיר ראונר	עיניים   אויר	1216	NULL
+3150	cheb611	תמיר ראונר	עיניים - בעלי חיים	1216	NULL
+3151	cheb623	תמיר ראונר	עיניים קיץ	1216	NULL
+3152	cheb607	תמיר ראונר	עיניים - לבוש	1216	NULL
+3153	cheb604	תמיר ראונר	עיניים בית ספר	1216	NULL
+3154	cheb605	תמיר ראונר	עיניים - פחד	1216	NULL
+3155	cheb626	תמיר ראונר	עיניים כתב	1216	NULL
+3156	cheb603	תמיר ראונר	עיניים - טוב ורע	1216	NULL
+3157	cheb621	תמיר ראונר	עיניים כסף	1216	NULL
+3158	cheb616	תמיר ראונר	עיניים - כחול	1216	NULL
+3159	cheb619	תמיר ראונר	עיניים חום וקור	1216	NULL
+3160	cheb627	תמיר ראונר	עיניים - קנאה	1216	NULL
+3161	cheb613	,תמיר ראונר	עיניים קסם	1216	NULL
+3162	cheb625	תמיר ראונר	עיניים - בפנים ובחוץ	1216	NULL
+3163	cheb614	תמיר ראונר	עיניים רעש	1216	NULL
+3164	cheb624	תמיר ראונר	עיניים - אומץ	1216	NULL
+3165	cheb622	תמיר ראונר	עיניים - חלל	1216	NULL
+3166	cheb620	תמיר ראונר	עיניים - תחרות	1216	NULL
+3167	cheb609	תמיר ראונר	עיניים אור	1216	NULL
+3168	cheb618	תמיר ראונר	עיניים - צדק	1216	NULL
+3169	cheb608	תמיר ראונר	עיניים בית	1216	NULL
+3170	rheb035	NULL	ספריית העשרה כתר פחם קרקע	NULL	NULL
+3171	rheb036	NULL	ספריית העשרה כתר ראש השנה	NULL	NULL
+3172	rheb040	אורן נהרי	ישראל 60 שנים וטיולים	NULL	NULL
+3173	cheb617	תמיר ראונר	עיניים - כאב	1216	NULL
+3174	rheb043	אורן נהרי	אטלס היסטורי של העולם	NULL	NULL
+3175	cheb556	NULL	יש לי אח קטן	1216	NULL
+3176	rheb045	יצחק לבנון	אנצקילופדיה אביב כרך שלישי ארנבות	NULL	NULL
+3177	rheb037	NULL	ספריית העשרה לילדים כתר	NULL	NULL
+3178	rart043	Escher M.C.	Escher - The Graphic Work	5255	NULL
+3179	rheb047	יון פדר	הבריטניקה החדשה לנוער	NULL	NULL
+3180	rheb048	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3181	rart042	אינגו פ. ואלטר	וינסנט ואן-גוך	5255	NULL
+3182	rheb055	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3183	rheb051	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3184	rart041	Ingo F. Walther	Pablo Picasso	5255	NULL
+3185	rheb050	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3186	rheb053	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3187	rheb056	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3188	rart040	Hajo Duchting	Wassily Kandinsky	5255	NULL
+3189	rheb060	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3190	rart039	NULL	Man Ray	5255	NULL
+3191	rheb059	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3192	rheb058	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3193	rart035	NULL	Les Chiffres	5255	NULL
+3194	rheb057	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3195	rart036	Volkmar Essers	Henri Mattise	5255	NULL
+3196	rheb054	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3197	rheb052	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3198	rart038	Muneshige Narazaki	Hiroshge Famous Views	5255	NULL
+3199	rheb049	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3200	rart037	טליה סידי	הריק והטוב	5255	NULL
+3201	rheb038	שרה פלס	מלוני החדש	NULL	NULL
+3202	rart032	J.A. Sakellarakis	Herakelion Museum	5255	NULL
+3203	rart034	Juzu Suzuki	Sharaku	5255	NULL
+3204	rheb039	רינה ז'ק	מילוני החדש עברי רוסי	NULL	NULL
+3205	rheb041	שרה שלום	מילוני  החדש עברי אנגלי	NULL	NULL
+3206	rart033	Ulrich Bischoff	Edvard Munch	5255	NULL
+3207	rheb061	יון פדר	בריטניקה חדשה לנוער	NULL	NULL
+3208	rart031	Gaston Diehl	Miro	5255	NULL
+3209	rheb062	יון פדר	מפתח - בריטניקה חדשה לנוער	NULL	NULL
+3210	RHEB046	עמי שמר	אביב אנציקלופדיה כללית לצעירים	NULL	NULL
+3211	reng022	Laurance Aurdang	The Random house English Dictionary	5277	NULL
+3212	RHEB044	אסתי אנגל	אטלס  גוף האדם	NULL	NULL
+3213	rheb031	יון פדר	ספריית העשרה לילדים	NULL	NULL
+3214	RHEB042	אורן נהרי	אטלס אנציקלופדי של העולם	NULL	NULL
+3215	rheb032	יון פדר	ספריית העשרה לילדים	NULL	NULL
+3216	cheb606	תמירראונר	עיניים אמונה	1216	NULL
+3217	RHEB033	ארט פלוס	ספריית העשרה לילדים	NULL	NULL
+3218	cheb597	אבישג רבינר	סיפור טעים	1216	NULL
+3219	RHEB034	ארט פלוס	ספריית העשרה לילדים	NULL	NULL
+3220	rheb065	מרדכי כהן	מילון עברי צרפתי	NULL	NULL
+3221	rfre006	Mordechei Cohen	Nouveau Dictionnaire Hebrew French	NULL	NULL
+3222	RHEB028	שרה פלס	מילוני- מילון עברי אמהרי מציר לילדים	NULL	NULL
+3223	RAMH001	שרה פלס	מלוני- מלון עברי-אמהרי מציר ללדים	5250	NULL
+3224	RHEB063	יעקב לוי	מילון עברי -אנגלי אנגלי- עברי	NULL	NULL
+3225	fre141	Alexandra David-Neel	Mysteriques et magiciens du tibet	NULL	NULL
+3226	RENG019	יעקב לוי	מילון עברי-אנגלי אנגלי-עברי	5277	NULL
+3227	RHEB066	NULL	הברית החדשה בעברית וערבית	NULL	NULL
+3228	fre144	Carlos Ruiz Zafon	L'Ombre du vent	NULL	NULL
+3229	RARA005	NULL	הברית החדשה בעברית וערבית	5255	NULL
+3230	fre135	Henry Denker	Le Patient du Dr Scott	NULL	NULL
+3231	RHEB064	שרה פלס	מלוני- מלון עברי-אמהרי מציר לילדים	NULL	NULL
+3232	RAMH002	שרה פלס	מלוני- מלון עברי-אמהרי מציר לילדים	5250	NULL
+3233	fre138	Natsuo Kirno	Disparitions	NULL	NULL
+3234	TAM002	NULL	NULL	5890	NULL
+3235	TAM001	NULL	NULL	5890	NULL
+3236	Nep002	Fleming H. Revell	Personality plus	4383	NULL
+3237	BEN001	NULL	NULL	606	NULL
+3238	HIN182	GULSHAN RAI	NULL	2264	NULL
+3239	nep108	NULL	NULL	4383	NULL
+3240	HIN181	NULL	NULL	2264	NULL
+3241	HIN180	NULL	NULL	2264	NULL
+3242	cnep114	Theodor Seuss Geisel	Dr. Seuss	NULL	NULL
+3243	hin194	NULL	NULL	2264	NULL
+3244	hun192	NULL	NULL	2365	NULL
+3245	cnep111	Puran Shakya	Let's be Friends	NULL	NULL
+3246	cheb657	תמיר ראונר	עיניים הפוך	1216	NULL
+3247	cheb643	תמיר ראונר	עיניים רוח	1216	NULL
+3248	cheb642	תמיר ראונר	עיניים חומר	1216	NULL
+3249	cheb641	תמיר ראונר	עיניים אחים ואחיות	1216	NULL
+3250	eng682	Michael Chabon	The Amazing Adventures of Kavalier & Clay	1760	NULL
+3251	cheb640	תמיר ראונר	עיניים צל	1216	NULL
+3252	cheb639	תמיר ראונר	עיניים דימיון	1216	NULL
+3253	cheb638	תמיר ראונר	עיניים דיוקן	1216	NULL
+3254	cheb637	תמיר ראונר	עיניים שוקולד	1216	NULL
+3255	cheb636	תמיר ראונר	עיניים מספרים	1216	NULL
+3256	eng685	Philippa Gregory	The Other Boleyn Girl	1760	NULL
+3257	cheb635	תמיר ראונר	עיניים אמא	1216	NULL
+3258	cheb634	תמיר ראונר	עיניים עני ועשיר	1216	NULL
+3259	cheb633	תמיר ראונר	עיניים מחזור	1216	NULL
+3260	cheb632	תמיר ראונר	עיניים חורף	1216	NULL
+3261	cheb631	תמיר ראונר	עיניים המצאות	1216	NULL
+3262	cheb630	תמיר ראונר	עיניים כיסא	1216	NULL
+3263	eng686	David Niven	The 100 Simple Secrets Of Successful People	1760	NULL
+3264	reng020	NULL	bhargava's concise english dictionary	5277	NULL
+3265	cheb629	תמיר ראונר	עיניים אי סדר	1216	NULL
+3266	eng684	Petronius	NULL	1760	NULL
+3267	cheb628	תמיר ראונר	עיניים עץ	1216	NULL
+3268	cheb656	תמיר ראונר	עיניים אריזה	1216	NULL
+3269	eng678	Corbett H. Thigpen & Hervey M. Cleckley	The 3 Faces Of Eve	1760	NULL
+3270	reng021	NULL	bhargava's concise english dictionary	5277	NULL
+3271	cheb655	תמיר ראונר	עיניים יום הולדת	1216	NULL
+3272	eng687	Ken Follett	The Pillars Of The Earth	1760	NULL
+3273	eng683	Moshe Givati	September Survivor	1760	NULL
+3274	eng681	Erik Larson	The Devil In The White City	1760	NULL
+3275	cheb654	תמיר ראונר	עיניים צורות	1216	NULL
+3276	cheb653	תמיר ראונר	עיניים שחור לבן	1216	NULL
+3277	cheb652	תמיר ראונר	עיניים אדום	1216	NULL
+3278	cheb665	תמיר ראונר	עיניים שטויות	1216	NULL
+3279	cheb658	תמיר ראונר	עיניים גלגל	1216	NULL
+3280	cheb659	תמיר ראונר	?????? ????	1216	NULL
+3281	cheb660	תמיר ראונר	עיניים אבא	1216	NULL
+3282	reng023	harishandra Lal Singh	The student's Cmpanion dictionary	5277	NULL
+3283	cTag013	Ferdinand Aguas	Pinoy	1387	NULL
+3284	CSPA091	Kim Kim YAGED	El libro de la Stela	NULL	NULL
+3285	CENG260	Kim Kim YAGED	El libro de la Stela	1202	NULL
+3286	eng672	Marlene Dropic	Cuisine in Katmandu	1760	NULL
+3287	eng655	clive cussler	cyclops	1760	NULL
+3288	nep110	Marlene Dropic	Cuisine in Katmandu	4383	NULL
+3289	eng680	kenneth allsop	hard travellin'	1760	NULL
+3290	eng675	Rabindra Dhoju 'Anjan'	Easy Cook Book	1760	NULL
+3291	nep109	Rabindra Dhoju 'Anjan'	Easy Cook Book	4383	NULL
+3292	eng698	john updike	bech: a book	1760	NULL
+3293	eng702	j.r.r tolkin	the hobbit	1760	NULL
+3294	eng653	Anita Shreve	Eden close	1760	NULL
+3295	eng674	Ken Follett	Lie down with lions	1760	NULL
+3296	eng699	allen dulles	great true spy stories	1760	NULL
+3297	eng659	Leon Uris	O'hara's choise	1760	NULL
+3298	eng696	robert t. kiyosaki	rich dad's prophecy	1760	NULL
+3299	eng650	?	new covenant	1760	NULL
+3300	eng656	Nelson DeMille	Wild Fire	1760	NULL
+3301	eng677	Ian Caldwell	The rule of four	1760	NULL
+3302	eng697	medha s. rajadhyaksha sukanya datta	the secret of protains	1760	NULL
+3303	eng693	unnati bohara sheela	two faces of a coin	1760	NULL
+3304	fre153	Robert Laffont	La Montagnr des parfums	NULL	NULL
+3305	eng695	w. somerset maugham	tom jones	1760	NULL
+3306	fre151	Alexandre Jardin	L'ile des Gauchers	NULL	NULL
+3307	eng694	urmila thatte sharadini dahnukar	a drug is born	1760	NULL
+3308	fre152	Philippe Sollers	Le Coeur Absolu	NULL	NULL
+3309	eng700	l. frank baum	the marvelous land of oz	1760	NULL
+3310	Fre154	Stephen King	Terres Perdues	NULL	NULL
+3311	eng701	B.s.Yadav	Computer course	1760	NULL
+3312	nep118	B.s.Yadav	Computer course	4383	NULL
+3313	eng649	len dieghton	berlin game	1760	NULL
+3314	cheb661	תמיר ראונר	עינים אילו	1216	NULL
+3315	eng679	archibald joseph cronin	the northeren light	1760	NULL
+3316	cheb662	תמיר ראונר	עיניים ספר	1216	NULL
+3317	eng652	john fowles	the french lieutenant's woman	1760	NULL
+3318	cheb663	תמיר ראונר	עיניים צהוב	1216	NULL
+3319	eng658	amy tan	the joy luck club	1760	NULL
+3320	cheb664	תמיר ראונר	ghbhho ahbuh	1216	NULL
+3321	eng671	ursula hagi	salt dancers	1760	NULL
+3322	cheb651	תמיר ראונר	עיניים חוק	1216	NULL
+3323	cheb650	תמיר ראונר	עיניים אבן	1216	NULL
+3324	cheb649	תמיר ראונר	עיניים החופש הגדול	1216	NULL
+3325	eng689	gary morris	a son	1760	NULL
+3326	cheb648	תמיר ראונר	עיניים צבע	1216	NULL
+3327	eng688	joan didion	the last thing he wanted	1760	NULL
+3328	cheb647	תמיר ראונר	עיניים צילום	1216	NULL
+3329	cheb646	תמיר ראונר	עיניים משחק	1216	NULL
+3330	eng691	lilian jackson braun	the cat who moved a mountain	1760	NULL
+3331	cheb645	תמיר ראונר	עיניים מתח	1216	NULL
+3332	eng692	ian ranklin	ressurection men	1760	NULL
+3333	cheb644	תמיר ראונר	עיניים חיים	1216	NULL
+3334	eng654	alistair maclean	time of the assassins	1760	NULL
+3335	eng676	stephan king	rose madder	1760	NULL
+3336	cara164	Avner Kats	The Little Pickpocket	1145	NULL
+3337	eng673	william james	the verietes of riligious expirience	1760	NULL
+3338	eng690	ali smith	the accidental	1760	NULL
+3339	eng670	Toni Morrison	A Merci	1760	NULL
+3340	eng657	Gustave Flaubert	Salambo	1760	NULL
+3341	eng648	Henry James	The Portrait of a Lady	1760	NULL
+3342	eng651	John le Carre	A Most Wanted Man	1760	NULL
+3343	tur007	EVELYN ANTHONY	MAVI DOSYA	6312	NULL
+3344	ben010	NULL	NULL	606	NULL
+3345	ben004	NULL	NULL	606	NULL
+3346	TUR009	MARGARET L.LAW	MAKASDIL SULTAN	6312	NULL
+3347	ben006	NULL	NULL	606	NULL
+3348	ben007	NULL	NULL	606	NULL
+3349	ben009	NULL	NULL	606	NULL
+3350	TUR012	MOLIERE	MOSOYO DE POURCEAUGNAC	6312	NULL
+3351	ben002	NULL	NULL	606	NULL
+3352	ben003	NULL	NULL	606	NULL
+3353	nep112	NULL	NULL	4383	NULL
+3354	TUR010	OTUZALTINCI BASIM	NULL	6312	NULL
+3355	NEP113	Puran Shakya	Gita Goes on a Picnic	4383	NULL
+3356	TUR008	ISKHYLOS	NULL	6312	NULL
+3357	NEP115	NULL	NULL	4383	NULL
+3358	CNEP116	של סילברסטיין	העץ הנדיב	NULL	NULL
+3359	HIN184	NULL	NULL	2264	NULL
+3360	TUR006	MERAL ALTINDAL	NULL	6312	NULL
+3361	HIN183	NULL	NULL	2264	NULL
+3362	TUR005	GUZIN DINO	GEL ZAMAN GIT ZAMAN	6312	NULL
+3363	TUR028	PLATON	NULL	6312	NULL
+3364	TUR003	PLATON	NULL	6312	NULL
+3365	TUR002	AZRA ERHAT	NULL	6312	NULL
+3366	ARA004	NULL	NULL	NULL	NULL
+3367	TUR001	A.CEHOV	NULL	6312	NULL
+3368	CFRE031	JACK LONDON	CROC BLANC	NULL	NULL
+3369	CHEB666	DVORA OMER	בניתי מגדל של קוביות	1216	NULL
+3370	nep117	NULL	NULL	4383	NULL
+3371	hin185	NULL	NULL	2264	NULL
+3372	hin187	NULL	NULL	2264	NULL
+3373	hin186	NULL	NULL	2264	NULL
+3374	hin188	NULL	NULL	2264	NULL
+3375	hin189	NULL	NULL	2264	NULL
+3376	hin190	NULL	NULL	2264	NULL
+3377	hin191	NULL	NULL	2264	NULL
+3378	hin195	NULL	NULL	2264	NULL
+3379	hin193	NULL	NULL	2264	NULL
+3380	hin179	NULL	NULL	2264	NULL
+3381	hin178	NULL	NULL	2264	NULL
+3382	hun177	NULL	NULL	2365	NULL
+3383	ben008	NULL	NULL	606	NULL
+3384	tur013	metin ustudag	orhan veli'lemeler	6312	NULL
+3385	rhin002	NULL	bhargava's concise english dictionary	NULL	NULL
+3386	rhin001	NULL	bhargava's concise english dictionary	NULL	NULL
+3387	NEP078	NEP	NULL	4383	NULL
+3388	ara033	dan brown	NULL	NULL	NULL
+3389	NEP105	NEPALI	NULL	4383	NULL
+3390	ramh003	NULL	NULL	5250	NULL
+3391	amh029	NULL	NULL	247	NULL
+3392	amh026	NULL	NULL	247	NULL
+3393	amh023	NULL	NULL	247	NULL
+3394	amh020	NULL	NULL	247	NULL
+3395	AMH017	NULL	NULL	247	NULL
+3396	amh014	NULL	NULL	247	NULL
+3397	amh019	NULL	NULL	247	NULL
+3398	amh012	NULL	NULL	247	NULL
+3399	amh015	NULL	NULL	247	NULL
+3400	amh016	NULL	NULL	247	NULL
+3401	amh022	NULL	NULL	247	NULL
+3402	amh030	NULL	NULL	247	NULL
+3403	amh027	NULL	NULL	247	NULL
+3404	amh024	NULL	NULL	247	NULL
+3405	amh021	NULL	NULL	247	NULL
+3406	amh018	NULL	NULL	247	NULL
+3407	amh011	NULL	NULL	247	NULL
+3408	amh013	NULL	NULL	247	NULL
+3409	amh028	NULL	NULL	247	NULL
+3410	amh025	NULL	NULL	247	NULL
+3415	RMA001	brrrr	brrr <img src="http://media1.break.com/dnet/media/2008/11/52%20Something%20Bad%20Happened.jpg"/>	5309	NULL
+3416	BEN011	ABCD	ABC	606	NULL
+3417	BEN012	gola	bor	606	NULL
+3418	ARB001	Najeeb Mahfouz	Between Palaces	340	NULL
+3419	ARB002	Najeeb Mahfouz	Between Palaces	340	NULL
+3420	TIR001	Gile, Goitom	Son of Razan	6064	NULL
+3421	ARB003	Saboni	The Chosen	340	NULL
+3422	ARB004	Al-Maa'rri	Mercy Message	340	NULL
+3423	ARB005	Fadwa Tuqan	Mountain Trip	340	NULL
+3424	ARB006	Najeeb Mahfouz	The poor	340	NULL
+3425	ARB007	Ibn Katheer	Profets' Story	340	NULL
+3426	TIR002	Yemane Girmatzion	English Tach Yourself	6064	NULL
+3427	ARB008	Rabeea Khalifa	Fareed & Asmahan	340	NULL
+3428	ARB009	Ibnul Muqaffaa'	Kalila & Dimna	340	NULL
+3429	ARB010	Al Taee	Deewan of Motivation	340	NULL
+3430	TIR003	Mesfin Ghebrehiot	Converzation	6064	NULL
+3431	TIR004	Mesfin Ghebrehiot	Converzation	6064	NULL
+3432	ARB011	Habeeb Bulos	The Palestinian Story	340	NULL
+3433	ARB012	Rabeea Khalifa	Fayrooz	340	NULL
+3434	TIR005	Unidentified	Hebrew- English - Amharic - Tigrigna	6064	NULL
+3435	TIR006	Angesom Gebrehiot	Haki Hebrew Grammar	6064	NULL
+3436	ARB013	Khaled Al Mujhed	God's Eye	340	NULL
+3437	ARB014	Abdullatif Uglu	Turkish Poems	340	NULL
+3438	TIR007	Berhane Ablel	Life Journey	6064	NULL
+3439	ARB015	Rhodolf Zelhaim	Arabic Proverbs	340	NULL
+3440	TIR008	Eyob Kibrom	Msta Adey	6064	NULL
+3441	TIR009	Eyob Kibrom	Msta Adey	6064	NULL
+3442	TIR010	Eyob Kibrom	Msta Adey	6064	NULL
+3443	TIR011	Eyob Kibrom	Msta Adey	6064	NULL
+3444	TIR012	Eyob Kibrom	Msta Adey	6064	NULL
+3445	TIR013	Eyob Kibrom	Msta Adey	6064	NULL
+3446	ARB016	Shakespeer	Hamlet Arabic	340	NULL
+3447	ARB017	Zaky Khoury	Trade Assistant	340	NULL
+3448	ARB018	Andrey Gratshov	Terror Octopus	340	NULL
+3449	TIR014	Samuel Merhazion	Jefye Simaey	6064	NULL
+3450	ARB019	Herschlag	Entrace For Mideast Economy	340	NULL
+3451	ARB020	Dr Hussein Fawzi	International Thinking Leaders	340	NULL
+3452	TIR015	Tesfa Lidet, Tesfa Mariam	Tesfa	6064	NULL
+3453	ARB021	Alya Salih	Storical Speech	340	NULL
+3454	ARB022	Robert Noyz	Sun	340	NULL
+3455	TIR016	Sem Internet Cafe	May 24 Eritrea Independence Day	6064	NULL
+3456	ARB023	Robert Noyz	Ethics At Businees	340	NULL
+3457	ARB024	Jonathan Randal	War of the thousand Years	340	NULL
+3458	TIR017	ed: Fasaha Keflom & Fizum Debas	April Maedo	6064	NULL
+3459	ARB025	Livio Riberino	The Revolution	340	NULL
+3460	ARB026	Antony Wikenson	Black Fire	340	NULL
+3461	ARB027	Muhammad Hijazi	Fiqh Maliky	340	NULL
+3462	TIR018	Ken Foliet	The Secret of the Plotter	6064	NULL
+3463	ARB028	Yusuf Al Ghazu	FullStory Jobs	340	NULL
+3464	TIR019	Tekie Beyene	Sofia	6064	NULL
+3465	TIR020	Tekie Beyene	Sofia	6064	NULL
+3466	TIR021	Tekie Beyene	Sofia	6064	NULL
+3467	ARB029	Ibrahim Alcony	Al Tibr	340	NULL
+3468	TIR022	Ronda Biron	Secret	6064	NULL
+3469	TIR023	Ronda Biron	Secret	6064	NULL
+3470	TIR024	Ronda Biron	Secret	6064	NULL
+3471	ARB030	Muhammad Al Tukhy	Summary Of Sahih Muslim	340	NULL
+3472	TIR025	Ronda Biron	Secret	6064	NULL
+3473	TIR026	Ronda Biron	Secret	6064	NULL
+3474	TIR027	Ronda Biron	Secret	6064	NULL
+3475	TIR028	Ronda Biron	Secret	6064	NULL
+3476	TIR029	Ronda Biron	Secret	6064	NULL
+3477	TIR030	Ronda Biron	Secret	6064	NULL
+3478	TIR031	Ronda Biron	Secret	6064	NULL
+3479	TIR032	Ronda Biron	Secret	6064	NULL
+3480	ARB031	Harvy	Body Language	340	NULL
+3481	TIR033	Ronda Biren	Secret	6064	NULL
+3482	ARB032	Ann Dimari	First Impressions	340	NULL
+3483	ARB033	Al Tukhy	Saheeh Albukhary	340	NULL
+3484	ARB034	Saeed Ali	Conversation	340	NULL
+3485	ARB035	Ibraheem Deeb	Educatinal Values	340	NULL
+3486	ARB036	Arther Miller	Death of a Traveller Merchant	340	NULL
+3487	ARB037	Qisas Al Quran	Quraan Stories	340	NULL
+3488	ENG703	Tracy Chvalier	Girl with a Pearl Earring	1760	NULL
+3489	ARB038	Al Nawawi	Azkar	340	NULL
+3490	ARB039	Rhonda Byron	The Secret	340	NULL
+3491	ARB040	Michael Ivanov	My Memory	340	NULL
+3492	ENG704	William Diehl	Chameleon	1760	NULL
+3493	ENG705	William Diehl	Chameleon	1760	NULL
+3494	ARB041	Kamal Khateeb	Beside Prophet Muhammad	340	NULL
+3495	ARB042	Ibnul Jawzi	Folks' Rivers	340	NULL
+3496	ARB043	Ibraheem Al Faqi	Mental Power	340	NULL
+3497	ARB044	Tariq Sweidan	Maufacturing A Leader	340	NULL
+3498	ENG706	Denys Johnson Davies	Arabic Short Stories	1760	NULL
+3499	ARB045	Rajaa Bakriyya	Woman Of Message	340	NULL
+3500	ARB046	Hanan Al Sheikh	It Is London Darling	340	NULL
+3501	ENG707	INca Gold	live Cussler	1760	NULL
+3502	ARB047	Edward Al Kharrat	Eagle's Way	340	NULL
+3503	ARB048	Timor Polatov	Properties	340	NULL
+3504	ARB049	Ahlam Mustaghanimi	Bed Passenger	340	NULL
+3505	ARB050	Yasmeena Salih	The Green	340	NULL
+3506	ENG708	Tricia Redeker Hepner	Soldiers, Martyers, Traitors, and Exiles	1760	NULL
+3507	ARB051	Raja faraj	Galile Jeth	340	NULL
+3508	ARB052	Salman Dagash	Homeland in Wind path	340	NULL
+3509	ENG709	Tom Clancy	Withuot Remorse	1760	NULL
+3510	ARB053	Rajaa Al Sane	Riyadh Girls	340	NULL
+3511	ARB054	Muhammad Shukry	The Barefoot Bread	340	NULL
+3512	ARB055	Abdulla Faylabi	Prophets Land	340	NULL
+3513	ENG710	Edward Miguel	Africa's Turn?	1760	NULL
+3514	ENG711	Tom Clancy	The Cardinal of the Kremlin	1760	NULL
+3515	ENG712	Tom Clancy	The Cardinal of the Kremlin	1760	NULL
+3516	ENG713	Maurice I. Mandell & Larry j. Rosenberg	Marketing	1760	NULL
+3517	ARB056	Harry auren	Memory Control	340	NULL
+3518	ENG714	Maurice I. Mandell & Larry j. Rosenberg	Marketing	1760	NULL
+3519	ENG715	Kay & Marshall Lee	America's Favorites	1760	NULL
+3520	ENG716	Rick Marshall	History of Television	1760	NULL
+3521	ENG717	Emmanuel Dehan	Our Visit to Israel	1760	NULL
+3522	ENG718	Christopher Reich	Rules of Deception	1760	NULL
+3523	ENG719	John Le Carre	The Honorable Schoolboy	1760	NULL
+3524	ARB057	Jonathan Randal	One thousand years War	340	NULL
+3525	ARB058	Salman Yousef	Masoud Haf	340	NULL
+3526	ENG720	Eliot Pattison	Bone Mountain	1760	NULL
+3527	ENG721	Robert James Waller	A Thousand Country Roads	1760	NULL
+3528	ARB059	Abdul Hafeez Muhammad	Jordan River	340	NULL
+3529	ARB060	Naji Makhoul	Arab Family Tree	340	NULL
+3530	ENG722	Dinah McCall	The Survivors	1760	NULL
+3531	ARB061	Ali Sallaby	Abu Bakr Al Siddeeq	340	NULL
+3532	ENG723	James Patterson	The Big Bad Wolf	1760	NULL
+3533	ENG724	Jeffry Archer	False Impression	1760	NULL
+3534	ENG725	Robert Harris	The Ghost	1760	NULL
+3535	ARB062	Muhammad Hamada	Umawi Political Documents	340	NULL
+3536	ENG726	Philip Kotler	Principles Of Marketing	1760	NULL
+3537	ARB063	Muhammad Abu Shaqra	Druze Muwahhideen	340	NULL
+3538	ARB064	111	Isabelle	340	NULL
+3539	ENG727	Andrew Tylor	Naked to the Hangman	1760	NULL
+3540	ARB065	Nabeeh Alqassem	Smile Jerusalem	340	NULL
+3541	ENG728	Stella Rimington	At Risk	1760	NULL
+3542	ARB066	Ibraheem Al Badi	Love in Saudi	340	NULL
+3543	ARB067	Taher Makki	Andalus Poet	340	NULL
+3544	ENG729	Barbara tylor Bradford	Unexpected Blessings	1760	NULL
+3545	ARB068	Saeed al Afgani	Aisha and Politics	340	NULL
+3546	ENG730	Mark Winegardner	The Godfather's Revenge	1760	NULL
+3547	ENG731	Nicholas Sparks	At First Sight	1760	NULL
+3548	ARB069	Abdul Khaleq Hussein	Political Ethnity	340	NULL
+3549	ARB070	Muhammad Hadidi	Alfareed	340	NULL
+3550	ARB071	Kamal Jonblatt	Creativity	340	NULL
+3551	ENG732	Tasmina Perry	Gold Diggers	1760	NULL
+3552	ARB072	111	Deer Hunter	340	NULL
+3553	ENG733	Fredrick Forsyth	The Afghan	1760	NULL
+3554	ENG734	Maggie Anton	Rashi's Daughters	1760	NULL
+3555	ENG735	Amalia & Aharon Barnea	Mine Enemy	1760	NULL
+3556	ARB073	Shmuel Moreh & Mahmod Abbasi	Translations Arab Israeli Literature	340	NULL
+3557	ARB074	111	Waken Your Mind	340	NULL
+3558	ARB075	Jubran Jubran	Almawakeb	340	NULL
+3559	ENG736	Stuart Woods	Mounting Fears	1760	NULL
+3560	ARB076	Nayef Khoury	Kameel Daw	340	NULL
+3561	ARB077	Salman Natour	Opinions And Studies in Philosophy	340	NULL
+3562	ENG737	Philip Roth	American Pastoral	1760	NULL
+3563	ARB078	Nizar Qabbani	Nizar Qabbani	340	NULL
+3564	ENG738	Nick Hornby	Fever Pitch	1760	NULL
+3565	ENG739	Victoria Hislop	The Island	1760	NULL
+3566	ENG740	Scott Turow	Limitations	1760	NULL
+3567	ARB079	Adel Hamuda	Assasination of a president	340	NULL
+3568	ARB080	Thamer Muhammad	Civil Society	340	NULL
+3569	ARB081	Saeed Al Afghani	Arabic grammar	340	NULL
+3570	ARB082	Muhammad Amara	Lingual Education policy	340	NULL
+3571	ARB083	Muhammad Al basheer	South Sudan Problem	340	NULL
+3572	ENG741	Chris Manby	Marrying For Money	1760	NULL
+3573	ENG742	Ian McEwan	On Chesil Beach	1760	NULL
+3574	ARB084	Yousef al Aqsari	Learn Seven Good Habits	340	NULL
+3575	ENG743	Panos Karnezis	The Birthday	1760	NULL
+3576	ENG744	Jeffrey Steingarten	The Man Who Ate Everything	1760	NULL
+3577	ARB085	111	One thouasand and one Nights	340	NULL
+3578	ENG745	Phlip Roth	I Married A Communist	1760	NULL
+3579	ARB086	Ghassan Al rifaee	How is the way	340	NULL
+3580	ENG746	David Gibbins	The Last Gospel	1760	NULL
+3581	ARB087	Taleb Ismaeel	Removing Subject	340	NULL
+3582	ARB088	Wasini Al Araj	Prince's Book	340	NULL
+3583	ARB089	Siham Natour	Synonims	340	NULL
+3584	ARB090	Fahd Abu Khadra	Musalat	340	NULL
+3585	ARB091	Louiza Alcott	Small Women	340	NULL
+3586	ARB092	Sameeh Al Qassem	Blue Memory	340	NULL
+3587	ARB093	Magazine	Koreana	340	NULL
+3588	ARB094	Jaber Qameeha	Palastinian Poetry	340	NULL
+3589	ARB095	Timour Polatov	Properties	340	NULL
+3590	ARB096	Muhammad Kazem	How not to get angry	340	NULL
+3591	ARB097	Rauf Masad	Ostrich Egg	340	NULL
+3592	ARB098	Michael Zaburov	Crusaders In East	340	NULL
+3593	ARB099	Tnissy Williams	Tram called Intention	340	NULL
+3594	ARB100	111	Teetus	340	NULL
+3595	ARB101	111	Facts abou Israel	340	NULL
+3596	ARB102	Maliha al Shihab	Saudi Women	340	NULL
+3597	ARB103	Lubna Al Atrash	Lubna Al Atrash	340	NULL
+3598	ARB104	Elias Khouri	White faces	340	NULL
+3599	ARB105	Muhammad Mustafa	Materialism	340	NULL
+3600	ARB106	Ihsan Abdul Quddus	Dont turn the sun off	340	NULL
+3601	ARB107	Jeffri Robinson	Al Yamaniy	340	NULL
+3602	ENG747	Joseph Finder	No Hiding Place	1760	NULL
+3603	ENG748	Joseph Finder	No Hiding Place	1760	NULL
+3604	ENG749	John Grisham	The associate	1760	NULL
+3605	ARB108	Pablo Niroda	100 Love poems	340	NULL
+3606	ENG750	Randy Pausch	The Last Lecture	1760	NULL
+3607	ENG751	James Patterson	Cross	1760	NULL
+3608	ENG752	Frances Mayes	Under The Tuscan Sun	1760	NULL
+3609	ENG753	Le Carre'	Our Game	1760	NULL
+3610	ARB109	Tawfeeq al hakim	Food to every mouth	340	NULL
+3611	ARB110	Salman Natour	Wind Habit	340	NULL
+3612	ENG754	Ursula Hegi	Stones From The River	1760	NULL
+3613	ENG755	KlausnHonnef	Andy Warhol	1760	NULL
+3614	ARB111	Zahiya Qaddura	Aisha, Believers Mother	340	NULL
+3615	ARB112	Henrian Epsen	Builders Master	340	NULL
+3616	ARB113	K. Tsetnik	Dust Planet	340	NULL
+3617	ARB114	111	Voice Shadow	340	NULL
+3618	ARB115	Ukasha Mannan	Leave Anxiety	340	NULL
+3619	HEB474	Sarah Shila	Court House	2242	NULL
+3620	HEB475	Eli Amir	What's Left	2242	NULL
+3621	ARB116	Shireen Najjar	Be with God	340	NULL
+3622	HEB476	Moshe Gilad	Journies without Perspective	2242	NULL
+3623	ARB117	Adnan Shareef	Quran Psychology	340	NULL
+3624	HEB477	Tzor Sheizaf	End Of The Road	2242	NULL
+3625	HEB478	Roger Gulianni	Devil Minister	2242	NULL
+3626	HEB479	Charles Nicole	leonardo de vinci	2242	NULL
+3627	ARB118	Habib Bulus	Palastinian Story In Israel	340	NULL
+3628	HEB480	Igal Eilam	What Happend Here	2242	NULL
+3629	ARB119	Badriyya Al Bishr	The Seesaw	340	NULL
+3630	HEB481	Chez	Far From Away	2242	NULL
+3631	ARB120	Jack London	Silk	340	NULL
+3632	HEB482	Mary Hoper	Amy	2242	NULL
+3633	ARB121	Yasmeena Saleh	Lakhder	340	NULL
+3634	HEB483	×œ××•×Ÿ × ×™×¨×‘×œ×˜	Who Hanged Up The Light	2242	NULL
+3635	ARB122	Fahd Abu Khadra	Lingual Harmony	340	NULL
+3636	HEB484	Amitav Gosh	Culcuta Chromozome	2242	NULL
+3637	HEB485	×¡×™×’×œ×™×ª ×“×™×œ	The Dark Boarding School	2242	NULL
+3638	HEB486	Sarai Barel & Bella Blaicher	Think Like a Zebra	2242	NULL
+3639	ARB123	Ahmad Saad	Jewish Immigration	340	NULL
+3640	HEB487	Dan Daor	Grass Files	2242	NULL
+3641	ARB124	Amal Jammal	Ads Consuming	340	NULL
+3642	HEB488	Rachel Talshir	Perfect	2242	NULL
+3643	HEB489	×©. ×©×¤×¨×”	Tales of Inna-Ashtar In Hell	2242	NULL
+3644	HEB490	Rutu Modan	Exit Wounds	2242	NULL
+3645	ARB125	George Kadar	Art Of Jokes	340	NULL
+3646	HEB491	Gila Almagor	Avia's Summer	2242	NULL
+3647	HEB492	Miriam Peslar	When Luck Comes, Invite Him In	2242	NULL
+3648	HEB493	Eli Amir	Ferwell, Baghdad	2242	NULL
+3649	ARB126	Ibraheem Hilal	Phylosophy And Religion	340	NULL
+3650	ARB127	Al Firdawsi	Al Shahnama	340	NULL
+3651	HEB494	Amir Zuckerman	Ossi's Tale	2242	NULL
+3652	HEB495	Mario Bandeti	The Recess	2242	NULL
+3653	ARB128	Yusuf Idrees	Language of Story	340	NULL
+3654	HEB496	Andrew Miller	The Wizdom Of Pain	2242	NULL
+3655	HEB497	Hava Leon	Opening The Sea	2242	NULL
+3656	ARB129	David Zemach	Opinions In Literature	340	NULL
+3657	HEB498	Amos Goren	Mordechai Metklef	2242	NULL
+3658	HEB499	Tamar Landau	I Didn't Know Bach Had Blue Eyes	2242	NULL
+3659	ARB130	Najeeb Saab	Life Reality	340	NULL
+3660	HEB500	K. A. Bartini	Behind The Curtin	2242	NULL
+3661	ARB131	Hasan Al Moden	Text Analysis	340	NULL
+3662	ARB132	Faris Al Hamzani	Northern Passion	340	NULL
+3663	ARB133	Yuri Kulisnikov	Promise Land	340	NULL
+3664	ARB134	Yusuf Sawtri	Peace Poems	340	NULL
+3665	HEB501	Tayeb Salah	Seasons Of Migration To The North	2242	NULL
+3666	HEB502	Yaron Avitov	Note From Mom	2242	NULL
+3667	HEB503	Robert Little	The Amatur	2242	NULL
+3668	ARB135	Muhammad Abd Al Nabi	Budha	340	NULL
+3669	ARB136	Berl Bakh	Good Land	340	NULL
+3670	ARB137	Alaa Al Aswani	Chicago	340	NULL
+3671	ARB138	Zaki Al Alyo	The Educated	340	NULL
+3672	ARB139	Nabeeh Qassem	Druze In Israel	340	NULL
+3673	ARB140	111	Variety of Women	340	NULL
+3674	ARB141	Mubarak Fadl	Historical Whitness	340	NULL
+3675	ARB142	Ibraheem Al Deeb	Quran Project	340	NULL
+3676	ARB143	Alan Peez	Body Language	340	NULL
+3677	ARB144	Donald Tramp	Think Like heroes	340	NULL
+3678	ARB145	Antony Robens	Waken your Coceales Powers	340	NULL
+3679	ARB146	Al Hussainy Muaddi	Al Farasa	340	NULL
+3680	ARB147	Yusuf Al Uqsory	Life Pressures	340	NULL
+3681	ARB148	Ali Al salabi	Islamic History	340	NULL
+3682	ARB149	Adnan Jaber	Maybe Next Trip	340	NULL
+3683	ARB150	Abdul Aziz Abdul Majid	Free Fear	340	NULL
+3684	ARB151	Elvis Wadburg	West & Islamic World	340	NULL
+3685	ARB152	Ashraf Shaheen	Mind Rest	340	NULL
+3686	ARB153	Hasan Dawood	180 Sunsets	340	NULL
+3687	ARB154	John Milton	Explode your Invisible Power	340	NULL
+3688	ARB155	Ayid Al Qarni	Do not be Sad	340	NULL
+3689	ARB156	Khaled Tamimi	Iraqi Chosens	340	NULL
+3690	ARB157	Adnan Sharif	Qurani Universe Science	340	NULL
+3691	ARB158	Adnan Sharif	Qurani Earth Sciences	340	NULL
+3692	ARB159	Amos Abdul Maseah	Amos	340	NULL
+3693	ARB160	Luiza Alcott	Little Women	340	NULL
+3694	ARB161	Adnan Shariff	Qurani Medicine	340	NULL
+3695	ENG756	Mohandas K.	Ghandi	1760	NULL
+3696	ENG757	Clayborne Carson	Martin Luther King JR	1760	NULL
+3697	ENG758	Back Bay Books	Nelson Mandela	1760	NULL
+3698	ENG759	Edward O. Wilson	consilience	1760	NULL
+3699	ENG760	Alistair MacNeill	Red Alert	1760	NULL
+3700	ENG761	Isaac Asimov	The Robots of Dawn	1760	NULL
+3701	ENG762	Martin Baier	Elements of Direct Marketing	1760	NULL
+3702	ENG763	Victoria Hislop	The Island	1760	NULL
+3703	ENG764	Chaim Herzog	The Arab-Israeli Wars	1760	NULL
+3704	ENG765	Bill Bryson	Down Under	1760	NULL
+3705	ENG766	Jane Imber, Betsy-Ann Toffler	Dictionary of Advertising and Direct Mail Terms	1760	NULL
+3706	ENG767	Kurt Vonnegut	Galapagos	1760	NULL
+3707	ENG768	Kurt Vonnegut	Galapagos	1760	NULL
+3708	ENG769	Simon Winchester	Pacific Nightmare	1760	NULL
+3709	ENG770	Gay Courter	Flowers in the Blood	1760	NULL
+3710	ENG771	Howard Fast	Seven Days In June	1760	NULL
+3711	ENG772	Mary Gordon	Men and Angels	1760	NULL
+3712	ENG773	Judith Kelman	More than you know	1760	NULL
+3713	ENG774	Paul Erdman	The Panic of '89	1760	NULL
+3714	ENG775	Phillip Margolin	Heartstone	1760	NULL
+3715	ENG776	Paul J. McAuley	Pasquale's Angel	1760	NULL
+3716	ENG777	Irving Stone	Lust for Life	1760	NULL
+3717	ENG778	Isaac Asimov	Murder of the ABA	1760	NULL
+3718	ENG779	Pauline Reage	Story of O	1760	NULL
+3719	ENG780	Jim Steinmeyer	Hiding the Elephant	1760	NULL
+3720	ENG781	Daniel Steel	Kaleidoscope	1760	NULL
+3721	ENG782	Jeffrey Archer	Not a Penny more, Not a Penny less	1760	NULL
+3722	ENG783	Ali Shaw	The Girl with Glass Feet	1760	NULL
+3723	ENG784	Denise Jarrett-Macauley	Chocolate Cooking	1760	NULL
+3724	ENG785	Russel Cronin	Way of the Noodle	1760	NULL

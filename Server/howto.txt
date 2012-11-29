@@ -1,0 +1,21 @@
+HOW TO USE GARDEN LIBRARY SERVER
+
+1) login server:
+ssh user11@50.57.82.223 (password is ateke0814siyas)
+
+2) start jetty inside screen session:
+change into jetty folder: cd jetty-distribution-...
+start screen: screen 
+start jetty: java -jar start.jar
+dettach screen: Ctrl-A D
+logout
+
+3) Online acccess:
+server page: http://50.57.82.223:2057/
+run app: http://50.57.82.223:2057/app/index.html
+run update: http://50.57.82.223:2057/update/?action=run
+
+4) Re-attach screen session:
+screen -r
+
+
