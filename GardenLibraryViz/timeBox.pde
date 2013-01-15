@@ -38,7 +38,7 @@ class TimeText {
 
 void loadTimeText() {
   String details[] = loadStrings("details.txt"); 
-  
+
   timeTextSet = new TimeText[ceil(details.length/3)+1];
   for (int i=0; i < details.length; i++) {
     if (i%3 == 0) { 
@@ -47,7 +47,7 @@ void loadTimeText() {
       int mm = parseInt(parts[1]);
       int yyyy = parseInt(parts[2]);
       TimeText timeTxt = new TimeText(dd, mm, yyyy); 
-      timeTextSet[floor(i/3)] = timeTxt; 
+      timeTextSet[floor(i/3)] = timeTxt;
     } 
     else if (i%3 == 1) {
       timeTextSet[floor(i/3)].setDetail(details[i]);
@@ -83,16 +83,16 @@ void drawTimeBox(float _x, float _x0, float _x1, float _y, int _day, int _month,
     if (textDays <= _year*360 + _month*30 + _day) {      
       currDetail = timeTextSet[i].detail;
       int days = (timeTextSet[i].year-2009)*360 + timeTextSet[i].month*30 + timeTextSet[i].day;
-      indicatorX = map(days, 11*30, 1080+11*30, _x0, _x1);      
+      indicatorX = map(days, 11*30, 1080+11*30, _x0, _x1);
     }
   }
-  
-  
-  if (indicatorX < _x0){
+
+
+  if (indicatorX < _x0) {
     indicatorX = _x0;
   }
 
-  
+
   // to change the alpha of the text box
   if (ROLLOVER_STATE == 1) {
     if (timeBox_alpha < 255) {

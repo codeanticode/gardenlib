@@ -37,22 +37,22 @@ class Book {
     this.ISBN = ISBN;
 
     bookshelfPos = new SoftFloat();
-    
+
     wheelAngle = new SoftFloat();
     wheelAngle.ATTRACTION = 0.02;
     wheelHeight = new SoftFloat();
     traveling = false;
     arrived = false;  
     wheelTrail = new Trail(trailLength);  
-        
+
     days = new ArrayList<Integer>();
     emos = new ArrayList<Integer>();
     days.add(0);
     emos.add(0);
-    
+
     history = new ArrayList<PVector>();
   }
-  
+
   void clearTrail() {    
     wheelTrail.clear();
   }  
@@ -61,7 +61,7 @@ class Book {
     days.add(t);
     emos.add(e);
   }
-  
+
   int getEmotion(int t) {
     int t0 = days.get(0);
     int emo = emos.get(0);
@@ -75,12 +75,12 @@ class Book {
     }   
     return emo;
   }  
-  
+
   void setEmotion(int emo) {
     prevEmo = currEmo;  
     currEmo = emo;
   }
-  
+
   boolean checkedIn(int t0, int t1) {
     for (int n = 0; n < days.size(); n++) {
       int t = days.get(n);
@@ -90,19 +90,20 @@ class Book {
     }
     return false;
   }  
-  
+
   boolean emotionChanged() {
-    return prevEmo != currEmo;   
+    return prevEmo != currEmo;
   }  
-  
+
   void addHistoryPoint(float x, float y, float c) {
-    history.add(new PVector(x, y, c));  
+    history.add(new PVector(x, y, c));
   }
-  
+
   void update(int mode) {
     if (mode == MODE_BOOKSHELF) {
       updateBookshelfPos();
-    } else if (mode == MODE_WHEEL) {
+    } 
+    else if (mode == MODE_WHEEL) {
       updateWheelPos();
     }
   }
@@ -115,17 +116,18 @@ class Book {
     // representation (each emotional assigment has the same height). 
     float factor = bookHeightTimer.get();
     float elapsed = daysSinceStart.get();
-    
+
     int nmax = 0;
-    while (nmax < days.size() - 1) {
+    while (nmax < days.size () - 1) {
       if (days.get(nmax + 1) <= elapsed) {
         nmax++;
-      } else {
-        break;  
-      }  
+      } 
+      else {
+        break;
+      }
     }
     nmax++;
-    
+
     for (int n = 0; n < nmax; n++) {
       float y0, y1;
       float len0, len1, len = 0;      
@@ -134,21 +136,23 @@ class Book {
         // represented in the book rect at the top, so we don't need to add it to the full 
         // history below.
         y0 = y1 = top;
-      } else {        
+      } 
+      else {        
         len0 = constrain(map(days.get(n), 0, elapsed, maxlen, 0), 0, maxlen);
         len1 = (nmax - n - 1) * maxBookHeight;       
         len = (1 - factor) * len0 + factor * len1;
         y0 = top + len;         
         if (n + 1 < nmax) {
           len0 = constrain(map(days.get(n + 1), 0, elapsed, maxlen, 0), 0, maxlen); 
-          len1 = (nmax - n) * maxBookHeight;       
-        } else {
+          len1 = (nmax - n) * maxBookHeight;
+        } 
+        else {
           len0 = 0;
           len1 = (nmax - n) * maxBookHeight;
         }      
         len = (1 - factor) * len0 + factor * len1;      
         y1 = top + len;  
-        
+
         if (compactTime) {
           y0 -= maxBookHeight;
           y1 -= maxBookHeight;
@@ -159,12 +163,13 @@ class Book {
       boolean last = false;      
       if (elapsed < days.get(n)) {
         e = emos.get(n - 1);
-        last = true;        
-      } else {
+        last = true;
+      } 
+      else {
         e = emos.get(n);
         last = n == nmax - 1;
       }
-      
+
       //int e = emos.get(n);
       Emotion emo0 = emotionsByID.get(e);         
       noStroke();
@@ -173,7 +178,7 @@ class Book {
       // Top rect identifying the book.
       float bh = bookTopHeight.get();      
       if (last && 0 < bh) {        
-        rect(x + bookPadding * weight, top - h - bh, max(1, (1 - 2 * bookPadding) * weight), bh);  
+        rect(x + bookPadding * weight, top - h - bh, max(1, (1 - 2 * bookPadding) * weight), bh);
       }
 
       // We draw the current emotional assignment only if the emotion is not "empty".
@@ -186,19 +191,19 @@ class Book {
           stroke(replaceAlpha(bookshelfLinesColor, viewFadeinAlpha.getInt()));
           strokeWeight(w);
           line(x0, y1, x1, y1);
-        }        
+        }
       }  
       if (elapsed < days.get(n)) {
         break;
       }
     }
   }
-  
+
   void drawInWheel(float xc, float yc, float rad, float h, float a) {    
     float a1 = wheelAngle.get();
     float x1 = xc + (rad * wheelRadius + h) * cos(a1);
     float y1 = yc + (rad * wheelRadius + h) * sin(a1);
-     
+
     if (traveling) {
       wheelTrail.draw();
       wheelTrail.add(x1, y1);
@@ -213,45 +218,47 @@ class Book {
         rect(x1, y1, 5, 5);
       }
       rectMode(CORNER);
-    } else {
+    } 
+    else {
       if (arrived) {
         wheelTrail.draw();
         wheelTrail.add(x1, y1);
-//         wheelHeight.setTarget(maxBookHeight);
-           wheelHeight.setTarget(500);
+        //         wheelHeight.setTarget(maxBookHeight);
+        wheelHeight.setTarget(500);
         arrived = false;
       }
       float wh = wheelHeight.get();
       float xh = xc + (rad * wheelRadius + h + wh) * cos(a1);
       float yh = yc + (rad * wheelRadius + h + wh) * sin(a1);
 
-     // stroke(replaceAlpha(historyTrailsColor, viewFadeinAlpha.getInt()));
-         Emotion emo = emotionsByID.get(prevEmo);
-       //   Emotion emo = emotionsByID.get(currEmo);
-         stroke(replaceAlpha(emo.argb, viewFadeinAlpha.getInt()));
-     // strokeWeight(1);  
+      // stroke(replaceAlpha(historyTrailsColor, viewFadeinAlpha.getInt()));
+      Emotion emo = emotionsByID.get(prevEmo);
+      //   Emotion emo = emotionsByID.get(currEmo);
+      stroke(replaceAlpha(emo.argb, viewFadeinAlpha.getInt()));
+      // strokeWeight(1);  
       strokeWeight(0.5);      
-      line(x1, y1, xh, yh);     
-    }    
+      line(x1, y1, xh, yh);
+    }
   }      
-  
+
   // TODO: the logic in this function should be simplified, same as drawInBookshelf
   int insideBookshelf(float x, float y, float first, float weight, float left, float top, float h, float maxlen) {
     float x0 = left + weight * (getBookshelfPos() - first);    
     if (x0 < x && x <= x0 + weight) {
       float factor = bookHeightTimer.get();
       float elapsed = daysSinceStart.get();
-      
+
       int nmax = 0;
-      while (nmax < days.size() - 1) {
+      while (nmax < days.size () - 1) {
         if (days.get(nmax + 1) <= elapsed) {
           nmax++;
-        } else {
-          break;  
-        }  
+        } 
+        else {
+          break;
+        }
       }
       nmax++;      
-      
+
       for (int n = 0; n < nmax; n++) {
         float y0, y1;
         float len0, len1, len = 0;      
@@ -260,61 +267,65 @@ class Book {
           // represented in the book rect at the top, so we don't need to add it to the full 
           // history below.
           y0 = y1 = top;
-        } else {        
+        } 
+        else {        
           len0 = constrain(map(days.get(n), 0, elapsed, maxlen, 0), 0, maxlen);
           len1 = (nmax - n - 1) * maxBookHeight;       
           len = (1 - factor) * len0 + factor * len1;
           y0 = top + len;         
           if (n + 1 < nmax) {
             len0 = constrain(map(days.get(n + 1), 0, elapsed, maxlen, 0), 0, maxlen); 
-            len1 = (nmax - n) * maxBookHeight;       
-          } else {
+            len1 = (nmax - n) * maxBookHeight;
+          } 
+          else {
             len0 = 0;
             len1 = (nmax - n) * maxBookHeight;
           }      
           len = (1 - factor) * len0 + factor * len1;      
           y1 = top + len;  
-        
+
           if (compactTime) {
             y0 -= maxBookHeight;
             y1 -= maxBookHeight;
           }
         }
-         
+
         int e = 0;
         boolean last = false;
         if (elapsed < days.get(n)) {
           e = emos.get(n - 1);
-          last = true;        
-        } else {
+          last = true;
+        } 
+        else {
           e = emos.get(n);
           last = n == nmax - 1;
         }
-              
+
         //int e = emos.get(n);        
         if (((y1 <= y && y <= y0) || (y0 <= y && y <= y1)) && (e != 0)) {   
-          return e;    
+          return e;
         }
-        
+
         float bh = bookTopHeight.get();
         if (n == nmax - 1 && 0 < bh) {
           y0 = top - h - bh;
           y1 = top - h;
           if ((y1 <= y && y <= y0) || (y0 <= y && y <= y1)) {   
             return e;
-          } 
+          }
         }
-      
+
         if (elapsed < days.get(n)) {
           return -1;
         }
       }   
-      return -1;      
-    } else {
+      return -1;
+    } 
+    else {
       return -1;
     }
   }
-    
+
   float getBookCenterX(float first, float weight, float left) {
     return left + weight * (getBookshelfPos() - first) + weight/2;
   }
@@ -330,7 +341,7 @@ class Book {
   float getBookshelfPos() {
     return bookshelfPos.get();
   }
-  
+
   void updateWheelPos() {    
     wheelAngle.update(); 
     if (traveling) {           
@@ -338,23 +349,25 @@ class Book {
         float t = constrain(map(wheelAngle.value, wheelAngle.source, wheelAngle.target, -1, +1), -1, +1);
         float range = abs(wheelAngle.target - wheelAngle.source) / TWO_PI;
         wheelRadius = constrain((1 - range) + range * t * t, 0, 1);
-      } else {
+      } 
+      else {
         wheelRadius = 1;
         traveling = false;
         arrived = true;
-      }  
-    } else {
+      }
+    } 
+    else {
       wheelHeight.update();
     }
   }
-  
+
   void initWheelPos(float pos) {
     float a = bookAngle(int(pos));    
     wheelAngle.set(a);
     wheelHeight.setTarget(maxBookHeight);
     wheelRadius = 1;
   }
-  
+
   void setWheelPos(float pos) {
     float a = bookAngle(int(pos));
     if (prevEmo == 0) {
@@ -362,8 +375,9 @@ class Book {
       // does at its current position, without trail
       // animation.
       wheelAngle.set(a);
-    } else {
-      wheelAngle.setTarget(a); 
+    } 
+    else {
+      wheelAngle.setTarget(a);
     }
     if (emotionChanged()) {
       wheelHeight.set(0);
@@ -374,7 +388,7 @@ class Book {
 
   float getWheelPos() {
     return wheelAngle.get();
-  }    
+  }
 }
 
 // A selection comprises a book and the emotion associated to the book
@@ -395,7 +409,7 @@ class SelectedBook {
 class SelectedLanguage {
   Language lang;
   float x, y;
-  
+
   SelectedLanguage(Language lang, float x, float y) {
     this.lang = lang;
     this.x = x;
@@ -406,7 +420,7 @@ class SelectedLanguage {
 class SelectedEmotion {
   Emotion emo;
   float x, y;
-  
+
   SelectedEmotion(Emotion emo, float x, float y) {
     this.emo = emo;
     this.x = x;
@@ -422,7 +436,7 @@ class Emotion {
 
   ArrayList<Book> booksInEmo;
   HashMap<Integer, ArrayList<Book>> booksPerLang;
-  
+
   ArrayList<PVector> border;
 
   Emotion(int id, String name, color argb) {
@@ -452,10 +466,10 @@ class Emotion {
     } 
     blang.add(book);
   }
-  
+
   void addBorderPoint(float x, float y) {
-    border.add(new PVector(x, y, 0));  
-  }  
+    border.add(new PVector(x, y, 0));
+  }
 }
 
 // Class storing the properties of a language
@@ -477,8 +491,8 @@ class Language {
 
     booksInLang = new ArrayList<Book>();
     booksPerEmo = new HashMap();
-    
-    url = ""; 
+
+    url = "";
   }
 
   void updateBooksPerEmo(int t) {
@@ -518,58 +532,59 @@ class ViewRegion {
     lastBook = new SoftFloat();
     this.allBooks = allBooks;
   }  
-  
+
   void update() {
     firstBook.update();
-    lastBook.update(); 
+    lastBook.update();
   }
-  
+
   void setTarget(float first, float last) {
     // Making sure that the interval remains inside the bounds.
     if (first < 0) {
       last -= first;
-      first = 0;      
+      first = 0;
     }
     /*
     if (allBooks.size() - 1 < last) {
-      float diff = last - allBooks.size() + 1;
-      first -= diff;
-      last  -= diff;
-    }
-    
-    // additional constraining (should make sense only if 
-    // diff between first and last is greater than the total
-    // number of books).
-    first = constrain(first, 0, allBooks.size() - 1);
-    last = constrain(last, firstBook.get(), allBooks.size() - 1);
-    */
+     float diff = last - allBooks.size() + 1;
+     first -= diff;
+     last  -= diff;
+     }
+     
+     // additional constraining (should make sense only if 
+     // diff between first and last is greater than the total
+     // number of books).
+     first = constrain(first, 0, allBooks.size() - 1);
+     last = constrain(last, firstBook.get(), allBooks.size() - 1);
+     */
     firstBook.setTarget(first);
     lastBook.setTarget(last);
   }
-  
+
   float getFirstBook() {
     return firstBook.get();
   }
-  
+
   float getLastBook() {
     return lastBook.get();
   }  
-  
+
   float getBookCount() {
     return lastBook.get() - firstBook.get() + 1;
   }
-  
+
   boolean isTargeting() {
     return firstBook.targeting || lastBook.targeting;
   }
-  
+
   boolean intersects(int i0, int i1) {
     float first = firstBook.get();
     float last = lastBook.get();
     if (i1 < first || last < i0) {
       return false;
-    } else {
-      return true;  
+    } 
+    else {
+      return true;
     }
   }
 }
@@ -578,43 +593,44 @@ class Trail {
   float[] x;
   float[] y;
   int len;  
-  
+
   Trail(int n) {
     x = new float[n];
     y = new float[n];  
-    len = 0;    
+    len = 0;
   }
-  
+
   void clear() {      
-    len = 0;        
+    len = 0;
   }
-  
+
   void init(float x0, float y0) {
     for (int i = 0; i < x.length; i++) {
       x[i] = x0;
-      y[i] = y0;    
+      y[i] = y0;
     }
   }  
-  
+
   void add(float newx, float newy) {
     if (len == 0) {
       init(newx, newy);
-    } else {
-      if (abs(newx - x[0]) < 0.001 && abs(newy - y[0]) < 0.001) return;  
+    } 
+    else {
+      if (abs(newx - x[0]) < 0.001 && abs(newy - y[0]) < 0.001) return;
     }    
-    
+
     for (int i = len - 1; 0 < i; i--) {
       x[i] = x[i - 1];
       y[i] = y[i - 1];
     }
     x[0] = newx;
     y[0] = newy;
-    
+
     if (len < x.length) {
       len++;
     }
   }
-  
+
   void draw() {
     strokeWeight(0.5);
     float r = red(historyTrailsColor);
@@ -624,6 +640,7 @@ class Trail {
       float opacity = map(i, 0, x.length - 1, 255, 0);
       stroke(r, g, b, opacity);
       line(x[i - 1], y[i - 1], x[i], y[i]);
-    }    
+    }
   }
 }
+

@@ -2,147 +2,162 @@
 
 void drawBookshelf(Rectangle bounds, float yTop) {
   clip(bounds.x, bounds.y, bounds.w, bounds.h);
-  
+
   float firstBook = viewRegion.getFirstBook();  
   float bookCount = viewRegion.getBookCount(); 
-    
+
   float elapsed = daysSinceStart.get();  
-    
- // float h = langBarH.get();
- 
- float h = langBarHB.get();// added for Bookshelf
- 
+
+  // float h = langBarH.get();
+
+  float h = langBarHB.get();// added for Bookshelf
+
   //float h = 10; //add 8 pix to height of lang bar
   float totLen = map(elapsed, 0, daysRunningTot, 0, bounds.y + bounds.h - yTop);
-  
+
   int count = 0;
-  
+
   float w = bounds.w / bookCount;
   if (1 < w) bookStrokeWeight.enable();
   else bookStrokeWeight.disable(); // to stop the stroke appearing when the book rects are still too thin.
 
-  if (sortByLangFirst) { // Grouping the books first by language, then by emotion.
-    int langCount = 0;
-    for (Language lang: languages) {  
-      if (lang.id == 0) continue;
-        
-      for (Emotion emo: emotions) {
-        ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
-        if (bemo == null) continue; 
-    
-        int i0 = count; 
-        int i1 = i0 + bemo.size() - 1;
- 
-        if (viewRegion.intersects(i0, i1)) {        
-          for (int i = 0; i < bemo.size(); i++) {
-            int iabs = i0 + i;
-            if (firstBook <= iabs && iabs < firstBook + bookCount) {
-              Book book = bemo.get(i); 
-              book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);            
-            }
-          }        
-        }
-      
-        count += bemo.size();
-      }
-
-      // Draw language rectangle    
-      float x0 = bookX(langCount, bounds.x, bounds.w);
-      langCount += lang.booksInLang.size();        
-      float x1 = bookX(langCount, bounds.x, bounds.w);    
-      if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
-        // Adding paddings between languages:
-        if (bounds.x < x0) { // left padding
-          x0 += bookPadding * w/2; 
-        } else {
-          x0 = bounds.x;
-        }  
-        if (x1 < bounds.x + bounds.w) { // right padding
-          x1 -= bookPadding * w/2;      
-        } else {
-          x1 = bounds.x + bounds.w;
-        }  
-        noStroke();
-      
-        fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));          
-        rect(x0, yTop - h, x1 - x0, h);      
-      } 
-    }      
-  } else { // Grouping the books first by emotion, then by language.
-    int emoCount = 0;
-    for (Emotion emo: emotions) {
-      if (emo.id == 0) continue;
-    
-      for (Language lang: languages) {
-        ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
-        if (blang == null) continue;
-      
-        int i0 = count; 
-        int i1 = i0 + blang.size() - 1;
- 
-        if (viewRegion.intersects(i0, i1)) {        
-          for (int i = 0; i < blang.size(); i++) {
-            int iabs = i0 + i;
-            if (firstBook <= iabs && iabs < firstBook + bookCount) {
-              Book book = blang.get(i); 
-              book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);            
-            }
-          }        
-        }
-      
-        count += blang.size(); 
-      }
-    
-      // Draw emotion rectangle    
-      float x0 = bookX(emoCount, bounds.x, bounds.w);
-      emoCount += emo.booksInEmo.size();        
-      float x1 = bookX(emoCount, bounds.x, bounds.w);    
-      if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
-        // Adding paddings between languages:
-        if (bounds.x < x0) { // left padding
-          x0 += bookPadding * w/2; 
-        } else {
-          x0 = bounds.x;
-        } 
-        if (x1 < bounds.x + bounds.w) { // right padding
-          x1 -= bookPadding * w/2;      
-        } else {
-          x1 = bounds.x + bounds.w;
-        }  
-        noStroke();
-      
-        fill(replaceAlpha(emo.argb, viewFadeinAlpha.getInt()));          
-        rect(x0, yTop - h, x1 - x0, h);      
-      }     
-    }    
+  if (groupByLangFirst) { // Grouping the books first by language, then by emotion.
+    drawBookshelfGroupByLang(bounds, count, firstBook, bookCount, yTop, totLen, w, h);
+  } 
+  else { // Grouping the books first by emotion, then by language.
+    drawBookshelfGroupByEmo(bounds, count, firstBook, bookCount, yTop, totLen, w, h);
   }
-        
+
   noClip();
 }
 
+void drawBookshelfGroupByLang(Rectangle bounds, int count, float firstBook, float bookCount, float yTop, float totLen, float w, float h) {
+  int langCount = 0;
+  for (Language lang: languages) {  
+    if (lang.id == 0) continue;
+
+    for (Emotion emo: emotions) {
+      ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
+      if (bemo == null) continue; 
+
+      int i0 = count; 
+      int i1 = i0 + bemo.size() - 1;
+
+      if (viewRegion.intersects(i0, i1)) {        
+        for (int i = 0; i < bemo.size(); i++) {
+          int iabs = i0 + i;
+          if (firstBook <= iabs && iabs < firstBook + bookCount) {
+            Book book = bemo.get(i); 
+            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);
+          }
+        }
+      }
+
+      count += bemo.size();
+    }
+
+    // Draw language rectangle    
+    float x0 = bookX(langCount, bounds.x, bounds.w);
+    langCount += lang.booksInLang.size();        
+    float x1 = bookX(langCount, bounds.x, bounds.w);    
+    if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
+      // Adding paddings between languages:
+      if (bounds.x < x0) { // left padding
+        x0 += bookPadding * w/2;
+      } 
+      else {
+        x0 = bounds.x;
+      }  
+      if (x1 < bounds.x + bounds.w) { // right padding
+        x1 -= bookPadding * w/2;
+      } 
+      else {
+        x1 = bounds.x + bounds.w;
+      }  
+      noStroke();
+
+      fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));          
+      rect(x0, yTop - h, x1 - x0, h);
+    }
+  }
+}
+
+void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float bookCount, float yTop, float totLen, float w, float h) {
+  int emoCount = 0;
+  for (Emotion emo: emotions) {
+    if (emo.id == 0) continue;
+
+    for (Language lang: languages) {
+      ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+      if (blang == null) continue;
+
+      int i0 = count; 
+      int i1 = i0 + blang.size() - 1;
+
+      if (viewRegion.intersects(i0, i1)) {        
+        for (int i = 0; i < blang.size(); i++) {
+          int iabs = i0 + i;
+          if (firstBook <= iabs && iabs < firstBook + bookCount) {
+            Book book = blang.get(i); 
+            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);
+          }
+        }
+      }
+
+      count += blang.size();
+    }
+
+    // Draw emotion rectangle    
+    float x0 = bookX(emoCount, bounds.x, bounds.w);
+    emoCount += emo.booksInEmo.size();        
+    float x1 = bookX(emoCount, bounds.x, bounds.w);    
+    if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
+      // Adding paddings between languages:
+      if (bounds.x < x0) { // left padding
+        x0 += bookPadding * w/2;
+      } 
+      else {
+        x0 = bounds.x;
+      } 
+      if (x1 < bounds.x + bounds.w) { // right padding
+        x1 -= bookPadding * w/2;
+      } 
+      else {
+        x1 = bounds.x + bounds.w;
+      }  
+      noStroke();
+
+      fill(replaceAlpha(emo.argb, viewFadeinAlpha.getInt()));          
+      rect(x0, yTop - h, x1 - x0, h);
+    }
+  }
+}
+
 boolean drawWheel(Rectangle bounds, float yTop) {
+  clip(bounds.x, bounds.y, bounds.w, bounds.h);
+
   boolean animatingTrails = false;
   float firstBook = 0;
   float bookCount = 0;
   for (Emotion emo: emotions) {
     if (emo.id == 0) continue;
-    
+
     for (Language lang: languages) {
       ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
       if (blang == null) continue;
       bookCount += blang.size();
     }
   }
-    
+
   float elapsed = daysSinceStart.get();  
-    
+
   float h = langBarH.get();
-  
+
   float xc = bounds.x + bounds.w/2;
   float yc = bounds.y + yTop + bounds.h/2;
-  
+
   int count = 0;
-  
+
   float w = bounds.w / bookCount;
 
   pushMatrix();
@@ -153,11 +168,11 @@ boolean drawWheel(Rectangle bounds, float yTop) {
   // Draw books:
   for (Emotion emo: emotions) {
     if (emo.id == 0) continue;    
-    
+
     for (Language lang: languages) {
       ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
       if (blang == null) continue; 
-    
+
       int i0 = count; 
       int i1 = i0 + blang.size() - 1;
       float a0 = bookAngle(i0);    
@@ -170,30 +185,31 @@ boolean drawWheel(Rectangle bounds, float yTop) {
         book.drawInWheel(0, 0, wheelRadius, h, angPerBook);
         animatingTrails |= book.traveling;
       }
-   
+
       count += blang.size();
     }
   }  
-  
+
   // Draw emotion arcs:
   count = 0;
   for (int i = 0; i < emotions.size(); i++) {
     Emotion emo = emotions.get(i);
     if (emo.id == 0) continue;
-      
+
     int i0 = count;
     int i1 = i0 + emo.booksInEmo.size();  
     float a0 = bookAngle(i0);    
     float a1 = bookAngle(i1);
-    
+
     noStroke();    
     fill(replaceAlpha(emo.argb, viewFadeinAlpha.getInt()));    
     solidArc(0, 0, RAD_TO_DEG * a0, RAD_TO_DEG * a1, wheelRadius, h);
 
-    count += emo.booksInEmo.size();    
+    count += emo.booksInEmo.size();
   }  
-  
+
   popMatrix();
+  noClip();
   return animatingTrails;
 }
 
@@ -207,7 +223,7 @@ void solidArc(float xc, float yc, float deg0, float deg1, float rad, float w) {
   for (int i = a1; i >= a0 ; i--) {
     vertex(cosLUT[i] * (rad + w) + xc, sinLUT[i] * (rad + w) + yc);
   }
-  endShape(CLOSE);  
+  endShape(CLOSE);
 }
 
 void drawHistory(Rectangle bounds, float yTop) {  
@@ -215,18 +231,18 @@ void drawHistory(Rectangle bounds, float yTop) {
   int historyH = int(bounds.h - yTop - 20);  
   if (historyCanvas == null) {
     historyCanvas = createGraphics(historyW, historyH);
-  
+
     historyCanvas.beginDraw();
-    
+
     if (showSolidEmoHistory) {
       // Draw background for each emotion
       historyCanvas.noStroke();
       for (int i = 0; i < emotions1.size(); i++) {
         Emotion emo = emotions1.get(i);
-    
+
         float minx = 1;
         historyCanvas.fill(red(emo.argb), green(emo.argb), blue(emo.argb), emoBandAlpha);
-      
+
         historyCanvas.beginShape(POLYGON);
         if (i == 0) { // first
           for (int d7 = 0; d7 <= daysRunningTot + 7; d7 += 7) {
@@ -235,30 +251,31 @@ void drawHistory(Rectangle bounds, float yTop) {
             historyCanvas.vertex(x * historyW, squeezeY(x, 0) * historyH);
           }
           minx = 0;
-        } else {
+        } 
+        else {
           for (PVector v: emo.border) {
             historyCanvas.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
-            minx = min(v.x, minx); 
-          }    
+            minx = min(v.x, minx);
+          }
         }
-    
+
         if (i == emotions1.size() - 1) { // last
           for (int d7 = 0; d7 <= daysRunningTot + 7; d7 += 7) {
             int days = constrain(d7, 0, daysRunningTot);
             float x = map(days, 0, daysRunningTot, 1, 0);
             historyCanvas.vertex(x * historyW, squeezeY(x, 1) * historyH);
           }
+        } 
+        else {      
 
-        } else {      
-     
           float minx1 = 1;
           Emotion emo1 = emotions1.get(i + 1);
           for (int j = emo1.border.size() - 1; j >= 0; j--) {
             PVector v = emo1.border.get(j);
             historyCanvas.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
-            minx1 = min(v.x, minx1);        
+            minx1 = min(v.x, minx1);
           }
-       
+
           if (minx == 0 && 0 < minx1) {
             // shape won't close properly, need to find another point
             // in the next emos.
@@ -268,18 +285,19 @@ void drawHistory(Rectangle bounds, float yTop) {
                 PVector v = emo1.border.get(0);
                 historyCanvas.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
                 minx1 = min(v.x, minx1);
-                if (minx1 == 0) break;     
-              } else {
-                historyCanvas.vertex(0, squeezeY(0, 1) * historyH);  
-              }    
+                if (minx1 == 0) break;
+              } 
+              else {
+                historyCanvas.vertex(0, squeezeY(0, 1) * historyH);
+              }
             }
-          }      
+          }
         }
-    
+
         historyCanvas.endShape(CLOSE);
       }
     }
-        
+
     // Draw each book
     Book sbook = null;
     for (Book book: books) {
@@ -291,22 +309,22 @@ void drawHistory(Rectangle bounds, float yTop) {
           historyCanvas.stroke(replaceAlpha(int(pt0.z), bookStrokeAlpha));
           historyCanvas.noFill();
           historyCanvas.line(historyW * pt0.x, historyH * squeezeY(pt0.x, pt0.y), // option for stretching vertically
-                             historyW * pt.x,  historyH * squeezeY(pt.x, pt.y));             
+          historyW * pt.x, historyH * squeezeY(pt.x, pt.y));
         }
-        pt0 = pt;      
+        pt0 = pt;
       }
     }
   }
-  
+
   historyCanvas.endDraw();
   tint(255, viewFadeinAlpha.getInt());
-    image(historyCanvas, bounds.x, bounds.y + yTop, bounds.w, historyH);
+  image(historyCanvas, bounds.x, bounds.y + yTop, bounds.w, historyH);
   //image(historyCanvas, bounds.x, bounds.y + yTop, bounds.w, historyH +30); // stretch bottom
 }  
 
 void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white line
   Book book = sel.book;
-  
+
   int historyW = int(bounds.w);
   int historyH = int(bounds.h - yTop - 20);  
   float xc = bounds.x;
@@ -314,34 +332,35 @@ void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white 
   PVector pt0 = null;
   for (PVector pt: book.history) {
     if (pt0 != null) {
-    //  strokeWeight(2);
-    strokeWeight(1);
+      //  strokeWeight(2);
+      strokeWeight(1);
       stroke(replaceAlpha(selHistoryColor, viewFadeinAlpha.getInt()));
       noFill();
       float x0 = xc + historyW * pt0.x; 
       float y0 = yc + historyH * squeezeY(pt0.x, pt0.y);
       float x1 = xc + historyW * pt.x;
       float y1 = yc + historyH * squeezeY(pt.x, pt.y);
-      
+
       line(x0, y0, x1, y1);
-      
+
       int days0 = int(map(pt0.x, 0, 1, 0, daysRunningTot));
       int days1 = int(map(pt.x, 0, 1, 0, daysRunningTot));
       if (book.checkedIn(days0, days1)) {
         // The book was checked in between days0 and days1
         noStroke();
         fill(replaceAlpha(selHistoryColor, viewFadeinAlpha.getInt()));
-        ellipse(x1, y1, 7, 7);        
+        ellipse(x1, y1, 7, 7);
       }
-    } else {
+    } 
+    else {
       float x1 = xc + historyW * pt.x;
       float y1 = yc + historyH * squeezeY(pt.x, pt.y);
       noStroke();
       fill(replaceAlpha(selHistoryColor, viewFadeinAlpha.getInt()));
-      ellipse(x1, y1, 7, 7);      
+      ellipse(x1, y1, 7, 7);
     }
-    
-    pt0 = pt;     
+
+    pt0 = pt;
   }
 }
 
@@ -350,7 +369,7 @@ void loadingAnimation() {
   String msg = "Loading data";
   float w = textWidth(msg);
   for (int i = 0; i < currentTask; i++) {
-    msg += ".";    
+    msg += ".";
   }  
   fill(255);
   text(msg, width/2 - w/2, height/2);

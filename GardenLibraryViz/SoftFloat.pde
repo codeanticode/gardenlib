@@ -17,12 +17,12 @@ class SoftFloat {
     targeting = false;
     enabled = true;
   }
-  
+
   void set(float v) {
     value = v;
     targeting = false;
   }  
-  
+
   float get() {
     return value;
   }
@@ -34,7 +34,7 @@ class SoftFloat {
   void enable() {
     enabled = true;
   }
-  
+
   void disable() {
     enabled = false;
   }
@@ -42,7 +42,7 @@ class SoftFloat {
 
   boolean update() {
     if (!enabled) return false;
-    
+
     if (targeting) {
       acceleration += ATTRACTION * (target - value);
       velocity = (velocity + acceleration) * DAMPING;
@@ -57,14 +57,15 @@ class SoftFloat {
     }
     return false;
   }
-  
+
   void setTarget(float t) {
     targeting = true;
     target = t;
     source = value;
   }
-  
+
   float getTarget() {
     return targeting ? target : value;
   }
 }
+

@@ -53,7 +53,8 @@ class ViewArea extends InterfaceElement {
   boolean animatingTrails;
   boolean draggingWheel;
   BookBubble bookBubble;
-  InfoTab langTab; 
+  LanguageTab langTab;
+  EmotionTab emoTab;  
 
   float langBarY; // Position of the language bar (with respect to the top of the bound rectangle)
 
@@ -61,7 +62,8 @@ class ViewArea extends InterfaceElement {
     super(x, y, w, h);
     w0 = w;
     bookBubble = new BookBubble();
-    langTab = new InfoTab();
+    langTab = new LanguageTab();
+    emoTab = new EmotionTab();
     langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + 5 * (fontSize + 5) + 5 + 10;
   }
 
@@ -83,6 +85,7 @@ class ViewArea extends InterfaceElement {
       bookHeightTimer.update();
 
       langTab.update();
+      emoTab.update();
     } 
     else if (currentMode == MODE_WHEEL) {
       if (playingAnim) {
@@ -131,25 +134,39 @@ class ViewArea extends InterfaceElement {
   void draw() {
     if (currentMode == MODE_BOOKSHELF) {
 
-      
-      
-      if (insideLangBar(mouseX, mouseY, bounds, langBarY)) {
-        selLang = getSelectedLanguageInBookshelf(mouseX, mouseY, bounds, langBarY);
+      if (groupByLangFirst) {      
+        if (insideLangBar(mouseX, mouseY, bounds, langBarY)) {
+          selLang = getSelectedLanguageInBookshelf(mouseX, mouseY, bounds, langBarY);
+        } 
+        else {
+          selLang = null;
+        }  
+        langTab.open(selLang);
+        langTab.draw();
+        emoTab.close();
       } 
       else {
-        selLang = null;
-      }  
-      langTab.open(selLang);
-      langTab.draw(); 
-
-
+        if (insideLangBar(mouseX, mouseY, bounds, langBarY)) {
+          selEmo = getSelectedEmotionInBookshelf(mouseX, mouseY, bounds, langBarY);
+        } 
+        else {
+          selEmo = null;
+        }  
+        emoTab.open(selEmo);
+        emoTab.draw();
+        langTab.close();
+      }
 
       if (insideBookshelf(mouseX, mouseY, bounds, langBarY)) {
-        selBook = getSelectedBookInBookshelf(mouseX, mouseY, bounds, langBarY);
+        if (groupByLangFirst) {
+          selBook = getSelectedBookInBookshelfGroupByLang(mouseX, mouseY, bounds, langBarY);
+        } else {
+          selBook = getSelectedBookInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
+        }
       } 
       else {
         selBook = null;
-      }      
+      }
       bookBubble.open(selBook);
       bookBubble.draw();
 
@@ -497,12 +514,13 @@ class Timeline extends InterfaceElement {
     int days = int(map(mx, bounds.x, bounds.x + bounds.w - margin, 0, daysRunningTot));
     daysSinceStart.setTarget(days);
     if (currentMode == MODE_BOOKSHELF) {
-      if (sortByLangFirst) {
+      if (groupByLangFirst) {
         groupBooksByEmotion(days, true);
-      } else {
+      } 
+      else {
         groupBooksByEmotion(days, false);
         viewRegion.setTarget(0, numBooksWithEmo());
-      }       
+      }
     } 
     else if (currentMode == MODE_WHEEL) {
       groupBooksByEmotion(days, false);
@@ -709,99 +727,110 @@ void setViewRegionBookshelf(float x, float y, Rectangle bounds, float yTop) {
 
   if (yTop - h < y && y < yTop) {
     if (viewRegion.zoomLevel != VIEW_ALL) return; // can select language only from fully zoomed-out view.
-    
-    if (sortByLangFirst) {
+
+    if (groupByLangFirst) {
       setLanguage(x, bounds);
-    } else {
+    } 
+    else {
       setEmotion(x, bounds);
-    }    
-    
+    }
   } 
   else {
     viewRegion.zoomLevel = VIEW_BOOK; 
     bookStrokeWeight.setTarget(bookOutlineW);
     bookTopHeight.setTarget(maxBookHeight);
     langBarH.setTarget(langBarWBook);    
-    selLanguage = null;
+    currLang = null;
+    currEmo = null;
 
     // Set view region around selected book
-    if (sortByLangFirst) {
-      int count = 0;
-      int langCount = 0;
-      for (Language lang: languages) {  
-        if (lang.id == 0) continue;
-
-        for (Emotion emo: emotions) {
-          ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
-          if (bemo == null) continue; 
-
-          int i0 = count; 
-          int i1 = i0 + bemo.size() - 1;
-
-          float startBook = viewRegion.getFirstBook();  
-          float viewBooks = viewRegion.getBookCount();         
-
-          if (viewRegion.intersects(i0, i1)) {        
-            for (int i = 0; i < bemo.size(); i++) {
-              int iabs = i0 + i;
-              float x0 = bookX(iabs, bounds.x, bounds.w);          
-              if (abs(x - x0) < 5) {
-                viewRegion.setTarget(iabs - sizeBookView/2, iabs + sizeBookView/2);
-                return;
-              }
-            }
-          }
-          count += bemo.size();
-        }
-      }      
-    } else {
-      int count = 0;
-      int emoCount = 0;
-      for (Emotion emo: emotions) {  
-        if (emo.id == 0) continue;
-
-        for (Language lang: languages) {
-          ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
-          if (blang == null) continue;
-
-          int i0 = count; 
-          int i1 = i0 + blang.size() - 1;
-
-          float startBook = viewRegion.getFirstBook();  
-          float viewBooks = viewRegion.getBookCount();         
-
-          if (viewRegion.intersects(i0, i1)) {        
-            for (int i = 0; i < blang.size(); i++) {
-              int iabs = i0 + i;
-              float x0 = bookX(iabs, bounds.x, bounds.w);          
-              if (abs(x - x0) < 5) {
-                viewRegion.setTarget(iabs - sizeBookView/2, iabs + sizeBookView/2);
-                return;
-              }
-            }
-          }
-          count += blang.size();
-        }
-      }      
+    if (groupByLangFirst) {
+      setViewRegionBookshelfGroupByLang(x, bounds);
+    } 
+    else {
+      setViewRegionBookshelfGroupByEmo(x, bounds);
     }
-    
+  }
+}
+
+void setViewRegionBookshelfGroupByLang(float x, Rectangle bounds) {
+  int count = 0;
+  int langCount = 0;
+  for (Language lang: languages) {  
+    if (lang.id == 0) continue;
+
+    for (Emotion emo: emotions) {
+      ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
+      if (bemo == null) continue; 
+
+      int i0 = count; 
+      int i1 = i0 + bemo.size() - 1;
+
+      float startBook = viewRegion.getFirstBook();  
+      float viewBooks = viewRegion.getBookCount();         
+
+      if (viewRegion.intersects(i0, i1)) {        
+        for (int i = 0; i < bemo.size(); i++) {
+          int iabs = i0 + i;
+          float x0 = bookX(iabs, bounds.x, bounds.w);          
+          if (abs(x - x0) < 5) {
+            viewRegion.setTarget(iabs - sizeBookView/2, iabs + sizeBookView/2);
+            return;
+          }
+        }
+      }
+      count += bemo.size();
+    }
+  }
+}
+
+void setViewRegionBookshelfGroupByEmo(float x, Rectangle bounds) {
+  int count = 0;
+  int emoCount = 0;
+  for (Emotion emo: emotions) {  
+    if (emo.id == 0) continue;
+
+    for (Language lang: languages) {
+      ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+      if (blang == null) continue;
+
+      int i0 = count; 
+      int i1 = i0 + blang.size() - 1;
+
+      float startBook = viewRegion.getFirstBook();  
+      float viewBooks = viewRegion.getBookCount();         
+
+      if (viewRegion.intersects(i0, i1)) {        
+        for (int i = 0; i < blang.size(); i++) {
+          int iabs = i0 + i;
+          float x0 = bookX(iabs, bounds.x, bounds.w);          
+          if (abs(x - x0) < 5) {
+            viewRegion.setTarget(iabs - sizeBookView/2, iabs + sizeBookView/2);
+            return;
+          }
+        }
+      }
+      count += blang.size();
+    }
   }
 }
 
 void setViewRegionAllBookshelf() {
- if (sortByLangFirst) {
+  if (groupByLangFirst) {
     viewRegion.setTarget(0, books.size());
-  } else {
+  } 
+  else {
     viewRegion.setTarget(0, numBooksWithEmo());
   } 
-  
+
   viewRegion.zoomLevel = VIEW_ALL;
   bookStrokeWeight.set(0);
   bookTopHeight.setTarget(0);
   langBarH.setTarget(langBarWAllB);// added B
   bookHeightTimer.setTarget(0);
   compactTime = false; 
-  selLanguage = null;
+  currLang = null;
+  currEmo = null;
 }
 
 void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
@@ -920,7 +949,7 @@ boolean insideLangBar(float x, float y, Rectangle bounds, float yTop) {
   return (bounds.x < x && x < bounds.x + bounds.w) && (yTop - h < y && y < yTop);
 }
 
-SelectedBook getSelectedBookInBookshelf(float x, float y, Rectangle bounds, float yTop) {
+SelectedBook getSelectedBookInBookshelfGroupByLang(float x, float y, Rectangle bounds, float yTop) {
   SelectedBook res = null;
   float firstBook = viewRegion.getFirstBook();  
   float bookCount = viewRegion.getBookCount(); 
@@ -959,6 +988,51 @@ SelectedBook getSelectedBookInBookshelf(float x, float y, Rectangle bounds, floa
         }
       }      
       count += bemo.size();
+    }
+  } 
+
+  return res;
+}
+
+SelectedBook getSelectedBookInBookshelfGroupByEmo(float x, float y, Rectangle bounds, float yTop) {
+  SelectedBook res = null;
+  float firstBook = viewRegion.getFirstBook();  
+  float bookCount = viewRegion.getBookCount(); 
+
+  float elapsed = daysSinceStart.get();  
+
+  float h = langBarH.get();
+  float totLen = map(elapsed, 0, daysRunningTot, 0, bounds.y + bounds.h - yTop);
+
+  float w = (float)(bounds.w) / bookCount;   
+
+  int count = 0;
+  int emoCount = 0;
+  for (Emotion emo: emotions) {  
+    if (emo.id == 0) continue;
+
+    for (Language lang: languages) {
+      ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+      if (blang == null) continue; 
+
+      int i0 = count; 
+      int i1 = i0 + blang.size() - 1;
+
+      if (viewRegion.intersects(i0, i1)) {        
+        for (int i = 0; i < blang.size(); i++) {
+          int iabs = i0 + i;
+          if (firstBook <= iabs && iabs < firstBook + bookCount) {
+            Book book = blang.get(i);
+            int e = book.insideBookshelf(x, y, firstBook, w, bounds.x, yTop, h, totLen);            
+            if (-1 < e) {
+              res = new SelectedBook(book, emotionsByID.get(e), book.getBookCenterX(firstBook, w, bounds.x), 
+              yTop - h - bookTopHeight.get() - 5);
+              return res;
+            }
+          }
+        }
+      }      
+      count += blang.size();
     }
   } 
 
@@ -1090,7 +1164,8 @@ void setLanguage(float x, Rectangle bounds) {
         viewRegion.setTarget(langCount0, langCount);
       }  
 
-      selLanguage = lang;
+      currLang = lang;
+      currEmo = null;
       return;
     }
   }
@@ -1121,9 +1196,9 @@ void setEmotion(float x, Rectangle bounds) {
       else {
         viewRegion.setTarget(emoCount0, emoCount);
       }  
-      
-      // TODO: finish... 
-//      selLanguage = lang;
+
+      currLang = null;
+      currEmo = emo;
       return;
     }
   }
@@ -1146,6 +1221,29 @@ void viewLanguage(Language selLang) {
       } 
       else {
         viewRegion.setTarget(langCount0, langCount);
+      }  
+      return;
+    }
+  }
+}
+
+// Sets the view region to cover exactly the specificed emotion.
+void viewEmotion(Emotion selEmo) {
+  int emoCount = 0;
+  for (Emotion emo: emotions) {  
+    if (emo.id == 0) continue;
+    int emoCount0 = emoCount;
+    emoCount += emo.booksInEmo.size(); 
+
+    if (emo == selEmo) {      
+      if (emoCount - emoCount0 < sizeBookView) {
+        // The number of books in this language is too small, 
+        // centering around the middle book and using
+        int imid = (emoCount0 + emoCount)/2; 
+        viewRegion.setTarget(imid - sizeBookView/2, imid + sizeBookView/2);
+      } 
+      else {
+        viewRegion.setTarget(emoCount0, emoCount);
       }  
       return;
     }
@@ -1194,48 +1292,84 @@ void dragViewRegion(float px, float x) {
   if (viewRegion.zoomLevel == VIEW_ALL) return;
 
   if (viewRegion.zoomLevel == VIEW_LANG) {
-    if (selLanguage != null) {
-
-      if (viewRegion.isTargeting()) return; // to avoid moving to another language before reaching the one selected first.
-
-      Language prevLang = selLanguage;
-      Language nextLang = selLanguage;            
-      for (int i = 0; i < languages.size(); i++) {
-        Language lang = languages.get(i);
-        if (selLanguage == lang) {
-          if (0 < i) {
-            prevLang = languages.get(i - 1);
-          }   
-          if (i < languages.size() - 1) {
-            nextLang = languages.get(i + 1);
-          }
-          break;
-        }
-      }
-
-      float diff = px - x;      
-      if (0 < diff) {
-        viewLanguage(nextLang);
-        selLanguage = nextLang;
-      } 
-
-      if (diff < 0) {
-        viewLanguage(prevLang);
-        selLanguage = prevLang;
-      }
+    if (groupByLangFirst) {
+      dragViewRegionGroupByLang(px, x);
+    } 
+    else {
+      dragViewRegionGroupByEmo(px, x);
     }
   } 
   else {
-    selLanguage = null;
+    currLang = null;
+    currEmo = null;
 
     float first = viewRegion.firstBook.get();
     float last = viewRegion.lastBook.get();
-
     float f = 20 * (float)(last - first);
-
     float diff = f * (px - x) / width;
-
     viewRegion.setTarget(first + diff, last + diff);
+  }
+}
+
+void dragViewRegionGroupByLang(float px, float x) {
+  if (currLang == null) return;
+  if (viewRegion.isTargeting()) return; // to avoid moving to another language before reaching the one selected first.      
+
+  Language prevLang = currLang;
+  Language nextLang = currLang;            
+  for (int i = 0; i < languages.size(); i++) {
+    Language lang = languages.get(i);
+    if (currLang == lang) {
+      if (0 < i) {
+        prevLang = languages.get(i - 1);
+      }   
+      if (i < languages.size() - 1) {
+        nextLang = languages.get(i + 1);
+      }
+      break;
+    }
+  }
+
+  float diff = px - x;      
+  if (0 < diff) {
+    viewLanguage(nextLang);
+    currLang = nextLang;
+  } 
+
+  if (diff < 0) {
+    viewLanguage(prevLang);
+    currLang = prevLang;
+  }
+}
+
+void dragViewRegionGroupByEmo(float px, float x) {
+  if (currEmo == null) return;
+  if (viewRegion.isTargeting()) return; // to avoid moving to another language before reaching the one selected first.      
+
+  Emotion prevEmo = currEmo;
+  Emotion nextEmo = currEmo;
+  for (int i = 0; i < emotions.size(); i++) {
+    Emotion emo = emotions.get(i);
+    if (currEmo == emo) {
+      if (0 < i) {
+        prevEmo = emotions.get(i - 1);
+      }   
+      if (i < emotions.size() - 1) {
+        nextEmo = emotions.get(i + 1);
+      }
+      break;
+    }
+  }
+
+  float diff = px - x;      
+  if (0 < diff) {
+    viewEmotion(nextEmo);
+    currEmo = nextEmo;
+  } 
+
+  if (diff < 0) {
+    viewEmotion(prevEmo);
+    currEmo = prevEmo;
   }
 }
 
