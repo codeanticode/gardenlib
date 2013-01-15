@@ -1,15 +1,12 @@
+TODO:
+
 General
+-- fill the timeline with historical info, rework code
 -- there's no way of telling how many books were read and in what languages at any given point in time, as well as comparatively over time. Can we incorporate this info into the existing scheme, and if so, how, and into which view? 
 It is important to see the changes in reading patterns, as this is a clear indication of changes in the demographics of the communities, and usually indicates political events or changes in government policies.
-
--- fill the timeline with historical info
 -- add info about communities in the sketch (maybe just statistics) with links to expanded info page 
-
 -- (automatic) resize
 -- translate to Javascript
-
-Bookshelf
--- flip display: languages within emotions
 
 Wheel
 -- the medium zoom view does not add any info and should probably be eliminated
@@ -24,3 +21,8 @@ History
 
 Legend
 Should the legend items be used as display triggers?
+
+DONE:
+
+Bookshelf
+-- flip display: languages within emotions
