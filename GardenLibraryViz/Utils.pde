@@ -33,24 +33,39 @@ void groupBooksByEmotion(int days, boolean init) {
     lang.updateBooksPerEmo(days);
   }
 
+  int i0 = 0;
   if (currentMode == MODE_BOOKSHELF) {
-    int i0 = 0;
     // Update positions of the books in the bookshelf
-    for (Language lang: languages) {  
-      if (lang.id == 0) continue;
     
-      for (Emotion emo: emotions) {  
-        ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
-        if (bemo == null) continue;      
-        for (int i = 0; i < bemo.size(); i++) {
-          Book book = bemo.get(i);        
-          book.setBookshelfPos(i + i0);
-        }  
-        i0 += bemo.size();        
+    if (sortByLangFirst) {
+      for (Language lang: languages) {  
+        if (lang.id == 0) continue;
+    
+        for (Emotion emo: emotions) {  
+          ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
+          if (bemo == null) continue;      
+          for (int i = 0; i < bemo.size(); i++) {
+            Book book = bemo.get(i);        
+            book.setBookshelfPos(i + i0);
+          }  
+          i0 += bemo.size();        
+        }
       }
+    } else {    
+      for (Emotion emo: emotions) {  
+        for (Language lang: languages) {
+          ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+          if (blang == null) continue;
+
+          for (int i = 0; i < blang.size(); i++) {
+            Book book = blang.get(i);        
+            book.setBookshelfPos(i + i0);          
+          }
+          i0 += blang.size();
+        }
+      }    
     }
   } else if (currentMode == MODE_WHEEL) {
-    int i0 = 0;
     // Update positions of the books in the wheel. 
     for (Emotion emo: emotions) {  
       for (Language lang: languages) {
@@ -79,16 +94,16 @@ void buildHistory() {
     groupBooksByEmotion(days, false);
     float x = float(days) / float(daysRunningTot);
     
-    int totCount = 0;
-    for (Emotion emo: emotions) {
-      if (emo.id == 0) continue;
-    
-      for (Language lang: languages) {
-        ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
-        if (blang == null) continue;
-        totCount += blang.size();
-      }
-    }    
+    int totCount = numBooksWithEmo();
+//    for (Emotion emo: emotions) {
+//      if (emo.id == 0) continue;
+//    
+//      for (Language lang: languages) {
+//        ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+//        if (blang == null) continue;
+//        totCount += blang.size();
+//      }
+//    }    
     
     int count = 0;
     for (Emotion emo: emotions) {
@@ -140,6 +155,21 @@ float bookAngle(int i) {
 
   int last = first + count - 1;
   return constrain(map(i, first, last, 0, TWO_PI), 0, TWO_PI);
+}
+
+// Returns the number of books with an emotional assignment.
+int numBooksWithEmo() {
+  int count = 0;
+  for (Emotion emo: emotions) {
+    if (emo.id == 0) continue;
+    
+    for (Language lang: languages) {
+      ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+      if (blang == null) continue;
+      count += blang.size();
+    }
+  }
+  return count;  
 }
 
 // Returns the intersection points between a line segment between (x1, y1) and

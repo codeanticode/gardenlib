@@ -1,6 +1,8 @@
 // The writing functions that take care of the bookshelf, wheel and history views.
 
 void drawBookshelf(Rectangle bounds, float yTop) {
+  clip(bounds.x, bounds.y, bounds.w, bounds.h);
+  
   float firstBook = viewRegion.getFirstBook();  
   float bookCount = viewRegion.getBookCount(); 
     
@@ -19,52 +21,103 @@ void drawBookshelf(Rectangle bounds, float yTop) {
   if (1 < w) bookStrokeWeight.enable();
   else bookStrokeWeight.disable(); // to stop the stroke appearing when the book rects are still too thin.
 
-  int langCount = 0;
-  for (Language lang: languages) {  
-    if (lang.id == 0) continue;
+  if (sortByLangFirst) { // Grouping the books first by language, then by emotion.
+    int langCount = 0;
+    for (Language lang: languages) {  
+      if (lang.id == 0) continue;
         
-    for (Emotion emo: emotions) {
-      ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
-      if (bemo == null) continue; 
+      for (Emotion emo: emotions) {
+        ArrayList<Book> bemo = lang.booksPerEmo.get(emo.id);
+        if (bemo == null) continue; 
     
-      int i0 = count; 
-      int i1 = i0 + bemo.size() - 1;
+        int i0 = count; 
+        int i1 = i0 + bemo.size() - 1;
  
-      if (viewRegion.intersects(i0, i1)) {        
-        for (int i = 0; i < bemo.size(); i++) {
-          int iabs = i0 + i;
-          if (firstBook <= iabs && iabs < firstBook + bookCount) {
-            Book book = bemo.get(i); 
-            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);            
-          }
-        }        
+        if (viewRegion.intersects(i0, i1)) {        
+          for (int i = 0; i < bemo.size(); i++) {
+            int iabs = i0 + i;
+            if (firstBook <= iabs && iabs < firstBook + bookCount) {
+              Book book = bemo.get(i); 
+              book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);            
+            }
+          }        
+        }
+      
+        count += bemo.size();
       }
-      
-      count += bemo.size();
-    }
 
-    // Draw language rectangle    
-    float x0 = bookX(langCount, bounds.x, bounds.w);
-    langCount += lang.booksInLang.size();        
-    float x1 = bookX(langCount, bounds.x, bounds.w);    
-    if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
-      // Adding paddings between languages:
-      if (bounds.x < x0) { // left padding
-        x0 += bookPadding * w/2; 
-      } else {
-         x0 = bounds.x;
-      }  
-      if (x1 < bounds.x + bounds.w) { // right padding
-        x1 -= bookPadding * w/2;      
-      } else {
-         x1 = bounds.x + bounds.w;
-      }  
-      noStroke();
+      // Draw language rectangle    
+      float x0 = bookX(langCount, bounds.x, bounds.w);
+      langCount += lang.booksInLang.size();        
+      float x1 = bookX(langCount, bounds.x, bounds.w);    
+      if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
+        // Adding paddings between languages:
+        if (bounds.x < x0) { // left padding
+          x0 += bookPadding * w/2; 
+        } else {
+          x0 = bounds.x;
+        }  
+        if (x1 < bounds.x + bounds.w) { // right padding
+          x1 -= bookPadding * w/2;      
+        } else {
+          x1 = bounds.x + bounds.w;
+        }  
+        noStroke();
       
-      fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));          
-      rect(x0, yTop - h, x1 - x0, h);      
-    } 
-  }  
+        fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));          
+        rect(x0, yTop - h, x1 - x0, h);      
+      } 
+    }      
+  } else { // Grouping the books first by emotion, then by language.
+    int emoCount = 0;
+    for (Emotion emo: emotions) {
+      if (emo.id == 0) continue;
+    
+      for (Language lang: languages) {
+        ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
+        if (blang == null) continue;
+      
+        int i0 = count; 
+        int i1 = i0 + blang.size() - 1;
+ 
+        if (viewRegion.intersects(i0, i1)) {        
+          for (int i = 0; i < blang.size(); i++) {
+            int iabs = i0 + i;
+            if (firstBook <= iabs && iabs < firstBook + bookCount) {
+              Book book = blang.get(i); 
+              book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);            
+            }
+          }        
+        }
+      
+        count += blang.size(); 
+      }
+    
+      // Draw emotion rectangle    
+      float x0 = bookX(emoCount, bounds.x, bounds.w);
+      emoCount += emo.booksInEmo.size();        
+      float x1 = bookX(emoCount, bounds.x, bounds.w);    
+      if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
+        // Adding paddings between languages:
+        if (bounds.x < x0) { // left padding
+          x0 += bookPadding * w/2; 
+        } else {
+          x0 = bounds.x;
+        } 
+        if (x1 < bounds.x + bounds.w) { // right padding
+          x1 -= bookPadding * w/2;      
+        } else {
+          x1 = bounds.x + bounds.w;
+        }  
+        noStroke();
+      
+        fill(replaceAlpha(emo.argb, viewFadeinAlpha.getInt()));          
+        rect(x0, yTop - h, x1 - x0, h);      
+      }     
+    }    
+  }
+        
+  noClip();
 }
 
 boolean drawWheel(Rectangle bounds, float yTop) {

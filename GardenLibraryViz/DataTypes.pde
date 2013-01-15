@@ -403,6 +403,17 @@ class SelectedLanguage {
   }
 }
 
+class SelectedEmotion {
+  Emotion emo;
+  float x, y;
+  
+  SelectedEmotion(Emotion emo, float x, float y) {
+    this.emo = emo;
+    this.x = x;
+    this.y = y;
+  }
+}
+
 // Class storing the properties of an emotion
 class Emotion {
   int id;
@@ -519,6 +530,7 @@ class ViewRegion {
       last -= first;
       first = 0;      
     }
+    /*
     if (allBooks.size() - 1 < last) {
       float diff = last - allBooks.size() + 1;
       first -= diff;
@@ -530,7 +542,7 @@ class ViewRegion {
     // number of books).
     first = constrain(first, 0, allBooks.size() - 1);
     last = constrain(last, firstBook.get(), allBooks.size() - 1);
-    
+    */
     firstBook.setTarget(first);
     lastBook.setTarget(last);
   }

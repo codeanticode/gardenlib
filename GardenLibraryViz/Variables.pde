@@ -35,6 +35,7 @@ boolean didDrag;
 boolean compactTime;
 SoftFloat bookHeightTimer;
 Language selLanguage;
+boolean sortByLangFirst = false;
 
 // wheel
 boolean playingAnim;
@@ -52,6 +53,7 @@ boolean mouseActivity = false;
 
 SelectedBook selBook = null;
 SelectedLanguage selLang = null;
+SelectedEmotion selEmo = null;
 
 ViewArea viewArea;
 ViewMenu viewMenu;
@@ -121,7 +123,13 @@ void initialize(int task) {
   } else if (task == FINISH_INIT) {
     // Init viewing range:
     viewRegion = new ViewRegion(books);
-    viewRegion.setTarget(0, books.size());  
+    if (sortByLangFirst) {
+      viewRegion.setTarget(0, books.size());
+    } else {
+      groupBooksByEmotion(int(daysSinceStart.getTarget()), true);
+      viewRegion.setTarget(0, numBooksWithEmo());
+    }
+    
     viewRegion.zoomLevel = VIEW_ALL;
   
     bookStrokeWeight = new SoftFloat();

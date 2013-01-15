@@ -232,13 +232,13 @@ class BookBubble extends InfoBox {
   }  
 }
 
-class LanguageTab extends InfoBox {
+class InfoTab extends InfoBox {
   Language lang;
   SoftFloat tabH;
   float tabW;
   boolean animating;
 
-  LanguageTab() {
+  InfoTab() {
     super();
     tabH = new SoftFloat();
   } 
@@ -250,7 +250,7 @@ class LanguageTab extends InfoBox {
     }
     lang = sel.lang;
     tabW = max(new float[] { textWidth(lang.name), 
-                             textWidth("Books: " + lang.booksInLang.size()) } );
+                             textWidth("Books: " + lang.booksInLang.size()) } );                      
   }
 
   void update() {
