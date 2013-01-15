@@ -58,6 +58,7 @@ SelectedEmotion selEmo = null;
 
 ViewArea viewArea;
 ViewMenu viewMenu;
+GroupMenu groupMenu;
 Timeline timeline;
 LegendArea legendArea;
 ArrayList<InterfaceElement> ui;
@@ -178,6 +179,8 @@ void initialize(int task) {
     // viewMenu = new ViewMenu(0, height - 50, 250, 50);
     viewMenu = new ViewMenu(20, height - 50, 180, 50);
 
+    groupMenu = new GroupMenu(20, height - 100, 180, 50);
+
     // timeline = new Timeline(250, height - 50, width - 250, 50);  
     timeline = new Timeline(205, height - 50, width - 200, 50); 
 
@@ -190,7 +193,8 @@ void initialize(int task) {
 
     ui.add(viewArea);    
     ui.add(legendArea);// changed view area and legend layers
-    ui.add(viewMenu);    
+    ui.add(viewMenu);
+    ui.add(groupMenu);    
     ui.add(timeline); 
 
     hintInfo = new HintInfo(600, 30);

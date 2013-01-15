@@ -84,18 +84,3 @@ void mouseMoved() {
   }
 }
 
-void keyPressed() {
-  if (key == ' ') {
-    int days = daysSinceStart.getInt();
-    if (groupByLangFirst) {
-      groupByLangFirst = false;
-      groupBooksByEmotion(days, false);
-    } 
-    else {
-      groupByLangFirst = true;
-      groupBooksByEmotion(days, true);
-    }     
-    setViewRegionAllBookshelf();
-  }
-}
-

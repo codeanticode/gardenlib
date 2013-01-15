@@ -374,6 +374,78 @@ class ViewMenu extends InterfaceElement {
   }
 }
 
+class GroupMenu extends InterfaceElement {
+  float w4, w2, lw, ew, h2;
+
+  GroupMenu(float x, float y, float w, float h) {
+    super(x, y, w, h);  
+    w4 = w/4;
+    w2 = w/2;
+    h2 = h/2;
+    lw = textWidth("languages");
+    ew = textWidth("emotions");
+  }
+
+  void draw() {
+    if (currentMode != MODE_BOOKSHELF) return;
+    
+    noStroke();
+    fill(replaceAlpha(backgroundColor, 180));
+    rect(bounds.x, bounds.y, bounds.w, bounds.h);
+
+    stroke(menuStrokeColor);
+    strokeWeight(1);
+
+    float xl = bounds.x;
+
+    float xc = xl + w4 - lw/2;
+    float yc = bounds.y + h2 + fontSize/2;
+    if (groupByLangFirst) {
+      fill(selOptionColor);
+    } 
+    else { 
+      fill(defTextColor);
+    }     
+    text("languages", xc, yc);
+
+    xl += w2;
+    // line(xl, bounds.y + h2 - fontSize/2, xl, bounds.y + h2 + fontSize/2);
+    line(xl, bounds.y + h2 - fontSize/2, xl, bounds.y + h2 + fontSize/2);
+
+    xc = xl + w4 - ew/2;
+    if (groupByLangFirst) {
+      fill(defTextColor);      
+    } 
+    else { 
+      fill(selOptionColor);
+    }      
+    text("emotions", xc, yc);
+
+  }
+
+  boolean mousePressed() {
+    if (currentMode != MODE_BOOKSHELF) return false;
+    if (!contains(mouseX, mouseY)) return false;
+
+    selected = true;
+
+    if (contains(mouseX, mouseY)) {
+      int days = daysSinceStart.getInt();
+      int p = int((mouseX - bounds.x) / w2);
+      if (p == 0) {
+        groupByLangFirst = true;
+        groupBooksByEmotion(days, true);
+      } 
+      else {
+        groupByLangFirst = false;
+        groupBooksByEmotion(days, false);
+      }
+      setViewRegionAllBookshelf();
+    }
+    return true;
+  }
+}
+
 class Timeline extends InterfaceElement {
   float h2;
   float margin;
