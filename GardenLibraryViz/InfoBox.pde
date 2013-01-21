@@ -132,15 +132,13 @@ class BookBubble extends InfoBox {
         fill(infoTextColor);
 
         float s = codeScale.get();
-        if (0 < s) {
-          float cw = textWidth(book.barcode);
-          
+        if (0 < s) {          
           pushMatrix();          
           translate(x0 + w + fontSize/2 + 5, y0 - tailH.get() - mainH.get()/2);
           rotate(HALF_PI);          
+          scale(s); 
           textFont(langFont);
-          
-          scale(s);
+          float cw = textWidth(book.barcode);
           fill(langFontColor);          
 //          text(book.barcode, -cw/2, fontSize/2);
           text(book.barcode, cw/2 - 5, fontSize/2);
@@ -180,13 +178,13 @@ class BookBubble extends InfoBox {
         fill(infoTextColor);
 
         float s = codeScale.get();
-        if (0 < s) {
+        if (0 < s) {          
           pushMatrix();
           translate(x0 - w + 10 - (fontSize + 10)/2, y0 - tailH.get() - mainH.get()/2);
           rotate(HALF_PI);
+          scale(s);
           textFont(langFont);        
           float cw = textWidth(book.barcode);
-          scale(s);
           fill(langFontColor);
           text(book.barcode, cw/2 - 5, fontSize/2);
           textFont(defFont);

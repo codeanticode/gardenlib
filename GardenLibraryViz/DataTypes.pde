@@ -109,7 +109,7 @@ class Book {
   }
 
   // TODO: the logic in this function should be simplified
-  void drawInBookshelf(float first, float weight, float left, float top, float h, float maxlen) {
+  void drawInBookshelf(float first, float weight, float left, float top, float h, float maxlen, boolean topEmo) {
     float x = left + weight * (getBookshelfPos() - first);
 
     // Factor is used to interpolate between the fully emotional story bars and the compact 
@@ -173,12 +173,22 @@ class Book {
       //int e = emos.get(n);
       Emotion emo0 = emotionsByID.get(e);         
       noStroke();
-      fill(replaceAlpha(emo0.argb, viewFadeinAlpha.getInt()));
+      
+      if (topEmo) {
+        fill(replaceAlpha(emo0.argb, viewFadeinAlpha.getInt()));  
+      } else {
+        Language lang0 = languagesByID.get(lang); 
+        fill(replaceAlpha(lang0.argb, viewFadeinAlpha.getInt()));  
+      }
 
       // Top rect identifying the book.
       float bh = bookTopHeight.get();      
       if (last && 0 < bh) {        
         rect(x + bookPadding * weight, top - h - bh, max(1, (1 - 2 * bookPadding) * weight), bh);
+      }
+
+      if (!topEmo) {
+        fill(replaceAlpha(emo0.argb, viewFadeinAlpha.getInt()));
       }
 
       // We draw the current emotional assignment only if the emotion is not "empty".

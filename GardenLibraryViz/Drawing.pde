@@ -49,7 +49,7 @@ void drawBookshelfGroupByLang(Rectangle bounds, int count, float firstBook, floa
           int iabs = i0 + i;
           if (firstBook <= iabs && iabs < firstBook + bookCount) {
             Book book = bemo.get(i); 
-            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);
+            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen, true);
           }
         }
       }
@@ -100,7 +100,7 @@ void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float
           int iabs = i0 + i;
           if (firstBook <= iabs && iabs < firstBook + bookCount) {
             Book book = blang.get(i); 
-            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen);
+            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen, false);
           }
         }
       }
