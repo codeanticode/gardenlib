@@ -525,12 +525,10 @@ class ViewRegion {
   SoftFloat firstBook;
   SoftFloat lastBook;
   int zoomLevel;
-  ArrayList<Book> allBooks;
 
-  ViewRegion(ArrayList<Book> allBooks) {
+  ViewRegion() {
     firstBook = new SoftFloat();
     lastBook = new SoftFloat();
-    this.allBooks = allBooks;
   }  
 
   void update() {
@@ -539,24 +537,28 @@ class ViewRegion {
   }
 
   void setTarget(float first, float last) {
+    setTarget(first, last, int(last));
+  }
+
+  void setTarget(float first, float last, int bookCount) {
     // Making sure that the interval remains inside the bounds.
     if (first < 0) {
       last -= first;
       first = 0;
     }
-    /*
-    if (allBooks.size() - 1 < last) {
-     float diff = last - allBooks.size() + 1;
-     first -= diff;
-     last  -= diff;
-     }
      
-     // additional constraining (should make sense only if 
-     // diff between first and last is greater than the total
-     // number of books).
-     first = constrain(first, 0, allBooks.size() - 1);
-     last = constrain(last, firstBook.get(), allBooks.size() - 1);
-     */
+    if (bookCount - 1 < last) {
+      float diff = last - bookCount + 1;
+      first -= diff;
+      last  -= diff;
+    }
+     
+    // additional constraining (should make sense only if 
+    // diff between first and last is greater than the total
+    // number of books).
+    first = constrain(first, 0, bookCount - 1);
+    last = constrain(last, firstBook.get(), bookCount - 1); 
+     
     firstBook.setTarget(first);
     lastBook.setTarget(last);
   }

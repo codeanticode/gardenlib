@@ -131,7 +131,7 @@ void initialize(int task) {
   } 
   else if (task == FINISH_INIT) {
     // Init viewing range:
-    viewRegion = new ViewRegion(books);
+    viewRegion = new ViewRegion();
     if (groupByLangFirst) {
       viewRegion.setTarget(0, books.size());
     } 
