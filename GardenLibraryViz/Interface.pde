@@ -428,20 +428,19 @@ class GroupMenu extends InterfaceElement {
     if (!contains(mouseX, mouseY)) return false;
 
     selected = true;
-
-    if (contains(mouseX, mouseY)) {
-      int days = daysSinceStart.getInt();
-      int p = int((mouseX - bounds.x) / w2);
-      if (p == 0) {
-        groupByLangFirst = true;
-        groupBooksByEmotion(days, true);
-      } 
-      else {
-        groupByLangFirst = false;
-        groupBooksByEmotion(days, false);
-      }
-      setViewRegionAllBookshelf();
+    
+    int days = daysSinceStart.getInt();
+    int p = int((mouseX - bounds.x) / w2);
+    if (p == 0) {
+      groupByLangFirst = true;
+      groupBooksByEmotion(days, true);
+    } 
+    else {
+      groupByLangFirst = false;
+      groupBooksByEmotion(days, false);
     }
+    setViewRegionAllBookshelf();
+    
     return true;
   }
 }
@@ -892,7 +891,7 @@ void setViewRegionAllBookshelf() {
   int count = groupByLangFirst ? books.size() : numBooksWithEmo();
   viewRegion.setTarget(0, count);
 
-  viewRegion.zoomLevel = VIEW_ALL;
+  viewRegion.zoomLevel = VIEW_ALL;  
   bookStrokeWeight.set(0);
   bookTopHeight.setTarget(0);
   langBarH.setTarget(langBarWAllB);// added B

@@ -129,7 +129,6 @@ class BookBubble extends InfoBox {
 
         fill(lang.argb);
         rect(x0 + w, y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
-
         fill(infoTextColor);
 
         float s = codeScale.get();
@@ -142,7 +141,7 @@ class BookBubble extends InfoBox {
           textFont(langFont);
           
           scale(s);
-          fill(langFontColor);
+          fill(langFontColor);          
 //          text(book.barcode, -cw/2, fontSize/2);
           text(book.barcode, cw/2 - 5, fontSize/2);
           textFont(defFont);

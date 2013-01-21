@@ -18,6 +18,7 @@ void drawBookshelf(Rectangle bounds, float yTop) {
   int count = 0;
 
   float w = bounds.w / bookCount;
+  
   if (1 < w) bookStrokeWeight.enable();
   else bookStrokeWeight.disable(); // to stop the stroke appearing when the book rects are still too thin.
 
@@ -107,7 +108,7 @@ void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float
       count += blang.size();
     }
 
-    // Draw emotion rectangle    
+    // Draw emotion rectangle  
     float x0 = bookX(emoCount, bounds.x, bounds.w);
     emoCount += emo.booksInEmo.size();        
     float x1 = bookX(emoCount, bounds.x, bounds.w);    

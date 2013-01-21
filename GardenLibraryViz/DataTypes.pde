@@ -557,7 +557,7 @@ class ViewRegion {
     // diff between first and last is greater than the total
     // number of books).
     first = constrain(first, 0, bookCount - 1);
-    last = constrain(last, firstBook.get(), bookCount - 1); 
+    last = constrain(last, first, bookCount - 1); 
      
     firstBook.setTarget(first);
     lastBook.setTarget(last);
