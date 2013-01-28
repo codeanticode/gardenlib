@@ -4,10 +4,14 @@ class Rectangle {
   float x, y, w, h;
 
   Rectangle(float x, float y, float w, float h) {
+    set(x, y, w, h);
+  }
+
+  void set(float x, float y, float w, float h) {
     this.x = x;
     this.y = y;
     this.w = w;
-    this.h = h;
+    this.h = h;    
   }
 
   boolean contains(float mx, float my) {
@@ -26,6 +30,7 @@ class InterfaceElement {
 
   void update() {
   }
+  
   void draw() {
   }
 
@@ -44,6 +49,10 @@ class InterfaceElement {
 
   boolean contains(float mx, float my) {
     return bounds.contains(mx, my);
+  }
+  
+  void resize(float x, float y, float w, float h) {
+    bounds.set(x, y, w, h);  
   }
 }  
 
@@ -265,6 +274,11 @@ class ViewArea extends InterfaceElement {
       selected = false;
     }
   }
+  
+  void resize(float x, float y, float w, float h) {
+    super.resize(x, y, w, h);
+    w0 = w;    
+  }
 }
 
 class ViewMenu extends InterfaceElement {
@@ -372,6 +386,12 @@ class ViewMenu extends InterfaceElement {
       playingAnim = false;
     }
   }
+  
+ void resize(float x, float y, float w, float h) {
+    super.resize(x, y, w, h);
+    w3 = w/3;
+    h2 = h/2;  
+  } 
 }
 
 class GroupMenu extends InterfaceElement {
@@ -443,6 +463,13 @@ class GroupMenu extends InterfaceElement {
     
     return true;
   }
+  
+  void resize(float x, float y, float w, float h) {
+    super.resize(x, y, w, h);
+    w4 = w/4;
+    w2 = w/2;
+    h2 = h/2;
+  }  
 }
 
 class Timeline extends InterfaceElement {
@@ -519,9 +546,7 @@ class Timeline extends InterfaceElement {
     fill(255);      
     triangle(xc - 5, bounds.y + h2 - 10, xc + 5, bounds.y + h2 - 10, xc, bounds.y + h2);
     Date selDate = dateAfter(startDate, int(daysSinceStart.get()));
-    ////////////////////////////////////////////////////////////////////////////////////////////// Moon ////
-    drawTimeBox(xc, x0, x1, bounds.y + h2 - 15, selDate.day, selDate.month, selDate.year);
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    drawTimeBox(xc, x0, x1, bounds.y + h2 - 15, selDate);
     String dstr = selDate.toNiceString();    
     float dw = textWidth(dstr);
     fill(defTextColor);
@@ -597,6 +622,11 @@ class Timeline extends InterfaceElement {
       groupBooksByEmotion(days, false);
     }
   }
+  
+  void resize(float x, float y, float w, float h) {
+    super.resize(x, y, w, h);
+    h2 = h/2;
+  }   
 }
 
 class LegendArea extends InterfaceElement {
@@ -606,7 +636,7 @@ class LegendArea extends InterfaceElement {
   SoftFloat animTimer;
 
   LegendArea(float bx, float by, float bw, float bh, 
-  float x, float y, float w, float h) {
+             float x, float y, float w, float h) {
     super(x, y, w, h);         
     this.bx = bx;
     this.by = by;
@@ -1168,7 +1198,6 @@ SelectedBook getSelectedBookInWheel(Rectangle bounds, SelectedBook defSelBook, f
     }
   }
 
-
   if (res != null) {
     // Update position of currently selected book to take into account margin animation.
     res.x = bounds.x + bounds.w/2;
@@ -1486,31 +1515,24 @@ void checkMouseActivity() {
   }
 }
 
-void timelineRollOver(float _x, float _y) {
+void timelineRollOver(float x, float y) {
   int areaExpand = 60;
   int areaAdjust_Y = 5;
 
-  newsRollover = false;
-  if (mouseX > _x-areaExpand/2 && mouseX < _x+areaExpand/2) {
-    if (mouseY > _y-areaExpand/2 +areaAdjust_Y && mouseY < _y+areaExpand/2 +areaAdjust_Y) {
-      newsRollover = true;
-    }
-  }
-
-  //  to check the area
-  /*
-  fill(255, 0, 0, 100);
-   rect(_x - areaExpand/2, _y-areaExpand/2 + areaAdjust_Y, areaExpand, areaExpand);
-   noFill();
-   */
+  newsRollover = x - areaExpand/2 < mouseX && mouseX < x + areaExpand/2 &&
+                 y - areaExpand/2 + areaAdjust_Y < mouseY && mouseY < y + areaExpand/2 + areaAdjust_Y;
 }
 
 void checkResize() {
   if (WIDTH != width || HEIGHT != height) {
-    println("resize detected");
-    // Resize UI here...
+    viewMenu.resize(20, height - 50, 180, 50);
+    groupMenu.resize(20, height - 100, 180, 50);
+    timeline.resize(205, height - 50, width - 200, 50); 
+    viewArea.resize(0, -8, width, height - 90);
+    legendArea.resize(0, 0, 200, height - 100);
+    
     WIDTH = width;
-    HEIGHT = height;
+    HEIGHT = height; 
   }   
 }
 

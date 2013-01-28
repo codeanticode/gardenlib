@@ -658,16 +658,22 @@ class Trail {
 
 
 class NewsText {
-  int year;
-  int month;
-  int day;
+//  int year;
+//  int month;
+//  int day;
+  Date date;
   String text;
 
-  NewsText(int _d, int _m, int _y, String _txt) {
-    this.day = _d;
-    this.month = _m;
-    this.year = _y;
-    this.text =  _txt;
+  NewsText(int d, int m, int y, String txt) {
+//    this.day = _d;
+//    this.month = _m;
+//    this.year = _y;
+    date = new Date(y, m, d);
+    text = txt;
+  }
+  
+  boolean isBefore(Date other) {
+    return date.isBefore(other);
   }
 }
 

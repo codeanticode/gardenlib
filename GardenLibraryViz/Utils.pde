@@ -258,7 +258,7 @@ int daysBetween(Date startDate, Date endDate) {
   int btw = 0;
   Date tmp = new Date();
   tmp.copy(startDate);
-  while (tmp.isBefore (endDate)) {
+  while (tmp.isBefore(endDate)) {
     tmp.addDay();
     btw++;
   }  

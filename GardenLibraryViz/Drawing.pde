@@ -2,6 +2,8 @@
 
 void drawBookshelf(Rectangle bounds, float yTop) {
   clip(bounds.x, bounds.y, bounds.w, bounds.h);
+  
+  println(bounds.w);
 
   float firstBook = viewRegion.getFirstBook();  
   float bookCount = viewRegion.getBookCount(); 
@@ -365,42 +367,25 @@ void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white 
   }
 }
 
-void drawTimeBox(float _x, float _x0, float _x1, float _y, int _day, int _month, int _year) {
-
-  // to check the speed of the cursor movemnent
-  /*
-  timecursor_speed = abs(_x - timecursor_prevX);
-   timecursor_prevX = _x;
-   
-   if (timecursor_speed > DEGREE_MOVEMENT) {
-   CURSOR_STATE = 1;
-   } 
-   else {
-   CURSOR_STATE = 0;
-   }
-   */
-  timelineRollOver(_x, _y);
+void drawTimeBox(float x, float x0, float x1, float y, Date selDate) {
+  timelineRollOver(x, y);
 
   float indicatorX = 0;
 
-
   // to correct the details
   for (int i = 0; i < timelineNews.length; i++) {
-    NewsText timeTxt = timelineNews[i];
-    if (timeTxt == null) continue;
-    int textDays = timeTxt.year*360 + timeTxt.month*30 + timeTxt.day;    
-    if (textDays <= _year*360 + _month*30 + _day) {      
+    NewsText news = timelineNews[i];
+    if (news == null) continue;
+    if (news.isBefore(selDate)) {     
       currNewsText = timelineNews[i].text;
-      int days = (timelineNews[i].year-2009)*360 + timelineNews[i].month*30 + timelineNews[i].day;
-      indicatorX = map(days, 11*30, 1080+11*30, _x0, _x1);
-    }
+      int days = daysBetween(startDate, news.date);      
+      indicatorX = map(days, 0, daysRunningTot, x0, x1);
+    }    
   }
 
-
-  if (indicatorX < _x0) {
-    indicatorX = _x0;
+  if (indicatorX < x0) {
+    indicatorX = x0;
   }
-
 
   // to change the alpha of the text box
   if (newsRollover) {
@@ -416,20 +401,20 @@ void drawTimeBox(float _x, float _x0, float _x1, float _y, int _day, int _month,
 
   //to calculate the position of the box
   float textLength = textWidth(currNewsText);
-  float boxWidth = _x1 - _x0;
-  float boxHeight = ceil(textLength/boxWidth)*newsLineSpace+3;
-  float boxPosX = _x0;
-  float boxPosY = _y - boxHeight - newsAdjustY;
+  float boxWidth = x1 - x0;
+  float boxHeight = ceil(textLength/boxWidth) * newsLineSpace + 3;
+  float boxPosX = x0;
+  float boxPosY = y - boxHeight - newsAdjustY;
 
   //to draw the box and text
   noStroke();
-  fill(0, newsAlpha*2);
+  fill(0, newsAlpha * 2);
   rect(boxPosX, boxPosY, boxWidth, boxHeight);
   fill(160, newsAlpha);
   textLeading(newsLineSpace);
   text(currNewsText, boxPosX, boxPosY, boxWidth, boxHeight);
   fill(255, 0, 0, newsAlpha);
-  ellipse(indicatorX, _y+15, 8, 8);
+  ellipse(indicatorX, y + 15, 8, 8);
   noFill();
 }
 

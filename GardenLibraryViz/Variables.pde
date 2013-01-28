@@ -197,8 +197,7 @@ void initialize(int task) {
     // viewArea = new ViewArea(0, 50, width, height - 120);  
     viewArea = new ViewArea(0, -8, width, height - 90);
 
-    legendArea = new LegendArea(150, 30, 100, 20, 
-    0, 0, 200, height - 100);
+    legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
     ui = new ArrayList<InterfaceElement>();
 
     ui.add(viewArea);    
