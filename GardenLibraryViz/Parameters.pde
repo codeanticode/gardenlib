@@ -49,11 +49,13 @@ boolean showSolidEmoHistory = false;
 int animationIncDays = 7;//28;
 
 // Fonts:
-String fontName = "Droid Sans";
+String fontName = "Istok-Regular";
+//String fontName = "Droid Sans";
 //String fontName = "Helvetica";
 int fontSize    = 11;
 
-String langFontName = "Droid Sans Bold";
+String langFontName = "Istok-Bold";
+//String langFontName = "Droid Sans Bold";
 //String langFontName = "Helvetica Bold";
 int langFontSize    = 12;
 color langFontColor = color(255);

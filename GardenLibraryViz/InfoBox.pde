@@ -186,6 +186,7 @@ class BookBubble extends InfoBox {
           textFont(langFont);        
           float cw = textWidth(book.barcode);
           fill(langFontColor);
+//          text(book.barcode, -cw/2, fontSize/2);
           text(book.barcode, cw/2 - 5, fontSize/2);
           textFont(defFont);
           popMatrix();
