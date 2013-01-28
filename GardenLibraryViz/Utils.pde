@@ -57,7 +57,6 @@ void groupBooksByEmotion(int days, boolean init) {
         for (Language lang: languages) {
           ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
           if (blang == null) continue;
-
           for (int i = 0; i < blang.size(); i++) {
             Book book = blang.get(i);        
             book.setBookshelfPos(i + i0);

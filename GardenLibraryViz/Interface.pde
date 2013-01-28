@@ -615,7 +615,7 @@ class Timeline extends InterfaceElement {
       } 
       else {
         groupBooksByEmotion(days, false);
-        viewRegion.setTarget(0, numBooksWithEmo());
+        viewRegion.update(numBooksWithEmo());
       }
     } 
     else if (currentMode == MODE_WHEEL) {

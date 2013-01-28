@@ -2,8 +2,6 @@
 
 void drawBookshelf(Rectangle bounds, float yTop) {
   clip(bounds.x, bounds.y, bounds.w, bounds.h);
-  
-  println(bounds.w);
 
   float firstBook = viewRegion.getFirstBook();  
   float bookCount = viewRegion.getBookCount(); 
