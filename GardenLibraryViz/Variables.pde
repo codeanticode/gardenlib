@@ -25,8 +25,6 @@ SoftFloat daysSinceStart;
 SoftFloat bookStrokeWeight;
 SoftFloat langBarH;
 
-SoftFloat langBarHB; // added for bookshelf
-
 SoftFloat bookTopHeight;
 //SelectedBook selBook;
 boolean didDrag;
@@ -41,6 +39,7 @@ boolean groupByLangFirst = true;
 // wheel
 boolean playingAnim;
 boolean selectedPlayAnim;
+SoftFloat wheelWidth;
 
 // News timebox
 NewsText[] timelineNews;
@@ -134,7 +133,7 @@ void initialize(int task) {
   } 
   else if (task == GROUP_BY_EMO) {
     daysSinceStart = new SoftFloat();
-    daysSinceStart.setTarget(daysRunningTot);   
+    daysSinceStart.setTarget(daysRunningTot);
     groupBooksByEmotion(daysSinceStart.getInt(), true);
 
     currentTask = FINISH_INIT;
@@ -154,20 +153,7 @@ void initialize(int task) {
 
     bookStrokeWeight = new SoftFloat();
     langBarH = new SoftFloat();
-    langBarH.setTarget(langBarWAllB);// added B for height of bookshelf
-
-    //    if (currentMode == MODE_BOOKSHELF){ // doesn't work
-    //    langBarH = new SoftFloat();
-    //    langBarH.setTarget(langBarWAll);
-    //    } else {
-    //       langBarH = new SoftFloat();
-    //    langBarH.setTarget(langBarWAllB);
-    //    
-    //    }
-
-    langBarHB = new SoftFloat(); // added for bookshelf
-    langBarHB.setTarget(langBarWAllB);
-
+    langBarH.setTarget(langBarWAll);
 
     bookTopHeight = new SoftFloat();
     bookHeightTimer = new SoftFloat();
@@ -180,6 +166,8 @@ void initialize(int task) {
     wheelYPos.set(0);
     wheelScale = new SoftFloat();
     wheelScale.set(1);
+    wheelWidth = new SoftFloat();
+    wheelWidth.setTarget(wheelWidthWAll);
 
     viewFadeinAlpha = new SoftFloat();
     viewFadeinAlpha.set(255);

@@ -16,10 +16,7 @@ String newsFilename  = "news.txt";
 
 // Bookshelf parameters:
 int bookshelfTop   = 10; //0;
-float langBarWAll  =  2;//10;//20; 
-
-float langBarWAllB  = 10;//20;// added for Bookshelf
-
+float langBarWAll  = 10;//20;
 float langBarWLang =  10;//20;
 float langBarWBook =  10;//15;
 float bookPadding  =  0.3;//0.4;//0.3;
@@ -38,6 +35,9 @@ float wheelDispEmo = 200;   // How much the wheel is translated down the Y axis 
 float wheelScaleEmo = 1.3;  // ...and how much it is scaled.
 float wheelDispBook = 600;  // Idem when selecting a book...
 float wheelScaleBook = 2.0; // ...
+float wheelWidthWAll = 5;//10;//20;
+float wheelWidthView = 8;
+float wheelWidthBook = 10;
 
 // History parameters
 float historyTop = 90;// 120;//80;

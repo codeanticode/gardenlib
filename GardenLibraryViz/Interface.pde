@@ -86,10 +86,8 @@ class ViewArea extends InterfaceElement {
         groupBooksByEmotion(daysSinceStart.getInt(), true);
       }  
       bookStrokeWeight.update();
-      langBarH.update();
 
-      langBarHB.update();// added 
-
+      langBarH.update(); 
       bookTopHeight.update();
       bookHeightTimer.update();
 
@@ -119,12 +117,13 @@ class ViewArea extends InterfaceElement {
       daysSinceStart.update();
 
       bookStrokeWeight.update();
-      langBarH.update();
       bookTopHeight.update();
 
       wheelRAngle.update();
       wheelYPos.update();
       wheelScale.update();
+      
+      wheelWidth.update();
     } 
     else {
       daysSinceStart.update();
@@ -840,7 +839,6 @@ void setViewRegionBookshelf(float x, float y, Rectangle bounds, float yTop) {
     viewRegion.zoomLevel = VIEW_BOOK; 
     bookStrokeWeight.setTarget(bookOutlineW);
     bookTopHeight.setTarget(maxBookHeight);
-    langBarH.setTarget(langBarWBook);    
     currLang = null;
     currEmo = null;
 
@@ -924,7 +922,7 @@ void setViewRegionAllBookshelf() {
   viewRegion.zoomLevel = VIEW_ALL;  
   bookStrokeWeight.set(0);
   bookTopHeight.setTarget(0);
-  langBarH.setTarget(langBarWAllB);// added B
+  langBarH.setTarget(langBarWAll);
   bookHeightTimer.setTarget(0);
   compactTime = false; 
   currLang = null;
@@ -935,7 +933,7 @@ void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
   float xc = bounds.x + bounds.w/2;
   float yc = bounds.y + yTop + bounds.h/2;
 
-  float h = langBarH.get();
+  float h = wheelWidth.get();
   float r0 = wheelRadius;
   float r1 = wheelRadius + h;
 
@@ -970,6 +968,7 @@ void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
         if (PI < centAngle) centAngle = centAngle - TWO_PI;
         wheelRAngle.setTarget(centAngle);
         viewRegion.zoomLevel = VIEW_EMO;
+        wheelWidth.set(wheelWidthView);
         return;
       }
     }
@@ -986,11 +985,11 @@ void setViewRegionAllWheel() {
   viewRegion.zoomLevel = VIEW_ALL;
   wheelYPos.setTarget(0);
   wheelScale.setTarget(1);
-  langBarH.set(langBarWAll);
+  wheelWidth.set(wheelWidthWAll);
 }
 
 void selectBookInWheel(float d, float angle) {
-  float r1 = wheelRadius + langBarH.get();
+  float r1 = wheelRadius + wheelWidth.get();
   int count = 0;    
   for (Emotion emo: emotions) {
     if (emo.id == 0) continue;
@@ -1018,6 +1017,7 @@ void selectBookInWheel(float d, float angle) {
             float centAngle = PI + HALF_PI - a;
             if (PI < centAngle) centAngle = centAngle - TWO_PI;
             wheelRAngle.setTarget(centAngle);
+            wheelWidth.set(wheelWidthBook);
             return;
           }
         }
@@ -1043,7 +1043,7 @@ boolean insideBookshelf(float x, float y, Rectangle bounds, float yTop) {
 }
 
 boolean insideLangBar(float x, float y, Rectangle bounds, float yTop) {
-  float h = langBarH.get();    
+  float h = langBarH.get();
   return (bounds.x < x && x < bounds.x + bounds.w) && (yTop - h < y && y < yTop);
 }
 
@@ -1144,7 +1144,7 @@ SelectedBook getSelectedBookInWheel(Rectangle bounds, SelectedBook defSelBook, f
   // that is right at the top of the wheel: 
   float xc = bounds.x + bounds.w/2;
   float yc = bounds.y + yTop + bounds.h/2;
-  float h = langBarH.get();  
+  float h = wheelWidth.get();  
   float r0 = wheelRadius;
   float r1 = wheelRadius + h;
 

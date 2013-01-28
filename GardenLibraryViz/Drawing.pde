@@ -10,7 +10,7 @@ void drawBookshelf(Rectangle bounds, float yTop) {
 
   // float h = langBarH.get();
 
-  float h = langBarHB.get();// added for Bookshelf
+  float h = langBarH.get();// added for Bookshelf
 
   //float h = 10; //add 8 pix to height of lang bar
   float totLen = map(elapsed, 0, daysRunningTot, 0, bounds.y + bounds.h - yTop);
@@ -168,7 +168,7 @@ boolean drawWheel(Rectangle bounds, float yTop) {
 
   float elapsed = daysSinceStart.get();  
 
-  float h = langBarH.get();
+  float h = wheelWidth.get();
 
   float xc = bounds.x + bounds.w/2;
   float yc = bounds.y + yTop + bounds.h/2;
