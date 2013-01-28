@@ -108,9 +108,10 @@ class Book {
     }
   }
 
-  // TODO: the logic in this function should be simplified
-  void drawInBookshelf(float first, float weight, float left, float top, float h, float maxlen, boolean topEmo) {
+  float drawInBookshelf(float first, float weight, float left, float top, float h, float maxlen, boolean topEmo) {
     float x = left + weight * (getBookshelfPos() - first);
+    float x0 = x + bookPadding * weight;
+    float x1 = x0 + max(1, (1 - 2 * bookPadding) * weight); // max() function to make things work in JS    
 
     // Factor is used to interpolate between the fully emotional story bars and the compact 
     // representation (each emotional assigment has the same height). 
@@ -176,15 +177,12 @@ class Book {
       
       if (topEmo) {
         fill(replaceAlpha(emo0.argb, viewFadeinAlpha.getInt()));  
-      } else {
-        Language lang0 = languagesByID.get(lang); 
-        fill(replaceAlpha(lang0.argb, viewFadeinAlpha.getInt()));  
-      }
+      } 
 
       // Top rect identifying the book.
       float bh = bookTopHeight.get();      
-      if (last && 0 < bh) {        
-        rect(x + bookPadding * weight, top - h - bh, max(1, (1 - 2 * bookPadding) * weight), bh);
+      if (last && 0 < bh && topEmo) {        
+        rect(x0, top - h - bh, x1 - x0, bh);
       }
 
       if (!topEmo) {
@@ -192,9 +190,7 @@ class Book {
       }
 
       // We draw the current emotional assignment only if the emotion is not "empty".
-      if (e != 0) {        
-        float x0 = x + bookPadding * weight;
-        float x1 = x0 + max(1, (1 - 2 * bookPadding) * weight); // max() function to make things work in JS         
+      if (e != 0) {     
         rect(x0, y0, x1 - x0, y1 - y0);
         float w = bookStrokeWeight.get();
         if (0.5 <= abs(w)) {        
@@ -207,6 +203,8 @@ class Book {
         break;
       }
     }
+    
+    return x0;
   }
 
   void drawInWheel(float xc, float yc, float rad, float h, float a) {    
@@ -251,7 +249,6 @@ class Book {
     }
   }      
 
-  // TODO: the logic in this function should be simplified, same as drawInBookshelf
   int insideBookshelf(float x, float y, float first, float weight, float left, float top, float h, float maxlen) {
     float x0 = left + weight * (getBookshelfPos() - first);    
     if (x0 < x && x <= x0 + weight) {

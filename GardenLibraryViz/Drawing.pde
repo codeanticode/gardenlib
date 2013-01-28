@@ -89,6 +89,8 @@ void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float
     if (emo.id == 0) continue;
 
     for (Language lang: languages) {
+      float x0 = -1, x1 = -1; 
+      
       ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
       if (blang == null) continue;
 
@@ -100,10 +102,24 @@ void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float
           int iabs = i0 + i;
           if (firstBook <= iabs && iabs < firstBook + bookCount) {
             Book book = blang.get(i); 
-            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen, false);
+            float x = book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen, false);
+            if (x0 == -1) {
+              x0 = x;  
+            }
+            x1 = x;
           }
         }
       }
+
+     // Draw language bar
+     if (-1 < x0 && x0 <= x1) {
+       x1 += max(1, (1 - 2 * bookPadding) * w);
+       fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));
+       //rect(x0,   x1 - x0,  ) 
+       float bh = bookTopHeight.get();
+       noStroke(); 
+       rect(x0, yTop - h - bh, x1 - x0, 0.7 * bh); 
+     }
 
       count += blang.size();
     }
