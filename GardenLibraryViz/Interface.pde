@@ -1505,3 +1505,12 @@ void timelineRollOver(float _x, float _y) {
    */
 }
 
+void checkResize() {
+  if (WIDTH != width || HEIGHT != height) {
+    println("resize detected");
+    // Resize UI here...
+    WIDTH = width;
+    HEIGHT = height;
+  }   
+}
+

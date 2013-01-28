@@ -2,6 +2,10 @@ String startDateString = "2009-11-01"; // Date the library opened
 //String endDateString   = "2010-12-31";
 String endDateString   = "";           // If left empty, then the current date will be used
 
+int WIDTH  = 1155;
+int HEIGHT = 643;
+boolean RESIZE = true;
+
 // Input files:
 String emoFilename   = "emotions.txt";
 String langFilename  = "languages.txt";
