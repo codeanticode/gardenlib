@@ -61,6 +61,7 @@ class ViewArea extends InterfaceElement {
   float pressX0, pressY0;
   boolean animatingTrails;
   boolean draggingWheel;
+  boolean histLocked;
   BookBubble bookBubble;
   LanguageTab langTab;
   EmotionTab emoTab;  
@@ -200,7 +201,7 @@ class ViewArea extends InterfaceElement {
     else if (currentMode == MODE_HISTORY) {      
       drawHistory(bounds, historyTop);
 
-      if (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0) {        
+      if (!histLocked && (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0)) {        
         if (contains(mouseX, mouseY)) {
           selBook = selectBookInHistory(mouseX, mouseY, bounds, historyTop);
         }
@@ -236,6 +237,8 @@ class ViewArea extends InterfaceElement {
       pressX0 = mouseX;
       pressY0 = mouseY;
       draggingWheel = false;
+    } else if (currentMode == MODE_HISTORY) {
+      histLocked = !histLocked;  
     }
     return true;
   }
