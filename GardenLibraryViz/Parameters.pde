@@ -8,7 +8,7 @@ String langFilename  = "languages.txt";
 String booksFilename = "books.txt";
 String histoFilename = "history.txt";
 String linksFilename = "links.txt";
-String newsFilename  = "details.txt";
+String newsFilename  = "news.txt";
 
 // Bookshelf parameters:
 int bookshelfTop   = 10; //0;
