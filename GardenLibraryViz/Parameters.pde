@@ -1,6 +1,6 @@
 String startDateString = "2009-11-01"; // Date the library opened
 //String endDateString   = "2010-12-31";
-String endDateString   = "";           // If left empty, then the current date will be used
+String endDateString   = "";           // Leave empty to use current date
 
 int WIDTH  = 1155;
 int HEIGHT = 643;

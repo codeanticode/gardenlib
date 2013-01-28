@@ -26,7 +26,6 @@ SoftFloat bookStrokeWeight;
 SoftFloat langBarH;
 
 SoftFloat bookTopHeight;
-//SelectedBook selBook;
 boolean didDrag;
 
 // bookshelf
@@ -40,17 +39,19 @@ boolean groupByLangFirst = true;
 boolean playingAnim;
 boolean selectedPlayAnim;
 SoftFloat wheelWidth;
+SoftFloat wheelRAngle;
+SoftFloat wheelYPos;
+SoftFloat wheelScale;
+
+// history
+float historyCircleX, historyCircleY;
+PGraphics historyCanvas;
 
 // News timebox
 NewsText[] timelineNews;
 String currNewsText = "";
 boolean newsRollover;
 int newsAlpha = 0;
-
-
-SoftFloat wheelRAngle;
-SoftFloat wheelYPos;
-SoftFloat wheelScale;
 
 SoftFloat viewFadeinAlpha;      // View left margin 
 SoftFloat viewLeftMargin; // View left margin
@@ -77,8 +78,6 @@ float sinLUT[];
 float cosLUT[];
 float SINCOS_PRECISION = 1.0;
 int SINCOS_LENGTH = int((360.0 / SINCOS_PRECISION));
-
-PGraphics historyCanvas;
 
 void initialize(int task) {
   if (task == LOADING) {

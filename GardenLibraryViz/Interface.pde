@@ -211,12 +211,13 @@ class ViewArea extends InterfaceElement {
         drawBookHistory(selBook, bounds, historyTop);
       }
 
-      float xc = map(daysSinceStart.get(), 0, daysRunningTot, bounds.x, bounds.x + bounds.w);
+      historyCircleX = map(daysSinceStart.get(), 0, daysRunningTot, bounds.x, bounds.x + bounds.w);
+      historyCircleY = bounds.y + bounds.h + 5;
       strokeWeight(1);
       stroke(historyLineColor);
-      line(xc, 0, xc, bounds.y + bounds.h + 10);
+      line(historyCircleX, 0, historyCircleX, historyCircleY + 5);
       fill(255);
-      ellipse(xc, bounds.y + bounds.h + 5, 10, 10);
+      ellipse(historyCircleX, historyCircleY, 10, 10);
 
       //  bookBubble.draw(); // moved book bubble down so it would draw above rays
     }
@@ -558,7 +559,14 @@ class Timeline extends InterfaceElement {
     text(dstr, xc - dw/2, bounds.y + h2 - 15);
   }
 
-  boolean mousePressed() {
+  boolean mousePressed() {    
+    if (currentMode == MODE_HISTORY && dist(mouseX, mouseY, historyCircleX, historyCircleY) < 10) {
+      // Hack to drag the white circle in the history view and control the timeline, part 1 
+      // (see setTimeHistoryHack() function below for the rest) 
+      selected = true;
+      return true;
+    }
+    
     if (!contains(mouseX, mouseY)) return false;
     selected = true;
     if (mouseX > bounds.x + bounds.w - margin) {
@@ -599,8 +607,10 @@ class Timeline extends InterfaceElement {
   boolean mouseDragged() {
     if (!selected) return false;
     if (bounds.x < mouseX && mouseX < bounds.x + bounds.w - margin && 
-      bounds.y < mouseY && mouseY < bounds.y + bounds.h) {
+        bounds.y < mouseY && mouseY < bounds.y + bounds.h) {
       setTime(mouseX);
+    } else if (currentMode == MODE_HISTORY) {
+      setTimeHistoryHack(mouseX);      
     }
     return true;
   }
@@ -620,6 +630,14 @@ class Timeline extends InterfaceElement {
     else if (currentMode == MODE_WHEEL) {
       groupBooksByEmotion(days, false);
     }
+  }
+  
+  void setTimeHistoryHack(float mx) {
+    // Hack to drag the white circle in the history view and control the timeline, part 2
+    int days = int(map(mx, viewArea.bounds.x, viewArea.bounds.x + viewArea.bounds.w, 0, daysRunningTot));
+    if (0 <= days && days <= daysRunningTot) {      
+      daysSinceStart.setTarget(days);
+    }  
   }
   
   void resize(float x, float y, float w, float h) {
