@@ -63,7 +63,7 @@ class ViewArea extends InterfaceElement {
   boolean draggingWheel;
   boolean histLocked;
   BookBubble bookBubble;
-  HintInfo dateInfo;
+  Message dateInfo;
   LanguageTab langTab;
   EmotionTab emoTab;  
 
@@ -73,7 +73,7 @@ class ViewArea extends InterfaceElement {
     super(x, y, w, h);
     w0 = w;
     bookBubble = new BookBubble();
-    dateInfo = new HintInfo();
+    dateInfo = new Message(selHistoryColor);
     langTab = new LanguageTab();
     emoTab = new EmotionTab();
     langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + 5 * (fontSize + 5) + 5 + 10;
@@ -214,8 +214,12 @@ class ViewArea extends InterfaceElement {
       if (selBook != null) {        
         drawBookHistory(selBook, bounds, historyTop);
         if (histLocked) {
-//          String selDate = selectDateInBookHistory(mouseX, mouseY, selBook, bounds, historyTop);
-//          dateInfo.open(selDate); 
+          SelectedText selDate = selectDateInBookHistory(mouseX, mouseY, selBook, bounds, historyTop);
+          if (selDate == null) {
+            dateInfo.close();
+          } else {
+            dateInfo.open(selDate.text, selDate.x, selDate.y); 
+          }
         }
       }
 
@@ -1262,10 +1266,40 @@ SelectedBook selectBookInHistory(float mx, float my, Rectangle bounds, float yTo
   return res;
 }
 
-/*
-selectDateInBookHistory(mouseX, mouseY, selBook, bounds, historyTop);
+SelectedText selectDateInBookHistory(float mx, float my, SelectedBook sel, Rectangle bounds, float yTop) {
+  Book book = sel.book;
 
-*/
+  int historyW = int(bounds.w);
+  int historyH = int(bounds.h - yTop - 20);  
+  float xc = bounds.x;
+  float yc = bounds.y + yTop;
+  PVector pt0 = null;
+  for (PVector pt: book.history) {
+    if (pt0 != null) {
+      int days0 = int(map(pt0.x, 0, 1, 0, daysRunningTot));
+      int days1 = int(map(pt.x, 0, 1, 0, daysRunningTot));
+      float x1 = xc + historyW * pt.x;
+      float y1 = yc + historyH * squeezeY(pt.x, pt.y); 
+      if (book.checkedIn(days0, days1) && dist(mx, my, x1, y1) < 7) {
+        Date retDate = dateAfter(startDate, days1);
+        return new SelectedText("Returned on " + retDate.toNiceString(), x1 + 10, y1 + 10);
+      }
+    } 
+    else {
+      int days1 = int(map(pt.x, 0, 1, 0, daysRunningTot));
+      float x1 = xc + historyW * pt.x;
+      float y1 = yc + historyH * squeezeY(pt.x, pt.y);
+      if (dist(mx, my, x1, y1) < 7) {
+        Date retDate = dateAfter(startDate, days1);
+        return new SelectedText("Returned on " + retDate.toNiceString(), x1 + 10, y1 + 10);
+      }
+    }
+
+    pt0 = pt;
+  }
+
+  return null;
+}
 
 void setLanguage(float x, Rectangle bounds) {  
   viewRegion.zoomLevel = VIEW_LANG;

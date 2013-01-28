@@ -437,6 +437,17 @@ class SelectedEmotion {
   }
 }
 
+class SelectedText {
+  String text;
+  float x, y;
+
+  SelectedText(String text, float x, float y) {
+    this.text = text;
+    this.x = x;
+    this.y = y;
+  }
+}
+
 // Class storing the properties of an emotion
 class Emotion {
   int id;
@@ -667,16 +678,10 @@ class Trail {
 
 
 class NewsText {
-//  int year;
-//  int month;
-//  int day;
   Date date;
   String text;
 
   NewsText(int d, int m, int y, String txt) {
-//    this.day = _d;
-//    this.month = _m;
-//    this.year = _y;
     date = new Date(y, m, d);
     text = txt;
   }

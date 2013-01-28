@@ -465,3 +465,66 @@ class HintInfo extends InfoBox {
   }
 }
 
+class Message extends InfoBox {
+  String message;
+  boolean animating;
+  SoftFloat animTimer;
+  float msgWidth;
+  int textColor;
+
+  Message(int tcolor) {
+    super();
+    message =  "";
+    animating = false;
+    animTimer = new SoftFloat();
+    textColor = tcolor; 
+  }
+
+  void update() {
+    animating = animTimer.update();
+    if (!animating && animTimer.target == 0) {
+      visible = false;
+    }
+  }
+
+  void draw() {
+    if (visible && !message.equals("")) {
+      float t = animTimer.get();
+      fill(replaceAlpha(textColor, int(255 * t)));
+      text(message, x0, y0);
+    }
+  }
+
+  void open(String message) {
+    if (!this.message.equals(message)) {   
+      this.message = message;
+      msgWidth = textWidth(message);
+      if (!visible) {    
+        visible = true;      
+        animTimer.set(0);
+        animTimer.setTarget(1);
+      }
+    }
+  }
+  
+  void open(String message, float x, float y) {    
+    moveTo(x, y);
+    open(message);   
+  }
+
+  void close() {
+    if (visible) {
+      visible = false;
+      animTimer.set(0);
+    }
+  }
+
+//  void closeGracefully() {
+//    animTimer.setTarget(0);
+//  }
+
+  boolean isAnimating() {
+    return animating;
+  }
+}
+
