@@ -63,6 +63,7 @@ class ViewArea extends InterfaceElement {
   boolean draggingWheel;
   boolean histLocked;
   BookBubble bookBubble;
+  HintInfo dateInfo;
   LanguageTab langTab;
   EmotionTab emoTab;  
 
@@ -72,6 +73,7 @@ class ViewArea extends InterfaceElement {
     super(x, y, w, h);
     w0 = w;
     bookBubble = new BookBubble();
+    dateInfo = new HintInfo();
     langTab = new LanguageTab();
     emoTab = new EmotionTab();
     langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + 5 * (fontSize + 5) + 5 + 10;
@@ -127,9 +129,10 @@ class ViewArea extends InterfaceElement {
       wheelWidth.update();
     } 
     else {
-      daysSinceStart.update();
+      daysSinceStart.update();      
     }
 
+    dateInfo.update();
     bookBubble.update();
 
     viewFadeinAlpha.update();
@@ -208,8 +211,12 @@ class ViewArea extends InterfaceElement {
         bookBubble.open(selBook);
       }
 
-      if (selBook != null) {
+      if (selBook != null) {        
         drawBookHistory(selBook, bounds, historyTop);
+        if (histLocked) {
+//          String selDate = selectDateInBookHistory(mouseX, mouseY, selBook, bounds, historyTop);
+//          dateInfo.open(selDate); 
+        }
       }
 
       historyCircleX = map(daysSinceStart.get(), 0, daysRunningTot, bounds.x, bounds.x + bounds.w);
@@ -219,10 +226,9 @@ class ViewArea extends InterfaceElement {
       line(historyCircleX, 0, historyCircleX, historyCircleY + 5);
       fill(255);
       ellipse(historyCircleX, historyCircleY, 10, 10);
-
-      //  bookBubble.draw(); // moved book bubble down so it would draw above rays
     }
     bookBubble.draw();
+    dateInfo.draw();
   }
 
   boolean mousePressed() {
@@ -1255,6 +1261,11 @@ SelectedBook selectBookInHistory(float mx, float my, Rectangle bounds, float yTo
   }
   return res;
 }
+
+/*
+selectDateInBookHistory(mouseX, mouseY, selBook, bounds, historyTop);
+
+*/
 
 void setLanguage(float x, Rectangle bounds) {  
   viewRegion.zoomLevel = VIEW_LANG;

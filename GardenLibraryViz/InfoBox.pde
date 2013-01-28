@@ -391,6 +391,13 @@ class HintInfo extends InfoBox {
   SoftFloat animTimer;
   float msgWidth;
 
+  HintInfo() {
+    super();
+    message =  "";
+    animating = false;
+    animTimer = new SoftFloat();    
+  }
+
   HintInfo(float x, float y) {
     super();
     x0 = x;
@@ -435,6 +442,11 @@ class HintInfo extends InfoBox {
         animTimer.setTarget(1);
       }
     }
+  }
+  
+  void open(String message, float x, float y) {
+    moveTo(x, y);
+    open(message);
   }
 
   void close() {
