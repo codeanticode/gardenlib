@@ -1,7 +1,7 @@
 // Garden Library project
 // Romy Achituv, Andres Colubri
 // 
-// GardenLibraryViz app, version 10.1 (January 27th, 2013).
+// GardenLibraryViz app, version 11 (January 27th, 2013).
 
 void setup() {
   size(WIDTH, HEIGHT);

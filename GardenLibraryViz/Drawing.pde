@@ -8,9 +8,7 @@ void drawBookshelf(Rectangle bounds, float yTop) {
 
   float elapsed = daysSinceStart.get();  
 
-  // float h = langBarH.get();
-
-  float h = langBarH.get();// added for Bookshelf
+  float h = langBarH.get();
 
   //float h = 10; //add 8 pix to height of lang bar
   float totLen = map(elapsed, 0, daysRunningTot, 0, bounds.y + bounds.h - yTop);

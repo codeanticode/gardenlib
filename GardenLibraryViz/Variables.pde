@@ -2,8 +2,8 @@ int currentTask = -1;
 int currentMode = MODE_BOOKSHELF;
 
 // Data:
-ArrayList<Emotion> emotions;
-ArrayList<Emotion> emotions1; // what is it for? I forgot...
+ArrayList<Emotion> emotions;  // All the emotions, including the null (0) emotion
+ArrayList<Emotion> emotions1; // Only non-null emotions
 ArrayList<Language> languages;
 ArrayList<Book> books;
 HashMap<Integer, Emotion> emotionsByID;
