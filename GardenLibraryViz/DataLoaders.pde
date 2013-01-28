@@ -104,6 +104,24 @@ void loadHistory(Book book, String[] histoData) {
   }
 }
 
+void loadTimeText() {
+  String details[] = loadStrings(newsFilename); 
+  timeTextSet = new TimeText[details.length];
+  for (int i = 0; i < details.length; i++) {
+    String[] parts = split(details[i], "\t");
+    String dateStr = parts[0];
+    String detStr = parts[1];
+    
+    String[] ddmmyyyy = split(dateStr, " ");
+    int dd = parseInt(ddmmyyyy[0]);
+    int mm = parseInt(ddmmyyyy[1]);
+    int yyyy = parseInt(ddmmyyyy[2]);
+    TimeText timeTxt = new TimeText(dd, mm, yyyy); 
+    timeTextSet[i] = timeTxt;
+    timeTextSet[i].setDetail(detStr);
+  }
+}
+
 void loadWebLinks() {
   String[] data = loadStrings(linksFilename); 
 

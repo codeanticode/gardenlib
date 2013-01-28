@@ -42,6 +42,15 @@ boolean groupByLangFirst = true;
 boolean playingAnim;
 boolean selectedPlayAnim;
 
+// News timebox
+TimeText[] timeTextSet;
+String currDetail = "";
+int rolloverState = 0;
+int timeBox_alpha = 0;
+float timecursor_prevX = 0;
+float timecursor_speed = 0;
+
+
 SoftFloat wheelRAngle;
 SoftFloat wheelYPos;
 SoftFloat wheelScale;

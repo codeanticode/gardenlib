@@ -1,28 +1,14 @@
 // Garden Library project
 // Romy Achituv, Andres Colubri
 // 
-// GardenLibraryViz app, version 10.0 (Janauary 6th, 2013).
-// 
-// Changes:
-// * Books can be sorted by emotion first, language second in the bookshelf view.
-// * Some code reorganization
-//
-// Fixes
-// 
-//
-// Issues:
-// * Some optimization of the book grouping algorithm?
-// * Remove ART, children and reference books from display because they don't participate of the emotional judgement system.
-// * Make the app use the entire browser canvas:
-//   https://forum.processing.org/topic/fullscreen-app-using-processing-js-and-canvas
-//   Check this site: www.adamtindale.com   
-//   it does just this thing. There is a small function that resizes the canvas when the window size changes. 
-//PImage img;//added
+// GardenLibraryViz app, version 10.1 (Janauary 27th, 2013).
 
 void setup() {
-  //  size(1154, 692);
   size(1155, 643);
   smooth(8);
+  
+  frame.setResizable(true);
+  
   // img = loadImage("media/header.gif");//added
   loadTimeText();
   initialize(LOADING);

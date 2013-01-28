@@ -8,6 +8,7 @@ String langFilename  = "languages.txt";
 String booksFilename = "books.txt";
 String histoFilename = "history.txt";
 String linksFilename = "links.txt";
+String newsFilename  = "details.txt";
 
 // Bookshelf parameters:
 int bookshelfTop   = 10; //0;
@@ -70,4 +71,15 @@ color bookshelfLinesColor = color(0);
 color historyTrailsColor = color(255);
 
 color selHistoryColor = color(255);
+
+// News timebox
+int BOX_ADJUST_Y = 16;
+int TEXTLINE_SPACE = 13;
+int CATCH_AREA = 10;
+
+// TimeLine Status:
+int CURSOR_STATE = 0;
+int DEGREE_MOVEMENT = 10;
+int TIMEBOX_ALPHASPEED = 10;
+int TIMEBOX_SCROLLALPHA = 70;
 

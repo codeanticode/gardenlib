@@ -1,47 +1,16 @@
-06 05 2008
-May 6, 2008, Egyptian border police fatally shot a Nigerian man who was trying to cross illegally into Israel. Guards also shot three Sudanese men and one woman who were also trying to sneak into Israel. (AP, 5/6/08)
-
-08 10 2009
-Sep 8, 2009, A security official said Egyptian border guards shot dead four sub-Saharan migrants as they tried to illegally enter Israel. (AFP, 9/8/09)
-
-15 05 2010
-Mar 15, 2010, Egyptian security officials have arrested Yotam Feldman, an Israeli journalist, as he tried to sneak across the porous Israeli-Egyptian border with African migrants. Feldman told his investigators he was reporting on African migrants sneaking into Israel from Egypt. Feldman returned home on March 22, saying he had been beaten in captivity and that some of his materials had been confiscated. (AP, 3/15/10)(AP, 3/22/10)
-
-01 08 2010
-Aug 1, 2010, Israel approved new residency criteria that could result in the deportations of hundreds of children of migrant workers. (AP, 8/1/10)
-
-13 09 2010
-Sep 13, 2010, Officials said Israel will begin deporting families of illegal migrants in coming weeks as an emotional debate rages over the ballooning numbers of foreign workers that some fear could threaten the country's Jewish identity. (AP, 9/13/10)
-
-28 11 2010
-Nov 28, 2010, Israel's Cabinet voted to erect a massive detention facility to hold thousands of Africans who have slipped illegally through the porous southern border with Egypt, heating up a debate over how to handle their mounting numbers. (AP, 11/28/10)
-
-13 12 2010
-Dec 13, 2010, Israel flew home 150 illegal Sudanese migrants in a secret operation that was the largest such deportation from the Jewish state. (AP, 12/14/10)
-
-24 12 2010
-Dec 24, 2010, In Israel hundreds of Israelis and African migrants marched down Tel Aviv's main boulevard to protest a government plan to build a detention facility to hold those who enter the country illegally. (AP, 12/24/10)
-
-08 01 2011
-Jan 8, 2011, Israeli soldiers shot and killed a Palestinian who tried to throw explosives at a West Bank checkpoint. A mortar attack from Gaza wounded 2 Thai workers in southern Israel. (AP, 1/8/11)(SSFC, 1/9/11, p.A5)
-
-11 12 2011
-Dec 11, 2011, The Israeli Cabinet voted unanimously to finance a $160 million program to stanch the flow of illegal African migrants by stepping up construction of a border fence and expanding a detention center. Several thousand Bedouin demonstrated outside Israeli PM Benjamin Netanyahu's office, protesting over a plan they say will displace tens of thousands of people from their land.
-
-31 12 2011
-Dec 31, 2011, Some 17,000 Africans made their way to Israel this year. A growing number of the migrants reported torture by smugglers in the Egyptian Sinai, who extorted migrant families for more money. (SFC, 2/17/12, p.A4)
-
-01 01 2012
-Jan 1, 2012, More than a quarter million foreigners live in Israel, according to a report issued on Sunday by the Knesset Committee on Foreign Workers. According to the report, which was based on Interior Ministry figures from November, there were 88,864 legal foreign workers in Israel. In addition, there are around 95,000 people in Israel illegally on expired tourist visas. (http://www.jpost.com/NationalNews/Article.aspx?id=252660)
-
-10 01 2012
-Jan 10, 2012, Israel's parliament approved harsh new penalties on illegal migrants and Israelis who help them, building on other contentious measures designed to stanch the flood of Africans seeking sanctuary here. (AP, 1/10/12)
-
-12 02 2012
-Feb 12, 2012, Eritrean refugees celebrate the engagement of a friend to his partner living in Eritrea. Two ceremonies were performed one in Israel and one in Eritrea using mock partners. Tel Aviv, Israel. ( http://www.demotix.com/news/591236/eritrean-refugee-engagement-ceremony-tel-aviv)
-
-19 07 2012
-Jul 19, 2012, Israel has initiated the first stage of a controversial “emergency plan” aimed at interning and deporting an estimated 60,000 African immigrants. Officials believe the presence of the Africans poses a threat to the “Jewish character” of the state. Israeli authorities are ready to grant 1,000 euros to any African who agrees to freely leave within five days. Some immigrants have agreed, while others are going to be repatriated by force.  http://rt.com/news/israel-closes-door-to-african-refugees-349/
-
-05 09 2012
-Sep 5, 2012, Israeli soldiers are refusing to allow entry to a group of about 20 Eritrean refugees trapped for six days between Egyptian land and a high steel fence that Israel has erected along its southern border. Despite high temperatures and lack of shade, the soldiers have been instructed to provide only limited quantities of water.  (http://www.guardian.co.uk/world/2012/sep/05/eritrean-refugees-at-israeli-egyptian-border)
+06 05 2008	May 6, 2008, Egyptian border police fatally shot a Nigerian man who was trying to cross illegally into Israel. Guards also shot three Sudanese men and one woman who were also trying to sneak into Israel. (AP, 5/6/08)
+08 10 2009	Sep 8, 2009, A security official said Egyptian border guards shot dead four sub-Saharan migrants as they tried to illegally enter Israel. (AFP, 9/8/09)
+15 05 2010	Mar 15, 2010, Egyptian security officials have arrested Yotam Feldman, an Israeli journalist, as he tried to sneak across the porous Israeli-Egyptian border with African migrants. Feldman told his investigators he was reporting on African migrants sneaking into Israel from Egypt. Feldman returned home on March 22, saying he had been beaten in captivity and that some of his materials had been confiscated. (AP, 3/15/10)(AP, 3/22/10)
+01 08 2010	Aug 1, 2010, Israel approved new residency criteria that could result in the deportations of hundreds of children of migrant workers. (AP, 8/1/10)
+13 09 2010	Sep 13, 2010, Officials said Israel will begin deporting families of illegal migrants in coming weeks as an emotional debate rages over the ballooning numbers of foreign workers that some fear could threaten the country's Jewish identity. (AP, 9/13/10)
+28 11 2010	Nov 28, 2010, Israel's Cabinet voted to erect a massive detention facility to hold thousands of Africans who have slipped illegally through the porous southern border with Egypt, heating up a debate over how to handle their mounting numbers. (AP, 11/28/10)
+13 12 2010	Dec 13, 2010, Israel flew home 150 illegal Sudanese migrants in a secret operation that was the largest such deportation from the Jewish state. (AP, 12/14/10)
+24 12 2010	Dec 24, 2010, In Israel hundreds of Israelis and African migrants marched down Tel Aviv's main boulevard to protest a government plan to build a detention facility to hold those who enter the country illegally. (AP, 12/24/10)
+08 01 2011	Jan 8, 2011, Israeli soldiers shot and killed a Palestinian who tried to throw explosives at a West Bank checkpoint. A mortar attack from Gaza wounded 2 Thai workers in southern Israel. (AP, 1/8/11)(SSFC, 1/9/11, p.A5)
+11 12 2011	Dec 11, 2011, The Israeli Cabinet voted unanimously to finance a $160 million program to stanch the flow of illegal African migrants by stepping up construction of a border fence and expanding a detention center. Several thousand Bedouin demonstrated outside Israeli PM Benjamin Netanyahu's office, protesting over a plan they say will displace tens of thousands of people from their land.
+31 12 2011	Dec 31, 2011, Some 17,000 Africans made their way to Israel this year. A growing number of the migrants reported torture by smugglers in the Egyptian Sinai, who extorted migrant families for more money. (SFC, 2/17/12, p.A4)
+01 01 2012	Jan 1, 2012, More than a quarter million foreigners live in Israel, according to a report issued on Sunday by the Knesset Committee on Foreign Workers. According to the report, which was based on Interior Ministry figures from November, there were 88,864 legal foreign workers in Israel. In addition, there are around 95,000 people in Israel illegally on expired tourist visas. (http://www.jpost.com/NationalNews/Article.aspx?id=252660)
+10 01 2012	Jan 10, 2012, Israel's parliament approved harsh new penalties on illegal migrants and Israelis who help them, building on other contentious measures designed to stanch the flood of Africans seeking sanctuary here. (AP, 1/10/12)
+12 02 2012	Feb 12, 2012, Eritrean refugees celebrate the engagement of a friend to his partner living in Eritrea. Two ceremonies were performed one in Israel and one in Eritrea using mock partners. Tel Aviv, Israel. ( http://www.demotix.com/news/591236/eritrean-refugee-engagement-ceremony-tel-aviv)
+19 07 2012	Jul 19, 2012, Israel has initiated the first stage of a controversial “emergency plan” aimed at interning and deporting an estimated 60,000 African immigrants. Officials believe the presence of the Africans poses a threat to the “Jewish character” of the state. Israeli authorities are ready to grant 1,000 euros to any African who agrees to freely leave within five days. Some immigrants have agreed, while others are going to be repatriated by force.  http://rt.com/news/israel-closes-door-to-african-refugees-349/
+05 09 2012	Sep 5, 2012, Israeli soldiers are refusing to allow entry to a group of about 20 Eritrean refugees trapped for six days between Egyptian land and a high steel fence that Israel has erected along its southern border. Despite high temperatures and lack of shade, the soldiers have been instructed to provide only limited quantities of water.  (http://www.guardian.co.uk/world/2012/sep/05/eritrean-refugees-at-israeli-egyptian-border)
