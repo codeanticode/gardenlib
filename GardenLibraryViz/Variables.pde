@@ -43,12 +43,10 @@ boolean playingAnim;
 boolean selectedPlayAnim;
 
 // News timebox
-TimeText[] timeTextSet;
-String currDetail = "";
-int rolloverState = 0;
-int timeBox_alpha = 0;
-float timecursor_prevX = 0;
-float timecursor_speed = 0;
+NewsText[] timelineNews;
+String currNewsText = "";
+boolean newsRollover;
+int newsAlpha = 0;
 
 
 SoftFloat wheelRAngle;
@@ -119,9 +117,12 @@ void initialize(int task) {
   else if (task == LOAD_BOOKS) {
     loadBooks();
 
+    currentTask = LOAD_TIMELINE_NEWS;
+  } else if (task == LOAD_TIMELINE_NEWS) { 
+    loadTimelineNews();
+    
     currentTask = GROUP_BY_LANG;
-  } 
-  else if (task == GROUP_BY_LANG) {
+  } else if (task == GROUP_BY_LANG) {
     groupBooksByLanguage();
 
     currentTask = BUILD_HISTORY;

@@ -76,14 +76,9 @@ color historyTrailsColor = color(255);
 
 color selHistoryColor = color(255);
 
-// News timebox
-int BOX_ADJUST_Y = 16;
-int TEXTLINE_SPACE = 13;
-int CATCH_AREA = 10;
+// Timeline news
+int newsAdjustY = 16;
+int newsLineSpace = 13;
+int newsAlphaSpeed = 10;
 
-// TimeLine Status:
-int CURSOR_STATE = 0;
-int DEGREE_MOVEMENT = 10;
-int TIMEBOX_ALPHASPEED = 10;
-int TIMEBOX_SCROLLALPHA = 70;
 

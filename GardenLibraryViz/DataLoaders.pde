@@ -104,9 +104,9 @@ void loadHistory(Book book, String[] histoData) {
   }
 }
 
-void loadTimeText() {
+void loadTimelineNews() {
   String details[] = loadStrings(newsFilename); 
-  timeTextSet = new TimeText[details.length];
+  timelineNews = new NewsText[details.length];
   for (int i = 0; i < details.length; i++) {
     String[] parts = split(details[i], "\t");
     String dateStr = parts[0];
@@ -116,9 +116,7 @@ void loadTimeText() {
     int dd = parseInt(ddmmyyyy[0]);
     int mm = parseInt(ddmmyyyy[1]);
     int yyyy = parseInt(ddmmyyyy[2]);
-    TimeText timeTxt = new TimeText(dd, mm, yyyy); 
-    timeTextSet[i] = timeTxt;
-    timeTextSet[i].setDetail(detStr);
+    timelineNews[i] = new NewsText(dd, mm, yyyy, detStr);
   }
 }
 

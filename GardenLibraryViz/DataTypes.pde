@@ -657,20 +657,17 @@ class Trail {
 }
 
 
-class TimeText {
+class NewsText {
   int year;
   int month;
   int day;
-  String detail;
+  String text;
 
-  TimeText(int _d, int _m, int _y) {
+  NewsText(int _d, int _m, int _y, String _txt) {
     this.day = _d;
     this.month = _m;
     this.year = _y;
-    detail =  "";
-  }
-  void setDetail(String detail) {   
-    this.detail = detail;
+    this.text =  _txt;
   }
 }
 

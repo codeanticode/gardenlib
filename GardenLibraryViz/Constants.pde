@@ -1,13 +1,14 @@
 // Run status:
-int LOADING        = 0;
-int LOAD_EMOTIONS  = 1;
-int LOAD_LANGUAGES = 2;
-int LOAD_BOOKS     = 3;
-int GROUP_BY_LANG  = 4;
-int BUILD_HISTORY  = 5;
-int GROUP_BY_EMO   = 6;
-int FINISH_INIT    = 7;
-int RUNNING        = 8;
+int LOADING            = 0;
+int LOAD_EMOTIONS      = 1;
+int LOAD_LANGUAGES     = 2;
+int LOAD_BOOKS         = 3;
+int LOAD_TIMELINE_NEWS = 4;
+int GROUP_BY_LANG      = 5;
+int BUILD_HISTORY      = 6;
+int GROUP_BY_EMO       = 7;
+int FINISH_INIT        = 8;
+int RUNNING            = 9;
 
 // Constants for view mode
 int MODE_BOOKSHELF = 0;

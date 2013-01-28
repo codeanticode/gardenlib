@@ -1490,10 +1490,10 @@ void timelineRollOver(float _x, float _y) {
   int areaExpand = 60;
   int areaAdjust_Y = 5;
 
-  rolloverState = 0;
+  newsRollover = false;
   if (mouseX > _x-areaExpand/2 && mouseX < _x+areaExpand/2) {
     if (mouseY > _y-areaExpand/2 +areaAdjust_Y && mouseY < _y+areaExpand/2 +areaAdjust_Y) {
-      rolloverState = 1;
+      newsRollover = true;
     }
   }
 

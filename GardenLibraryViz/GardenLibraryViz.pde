@@ -9,8 +9,7 @@ void setup() {
   
   frame.setResizable(RESIZE);
   
-  // img = loadImage("media/header.gif");//added
-  loadTimeText();
+  // img = loadImage("media/header.gif");//added  
   initialize(LOADING);
 }
 
