@@ -231,8 +231,7 @@ class Book {
       if (arrived) {
         wheelTrail.draw();
         wheelTrail.add(x1, y1);
-        //         wheelHeight.setTarget(maxBookHeight);
-        wheelHeight.setTarget(500);
+        wheelHeight.setTarget(max(width, height));
         arrived = false;
       }
       float wh = wheelHeight.get();
@@ -247,6 +246,9 @@ class Book {
       strokeWeight(0.5);      
       line(x1, y1, xh, yh);
     }
+    if (!wheelHeight.targeting && viewRegion.zoomLevel == VIEW_BOOK) {
+      wheelHeight.setTarget(maxBookHeight);
+    }    
   }      
 
   int insideBookshelf(float x, float y, float first, float weight, float left, float top, float h, float maxlen) {

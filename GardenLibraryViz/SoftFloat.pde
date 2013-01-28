@@ -39,7 +39,6 @@ class SoftFloat {
     enabled = false;
   }
 
-
   boolean update() {
     if (!enabled) return false;
 
