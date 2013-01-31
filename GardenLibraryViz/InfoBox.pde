@@ -95,26 +95,35 @@ class BookBubble extends InfoBox {
 
   void draw() {
     if (visible) {
-      strokeWeight(1);
-      stroke(0);
-      fill(255);
 
       float w = mainW.get();
       float xmax = x0 + w + 20;
       if (xmax <= width) {
+        noStroke();
+        fill(lang.argb);
+        rect(x0 - 10, y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
+        fill(infoTextColor);      
+
+
+        strokeWeight(1);
+        stroke(150);
+        fill(0);
+
+        float wl = fontSize + 10 + 3;
+
         // Left to right orientation
         beginShape(POLYGON); 
-        vertex(x0, y0);
-        vertex(x0 + 20, y0 - tailH.get());
-        vertex(x0 + w, y0 - tailH.get());
-        vertex(x0 + w, y0 - tailH.get() - mainH.get());
-        vertex(x0 - 10, y0 - tailH.get() - mainH.get());
-        vertex(x0 - 10, y0 - tailH.get());
-        vertex(x0, y0 - tailH.get());      
+        //vertex(x0, y0);
+        //vertex(x0 + 20, y0 - tailH.get());
+        vertex(wl + x0 + w, y0 - tailH.get());
+        vertex(wl + x0 + w, y0 - tailH.get() - mainH.get());
+        vertex(wl + x0 - 10, y0 - tailH.get() - mainH.get());
+        vertex(wl + x0 - 10, y0 - tailH.get());
+        //vertex(x0, y0 - tailH.get());      
         endShape(CLOSE);
 
-        fill(0);
-        float xt = x0 - 5;
+        fill(langFontColor);
+        float xt = wl + x0 - 5;
         float yt = y0 - tailH.get() - mainH.get();
         float h = fontSize + 5;
         if (h < mainH.get()) text(chopString(titleStr), xt, yt + h);
@@ -127,23 +136,25 @@ class BookBubble extends InfoBox {
         h += fontSize + 5;
         if (h < mainH.get()) text(chopString(emoStr), xt, yt + h);
 
-        fill(lang.argb);
-        rect(x0 + w, y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
-        fill(infoTextColor);
 
         float s = codeScale.get();
-        if (0 < s) {          
-          pushMatrix();          
-          translate(x0 + w + fontSize/2 + 5, y0 - tailH.get() - mainH.get()/2);
-          rotate(HALF_PI);          
-          scale(s); 
+        if (0 < s) {
           textFont(langFont);
           float cw = textWidth(book.barcode);
-          fill(langFontColor);          
-//          text(book.barcode, -cw/2, fontSize/2);
-          text(book.barcode, cw/2 - 5, fontSize/2);
-          textFont(defFont);
+          fill(0);
+
+          pushMatrix();          
+          translate(x0, y0 - tailH.get() - mainH.get()/2);
+          //translate(width/2, height/2);
+          rotate(HALF_PI);          
+          scale(s); 
+
+          text(book.barcode, -cw/2, fontSize/2);
+          //          text(book.barcode, cw/2 - 5, fontSize/2);
+          //text(book.barcode, 0, 0);          
           popMatrix();
+
+          textFont(defFont);
         }
       } 
       else {
@@ -186,7 +197,7 @@ class BookBubble extends InfoBox {
           textFont(langFont);        
           float cw = textWidth(book.barcode);
           fill(langFontColor);
-//          text(book.barcode, -cw/2, fontSize/2);
+          //          text(book.barcode, -cw/2, fontSize/2);
           text(book.barcode, cw/2 - 5, fontSize/2);
           textFont(defFont);
           popMatrix();
@@ -396,7 +407,7 @@ class HintInfo extends InfoBox {
     super();
     message =  "";
     animating = false;
-    animTimer = new SoftFloat();    
+    animTimer = new SoftFloat();
   }
 
   HintInfo(float x, float y) {
@@ -444,7 +455,7 @@ class HintInfo extends InfoBox {
       }
     }
   }
-  
+
   void open(String message, float x, float y) {
     moveTo(x, y);
     open(message);
@@ -478,7 +489,7 @@ class Message extends InfoBox {
     message =  "";
     animating = false;
     animTimer = new SoftFloat();
-    textColor = tcolor; 
+    textColor = tcolor;
   }
 
   void update() {
@@ -507,10 +518,10 @@ class Message extends InfoBox {
       }
     }
   }
-  
+
   void open(String message, float x, float y) {    
     moveTo(x, y);
-    open(message);   
+    open(message);
   }
 
   void close() {
@@ -520,9 +531,9 @@ class Message extends InfoBox {
     }
   }
 
-//  void closeGracefully() {
-//    animTimer.setTarget(0);
-//  }
+  //  void closeGracefully() {
+  //    animTimer.setTarget(0);
+  //  }
 
   boolean isAnimating() {
     return animating;

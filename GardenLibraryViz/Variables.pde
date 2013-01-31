@@ -87,7 +87,7 @@ void initialize(int task) {
     defFont = createFont(fontName, fontSize, false);
     textFont(defFont);
 
-    langFont = createFont(langFontName, langFontSize, false);
+    langFont = createFont(langFontName, langFontSize);
 
     initLUT();
 
@@ -187,8 +187,8 @@ void initialize(int task) {
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
     ui = new ArrayList<InterfaceElement>();
 
-    ui.add(viewArea);    
-    ui.add(legendArea);// changed view area and legend layers
+    ui.add(legendArea);
+    ui.add(viewArea);        
     ui.add(viewMenu);
     ui.add(groupMenu);    
     ui.add(timeline); 

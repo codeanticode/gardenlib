@@ -5,7 +5,7 @@
 
 void setup() {
   size(WIDTH, HEIGHT);
-  smooth(8);
+  //smooth(8);
   
   frame.setResizable(RESIZE);
   
@@ -13,30 +13,29 @@ void setup() {
   initialize(LOADING);
 }
 
-void draw() {    
+void draw() {
   if (currentTask < RUNNING) {
     initialize(currentTask);
     loadingAnimation();
   } 
-  else { 
+  else {     
     background(backgroundColor);
     
     checkResize();
 
     checkMouseActivity();
 
-    // Update UI
+    // Update UI    
     for (InterfaceElement e: ui) {
       e.update();
     }
-    hintInfo.update();
 
-
-    // Draw UI
+    // Draw UI    
     for (InterfaceElement e: ui) {
       e.draw();
     }
-
+    
+    hintInfo.update();
     hintInfo.draw();
   }
   //   image(img,0,0);// added here on top of legend anim
