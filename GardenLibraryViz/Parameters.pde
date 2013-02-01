@@ -25,7 +25,7 @@ int   sizeBookView = 100;//40;//40;
 float maxBookHeight  = 10;
 float bookOutlineW   = 1;
 
-float bookBubbleTailH = 20;// 30; // Height of the tail of the box bubble
+float bookBubbleTailH = 15;// 30; // Height of the tail of the box bubble
 
 // Wheel parameters:
 int wheelTop = 20; // 0;

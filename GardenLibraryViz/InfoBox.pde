@@ -102,9 +102,10 @@ class BookBubble extends InfoBox {
         noStroke();
         fill(lang.argb);
         rect(x0 - 10, y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
-        fill(infoTextColor);      
-
-
+        triangle(x0 - 10 + 5, y0 - tailH.get() + 5, 
+                 x0 + fontSize - 5, y0 - tailH.get() + 5, 
+                 x0 + fontSize/2 - 5, y0 - tailH.get() + 10);
+       
         strokeWeight(1);
         stroke(150);
         fill(0);
@@ -113,14 +114,11 @@ class BookBubble extends InfoBox {
 
         // Left to right orientation
         beginShape(POLYGON); 
-        //vertex(x0, y0);
-        //vertex(x0 + 20, y0 - tailH.get());
         vertex(wl + x0 + w, y0 - tailH.get());
         vertex(wl + x0 + w, y0 - tailH.get() - mainH.get());
         vertex(wl + x0 - 10, y0 - tailH.get() - mainH.get());
         vertex(wl + x0 - 10, y0 - tailH.get());
-        //vertex(x0, y0 - tailH.get());      
-        endShape(CLOSE);
+        endShape(CLOSE);       
 
         fill(langFontColor);
         float xt = wl + x0 - 5;
@@ -136,7 +134,6 @@ class BookBubble extends InfoBox {
         h += fontSize + 5;
         if (h < mainH.get()) text(chopString(emoStr), xt, yt + h);
 
-
         float s = codeScale.get();
         if (0 < s) {
           textFont(langFont);
@@ -145,13 +142,9 @@ class BookBubble extends InfoBox {
 
           pushMatrix();          
           translate(x0, y0 - tailH.get() - mainH.get()/2);
-          //translate(width/2, height/2);
           rotate(HALF_PI);          
           scale(s); 
-
           text(book.barcode, -cw/2, fontSize/2);
-          //          text(book.barcode, cw/2 - 5, fontSize/2);
-          //text(book.barcode, 0, 0);          
           popMatrix();
 
           textFont(defFont);
