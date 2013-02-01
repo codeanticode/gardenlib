@@ -460,14 +460,12 @@ class Message extends InfoBox {
   }
 
   void open(String message) {
-    if (!this.message.equals(message)) {   
-      this.message = message;
-      msgWidth = textWidth(message);
-      if (!visible) {    
-        visible = true;      
-        animTimer.set(0);
-        animTimer.setTarget(1);
-      }
+    this.message = message;
+    msgWidth = textWidth(message);
+    if (!visible) {    
+      visible = true;      
+      animTimer.set(0);
+      animTimer.setTarget(1);
     }
   }
 
@@ -482,10 +480,6 @@ class Message extends InfoBox {
       animTimer.set(0);
     }
   }
-
-  //  void closeGracefully() {
-  //    animTimer.setTarget(0);
-  //  }
 
   boolean isAnimating() {
     return animating;

@@ -300,6 +300,7 @@ class ViewMenu extends InterfaceElement {
   PImage historySel, historyUnsel;
   PImage langSel, langUnsel;
   PImage emoSel, emoUnsel;
+  Message hint;
   
   float w5, h2;
   float bw, ww, hw, lw, ew;
@@ -329,6 +330,12 @@ class ViewMenu extends InterfaceElement {
     hw = historySel.width;
     lw = langSel.width;
     ew = emoSel.width;
+    
+    hint = new Message(defTextColor);
+  }
+
+  void update() {
+    hint.update();  
   }
 
   void draw() {
@@ -368,30 +375,32 @@ class ViewMenu extends InterfaceElement {
       image(historyUnsel, xc, yc);
     }
 
-    
-    
+    if (currentMode == MODE_BOOKSHELF) {
+      xl += w5;
+      xc = xl + w5/2 - lw/2;
+      if (groupByLangFirst) {
+        image(langSel, xc, yc);
+      } else {
+        image(langUnsel, xc, yc);
+      }
 
-    xl += w5;
-    xc = xl + w5/2 - lw/2;
-    if (groupByLangFirst) {
-      image(langSel, xc, yc);
-    } else {
-      image(langUnsel, xc, yc);
+      xl += w5;
+      xc = xl + w5/2 - ew/2;
+      if (!groupByLangFirst) {
+        image(emoSel, xc, yc);
+      } else {
+        image(emoUnsel, xc, yc);
+      }      
     }
-
-    xl += w5;
-    xc = xl + w5/2 - ew/2;
-    if (!groupByLangFirst) {
-      image(emoSel, xc, yc);
-    } else {
-      image(emoUnsel, xc, yc);
-    }
-    
+   
+    hint.draw(); 
   }
 
   boolean mousePressed() {
+    hint.close();
+    
     if (!contains(mouseX, mouseY)) return false;
-
+    
     selected = true;
 
 //    if (contains(mouseX, mouseY)) {
@@ -437,7 +446,36 @@ class ViewMenu extends InterfaceElement {
     }
   }
   
- void resize(float x, float y, float w, float h) {
+  void mouseMoved() {
+    if (!contains(mouseX, mouseY)) {
+      hint.close();
+      return;
+    }
+    
+    int p = int((mouseX - bounds.x) / w5);
+      
+    float x = mouseX;
+    float y = bounds.y + h2 - bw;
+      
+    if (p == 0) {
+      hint.open("bookshelf view", x, y);
+    } 
+    else if (p == 1) {
+      hint.open("wheel view", x, y);
+    } 
+    else if (p == 2) {
+      hint.open("history view", x, y);
+    } else if (currentMode == MODE_BOOKSHELF) {
+      if (p == 3) {
+        hint.open("group by language", x, y);
+      }
+      else if (p == 4) {
+        hint.open("group by emotion", x, y);
+      }
+    }      
+  } 
+  
+  void resize(float x, float y, float w, float h) {
     super.resize(x, y, w, h);
     w5 = w/5;
     h2 = h/2;  
