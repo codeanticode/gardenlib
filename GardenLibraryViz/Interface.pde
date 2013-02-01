@@ -301,15 +301,17 @@ class ViewMenu extends InterfaceElement {
   PImage langSel, langUnsel;
   PImage emoSel, emoUnsel;
   
-  float w3, bw, ww, hw, h2;
+  float w5, h2;
+  float bw, ww, hw, lw, ew;
 
   ViewMenu(float x, float y, float w, float h) {
     super(x, y, w, h);  
-    w3 = w/3;
+    w5 = w/5;
     h2 = h/2;
-    bw = textWidth("bookshelf");
-    ww = textWidth("wheel");
-    hw = textWidth("history");
+    
+//    bw = textWidth("bookshelf");
+//    ww = textWidth("wheel");
+//    hw = textWidth("history");
     
     bookshelfSel = loadImage("media/bookshelf_green.gif");
     bookshelfUnsel = loadImage("media/bookshelf_grey.gif");
@@ -320,7 +322,13 @@ class ViewMenu extends InterfaceElement {
     langSel = loadImage("media/languages_green.gif");
     langUnsel = loadImage("media/languages_grey.gif");    
     emoSel = loadImage("media/emotions_green.gif");
-    emoUnsel = loadImage("media/emotions_grey.gif");    
+    emoUnsel = loadImage("media/emotions_grey.gif");
+
+    bw = bookshelfSel.width;
+    ww = wheelSel.width;
+    hw = historySel.width;
+    lw = langSel.width;
+    ew = emoSel.width;
   }
 
   void draw() {
@@ -333,40 +341,52 @@ class ViewMenu extends InterfaceElement {
 
     float xl = bounds.x;
 
-    float xc = xl + w3/2 - bw/2;
-    float yc = bounds.y + h2 + fontSize/2;
+    float xc = xl + w5/2 - bw/2;
+    float yc = bounds.y + h2 - bw/2;
     if (currentMode == MODE_BOOKSHELF) {
-      fill(selOptionColor);
+      image(bookshelfSel, xc, yc);
     } 
     else { 
-      fill(defTextColor);
+      image(bookshelfUnsel, xc, yc);
     }     
-    text("bookshelf", xc, yc);
 
-    xl += w3;
-    // line(xl, bounds.y + h2 - fontSize/2, xl, bounds.y + h2 + fontSize/2);
-    line(xl+5, bounds.y + h2 - fontSize/2, xl+5, bounds.y + h2 + fontSize/2);
-
-    xc = xl + w3/2 - ww/2;
+    xl += w5;
+    xc = xl + w5/2 - ww/2;
     if (currentMode == MODE_WHEEL) {
-      fill(selOptionColor);
+      image(wheelSel, xc, yc);
     } 
     else { 
-      fill(defTextColor);
+      image(wheelUnsel, xc, yc);
     }      
-    text("wheel", xc, yc);
 
-    xl += w3;
-    line(xl, bounds.y + h2 - fontSize/2, xl, bounds.y + h2 + fontSize/2);
-
-    xc = xl + w3/2 - hw/2;
+    xl += w5;
+    xc = xl + w5/2 - hw/2;
     if (currentMode == MODE_HISTORY) {
-      fill(selOptionColor);
+      image(historySel, xc, yc);
     } 
     else { 
-      fill(defTextColor);
-    }     
-    text("history", xc, yc);
+      image(historyUnsel, xc, yc);
+    }
+
+    
+    
+
+    xl += w5;
+    xc = xl + w5/2 - lw/2;
+    if (groupByLangFirst) {
+      image(langSel, xc, yc);
+    } else {
+      image(langUnsel, xc, yc);
+    }
+
+    xl += w5;
+    xc = xl + w5/2 - ew/2;
+    if (!groupByLangFirst) {
+      image(emoSel, xc, yc);
+    } else {
+      image(emoUnsel, xc, yc);
+    }
+    
   }
 
   boolean mousePressed() {
@@ -374,18 +394,18 @@ class ViewMenu extends InterfaceElement {
 
     selected = true;
 
-    if (contains(mouseX, mouseY)) {
-      int p = int((mouseX - bounds.x) / w3);
-      if (p == 0) {
-        setCurrenMode(MODE_BOOKSHELF);
-      } 
-      else if (p == 1) {
-        setCurrenMode(MODE_WHEEL);
-      } 
-      else {
-        setCurrenMode(MODE_HISTORY);
-      }
-    }
+//    if (contains(mouseX, mouseY)) {
+//      int p = int((mouseX - bounds.x) / w3);
+//      if (p == 0) {
+//        setCurrenMode(MODE_BOOKSHELF);
+//      } 
+//      else if (p == 1) {
+//        setCurrenMode(MODE_WHEEL);
+//      } 
+//      else {
+//        setCurrenMode(MODE_HISTORY);
+//      }
+//    }
     return true;
   }
 
@@ -419,11 +439,13 @@ class ViewMenu extends InterfaceElement {
   
  void resize(float x, float y, float w, float h) {
     super.resize(x, y, w, h);
-    w3 = w/3;
+    w5 = w/5;
     h2 = h/2;  
   } 
 }
 
+
+/*
 class GroupMenu extends InterfaceElement {
   float w4, w2, lw, ew, h2;
 
@@ -501,6 +523,10 @@ class GroupMenu extends InterfaceElement {
     h2 = h/2;
   }  
 }
+*/
+
+
+
 
 class Timeline extends InterfaceElement {
   float h2;
@@ -1608,8 +1634,7 @@ void timelineRollOver(float x, float y) {
 
 void checkResize() {
   if (WIDTH != width || HEIGHT != height) {
-    viewMenu.resize(20, height - 50, 180, 50);
-    groupMenu.resize(20, height - 100, 180, 50);
+    viewMenu.resize(10, height - 50, 180, 50);
     timeline.resize(205, height - 50, width - 200, 50); 
     viewArea.resize(0, -8, width, height - 90);
     legendArea.resize(0, 0, 200, height - 100);

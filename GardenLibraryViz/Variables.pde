@@ -65,7 +65,6 @@ SelectedEmotion selEmo = null;
 
 ViewArea viewArea;
 ViewMenu viewMenu;
-GroupMenu groupMenu;
 Timeline timeline;
 LegendArea legendArea;
 ArrayList<InterfaceElement> ui;
@@ -173,24 +172,15 @@ void initialize(int task) {
     viewLeftMargin = new SoftFloat();
 
     // Create UI    
-    // viewMenu = new ViewMenu(0, height - 50, 250, 50);
-    viewMenu = new ViewMenu(20, height - 50, 180, 50);
-
-    groupMenu = new GroupMenu(20, height - 100, 180, 50);
-
-    // timeline = new Timeline(250, height - 50, width - 250, 50);  
+    viewMenu = new ViewMenu(10, height - 50, 180, 50);
     timeline = new Timeline(205, height - 50, width - 200, 50); 
-
-    // viewArea = new ViewArea(0, 50, width, height - 120);  
     viewArea = new ViewArea(0, -8, width, height - 90);
-
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
     ui = new ArrayList<InterfaceElement>();
 
     ui.add(legendArea);
     ui.add(viewArea);        
     ui.add(viewMenu);
-    ui.add(groupMenu);    
     ui.add(timeline); 
 
     hintInfo = new HintInfo(600, 30);
