@@ -217,7 +217,7 @@ class ViewArea extends InterfaceElement {
           SelectedText selDate = selectDateInBookHistory(mouseX, mouseY, selBook, bounds, historyTop);
           if (selDate == null) {
             dateInfo.close();
-          } else {
+          } else {            
             dateInfo.open(selDate.text, selDate.x, selDate.y); 
           }
         }

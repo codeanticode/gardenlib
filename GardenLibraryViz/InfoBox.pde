@@ -454,8 +454,13 @@ class Message extends InfoBox {
   void draw() {
     if (visible && !message.equals("")) {
       float t = animTimer.get();
-      fill(replaceAlpha(textColor, int(255 * t)));
-      text(message, x0, y0);
+      fill(replaceAlpha(textColor, int(255 * t)));      
+      float x = x0;
+      float y = y0;
+      if (width < x + msgWidth) {
+        x -= x + msgWidth - width;    
+      }       
+      text(message, x, y);
     }
   }
 
