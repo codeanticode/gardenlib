@@ -304,6 +304,7 @@ class ViewMenu extends InterfaceElement {
   
   float w5, h2;
   float bw, ww, hw, lw, ew;
+  float hbw, hww, hhw, hlw, hew;
 
   ViewMenu(float x, float y, float w, float h) {
     super(x, y, w, h);  
@@ -320,6 +321,12 @@ class ViewMenu extends InterfaceElement {
     langUnsel = loadImage("media/languages_grey.gif");    
     emoSel = loadImage("media/emotions_green.gif");
     emoUnsel = loadImage("media/emotions_grey.gif");
+
+    hbw = textWidth("bookshelf view");
+    hww = textWidth("wheel view");
+    hhw = textWidth("history view");
+    hlw = textWidth("group by language");
+    hew = textWidth("group by emotion");
 
     bw = bookshelfSel.width;
     ww = wheelSel.width;
@@ -467,28 +474,66 @@ class ViewMenu extends InterfaceElement {
       return;
     }
     
-    int p = int((mouseX - bounds.x) / w5);
-      
-    float x = mouseX;
-    float y = bounds.y + h2 - bw;
-      
-    if (p == 0) {
-      hint.open("bookshelf view", x, y);
-    } 
-    else if (p == 1) {
-      hint.open("wheel view", x, y);
-    } 
-    else if (p == 2) {
-      hint.open("history view", x, y);
-    } else if (currentMode == MODE_BOOKSHELF) {
-      if (p == 3) {
-        hint.open("group by language", x, y);
-      }
-      else if (p == 4) {
-        hint.open("group by emotion", x, y);
-      }
+    float hx;
+    float hy = bounds.y + h2 - bw; 
+    
+    float xl = bounds.x;
+
+    float xc = xl + w5/2 - bw/2;
+    float yc = bounds.y + h2 - bw/2;
+    if (insideIcon(xc, yc)) {
+      hx = xc + bw/2 - hbw/2; 
+      if (hx < bounds.x) {
+        hx += bounds.x - hx; 
+      }      
+      hint.open("bookshelf view", hx, hy);
+      return;
     }
+
+    xl += w5;
+    xc = xl + w5/2 - ww/2;
+    if (insideIcon(xc, yc)) {
+      hx = xc + bw/2 - hww/2; 
+      hint.open("wheel view", hx, hy);
+      return;
+    }
+
+    xl += w5;
+    xc = xl + w5/2 - hw/2;
+    if (insideIcon(xc, yc)) {
+      hx = xc + bw/2 - hhw/2; 
+      hint.open("history view", hx, hy);
+      return;
+    }
+    
+    if (currentMode == MODE_BOOKSHELF) {
+      xl += w5;
+      xc = xl + w5/2 - lw/2;
+      if (insideIcon(xc, yc)) {
+        hx = xc + bw/2 - hlw/2; 
+        hint.open("group by language", hx, hy);
+        return;
+      }
+
+      xl += w5;
+      xc = xl + w5/2 - ew/2;
+      if (insideIcon(xc, yc)) {
+        hx = xc + bw/2 - hew/2; 
+        if (bounds.x + bounds.w < hx + hew) {
+          hx -= (hx + hew) - (bounds.x + bounds.w); 
+        }         
+        hint.open("group by emotion", hx, hy);
+        return;
+      }      
+    }    
+    
+    hint.close();
   } 
+  
+  boolean insideIcon(float xc, float yc) {
+    return xc < mouseX && mouseX < xc + bw &&
+           yc < mouseY && mouseY < yc + bw;      
+  }
   
   void resize(float x, float y, float w, float h) {
     super.resize(x, y, w, h);
