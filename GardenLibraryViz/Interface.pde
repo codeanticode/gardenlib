@@ -325,8 +325,8 @@ class ViewMenu extends InterfaceElement {
     hbw = textWidth("bookshelf view");
     hww = textWidth("wheel view");
     hhw = textWidth("history view");
-    hlw = textWidth("group by language");
-    hew = textWidth("group by emotion");
+    hlw = textWidth("sort by language");
+    hew = textWidth("sort by emotion");
 
     bw = bookshelfSel.width;
     ww = wheelSel.width;
@@ -511,7 +511,7 @@ class ViewMenu extends InterfaceElement {
       xc = xl + w5/2 - lw/2;
       if (insideIcon(xc, yc)) {
         hx = xc + bw/2 - hlw/2; 
-        hint.open("group by language", hx, hy);
+        hint.open("sort by language", hx, hy);
         return;
       }
 
@@ -522,7 +522,7 @@ class ViewMenu extends InterfaceElement {
         if (bounds.x + bounds.w < hx + hew) {
           hx -= (hx + hew) - (bounds.x + bounds.w); 
         }         
-        hint.open("group by emotion", hx, hy);
+        hint.open("sort by emotion", hx, hy);
         return;
       }      
     }    
