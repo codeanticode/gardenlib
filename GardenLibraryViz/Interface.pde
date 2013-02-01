@@ -351,6 +351,8 @@ class ViewMenu extends InterfaceElement {
 
     float xl = bounds.x;
 
+    tint(255);
+
     float xc = xl + w5/2 - bw/2;
     float yc = bounds.y + h2 - bw/2;
     if (currentMode == MODE_BOOKSHELF) {
@@ -773,8 +775,8 @@ class LegendArea extends InterfaceElement {
 
       //      line(xlang, bounds.y, xlang, bounds.y + h);
       //      line(xemo, bounds.y, xemo, bounds.y + h + animTimer.get() * 20);    
-      line(xlang, bounds.y, xlang, bounds.y + h-35);
-      line(xemo, bounds.y, xemo, bounds.y + h + animTimer.get() * 20-42); 
+      line(xlang, bounds.y, xlang, bounds.y + h - 85);
+      line(xemo, bounds.y, xemo, bounds.y + h + animTimer.get() * 20 - 42); 
 
       //  float y = h - 20; // height of legend
       float y = h - 55;
@@ -782,12 +784,12 @@ class LegendArea extends InterfaceElement {
         int ri = languages.size() - 1 - i;
         int ei = emotions.size() - ri - 1;
 
-        if (bounds.x + 20 < y) {         
+        if (bounds.y + 20 < y) {         
           Language lang = languages.get(i);  
           if (lang.id == 0) continue;
 
           float x0 = xlang - 10;
-          float y0 = y;
+          float y0 = y - 60;
           float x1 = x0 + 20; 
           float y1 = y0 + 0.7 * fontSize;
 
@@ -796,7 +798,7 @@ class LegendArea extends InterfaceElement {
           fill(defTextColor);
           float tw = textWidth(lang.name);
           //text(lang.name, xlang - 15 - tw, y + 0.7 * fontSize/2 + fontSize/2); // location of lang text
-          text(lang.name, xlang - 15 - tw, y + 0.7 * fontSize/2 + fontSize/2 -1); // location of lang text
+          text(lang.name, xlang - 15 - tw, y0 + 0.7 * fontSize/2 + fontSize/2 -1); // location of lang text
 
           if (0 <= ei) {
             Emotion emo = emotions.get(ei);
@@ -854,11 +856,12 @@ class LegendArea extends InterfaceElement {
         if (lang.id == 0) continue;
 
         float x0 = xlang - 10;
-        float y0 = y;
+        float y0 = y - 60;
         float x1 = x0 + 20; 
         float y1 = y0 + 0.7 * fontSize;        
         if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
           if (!lang.url.equals("")) {
+            println("Open " + lang.url);
             //     link(lang.url, "_new");  // hyperlink
           }
           return true;
