@@ -601,7 +601,7 @@ class Timeline extends InterfaceElement {
 
     stroke(timelineColor);
     strokeWeight(1);
-    line(x0, bounds.y + h2, x1, bounds.y + h2);
+    //line(x0, bounds.y + h2, x1, bounds.y + h2);
     float elapsed = daysRunningTot;
     Date currDate = dateAfter(startDate, int(elapsed));
     Date date = new Date();
@@ -615,8 +615,9 @@ class Timeline extends InterfaceElement {
     line(x1, bounds.y + h2 - 5, x1, bounds.y + h2 + 5); // last tickmark. 
 
     float xc = map(daysSinceStart.get(), 0, daysRunningTot, x0, x1);
-    fill(255);      
-    triangle(xc - 5, bounds.y + h2 - 10, xc + 5, bounds.y + h2 - 10, xc, bounds.y + h2);
+    fill(255);  
+    noStroke();      
+    triangle(xc - 4, bounds.y + h2 - 10, xc + 4, bounds.y + h2 - 10, xc, bounds.y + h2 - 6);
     Date selDate = dateAfter(startDate, int(daysSinceStart.get()));
     drawTimeBox(xc, x0, x1, bounds.y + h2 - 15, selDate);
     String dstr = selDate.toNiceString();    
