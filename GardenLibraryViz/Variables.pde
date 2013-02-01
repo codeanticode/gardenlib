@@ -33,7 +33,7 @@ boolean compactTime;
 SoftFloat bookHeightTimer;
 Language currLang;
 Emotion currEmo;
-boolean groupByLangFirst = true;
+boolean sortByLang = true;
 
 // wheel
 boolean playingAnim;
@@ -140,7 +140,7 @@ void initialize(int task) {
   else if (task == FINISH_INIT) {
     // Init viewing range:
     viewRegion = new ViewRegion();
-    if (groupByLangFirst) {
+    if (sortByLang) {
       viewRegion.setTarget(0, books.size());
     } 
     else {

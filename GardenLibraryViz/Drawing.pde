@@ -20,7 +20,7 @@ void drawBookshelf(Rectangle bounds, float yTop) {
   if (1 < w) bookStrokeWeight.enable();
   else bookStrokeWeight.disable(); // to stop the stroke appearing when the book rects are still too thin.
 
-  if (groupByLangFirst) { // Grouping the books first by language, then by emotion.
+  if (sortByLang) { // Grouping the books first by language, then by emotion.
     drawBookshelfGroupByLang(bounds, count, firstBook, bookCount, yTop, totLen, w, h);
   } 
   else { // Grouping the books first by emotion, then by language.
@@ -110,11 +110,10 @@ void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float
       }
 
      // Draw language bar
-     if (-1 < x0 && x0 <= x1) {
+     float bh = bookTopHeight.get();
+     if (-1 < x0 && x0 <= x1 && 0 < bh) {
        x1 += max(1, (1 - 2 * bookPadding) * w);
-       fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));
-       //rect(x0,   x1 - x0,  ) 
-       float bh = bookTopHeight.get();
+       fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));       
        noStroke(); 
        rect(x0, yTop - h - bh, x1 - x0, 0.7 * bh); 
      }

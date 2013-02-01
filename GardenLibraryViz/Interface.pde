@@ -146,7 +146,7 @@ class ViewArea extends InterfaceElement {
   void draw() {
     if (currentMode == MODE_BOOKSHELF) {
 
-      if (groupByLangFirst) {      
+      if (sortByLang) {      
         if (insideLangBar(mouseX, mouseY, bounds, langBarY)) {
           selLang = getSelectedLanguageInBookshelf(mouseX, mouseY, bounds, langBarY);
         } 
@@ -170,7 +170,7 @@ class ViewArea extends InterfaceElement {
       }
 
       if (insideBookshelf(mouseX, mouseY, bounds, langBarY)) {
-        if (groupByLangFirst) {
+        if (sortByLang) {
           selBook = getSelectedBookInBookshelfGroupByLang(mouseX, mouseY, bounds, langBarY);
         } else {
           selBook = getSelectedBookInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
@@ -383,7 +383,7 @@ class ViewMenu extends InterfaceElement {
     if (currentMode == MODE_BOOKSHELF) {
       xl += w5;
       xc = xl + w5/2 - lw/2;
-      if (groupByLangFirst) {
+      if (sortByLang) {
         image(langSel, xc, yc);
       } else {
         image(langUnsel, xc, yc);
@@ -391,7 +391,7 @@ class ViewMenu extends InterfaceElement {
 
       xl += w5;
       xc = xl + w5/2 - ew/2;
-      if (!groupByLangFirst) {
+      if (!sortByLang) {
         image(emoSel, xc, yc);
       } else {
         image(emoUnsel, xc, yc);
@@ -461,10 +461,10 @@ class ViewMenu extends InterfaceElement {
   void setGrouping(boolean byLang) {
     int days = daysSinceStart.getInt(); 
     if (byLang) {
-      groupByLangFirst = true;
+      sortByLang = true;
       groupBooksByEmotion(days, true);    
     } else {
-      groupByLangFirst = false;
+      sortByLang = false;
       groupBooksByEmotion(days, false);
     }
     setViewRegionAllBookshelf();
@@ -707,7 +707,7 @@ class Timeline extends InterfaceElement {
     int days = int(map(mx, bounds.x, bounds.x + bounds.w - margin, 0, daysRunningTot));
     daysSinceStart.setTarget(days);
     if (currentMode == MODE_BOOKSHELF) {
-      if (groupByLangFirst) {
+      if (sortByLang) {
         groupBooksByEmotion(days, true);
       } 
       else {        
@@ -939,7 +939,7 @@ void setViewRegionBookshelf(float x, float y, Rectangle bounds, float yTop) {
   if (yTop - h < y && y < yTop) {
     if (viewRegion.zoomLevel != VIEW_ALL) return; // can select language only from fully zoomed-out view.
 
-    if (groupByLangFirst) {
+    if (sortByLang) {
       setLanguage(x, bounds);
     } 
     else {
@@ -954,7 +954,7 @@ void setViewRegionBookshelf(float x, float y, Rectangle bounds, float yTop) {
     currEmo = null;
 
     // Set view region around selected book
-    if (groupByLangFirst) {
+    if (sortByLang) {
       setViewRegionBookshelfGroupByLang(x, bounds);
     } 
     else {
@@ -1027,12 +1027,12 @@ void setViewRegionBookshelfGroupByEmo(float x, Rectangle bounds) {
 }
 
 void setViewRegionAllBookshelf() {
-  int count = groupByLangFirst ? books.size() : numBooksWithEmo();
+  int count = sortByLang ? books.size() : numBooksWithEmo();
   viewRegion.setTarget(0, count);
 
   viewRegion.zoomLevel = VIEW_ALL;  
   bookStrokeWeight.set(0);
-  bookTopHeight.setTarget(0);
+  bookTopHeight.setTarget(sortByLang ? 0 : maxBookHeight); 
   langBarH.setTarget(langBarWAll);
   bookHeightTimer.setTarget(0);
   compactTime = false; 
@@ -1418,7 +1418,8 @@ void setEmotion(float x, Rectangle bounds) {
   int totCount = numBooksWithEmo();
   viewRegion.zoomLevel = VIEW_LANG;
   bookStrokeWeight.set(0);
-  bookTopHeight.setTarget(0);
+//  bookTopHeight.setTarget(0);
+  bookTopHeight.setTarget(maxBookHeight);  
   langBarH.setTarget(langBarWLang);
   bookHeightTimer.setTarget(0);
   compactTime = false;    
@@ -1539,7 +1540,7 @@ void dragViewRegion(float px, float x) {
   if (viewRegion.zoomLevel == VIEW_ALL) return;
 
   if (viewRegion.zoomLevel == VIEW_LANG) {
-    if (groupByLangFirst) {
+    if (sortByLang) {
       dragViewRegionGroupByLang(px, x);
     } 
     else {
@@ -1554,7 +1555,7 @@ void dragViewRegion(float px, float x) {
     float last = viewRegion.lastBook.get();
     float f = 20 * (float)(last - first);
     float diff = f * (px - x) / width;
-    int count = groupByLangFirst ? books.size() : numBooksWithEmo();
+    int count = sortByLang ? books.size() : numBooksWithEmo();
     viewRegion.setTarget(first + diff, last + diff, count);
   }
 }

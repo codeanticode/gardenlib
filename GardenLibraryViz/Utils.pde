@@ -37,7 +37,7 @@ void groupBooksByEmotion(int days, boolean init) {
   if (currentMode == MODE_BOOKSHELF) {
     // Update positions of the books in the bookshelf
 
-    if (groupByLangFirst) {
+    if (sortByLang) {
       for (Language lang: languages) {  
         if (lang.id == 0) continue;
 
