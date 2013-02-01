@@ -310,10 +310,6 @@ class ViewMenu extends InterfaceElement {
     w5 = w/5;
     h2 = h/2;
     
-//    bw = textWidth("bookshelf");
-//    ww = textWidth("wheel");
-//    hw = textWidth("history");
-    
     bookshelfSel = loadImage("media/bookshelf_green.gif");
     bookshelfUnsel = loadImage("media/bookshelf_grey.gif");
     wheelSel = loadImage("media/wheel_green.gif");
@@ -403,18 +399,25 @@ class ViewMenu extends InterfaceElement {
     
     selected = true;
 
-//    if (contains(mouseX, mouseY)) {
-//      int p = int((mouseX - bounds.x) / w3);
-//      if (p == 0) {
-//        setCurrenMode(MODE_BOOKSHELF);
-//      } 
-//      else if (p == 1) {
-//        setCurrenMode(MODE_WHEEL);
-//      } 
-//      else {
-//        setCurrenMode(MODE_HISTORY);
-//      }
-//    }
+    if (contains(mouseX, mouseY)) {
+      int p = int((mouseX - bounds.x) / w5);
+      if (p == 0) {
+        setCurrenMode(MODE_BOOKSHELF);
+      } 
+      else if (p == 1) {
+        setCurrenMode(MODE_WHEEL);
+      } 
+      else if (p == 2) {
+        setCurrenMode(MODE_HISTORY);
+      } else if (currentMode == MODE_BOOKSHELF) {
+        if (p == 3) {
+          setGrouping(true);
+        }
+        else if (p == 4) {
+          setGrouping(false);
+        }
+      }
+    }
     return true;
   }
 
@@ -446,6 +449,18 @@ class ViewMenu extends InterfaceElement {
     }
   }
   
+  void setGrouping(boolean byLang) {
+    int days = daysSinceStart.getInt(); 
+    if (byLang) {
+      groupByLangFirst = true;
+      groupBooksByEmotion(days, true);    
+    } else {
+      groupByLangFirst = false;
+      groupBooksByEmotion(days, false);
+    }
+    setViewRegionAllBookshelf();
+  }
+  
   void mouseMoved() {
     if (!contains(mouseX, mouseY)) {
       hint.close();
@@ -472,7 +487,7 @@ class ViewMenu extends InterfaceElement {
       else if (p == 4) {
         hint.open("group by emotion", x, y);
       }
-    }      
+    }
   } 
   
   void resize(float x, float y, float w, float h) {
@@ -481,90 +496,6 @@ class ViewMenu extends InterfaceElement {
     h2 = h/2;  
   } 
 }
-
-
-/*
-class GroupMenu extends InterfaceElement {
-  float w4, w2, lw, ew, h2;
-
-  GroupMenu(float x, float y, float w, float h) {
-    super(x, y, w, h);  
-    w4 = w/4;
-    w2 = w/2;
-    h2 = h/2;
-    lw = textWidth("languages");
-    ew = textWidth("emotions");
-  }
-
-  void draw() {
-    if (currentMode != MODE_BOOKSHELF) return;
-    
-    noStroke();
-    fill(replaceAlpha(backgroundColor, 180));
-    rect(bounds.x, bounds.y, bounds.w, bounds.h);
-
-    stroke(menuStrokeColor);
-    strokeWeight(1);
-
-    float xl = bounds.x;
-
-    float xc = xl + w4 - lw/2;
-    float yc = bounds.y + h2 + fontSize/2;
-    if (groupByLangFirst) {
-      fill(selOptionColor);
-    } 
-    else { 
-      fill(defTextColor);
-    }     
-    text("languages", xc, yc);
-
-    xl += w2;
-    // line(xl, bounds.y + h2 - fontSize/2, xl, bounds.y + h2 + fontSize/2);
-    line(xl, bounds.y + h2 - fontSize/2, xl, bounds.y + h2 + fontSize/2);
-
-    xc = xl + w4 - ew/2;
-    if (groupByLangFirst) {
-      fill(defTextColor);      
-    } 
-    else { 
-      fill(selOptionColor);
-    }      
-    text("emotions", xc, yc);
-
-  }
-
-  boolean mousePressed() {
-    if (currentMode != MODE_BOOKSHELF) return false;
-    if (!contains(mouseX, mouseY)) return false;
-
-    selected = true;
-    
-    int days = daysSinceStart.getInt();
-    int p = int((mouseX - bounds.x) / w2);
-    if (p == 0) {
-      groupByLangFirst = true;
-      groupBooksByEmotion(days, true);
-    } 
-    else {
-      groupByLangFirst = false;
-      groupBooksByEmotion(days, false);
-    }
-    setViewRegionAllBookshelf();
-    
-    return true;
-  }
-  
-  void resize(float x, float y, float w, float h) {
-    super.resize(x, y, w, h);
-    w4 = w/4;
-    w2 = w/2;
-    h2 = h/2;
-  }  
-}
-*/
-
-
-
 
 class Timeline extends InterfaceElement {
   float h2;
