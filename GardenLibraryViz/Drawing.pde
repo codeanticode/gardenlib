@@ -378,24 +378,20 @@ void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white 
   }
 }
 
-void drawTimeBox(float x, float x0, float x1, float y, Date selDate) {
+void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
   timelineRollOver(x, y);
 
-  float indicatorX = 0;
-
-  // to correct the details
-  for (int i = 0; i < timelineNews.length; i++) {
-    NewsText news = timelineNews[i];
-    if (news == null) continue;
-    if (news.isBefore(selDate)) {     
-      currNewsText = timelineNews[i].text;
-      int days = daysBetween(startDate, news.date);      
-      indicatorX = map(days, 0, daysRunningTot, x0, x1);
+  if (!daysSinceStart.targeting) {
+    for (int i = 0; i < timelineNews.length; i++) {
+      NewsText news = timelineNews[i];
+      if (news.isBefore(selDate)) {     
+        currNewsText = timelineNews[i].text;
+        int days = daysBetween(startDate, news.date);      
+        newsX = map(days, 0, daysRunningTot, x0, x1);
+      }    
     }    
-  }
-
-  if (indicatorX < x0) {
-    indicatorX = x0;
+  } else {
+    newsAlpha = 0;
   }
 
   // to change the alpha of the text box
@@ -410,23 +406,25 @@ void drawTimeBox(float x, float x0, float x1, float y, Date selDate) {
     }
   }
 
-  //to calculate the position of the box
-  float textLength = textWidth(currNewsText);
-  float boxWidth = x1 - x0;
-  float boxHeight = ceil(textLength/boxWidth) * newsLineSpace + 3;
-  float boxPosX = x0;
-  float boxPosY = y - boxHeight - newsAdjustY;
+  if (0 < newsAlpha) {
+    //to calculate the position of the box
+    float textLength = textWidth(currNewsText);
+    float boxWidth = x1 - x0;
+    float boxHeight = ceil(textLength/boxWidth) * newsLineSpace + 3;
+    float boxPosX = x0;
+    float boxPosY = y - boxHeight - newsAdjustY;
 
-  //to draw the box and text
-  noStroke();
-  fill(0, newsAlpha * 2);
-  rect(boxPosX, boxPosY, boxWidth, boxHeight);
-  fill(160, newsAlpha);
-  textLeading(newsLineSpace);
-  text(currNewsText, boxPosX, boxPosY, boxWidth, boxHeight);
-  fill(255, 0, 0, newsAlpha);
-  ellipse(indicatorX, y + 15, 8, 8);
-  noFill();
+    //to draw the box and text
+    noStroke();
+    fill(0, newsAlpha * 2);
+    rect(boxPosX, boxPosY, boxWidth, boxHeight);
+    fill(160, newsAlpha);
+    textLeading(newsLineSpace);
+    text(currNewsText, boxPosX, boxPosY, boxWidth, boxHeight);
+    fill(255, 0, 0, newsAlpha);
+    ellipse(newsX, y + 15, 8, 8);
+    noFill();
+  }
 }
 
 void loadingAnimation() {

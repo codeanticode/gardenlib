@@ -50,6 +50,7 @@ PGraphics historyCanvas;
 // News timebox
 NewsText[] timelineNews;
 String currNewsText = "";
+float newsX = 0;
 boolean newsRollover;
 int newsAlpha = 0;
 

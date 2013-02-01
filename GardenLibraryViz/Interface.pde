@@ -634,7 +634,9 @@ class Timeline extends InterfaceElement {
     noStroke();      
     triangle(xc - 4, bounds.y + h2 - 10, xc + 4, bounds.y + h2 - 10, xc, bounds.y + h2 - 6);
     Date selDate = dateAfter(startDate, int(daysSinceStart.get()));
-    drawTimeBox(xc, x0, x1, bounds.y + h2 - 15, selDate);
+        
+    drawNewsBox(xc, x0, x1, bounds.y + h2 - 15, selDate);
+    
     String dstr = selDate.toNiceString();    
     float dw = textWidth(dstr);
     fill(defTextColor);
