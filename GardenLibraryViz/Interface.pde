@@ -710,9 +710,13 @@ class Timeline extends InterfaceElement {
       if (groupByLangFirst) {
         groupBooksByEmotion(days, true);
       } 
-      else {
+      else {        
         groupBooksByEmotion(days, false);
-        viewRegion.update(numBooksWithEmo());
+        viewRegion.update(numBooksWithEmo());        
+        if (viewRegion.zoomLevel == VIEW_EMO && currEmo != null) {
+          // Stay centered around currently selected emotion.
+          viewEmotion(currEmo);
+        } 
       }
     } 
     else if (currentMode == MODE_WHEEL) {
@@ -1485,7 +1489,9 @@ void viewEmotion(Emotion selEmo) {
       } 
       else {
         viewRegion.setTarget(emoCount0, emoCount, totCount);
-      }  
+      }
+      currLang = null;
+      currEmo = emo;
       return;
     }
   }

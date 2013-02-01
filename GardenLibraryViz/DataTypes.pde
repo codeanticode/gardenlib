@@ -584,7 +584,7 @@ class ViewRegion {
   }
   
   void update(int bookCount) {
-    int first = firstBook.getInt();
+    int first = firstBook.getInt();    
     int last = lastBook.getInt();
     if (bookCount <= first) {
       setTarget(0, bookCount);
