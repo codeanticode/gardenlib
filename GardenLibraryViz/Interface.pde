@@ -544,6 +544,21 @@ class ViewMenu extends InterfaceElement {
   } 
 }
 
+class ToolMenu extends InterfaceElement {
+  PImage magnifyingGlass, questionSign;
+  
+  ToolMenu(float x, float y, float w, float h) {
+    super(x, y, w, h);
+    magnifyingGlass = loadImage("media/magnifying_glass.gif");
+    questionSign = loadImage("media/question_sign.gif");
+  }  
+  
+  void draw() {
+    image(magnifyingGlass, bounds.x, bounds.y);  
+    image(questionSign, bounds.x + magnifyingGlass.width + 5, bounds.y);
+  }
+}
+
 class Timeline extends InterfaceElement {
   float h2;
   float margin;
@@ -1655,6 +1670,7 @@ void checkResize() {
     viewMenu.resize(10, height - 50, 180, 50);
     timeline.resize(205, height - 50, width - 200, 50); 
     viewArea.resize(0, -8, width, height - 90);
+    toolMenu.resize(width - 60, 20, 70, 30);
     legendArea.resize(0, 0, 200, height - 100);
     
     WIDTH = width;

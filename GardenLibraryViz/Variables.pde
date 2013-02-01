@@ -66,6 +66,7 @@ SelectedEmotion selEmo = null;
 ViewArea viewArea;
 ViewMenu viewMenu;
 Timeline timeline;
+ToolMenu toolMenu;
 LegendArea legendArea;
 ArrayList<InterfaceElement> ui;
 HintInfo hintInfo;
@@ -175,12 +176,14 @@ void initialize(int task) {
     viewMenu = new ViewMenu(10, height - 50, 180, 50);
     timeline = new Timeline(205, height - 50, width - 200, 50); 
     viewArea = new ViewArea(0, -8, width, height - 90);
+    toolMenu = new ToolMenu(width - 60, 20, 70, 30);
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
     ui = new ArrayList<InterfaceElement>();
 
     ui.add(legendArea);
+    ui.add(toolMenu);
     ui.add(viewArea);        
-    ui.add(viewMenu);
+    ui.add(viewMenu);    
     ui.add(timeline); 
 
     hintInfo = new HintInfo(600, 30);
