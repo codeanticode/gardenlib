@@ -295,6 +295,12 @@ class ViewArea extends InterfaceElement {
 }
 
 class ViewMenu extends InterfaceElement {
+  PImage bookshelfSel, bookshelfUnsel;
+  PImage wheelSel, wheelUnsel;
+  PImage historySel, historyUnsel;
+  PImage langSel, langUnsel;
+  PImage emoSel, emoUnsel;
+  
   float w3, bw, ww, hw, h2;
 
   ViewMenu(float x, float y, float w, float h) {
@@ -304,6 +310,17 @@ class ViewMenu extends InterfaceElement {
     bw = textWidth("bookshelf");
     ww = textWidth("wheel");
     hw = textWidth("history");
+    
+    bookshelfSel = loadImage("media/bookshelf_green.gif");
+    bookshelfUnsel = loadImage("media/bookshelf_grey.gif");
+    wheelSel = loadImage("media/wheel_green.gif");
+    wheelUnsel = loadImage("media/wheel_grey.gif");
+    historySel = loadImage("media/history_green.gif");
+    historyUnsel = loadImage("media/history_grey.gif");
+    langSel = loadImage("media/languages_green.gif");
+    langUnsel = loadImage("media/languages_grey.gif");    
+    emoSel = loadImage("media/emotions_green.gif");
+    emoUnsel = loadImage("media/emotions_grey.gif");    
   }
 
   void draw() {

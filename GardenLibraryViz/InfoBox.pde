@@ -98,114 +98,63 @@ class BookBubble extends InfoBox {
 
       float w = mainW.get();
       float xmax = x0 + w + 20;
-      //if (xmax <= width) {
-        noStroke();
-        fill(lang.argb);
-        rect(x0 - 10, y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
-        triangle(x0 - 10 + 5, y0 - tailH.get() + 5, 
-                 x0 + fontSize - 5, y0 - tailH.get() + 5, 
-                 x0 + fontSize/2 - 5, y0 - tailH.get() + 10);
+      
+      noStroke();
+      fill(lang.argb);
+      rect(x0 - 10, y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
+      triangle(x0 - 10 + 5, y0 - tailH.get() + 5, 
+               x0 + fontSize - 5, y0 - tailH.get() + 5, 
+               x0 + fontSize/2 - 5, y0 - tailH.get() + 10);
 
-        float s = codeScale.get();
-        if (0 < s) {
-          textFont(langFont);
-          float cw = textWidth(book.barcode);
-          fill(0);
-
-          pushMatrix();          
-          translate(x0, y0 - tailH.get() - mainH.get()/2);
-          rotate(HALF_PI);          
-          scale(s); 
-          text(book.barcode, -cw/2, fontSize/2);
-          popMatrix();
-        }
-       
-        strokeWeight(1);
-        stroke(150);
+      float s = codeScale.get();
+      if (0 < s) {
+        textFont(langFont);
+        float cw = textWidth(book.barcode);
         fill(0);
 
-        float x1, x2;
-        if (xmax <= width) {
-          // Left to right orientation
-          float wl = fontSize + 10 + 3;
-          x1 = x0 + wl - 10;
-          x2 = x0 + wl + w; 
-        } else {
-          // Right to left orientation          
-          x1 = x0 - 10 - 3 - w - 10;
-          x2 = x0 - 10 - 3;
-        }
-
-        
-        beginShape(POLYGON); 
-        vertex(x2, y0 - tailH.get());
-        vertex(x2, y0 - tailH.get() - mainH.get());
-        vertex(x1, y0 - tailH.get() - mainH.get());
-        vertex(x1, y0 - tailH.get());
-        endShape(CLOSE);
-        
-        textFont(defFont);
-        fill(langFontColor);
-        float xt = x1 + 5;
-        float yt = y0 - tailH.get() - mainH.get();
-        float h = fontSize + 5;
-        if (h < mainH.get()) text(chopString(titleStr), xt, yt + h);
-        h += fontSize + 5;
-        if (h < mainH.get()) text(chopString(authorStr), xt, yt + h);
-        h += fontSize + 5;
-        if (h < mainH.get()) text(chopString(langStr), xt, yt + h);
-        h += fontSize + 5;
-        if (h < mainH.get()) text(chopString(emoStr), xt, yt + h);
-      //}
-      /* 
-      else {
-
-        // Right to left orientation
-        beginShape(POLYGON);
-        vertex(x0, y0);
-        vertex(x0 + 20, y0 - tailH.get());
-        vertex(x0 + 30, y0 - tailH.get());
-        vertex(x0 + 30, y0 - tailH.get() - mainH.get());
-        vertex(x0 - w + 10, y0 - tailH.get() - mainH.get());
-        vertex(x0 - w + 10, y0 - tailH.get());
-        vertex(x0, y0 - tailH.get());
-        endShape(CLOSE);
-
-        fill(0);
-        float xt = x0 - w + 15;
-        float yt = y0 - tailH.get() - mainH.get();
-        float h = fontSize + 5;
-        if (h < mainH.get()) text(chopString(titleStr), xt, yt + h);
-        h += fontSize + 5;
-        if (h < mainH.get()) text(chopString(authorStr), xt, yt + h);
-        //h += fontSize + 5;
-        //if (h < mainH.get()) text(chopString(isbnStr), xt, yt + h);
-        h += fontSize + 5;
-        if (h < mainH.get()) text(chopString(langStr), xt, yt + h);
-        h += fontSize + 5;
-        if (h < mainH.get()) text(chopString(emoStr), xt, yt + h);
-
-        fill(lang.argb);
-        rect(x0 - w + 10 - (fontSize + 10), y0 - tailH.get() - mainH.get(), fontSize + 10, mainH.get());
-
-        fill(infoTextColor);
-
-        float s = codeScale.get();
-        if (0 < s) {          
-          pushMatrix();
-          translate(x0 - w + 10 - (fontSize + 10)/2, y0 - tailH.get() - mainH.get()/2);
-          rotate(HALF_PI);
-          scale(s);
-          textFont(langFont);        
-          float cw = textWidth(book.barcode);
-          fill(langFontColor);
-          //          text(book.barcode, -cw/2, fontSize/2);
-          text(book.barcode, cw/2 - 5, fontSize/2);
-          textFont(defFont);
-          popMatrix();
-        }                
+        pushMatrix();          
+        translate(x0, y0 - tailH.get() - mainH.get()/2);
+        rotate(HALF_PI);          
+        scale(s); 
+        text(book.barcode, -cw/2, fontSize/2);
+        popMatrix();
       }
-      */
+       
+      strokeWeight(1);
+      stroke(150);
+      fill(0);
+
+      float x1, x2;
+      if (xmax <= width) {
+        // Left to right orientation
+        float wl = fontSize + 10 + 3;
+        x1 = x0 + wl - 10;
+        x2 = x0 + wl + w; 
+      } else {
+        // Right to left orientation          
+        x1 = x0 - 10 - 3 - w - 10;
+        x2 = x0 - 10 - 3;
+      }
+        
+      beginShape(POLYGON); 
+      vertex(x2, y0 - tailH.get());
+      vertex(x2, y0 - tailH.get() - mainH.get());
+      vertex(x1, y0 - tailH.get() - mainH.get());
+      vertex(x1, y0 - tailH.get());
+      endShape(CLOSE);
+        
+      textFont(defFont);
+      fill(langFontColor);
+      float xt = x1 + 5;
+      float yt = y0 - tailH.get() - mainH.get();
+      float h = fontSize + 5;
+      if (h < mainH.get()) text(chopString(titleStr), xt, yt + h);
+      h += fontSize + 5;
+      if (h < mainH.get()) text(chopString(authorStr), xt, yt + h);
+      h += fontSize + 5;
+      if (h < mainH.get()) text(chopString(langStr), xt, yt + h);
+      h += fontSize + 5;
+      if (h < mainH.get()) text(chopString(emoStr), xt, yt + h);
     }
   }
 
