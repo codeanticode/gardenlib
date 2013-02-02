@@ -526,17 +526,51 @@ class ViewMenu extends InterfaceElement {
 }
 
 class ToolMenu extends InterfaceElement {
-  PImage magnifyingGlass, questionSign;
+  int searchStatus;
+  int helpStatus;
+  PImage[] searchIcon;
+  PImage[] helpIcon;
   
   ToolMenu(float x, float y, float w, float h) {
     super(x, y, w, h);
-    magnifyingGlass = loadImage("media/mag_grey.gif");
-    questionSign = loadImage("media/q_mark_grey.gif");
+    searchIcon = new PImage[2];
+    searchIcon[0] = loadImage("media/mag_grey.gif");
+    searchIcon[1] = loadImage("media/mag_green.gif");
+    
+    helpIcon = new PImage[2];
+    helpIcon[0] = loadImage("media/q_mark_grey.gif");
+    helpIcon[1] = loadImage("media/q_mark_green.gif");
+    
+    searchStatus = 0;
+    helpStatus = 0;
   }  
   
   void draw() {
-    image(magnifyingGlass, bounds.x, bounds.y);  
-    image(questionSign, bounds.x + magnifyingGlass.width + 5, bounds.y);
+    image(searchIcon[searchStatus], bounds.x, bounds.y);  
+    image(helpIcon[helpStatus], bounds.x + searchIcon[searchStatus].width + 5, bounds.y);
+  }
+  
+  boolean mousePressed() {
+    if (contains(mouseX, mouseY)) {
+     
+      if (insideIcon(searchIcon[searchStatus], bounds.x, bounds.y)) {
+        searchStatus = (searchStatus + 1) % 2;
+      }
+
+      if (insideIcon(helpIcon[helpStatus], bounds.x + searchIcon[searchStatus].width + 5, bounds.y)) {
+        helpStatus = (helpStatus + 1) % 2;
+      }      
+     
+      selected = true;
+    } else {
+      selected = false;  
+    }
+    
+    return selected;
+  }  
+  
+  boolean insideIcon(PImage icon, float x, float y) {
+    return x < mouseX && mouseX < x + icon.width & y < mouseY && mouseY < y + icon.height;
   }
 }
 
