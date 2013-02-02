@@ -530,8 +530,8 @@ class ToolMenu extends InterfaceElement {
   
   ToolMenu(float x, float y, float w, float h) {
     super(x, y, w, h);
-    magnifyingGlass = loadImage("media/magnifying_glass.gif");
-    questionSign = loadImage("media/question_sign.gif");
+    magnifyingGlass = loadImage("media/mag_grey.gif");
+    questionSign = loadImage("media/q_mark_grey.gif");
   }  
   
   void draw() {
@@ -1045,29 +1045,32 @@ void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
     angle += TWO_PI;
   }  
 
-  if (r0 < d && d < r1) {
-    int emoCount = 0;
-    for (Emotion emo: emotions) {
-      if (emo.id == 0) continue;
-
-      // Draw emotion arc
-      float a0 = bookAngle(emoCount);
-      emoCount += emo.booksInEmo.size();
-      float a1 = bookAngle(emoCount);
-
-      if (a0 <= angle && angle <= a1) {
-        wheelYPos.setTarget(wheelDispEmo);
-        wheelScale.setTarget(wheelScaleEmo);
-        float centAngle = PI + HALF_PI - 0.5 * (a0 + a1);
-        if (PI < centAngle) centAngle = centAngle - TWO_PI;
-        wheelRAngle.setTarget(centAngle);
-        viewRegion.zoomLevel = VIEW_EMO;
-        wheelWidth.set(wheelWidthView);
-        return;
-      }
-    }
-  } 
-  else if (r1 < d && d < r1 + maxBookHeight) {
+// Disabled emo-level zoom in wheel.
+//  if (r0 < d && d < r1) {
+//    int emoCount = 0;
+//    for (Emotion emo: emotions) {
+//      if (emo.id == 0) continue;
+//
+//      // Draw emotion arc
+//      float a0 = bookAngle(emoCount);
+//      emoCount += emo.booksInEmo.size();
+//      float a1 = bookAngle(emoCount);
+//
+//      if (a0 <= angle && angle <= a1) {
+//        wheelYPos.setTarget(wheelDispEmo);
+//        wheelScale.setTarget(wheelScaleEmo);
+//        float centAngle = PI + HALF_PI - 0.5 * (a0 + a1);
+//        if (PI < centAngle) centAngle = centAngle - TWO_PI;
+//        wheelRAngle.setTarget(centAngle);
+//        viewRegion.zoomLevel = VIEW_EMO;
+//        wheelWidth.set(wheelWidthView);
+//        return;
+//      }
+//    }
+//  } 
+//  else
+  
+  if (r1 < d && d < r1 + maxBookHeight) {
     selectBookInWheel(d, angle);
   } 
   else {
