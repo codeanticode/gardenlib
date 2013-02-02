@@ -1189,10 +1189,11 @@ SelectedBook getSelectedBookInBookshelfGroupByLang(float x, float y, Rectangle b
           int iabs = i0 + i;
           if (firstBook <= iabs && iabs < firstBook + bookCount) {
             Book book = bemo.get(i);
-            int e = book.insideBookshelf(x, y, firstBook, w, bounds.x, yTop, h, totLen);            
+            float bh = bookTopHeight.get();
+            int e = book.insideBookshelf(x, y, firstBook, w, bounds.x, yTop, h, bh, totLen);            
             if (-1 < e) {
               res = new SelectedBook(book, emotionsByID.get(e), book.getBookCenterX(firstBook, w, bounds.x), 
-              yTop - h - bookTopHeight.get() - 5);
+              yTop - h -bh - 5);
               return res;
             }
           }
@@ -1234,7 +1235,7 @@ SelectedBook getSelectedBookInBookshelfGroupByEmo(float x, float y, Rectangle bo
           int iabs = i0 + i;
           if (firstBook <= iabs && iabs < firstBook + bookCount) {
             Book book = blang.get(i);
-            int e = book.insideBookshelf(x, y, firstBook, w, bounds.x, yTop, h, totLen);            
+            int e = book.insideBookshelf(x, y, firstBook, w, bounds.x, yTop, h, 0, totLen);            
             if (-1 < e) {
               res = new SelectedBook(book, emotionsByID.get(e), book.getBookCenterX(firstBook, w, bounds.x), 
               yTop - h - bookTopHeight.get() - 5);

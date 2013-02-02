@@ -251,7 +251,7 @@ class Book {
     }    
   }      
 
-  int insideBookshelf(float x, float y, float first, float weight, float left, float top, float h, float maxlen) {
+  int insideBookshelf(float x, float y, float first, float weight, float left, float top, float h, float bh, float maxlen) {
     float x0 = left + weight * (getBookshelfPos() - first);    
     if (x0 < x && x <= x0 + weight) {
       float factor = bookHeightTimer.get();
@@ -315,7 +315,7 @@ class Book {
           return e;
         }
 
-        float bh = bookTopHeight.get();
+//        float bh = bookTopHeight.get();
         if (n == nmax - 1 && 0 < bh) {
           y0 = top - h - bh;
           y1 = top - h;
