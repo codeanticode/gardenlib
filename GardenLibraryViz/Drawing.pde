@@ -388,7 +388,7 @@ void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
         currNewsText = timelineNews[i].text;
         int days = daysBetween(startDate, news.date);      
         newsX = map(days, 0, daysRunningTot, x0, x1);
-      }    
+      }
     }    
   } else {
     newsAlpha = 0;
@@ -406,24 +406,30 @@ void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
     }
   }
 
-  if (0 < newsAlpha) {
-    //to calculate the position of the box
-    float textLength = textWidth(currNewsText);
-    float boxWidth = x1 - x0;
-    float boxHeight = ceil(textLength/boxWidth) * newsLineSpace + 3;
-    float boxPosX = x0;
-    float boxPosY = y - boxHeight - newsAdjustY;
+  if (0 < newsAlpha && currNewsText != null) {
+    float y0 = y;
+    for (int i = currNewsText.length - 1; i >= 0 ; i--) {
+      String par = currNewsText[i];
+      
+      // calculate the position of the box
+      float textLength = textWidth(par);
+      float boxWidth = x1 - x0;
+      float boxHeight = ceil(textLength/boxWidth) * newsLineSpace + 3;
+      float boxPosX = x0;
+      float boxPosY = y0 - boxHeight - newsAdjustY;
 
-    //to draw the box and text
-    noStroke();
-    fill(0, newsAlpha * 2);
-    rect(boxPosX, boxPosY, boxWidth, boxHeight);
-    fill(160, newsAlpha);
-    textLeading(newsLineSpace);
-    text(currNewsText, boxPosX, boxPosY, boxWidth, boxHeight);
+      // draw the box and text
+      noStroke();
+      fill(0, newsAlpha * 2);
+      rect(boxPosX, boxPosY, boxWidth, boxHeight);
+      fill(160, newsAlpha);
+      textLeading(newsLineSpace);
+      text(par, boxPosX, boxPosY, boxWidth, boxHeight);
+      
+      y0 = y0 - boxHeight;
+    }
     fill(255, 0, 0, newsAlpha);
     ellipse(newsX, y + 15, 8, 8);
-    noFill();
   }
 }
 

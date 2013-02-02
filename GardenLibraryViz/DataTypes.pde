@@ -679,11 +679,11 @@ class Trail {
 
 class NewsText {
   Date date;
-  String text;
+  String[] text;
 
   NewsText(int d, int m, int y, String txt) {
     date = new Date(y, m, d);
-    text = txt;
+    text = txt.split("&");   
   }
   
   boolean isBefore(Date other) {
