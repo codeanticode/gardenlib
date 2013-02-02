@@ -241,7 +241,7 @@ class Book {
       rectMode(CORNER);
     } 
     else {
-      if (arrived) {
+      if (arrived && viewRegion.zoomLevel != VIEW_BOOK) {
         wheelTrail.draw();
         wheelTrail.add(x1, y1);
         wheelHeight.setTarget(max(width, height));
