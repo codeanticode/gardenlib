@@ -1,7 +1,9 @@
 // Garden Library project
-// Romy Achituv, Andres Colubri
+// Concept: Romy Achituv
+// Design: Romy Achituv, Andres Colubri
+// Development: Andres Colubri, Moon Jung Hyun
 // 
-// GardenLibraryViz app, version 11 (February 1th, 2013).
+// GardenLibraryViz app, version 11 (February 2th, 2013).
 
 void setup() {
   size(WIDTH, HEIGHT);
