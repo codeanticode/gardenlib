@@ -10,7 +10,7 @@ void groupBooksByLanguage() {
   // Removing languages with no books.
   for (int i = languages.size() - 1; i >= 0; i--) {
     Language lang = languages.get(i);
-    if (lang.booksInLang.size() == 0) {
+    if (lang.numTotBooks() == 0) {
       languages.remove(i);
     }
   }

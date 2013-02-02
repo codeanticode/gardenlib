@@ -239,6 +239,8 @@ class InfoTab extends InfoBox {
 
 class LanguageTab extends InfoTab {
   Language lang;
+  Emotion emo;
+  String txt;
 
   void setLanguage(SelectedLanguage sel) {
     if (lang != null && lang != sel.lang) {
@@ -246,9 +248,18 @@ class LanguageTab extends InfoTab {
       tabH.set(0);
     }
     lang = sel.lang;
+    emo = sel.emo;
+    if (emo == null) {          
+      int numRead = lang.numReadBooks();
+      int numTot = lang.numTotBooks();      
+      txt = "Books: " + numRead + "/" + numTot;      
+    } else {
+      ArrayList<Book> blang = emo.booksPerLang.get(lang.id);      
+      txt = "Books: " + blang.size(); 
+    }
     tabW = max(new float[] { 
       textWidth(lang.name), 
-      textWidth("Books: " + lang.booksInLang.size())
+      textWidth(txt)
     } 
     );
   }
@@ -275,7 +286,7 @@ class LanguageTab extends InfoTab {
       fill(0);
       text(lang.name, x0 - xoff + 5, y0 - tabH.get() - bh + fontSize + 5);
       if (fontSize < tabH.get()) {
-        text("Books: " + lang.booksInLang.size(), x0 - xoff + 5, y0 - tabH.get() - bh + 2 * fontSize + 10);
+        text(txt, x0 - xoff + 5, y0 - tabH.get() - bh + 2 * fontSize + 10);
       }
     }
   }
@@ -293,6 +304,7 @@ class LanguageTab extends InfoTab {
 
 class EmotionTab extends InfoTab {
   Emotion emo;
+  String txt;
 
   void setEmotion(SelectedEmotion sel) {
     if (emo != null && emo != sel.emo) {
@@ -300,9 +312,10 @@ class EmotionTab extends InfoTab {
       tabH.set(0);
     }
     emo = sel.emo;
+    txt = "Books: " + emo.booksInEmo.size();
     tabW = max(new float[] { 
       textWidth(emo.name), 
-      textWidth("Books: " + emo.booksInEmo.size())
+      textWidth(txt)
     } 
     );
   }
@@ -329,7 +342,7 @@ class EmotionTab extends InfoTab {
       fill(0);
       text(emo.name, x0 - xoff + 5, y0 - tabH.get() - bh + fontSize + 5);
       if (fontSize < tabH.get()) {
-        text("Books: " + emo.booksInEmo.size(), x0 - xoff + 5, y0 - tabH.get() - bh + 2 * fontSize + 10);
+        text(txt, x0 - xoff + 5, y0 - tabH.get() - bh + 2 * fontSize + 10);
       }
     }
   }

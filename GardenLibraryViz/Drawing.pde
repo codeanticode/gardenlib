@@ -56,7 +56,7 @@ void drawBookshelfGroupByLang(Rectangle bounds, float firstBook, float bookCount
 
     // Draw language rectangle    
     float x0 = bookX(langCount, bounds.x, bounds.w);
-    langCount += lang.booksInLang.size();        
+    langCount += lang.numTotBooks();        
     float x1 = bookX(langCount, bounds.x, bounds.w);    
     if (intervalIntersect(x0, x1, bounds.x, bounds.x + bounds.w)) {
       // Adding paddings between languages:

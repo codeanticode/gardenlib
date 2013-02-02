@@ -429,13 +429,22 @@ class SelectedBook {
 
 class SelectedLanguage {
   Language lang;
+  Emotion emo;
   float x, y;
 
   SelectedLanguage(Language lang, float x, float y) {
     this.lang = lang;
+    this.emo = null;
     this.x = x;
     this.y = y;
   }
+  
+  SelectedLanguage(Language lang, Emotion emo, float x, float y) {
+    this.lang = lang;
+    this.emo = emo;
+    this.x = x;
+    this.y = y;
+  }  
 }
 
 class SelectedEmotion {
@@ -551,6 +560,20 @@ class Language {
   void addBook(Book book) {
     booksInLang.add(book);
   }
+
+  int numTotBooks() {
+    return booksInLang.size();
+  }
+  
+  int numReadBooks() {
+    ArrayList<Book> bemo = booksPerEmo.get(0);
+    return booksInLang.size() - bemo.size();
+  }
+  
+  int numUnreadBooks() {
+    ArrayList<Book> bemo = booksPerEmo.get(0);
+    return bemo.size();
+  }  
 }
 
 class ViewRegion {

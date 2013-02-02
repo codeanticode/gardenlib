@@ -145,7 +145,6 @@ class ViewArea extends InterfaceElement {
 
   void draw() {
     if (currentMode == MODE_BOOKSHELF) {
-
       if (sortByLang) {      
         selLang = getSelectedLangInBookshelf(mouseX, mouseY, bounds, langBarY);
         selEmo = null;
@@ -1380,7 +1379,7 @@ void setLanguage(float x, Rectangle bounds) {
     if (lang.id == 0) continue;
     int langCount0 = langCount;
     float x0 = bookX(langCount, bounds.x, bounds.w);       
-    langCount += lang.booksInLang.size();      
+    langCount += lang.numTotBooks();
     float x1 = bookX(langCount, bounds.x, bounds.w); 
 
     if (x0 <= x && x <= x1) {
@@ -1441,7 +1440,7 @@ void viewLanguage(Language selLang) {
   for (Language lang: languages) {  
     if (lang.id == 0) continue;
     int langCount0 = langCount;
-    langCount += lang.booksInLang.size(); 
+    langCount += lang.numTotBooks(); 
 
     if (lang == selLang) {      
       if (langCount - langCount0 < sizeBookView) {
@@ -1496,7 +1495,7 @@ SelectedLanguage getSelectedLangInBookshelf(float x, float y, Rectangle bounds, 
     if (lang.id == 0) continue;
     int langCount0 = langCount;
     float x0 = bookX(langCount, bounds.x, bounds.w);       
-    langCount += lang.booksInLang.size();      
+    langCount += lang.numTotBooks();      
     float x1 = bookX(langCount, bounds.x, bounds.w);     
     if (x0 <= x && x <= x1) {            
       return new SelectedLanguage(lang, max(bounds.x, x0 + langPadding), yTop - langBarH.get());
@@ -1563,7 +1562,7 @@ SelectedLanguage getSelectedLangInBookshelfGroupByEmo(float x, float y, Rectangl
         }
      
         if (-1 < x0 && x0 < x && x < x1) {
-          return new SelectedLanguage(lang, max(bounds.x, x0), y1);
+          return new SelectedLanguage(lang, emo, max(bounds.x, x0), y1);
         }
 
         count += blang.size();
