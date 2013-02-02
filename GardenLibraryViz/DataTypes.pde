@@ -206,6 +206,19 @@ class Book {
     
     return x0;
   }
+  
+  float bookBookshelfX0(float first, float weight, float left) {
+    float x = left + weight * (getBookshelfPos() - first);
+    float x0 = x + bookPadding * weight;
+    return x0;    
+  }  
+
+  float bookBookshelfX1(float first, float weight, float left) {
+    float x = left + weight * (getBookshelfPos() - first);
+    float x0 = x + bookPadding * weight;
+    float x1 = x0 + max(1, (1 - 2 * bookPadding) * weight);
+    return x1;    
+  }  
 
   void drawInWheel(float xc, float yc, float rad, float h, float a) {    
     float a1 = wheelAngle.get();
@@ -251,6 +264,7 @@ class Book {
     }    
   }      
 
+  // Returns -1 if (x, y) is not inside of the book, the emotion of the book if it is.
   int insideBookshelf(float x, float y, float first, float weight, float left, float top, float h, float bh, float maxlen) {
     float x0 = left + weight * (getBookshelfPos() - first);    
     if (x0 < x && x <= x0 + weight) {
@@ -310,12 +324,10 @@ class Book {
           last = n == nmax - 1;
         }
 
-        //int e = emos.get(n);        
         if (((y1 <= y && y <= y0) || (y0 <= y && y <= y1)) && (e != 0)) {   
           return e;
         }
 
-//        float bh = bookTopHeight.get();
         if (n == nmax - 1 && 0 < bh) {
           y0 = top - h - bh;
           y1 = top - h;

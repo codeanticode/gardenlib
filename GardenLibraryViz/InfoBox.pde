@@ -255,9 +255,7 @@ class LanguageTab extends InfoTab {
 
   void draw() {
     if (visible) {      
-      //strokeWeight(1);
       noStroke();
-      //stroke(0);
       fill(lang.argb);
 
       float xmax = x0 + tabW + 10;
@@ -311,9 +309,7 @@ class EmotionTab extends InfoTab {
 
   void draw() {
     if (visible) {      
-      //strokeWeight(1);
       noStroke();
-      //stroke(0);
       fill(emo.argb);
 
       float xmax = x0 + tabW + 10;

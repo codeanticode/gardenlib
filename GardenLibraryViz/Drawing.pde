@@ -13,24 +13,23 @@ void drawBookshelf(Rectangle bounds, float yTop) {
   //float h = 10; //add 8 pix to height of lang bar
   float totLen = map(elapsed, 0, daysRunningTot, 0, bounds.y + bounds.h - yTop);
 
-  int count = 0;
-
   float w = bounds.w / bookCount;
   
   if (1 < w) bookStrokeWeight.enable();
   else bookStrokeWeight.disable(); // to stop the stroke appearing when the book rects are still too thin.
 
   if (sortByLang) { // Grouping the books first by language, then by emotion.
-    drawBookshelfGroupByLang(bounds, count, firstBook, bookCount, yTop, totLen, w, h);
+    drawBookshelfGroupByLang(bounds, firstBook, bookCount, yTop, totLen, w, h);
   } 
   else { // Grouping the books first by emotion, then by language.
-    drawBookshelfGroupByEmo(bounds, count, firstBook, bookCount, yTop, totLen, w, h);
+    drawBookshelfGroupByEmo(bounds, firstBook, bookCount, yTop, totLen, w, h);
   }
 
   noClip();
 }
 
-void drawBookshelfGroupByLang(Rectangle bounds, int count, float firstBook, float bookCount, float yTop, float totLen, float w, float h) {
+void drawBookshelfGroupByLang(Rectangle bounds, float firstBook, float bookCount, float yTop, float totLen, float w, float h) {
+  int count = 0;
   int langCount = 0;
   for (Language lang: languages) {  
     if (lang.id == 0) continue;
@@ -81,8 +80,9 @@ void drawBookshelfGroupByLang(Rectangle bounds, int count, float firstBook, floa
   }
 }
 
-void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float bookCount, float yTop, float totLen, float w, float h) {
+void drawBookshelfGroupByEmo(Rectangle bounds, float firstBook, float bookCount, float yTop, float totLen, float w, float h) {
   int emoCount = 0;
+  int count = 0;
   for (Emotion emo: emotions) {
     if (emo.id == 0) continue;
 
@@ -100,19 +100,18 @@ void drawBookshelfGroupByEmo(Rectangle bounds, int count, float firstBook, float
           int iabs = i0 + i;
           if (firstBook <= iabs && iabs < firstBook + bookCount) {
             Book book = blang.get(i); 
-            float x = book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen, false);
+            book.drawInBookshelf(firstBook, w, bounds.x, yTop, h, totLen, false);
             if (x0 == -1) {
-              x0 = x;  
+              x0 = book.bookBookshelfX0(firstBook, w, bounds.x);
             }
-            x1 = x;
+            x1 = book.bookBookshelfX1(firstBook, w, bounds.x);            
           }
         }
       }
 
      // Draw language bar
      float bh = bookTopHeight.get();
-     if (-1 < x0 && x0 <= x1 && 0 < bh) {
-       x1 += max(1, (1 - 2 * bookPadding) * w);
+     if (-1 < x0 && x0 < x1 && 0 < bh) {
        fill(replaceAlpha(lang.argb, viewFadeinAlpha.getInt()));       
        noStroke(); 
        rect(x0, yTop - h - bh, x1 - x0, 0.7 * bh); 
