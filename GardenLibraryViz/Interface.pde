@@ -1794,8 +1794,8 @@ void timelineRollOver(float x, float y) {
 
 void checkResize() {
   if (WIDTH != width || HEIGHT != height) {
-    viewMenu.resize(10, height - 50, 180, 50);
-    timeline.resize(205, height - 50, width - 200, 50); 
+    viewMenu.resize(0, height - 50, 200, 50);
+    timeline.resize(200, height - 50, width - 200, 50); 
     viewArea.resize(0, -8, width, height - 90);
     toolMenu.resize(width - 60, 20, 70, 30);
     legendArea.resize(0, 0, 200, height - 100);
