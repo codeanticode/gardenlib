@@ -584,8 +584,8 @@ class ToolMenu extends InterfaceElement {
 
 class Timeline extends InterfaceElement {
   float h2;
-  float rmargin;
   float lmargin;
+  float rmargin;
   boolean compact;
   boolean animating;
   boolean insideDragArea;
@@ -593,8 +593,8 @@ class Timeline extends InterfaceElement {
   Timeline(float x, float y, float w, float h) {
     super(x, y, w, h);  
     h2 = h/2;
-    rmargin = 5;
-    lmargin = 100;
+    lmargin = 5;
+    rmargin = 100;
     compact = false;
     animating = false;
   }
@@ -613,8 +613,8 @@ class Timeline extends InterfaceElement {
 
     fill(defTextColor);
 
-    float x0 = bounds.x + rmargin;
-    float x1 = x0 + bounds.w - lmargin;
+    float x0 = getLeft();
+    float x1 = getRight();
     float xm = x1 + 10;
     if (currentMode == MODE_WHEEL) {
       if (animating) {
@@ -682,8 +682,8 @@ class Timeline extends InterfaceElement {
     }
     if (!contains(mouseX, mouseY)) return false;
     selected = true;
-    float x0 = bounds.x + rmargin;
-    float x1 = x0 + bounds.w - lmargin;    
+    float x0 = getLeft();
+    float x1 = getRight();
     if (mouseX > x1) {
       if (currentMode == MODE_WHEEL) {
         animating = !animating;
@@ -720,8 +720,8 @@ class Timeline extends InterfaceElement {
 
   boolean mouseDragged() {    
     if (!selected) return false;
-    float x0 = bounds.x + rmargin;
-    float x1 = x0 + bounds.w - lmargin;     
+    float x0 = getLeft();
+    float x1 = getRight();    
     if (x0 < mouseX && mouseX < x1 && 
         bounds.y < mouseY && mouseY < bounds.y + bounds.h) {
       setTime(mouseX);
@@ -732,8 +732,8 @@ class Timeline extends InterfaceElement {
   }
 
   void setTime(float mx) {
-    float x0 = bounds.x + rmargin;
-    float x1 = x0 + bounds.w - lmargin;
+    float x0 = getLeft();
+    float x1 = getRight();
     int days = int(constrain(map(mx, x0, x1, 0, daysRunningTot), 0, daysRunningTot));
     daysSinceStart.setTarget(days);
     if (currentMode == MODE_BOOKSHELF) {
@@ -766,6 +766,19 @@ class Timeline extends InterfaceElement {
     super.resize(x, y, w, h);
     h2 = h/2;
   }   
+  
+  float getLeft() {
+    return bounds.x + lmargin;        
+  }
+  
+  float getRight() {
+    float x0 = getLeft();    
+    if (currentMode == MODE_HISTORY) {
+      return x0 + bounds.w - 20;
+    } else {
+      return x0 + bounds.w - rmargin; 
+    }    
+  }
 }
 
 class LegendArea extends InterfaceElement {
