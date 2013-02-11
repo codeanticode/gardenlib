@@ -258,7 +258,7 @@ class ViewArea extends InterfaceElement {
     if (currentMode == MODE_BOOKSHELF) {
     } 
     else if (currentMode == MODE_WHEEL) {
-      if (!draggingWheel) {
+      if (!draggingWheel && !helpMenu.contains(mouseX, mouseY)) {
         // An emotion can be selected only by a single
         // click that doesn't involve dragging.
         setViewRegionWheel(mouseX, mouseY, bounds, wheelTop);
@@ -611,7 +611,13 @@ class HelpMenu extends InterfaceElement {
         }  
       }
     } else if (currentMode == MODE_WHEEL) {
-      
+      if (viewRegion.zoomLevel == VIEW_ALL) {
+        float d = wheelRadius + wheelWidth.get() + maxBookHeight/2;
+        float angle = 0;   
+        selectBookInWheel(d, angle);
+      } else if (viewRegion.zoomLevel == VIEW_BOOK) {
+        setViewRegionAllWheel();  
+      }
     }    
   }
 }
