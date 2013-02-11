@@ -682,6 +682,22 @@ class Timeline extends InterfaceElement {
     }
     if (!contains(mouseX, mouseY)) return false;
     selected = true;
+    
+    if (mouseButton == RIGHT && currNewsText != null && newsAlpha > 0) {      
+      for (int i = 0; i < currNewsText.length; i++) {
+        String ln = currNewsText[i];
+        int idx = ln.indexOf("http://");
+        if (-1 < idx) {
+          ln = ln.substring(idx);
+          String[] parts = ln.split(" ");
+          if (0 < parts.length) {  
+            link(parts[0], "_new");
+            break;
+          }
+        }
+      }
+    }
+    
     float x0 = getLeft();
     float x1 = getRight();
     if (mouseX > x1) {
@@ -719,7 +735,7 @@ class Timeline extends InterfaceElement {
   }
 
   boolean mouseDragged() {    
-    if (!selected) return false;
+    if (!selected || mouseButton == RIGHT) return false;
     float x0 = getLeft();
     float x1 = getRight();    
     if (x0 < mouseX && mouseX < x1 && 
