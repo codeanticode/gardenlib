@@ -54,8 +54,8 @@ float newsX = 0;
 boolean newsRollover;
 int newsAlpha = 0;
 
-SoftFloat viewFadeinAlpha;      // View left margin 
-SoftFloat viewLeftMargin; // View left margin
+SoftFloat viewFadeinAlpha; 
+SoftFloat viewLeftMargin; 
 
 int noMouseActivityCount = 0;
 boolean mouseActivity = false;
@@ -174,8 +174,8 @@ void initialize(int task) {
     viewLeftMargin = new SoftFloat();
 
     // Create UI    
-    viewMenu = new ViewMenu(10, height - 50, 180, 50);
-    timeline = new Timeline(205, height - 50, width - 200, 50); 
+    viewMenu = new ViewMenu(0, height - 50, 200, 50);
+    timeline = new Timeline(200, height - 50, width - 200, 50); 
     viewArea = new ViewArea(0, -8, width, height - 90);
     toolMenu = new ToolMenu(width - 60, 20, 70, 30);
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);

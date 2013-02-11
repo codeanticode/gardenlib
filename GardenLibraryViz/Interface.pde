@@ -576,7 +576,8 @@ class ToolMenu extends InterfaceElement {
 
 class Timeline extends InterfaceElement {
   float h2;
-  float margin;
+  float rmargin;
+  float lmargin;
   boolean compact;
   boolean animating;
   boolean insideDragArea;
@@ -584,7 +585,8 @@ class Timeline extends InterfaceElement {
   Timeline(float x, float y, float w, float h) {
     super(x, y, w, h);  
     h2 = h/2;
-    margin = 100;
+    rmargin = 5;
+    lmargin = 100;
     compact = false;
     animating = false;
   }
@@ -603,7 +605,9 @@ class Timeline extends InterfaceElement {
 
     fill(defTextColor);
 
-    float xm = bounds.x + bounds.w - margin + 10;
+    float x0 = bounds.x + rmargin;
+    float x1 = x0 + bounds.w - lmargin;
+    float xm = x1 + 10;
     if (currentMode == MODE_WHEEL) {
       if (animating) {
         text("stop animation", xm, bounds.y + h2 + fontSize/2);
@@ -622,11 +626,8 @@ class Timeline extends InterfaceElement {
       }
     }   
 
-    float x0 = bounds.x;
-    float x1 = bounds.x + bounds.w - margin;
-
     if (currentMode == MODE_HISTORY) { // added expand timeline for history mode
-      x1 = bounds.x + bounds.w-20;
+      x1 = x0 + bounds.w - 20;
     }
 
     stroke(timelineColor);
@@ -671,11 +672,11 @@ class Timeline extends InterfaceElement {
       selected = true;
       return true;
     }
-    
     if (!contains(mouseX, mouseY)) return false;
     selected = true;
-    if (mouseX > bounds.x + bounds.w - margin) {
-
+    float x0 = bounds.x + rmargin;
+    float x1 = x0 + bounds.w - lmargin;    
+    if (mouseX > x1) {
       if (currentMode == MODE_WHEEL) {
         animating = !animating;
 
@@ -709,9 +710,11 @@ class Timeline extends InterfaceElement {
     return true;
   }
 
-  boolean mouseDragged() {
+  boolean mouseDragged() {    
     if (!selected) return false;
-    if (bounds.x < mouseX && mouseX < bounds.x + bounds.w - margin && 
+    float x0 = bounds.x + rmargin;
+    float x1 = x0 + bounds.w - lmargin;     
+    if (x0 < mouseX && mouseX < x1 && 
         bounds.y < mouseY && mouseY < bounds.y + bounds.h) {
       setTime(mouseX);
     } else if (currentMode == MODE_HISTORY) {
@@ -721,7 +724,9 @@ class Timeline extends InterfaceElement {
   }
 
   void setTime(float mx) {
-    int days = int(map(mx, bounds.x, bounds.x + bounds.w - margin, 0, daysRunningTot));
+    float x0 = bounds.x + rmargin;
+    float x1 = x0 + bounds.w - lmargin;
+    int days = int(constrain(map(mx, x0, x1, 0, daysRunningTot), 0, daysRunningTot));
     daysSinceStart.setTarget(days);
     if (currentMode == MODE_BOOKSHELF) {
       if (sortByLang) {
