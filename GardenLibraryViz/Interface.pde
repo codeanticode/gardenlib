@@ -221,7 +221,7 @@ class ViewArea extends InterfaceElement {
 
     selected = true;
 
-    if (currentMode == MODE_BOOKSHELF) { 
+    if (currentMode == MODE_BOOKSHELF && !helpMenu.contains(mouseX, mouseY)) { 
       setViewRegionBookshelf(mouseX, mouseY, bounds, langBarY);
     } 
     else if (currentMode == MODE_WHEEL) {      
@@ -525,42 +525,42 @@ class ViewMenu extends InterfaceElement {
   } 
 }
 
-class ToolMenu extends InterfaceElement {
-  int searchStatus;
-  int helpStatus;
-  PImage[] searchIcon;
-  PImage[] helpIcon;
+class HelpMenu extends InterfaceElement {
+  int zoomStatus;
+  int infoStatus;
+  PImage[] zoomIcon;
+  PImage[] infoIcon;
   
-  ToolMenu(float x, float y, float w, float h) {
+  HelpMenu(float x, float y, float w, float h) {
     super(x, y, w, h);
-    searchIcon = new PImage[2];
-    searchIcon[0] = loadImage("media/mag_grey.gif");
-    searchIcon[1] = loadImage("media/mag_green.gif");
+    zoomIcon = new PImage[2];
+    zoomIcon[0] = loadImage("media/mag_grey.gif");
+    zoomIcon[1] = loadImage("media/mag_green.gif");
     
-    helpIcon = new PImage[2];
-    helpIcon[0] = loadImage("media/q_mark_grey.gif");
-    helpIcon[1] = loadImage("media/q_mark_green.gif");
+    infoIcon = new PImage[2];
+    infoIcon[0] = loadImage("media/q_mark_grey.gif");
+    infoIcon[1] = loadImage("media/q_mark_green.gif");
     
-    searchStatus = 0;
-    helpStatus = 0;
+    zoomStatus = 0;
+    infoStatus = 0;
   }  
   
   void draw() {
-    image(searchIcon[searchStatus], bounds.x, bounds.y);  
-    image(helpIcon[helpStatus], bounds.x + searchIcon[searchStatus].width + 5, bounds.y);
+    if (currentMode != MODE_HISTORY) {
+      image(zoomIcon[zoomStatus], bounds.x, bounds.y);
+    }
+    image(infoIcon[infoStatus], bounds.x + zoomIcon[zoomStatus].width + 5, bounds.y);
   }
   
   boolean mousePressed() {
-    if (contains(mouseX, mouseY)) {
-     
-      if (insideIcon(searchIcon[searchStatus], bounds.x, bounds.y)) {
-        searchStatus = (searchStatus + 1) % 2;
+    if (contains(mouseX, mouseY)) {     
+      if (currentMode != MODE_HISTORY && insideIcon(zoomIcon[zoomStatus], bounds.x, bounds.y)) {
+        cycleZoom();        
       }
 
-      if (insideIcon(helpIcon[helpStatus], bounds.x + searchIcon[searchStatus].width + 5, bounds.y)) {
-        helpStatus = (helpStatus + 1) % 2;
-      }      
-     
+      if (insideIcon(infoIcon[infoStatus], bounds.x + zoomIcon[zoomStatus].width + 5, bounds.y)) {
+
+      }     
       selected = true;
     } else {
       selected = false;  
@@ -569,8 +569,50 @@ class ToolMenu extends InterfaceElement {
     return selected;
   }  
   
+  void mouseMoved() {
+    if (contains(mouseX, mouseY)) {
+      if (insideIcon(zoomIcon[zoomStatus], bounds.x, bounds.y)) {
+        zoomStatus = 1;
+      } else {
+        zoomStatus = 0;
+      }
+      if (insideIcon(infoIcon[infoStatus], bounds.x + zoomIcon[zoomStatus].width + 5, bounds.y)) {
+        infoStatus = 1;
+      } else {
+        infoStatus = 0;
+      }
+    } else {
+      zoomStatus = 0;
+      infoStatus = 0;
+    }   
+  }
+  
   boolean insideIcon(PImage icon, float x, float y) {
     return x < mouseX && mouseX < x + icon.width & y < mouseY && mouseY < y + icon.height;
+  }
+  
+  void cycleZoom() {
+    if (currentMode == MODE_BOOKSHELF) {
+      float xc = viewArea.bounds.x + viewArea.bounds.w/2;
+      if (viewRegion.zoomLevel == VIEW_ALL) {
+        println("set lang region");
+        setViewRegionLangBookshelf(xc, viewArea.bounds);
+      } else if (viewRegion.zoomLevel == VIEW_LANG) {
+        setViewRegionBookBookshelf(xc, viewArea.bounds);
+        if (compactTime) {
+          disableCompactTime();
+        }        
+      } else if (viewRegion.zoomLevel == VIEW_BOOK) {
+        if (!compactTime) {
+          enableCompactTime();
+        } else {
+          // Return to fully zoomed-out view
+          setViewRegionAllBookshelf();
+        }  
+      }
+    } else if (currentMode == MODE_WHEEL) {
+      
+    }    
   }
 }
 
@@ -692,12 +734,10 @@ class Timeline extends InterfaceElement {
         compact = !compact;
 
         if (compactTime) {
-          bookHeightTimer.setTarget(0);
-          compactTime = false;
+          disableCompactTime();
         } 
         else {
-          bookHeightTimer.setTarget(1);
-          compactTime = true;
+          enableCompactTime();
         }
       }
     } 
@@ -955,29 +995,49 @@ void setViewRegionBookshelf(float x, float y, Rectangle bounds, float yTop) {
 
   if (yTop - h < y && y < yTop) {
     if (viewRegion.zoomLevel != VIEW_ALL) return; // can select language only from fully zoomed-out view.
-
-    if (sortByLang) {
-      setLanguage(x, bounds);
-    } 
-    else {
-      setEmotion(x, bounds);
-    }
+    setViewRegionLangBookshelf(x, bounds);
   } 
   else {
-    viewRegion.zoomLevel = VIEW_BOOK; 
-    bookStrokeWeight.setTarget(bookOutlineW);
-    bookTopHeight.setTarget(maxBookHeight);
-    currLang = null;
-    currEmo = null;
-
-    // Set view region around selected book
-    if (sortByLang) {
-      setViewRegionBookshelfGroupByLang(x, bounds);
-    } 
-    else {
-      setViewRegionBookshelfGroupByEmo(x, bounds);
-    }
+    setViewRegionBookBookshelf(x, bounds);
   }
+}
+
+void setViewRegionAllBookshelf() {
+  int count = sortByLang ? books.size() : numBooksWithEmo();
+  viewRegion.setTarget(0, count);
+
+  viewRegion.zoomLevel = VIEW_ALL;  
+  bookStrokeWeight.set(0);
+  bookTopHeight.setTarget(sortByLang ? 0 : maxBookHeight); 
+  langBarH.setTarget(langBarWAll);
+  disableCompactTime(); 
+  currLang = null;
+  currEmo = null;
+}
+
+void setViewRegionLangBookshelf(float x, Rectangle bounds) {
+  if (sortByLang) {
+    setLanguage(x, bounds);
+  } 
+  else {
+    setEmotion(x, bounds);
+  }  
+}
+
+void setViewRegionBookBookshelf(float x, Rectangle bounds) {
+  viewRegion.zoomLevel = VIEW_BOOK; 
+  bookStrokeWeight.setTarget(bookOutlineW);
+  bookTopHeight.setTarget(maxBookHeight);
+  currLang = null;
+  currEmo = null;
+
+  // Set view region around selected book
+  if (sortByLang) {
+    setViewRegionBookshelfGroupByLang(x, bounds);
+  } 
+  else {
+    setViewRegionBookshelfGroupByEmo(x, bounds);
+  }  
 }
 
 void setViewRegionBookshelfGroupByLang(float x, Rectangle bounds) {
@@ -1043,18 +1103,14 @@ void setViewRegionBookshelfGroupByEmo(float x, Rectangle bounds) {
   }
 }
 
-void setViewRegionAllBookshelf() {
-  int count = sortByLang ? books.size() : numBooksWithEmo();
-  viewRegion.setTarget(0, count);
-
-  viewRegion.zoomLevel = VIEW_ALL;  
-  bookStrokeWeight.set(0);
-  bookTopHeight.setTarget(sortByLang ? 0 : maxBookHeight); 
-  langBarH.setTarget(langBarWAll);
+void disableCompactTime() {
   bookHeightTimer.setTarget(0);
-  compactTime = false; 
-  currLang = null;
-  currEmo = null;
+  compactTime = false;  
+}
+
+void enableCompactTime() {
+  bookHeightTimer.setTarget(1);
+  compactTime = true;
 }
 
 void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
@@ -1409,8 +1465,7 @@ void setLanguage(float x, Rectangle bounds) {
   bookStrokeWeight.set(0);
   bookTopHeight.setTarget(0);
   langBarH.setTarget(langBarWLang);
-  bookHeightTimer.setTarget(0);
-  compactTime = false;  
+  disableCompactTime();  
   int langCount = 0;
   for (Language lang: languages) {  
     if (lang.id == 0) continue;
@@ -1443,8 +1498,7 @@ void setEmotion(float x, Rectangle bounds) {
   bookStrokeWeight.set(0);
   bookTopHeight.setTarget(maxBookHeight);  
   langBarH.setTarget(langBarWLang);
-  bookHeightTimer.setTarget(0);
-  compactTime = false;    
+  disableCompactTime();    
   int emoCount = 0;
   for (Emotion emo: emotions) {  
     if (emo.id == 0) continue;
@@ -1751,7 +1805,7 @@ void checkResize() {
     viewMenu.resize(10, height - 50, 180, 50);
     timeline.resize(205, height - 50, width - 200, 50); 
     viewArea.resize(0, -8, width, height - 90);
-    toolMenu.resize(width - 60, 20, 70, 30);
+    helpMenu.resize(width - 60, 20, 70, 30);
     legendArea.resize(0, 0, 200, height - 100);
     
     WIDTH = width;
