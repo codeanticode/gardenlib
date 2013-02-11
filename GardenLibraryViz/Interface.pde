@@ -188,7 +188,7 @@ class ViewArea extends InterfaceElement {
       animatingTrails = drawWheel(bounds, wheelTop);
     } 
     else if (currentMode == MODE_HISTORY) {      
-      drawHistory(bounds, historyTop);
+      drawHistory(bounds, historyTop, w0);
 
       if (!histLocked && (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0)) {        
         if (contains(mouseX, mouseY)) {
@@ -968,7 +968,7 @@ class LegendArea extends InterfaceElement {
     closed = false;
     viewLeftMargin.setTarget(bounds.w);
     animTimer.set(0);
-    animTimer.setTarget(1);
+    animTimer.setTarget(1);    
   }
 
   void close() {
@@ -1801,7 +1801,8 @@ void checkResize() {
     legendArea.resize(0, 0, 200, height - 100);
     
     WIDTH = width;
-    HEIGHT = height; 
+    HEIGHT = height;
+    historyCanvas[0] = historyCanvas[1] = null; 
   }   
 }
 

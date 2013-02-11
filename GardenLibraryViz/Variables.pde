@@ -45,7 +45,7 @@ SoftFloat wheelScale;
 
 // history
 float historyCircleX, historyCircleY;
-PGraphics historyCanvas;
+PGraphics[] historyCanvas;
 
 // News timebox
 NewsText[] timelineNews;
@@ -195,6 +195,9 @@ void initialize(int task) {
     // Trigger initial fade-in animation.
     viewFadeinAlpha.set(0);
     viewFadeinAlpha.setTarget(255);
+    
+    historyCanvas = new PGraphics[2];
+    historyCanvas[0] = historyCanvas[1] = null;
   }
 }
 
