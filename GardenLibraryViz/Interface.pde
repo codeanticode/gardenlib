@@ -1109,7 +1109,7 @@ void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
 //  } 
 //  else
   
-  if (r1 < d && d < r1 + maxBookHeight) {
+  if (r0 < d && d < r1 + maxBookHeight) {
     selectBookInWheel(d, angle);
   } 
   else {
