@@ -34,7 +34,7 @@ class Book {
     this.title = title;
     this.author = author;
     this.lang = lang;
-    this.ISBN = ISBN;
+    this.ISBN = ISBN.replace("-", "") ;
 
     bookshelfPos = new SoftFloat();
 

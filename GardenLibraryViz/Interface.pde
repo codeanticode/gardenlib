@@ -76,7 +76,7 @@ class ViewArea extends InterfaceElement {
     dateInfo = new Message(selHistoryColor);
     langTab = new LanguageTab();
     emoTab = new EmotionTab();
-    langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + 5 * (fontSize + 5) + 5 + 10;
+    langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + 6 * (fontSize + 5) + 5 + 10;
   }
 
   void update() {
@@ -220,6 +220,14 @@ class ViewArea extends InterfaceElement {
     if (!contains(mouseX, mouseY)) return false;
 
     selected = true;
+
+    if (mouseButton == RIGHT && selBook != null) {
+      String isbn = selBook.book.ISBN;
+//      String isbn = "9780140285000";
+      String url = "https://www.google.com/search?tbo=p&tbm=bks&q=isbn:" + isbn + "&num=10";
+      link(url, "_new");
+      return selected;  
+    }
 
     if (currentMode == MODE_BOOKSHELF) { 
       setViewRegionBookshelf(mouseX, mouseY, bounds, langBarY);
