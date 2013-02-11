@@ -120,9 +120,9 @@ class BookBubble extends InfoBox {
         popMatrix();
       }
        
-      strokeWeight(1);
+      strokeWeight(0.5);
       stroke(150);
-      fill(0);
+      fill(0, 166);
 
       float x1, x2;
       if (xmax <= width) {
