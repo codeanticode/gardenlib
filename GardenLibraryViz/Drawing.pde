@@ -380,7 +380,8 @@ void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white 
 void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
   timelineRollOver(x, y);
 
-  if (!daysSinceStart.targeting) {
+  //if (!daysSinceStart.targeting) {
+  if (abs(daysSinceStart.velocity) < 0.2) { // So the news text shows up faster        
     for (int i = 0; i < timelineNews.length; i++) {
       NewsText news = timelineNews[i];
       if (news.isBefore(selDate)) {     
