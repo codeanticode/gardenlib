@@ -132,6 +132,24 @@ void buildHistory() {
   }
 }  
 
+String urlInCurrNewsText() {
+  if (currNewsText == null) return "";
+  
+  for (int i = 0; i < currNewsText.length; i++) {
+  String ln = currNewsText[i];
+  int idx = ln.indexOf("http://");
+    if (-1 < idx) {
+      ln = ln.substring(idx);
+      String[] parts = ln.split(" ");
+      if (0 < parts.length) {  
+        return parts[0];
+      }
+    }
+  }
+  
+  return "";
+}
+
 // Returns the x coordinate for the book with absolute coordinate i, corresponding to the
 // current viewing range.
 float bookX(int i, float x, float w) {

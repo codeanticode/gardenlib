@@ -163,8 +163,13 @@ class ViewArea extends InterfaceElement {
       bookBubble.open(selBook);
       bookBubble.draw();
 
-      if (!mouseActivity && selBook == null && selLang == null && viewRegion.zoomLevel != VIEW_ALL) {
-        hintInfo.open("click anywhere above the language bar to zoom out");
+      if (!mouseActivity) {
+        if (selBook == null && selLang == null && viewRegion.zoomLevel != VIEW_ALL) {
+          hintInfo.open("click anywhere above the language bar to zoom out");
+        }
+        if (selBook != null) {
+          hintInfo.open("right click to search the book by ISBN on google books");
+        }
       }
 
       drawBookshelf(bounds, langBarY);
@@ -671,6 +676,13 @@ class Timeline extends InterfaceElement {
       xc += x0 - (xc - dw/2);
     }        
     text(dstr, xc - dw/2, bounds.y + h2 - 15);
+    
+    if (!mouseActivity && contains(mouseX, mouseY)) { 
+      String url = urlInCurrNewsText();      
+      if (!url.equals("") && newsAlpha > 0 && !daysSinceStart.targeting) {
+        hintInfo.open("right click to open the news link");
+      }
+    }    
   }
 
   boolean mousePressed() {    
@@ -683,18 +695,10 @@ class Timeline extends InterfaceElement {
     if (!contains(mouseX, mouseY)) return false;
     selected = true;
     
-    if (mouseButton == RIGHT && currNewsText != null && newsAlpha > 0) {      
-      for (int i = 0; i < currNewsText.length; i++) {
-        String ln = currNewsText[i];
-        int idx = ln.indexOf("http://");
-        if (-1 < idx) {
-          ln = ln.substring(idx);
-          String[] parts = ln.split(" ");
-          if (0 < parts.length) {  
-            link(parts[0], "_new");
-            break;
-          }
-        }
+    if (mouseButton == RIGHT && currNewsText != null && newsAlpha > 0) {   
+      String url = urlInCurrNewsText();
+      if (!url.equals("")) {
+        link(url, "_new");  
       }
     }
     
