@@ -458,3 +458,22 @@ void loadingAnimation() {
   text(msg, width/2 - w/2, height/2);
 }
 
+void drawHelpLayer() {
+  noStroke();
+  fill(0, viewFadeinAlpha.getInt());
+  rect(0, 0, width, height);  
+  
+  fill(255, 2 * viewFadeinAlpha.getInt());
+  textFont(helpFont);
+  
+  if (currentMode == MODE_BOOKSHELF) {
+    text("Bookshelf", width/2, height/2);  
+  } else if (currentMode == MODE_WHEEL) {
+    text("Wheel", width/2, height/2);
+  } else if (currentMode == MODE_HISTORY) {
+    text("History", width/2, height/2);
+  }
+  
+  textFont(defFont);
+}
+

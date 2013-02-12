@@ -145,15 +145,17 @@ class ViewArea extends InterfaceElement {
 
   void draw() {
     if (currentMode == MODE_BOOKSHELF) {
-      if (sortByLang) {      
-        selLang = getSelectedLangInBookshelf(mouseX, mouseY, bounds, langBarY);
-        selEmo = null;
-        selBook = getSelectedBookInBookshelfGroupByLang(mouseX, mouseY, bounds, langBarY);        
-      } 
-      else {
-        selLang = getSelectedLangInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
-        selEmo = getSelectedEmoInBookshelf(mouseX, mouseY, bounds, langBarY);                
-        selBook = getSelectedBookInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
+      if (!showingHelp) {
+        if (sortByLang) {      
+          selLang = getSelectedLangInBookshelf(mouseX, mouseY, bounds, langBarY);
+          selEmo = null;
+          selBook = getSelectedBookInBookshelfGroupByLang(mouseX, mouseY, bounds, langBarY);        
+        } 
+        else {
+          selLang = getSelectedLangInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
+          selEmo = getSelectedEmoInBookshelf(mouseX, mouseY, bounds, langBarY);                
+          selBook = getSelectedBookInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
+        }
       }
 
       emoTab.open(selEmo);
@@ -175,9 +177,12 @@ class ViewArea extends InterfaceElement {
       drawBookshelf(bounds, langBarY);
     } 
     else if (currentMode == MODE_WHEEL) {
-      if (viewRegion.zoomLevel == VIEW_BOOK) {
-        selBook = getSelectedBookInWheel(bounds, selBook, wheelTop);
+      if (!showingHelp) {
+        if (viewRegion.zoomLevel == VIEW_BOOK) {
+          selBook = getSelectedBookInWheel(bounds, selBook, wheelTop);
+        }
       }
+      
       bookBubble.open(selBook);
       bookBubble.draw();      
 
@@ -190,7 +195,7 @@ class ViewArea extends InterfaceElement {
     else if (currentMode == MODE_HISTORY) {      
       drawHistory(bounds, historyTop, w0);
 
-      if (!histLocked && (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0)) {        
+      if (!showingHelp && !histLocked && (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0)) {        
         if (contains(mouseX, mouseY)) {
           selBook = selectBookInHistory(mouseX, mouseY, bounds, historyTop);
         }
@@ -572,7 +577,9 @@ class HelpMenu extends InterfaceElement {
       }
 
       if (insideIcon(infoIcon[infoStatus], bounds.x + zoomIcon[zoomStatus].width + 5, bounds.y)) {
-
+        showingHelp = true;
+        viewFadeinAlpha.set(0);
+        viewFadeinAlpha.setTarget(127);
       }     
       selected = true;
     } else {

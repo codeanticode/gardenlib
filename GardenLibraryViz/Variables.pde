@@ -1,5 +1,6 @@
 int currentTask = -1;
 int currentMode = MODE_BOOKSHELF;
+boolean showingHelp = false; 
 
 // Data:
 ArrayList<Emotion> emotions;  // All the emotions, including the null (0) emotion
@@ -75,6 +76,7 @@ HintInfo hintInfo;
 
 PFont defFont;
 PFont langFont;
+PFont helpFont;
 
 float sinLUT[];
 float cosLUT[];
@@ -90,6 +92,8 @@ void initialize(int task) {
     textFont(defFont);
 
     langFont = createFont(langFontName, langFontSize);
+
+    helpFont = createFont(helpFontName, helpFontSize, false);
 
     initLUT();
 

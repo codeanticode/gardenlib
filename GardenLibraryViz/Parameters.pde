@@ -61,6 +61,10 @@ String langFontName = "Istok-Bold";
 int langFontSize    = 12;
 color langFontColor = color(255);
 
+String helpFontName = "Istok-Web";
+int helpFontSize    = 17;
+color helpFontColor = color(255);
+
 color defTextColor = color(175);
 
 // Colors

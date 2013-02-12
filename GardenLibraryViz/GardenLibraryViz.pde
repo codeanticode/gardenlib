@@ -3,7 +3,7 @@
 // Design: Romy Achituv, Andres Colubri
 // Development: Andres Colubri, Moon Jung Hyun
 // 
-// GardenLibraryViz app, version 11 (February 2th, 2013).
+// GardenLibraryViz app, version 12 (February 12th, 2013).
 
 void setup() {
   size(WIDTH, HEIGHT);
@@ -39,6 +39,10 @@ void draw() {
     
     hintInfo.update();
     hintInfo.draw();
+    
+    if (showingHelp) {
+      drawHelpLayer();  
+    }    
   }
   //   image(img,0,0);// added here on top of legend anim
   //  printFrameRate();
@@ -46,27 +50,41 @@ void draw() {
 
 void mousePressed() {  
   if (currentTask < RUNNING) return;
+  if (showingHelp) {
+    showingHelp = false;
+    viewFadeinAlpha.set(255);
+    return;
+  }
   for (InterfaceElement e: ui) {
     e.mousePressed();
   }
 }
 
 void mouseDragged() {
-  if (currentTask < RUNNING) return;  
+  if (currentTask < RUNNING) return;
+  if (showingHelp) {
+    return;
+  }
   for (InterfaceElement e: ui) {
     e.mouseDragged();
   }
 }
 
 void mouseReleased() {
-  if (currentTask < RUNNING) return;  
+  if (currentTask < RUNNING) return;
+  if (showingHelp) {
+    return;
+  }
   for (InterfaceElement e: ui) {
     e.mouseReleased();
   }
 }
 
 void mouseMoved() {
-  if (currentTask < RUNNING) return;  
+  if (currentTask < RUNNING) return;
+  if (showingHelp) {
+    return;
+  }
   for (InterfaceElement e: ui) {
     e.mouseMoved();
   }
