@@ -69,14 +69,14 @@ class BookBubble extends InfoBox {
 
     titleStr = "Title: " + book.title;
     authorStr = "Author: " + book.author;
-    //isbnStr = "ISBN: " + book.ISBN;
+    isbnStr = showISBN ? "ISBN: " + book.ISBN : "";
     langStr = "Language: " + lang.name;
     emoStr = "Emotion: " + emo.name;
 
     float w = max(new float[] { 
       textWidth(titleStr), 
       textWidth(authorStr), 
-      //                                textWidth(isbnStr), 
+      textWidth(isbnStr), 
       textWidth(langStr), 
       textWidth(emoStr)
     } 
@@ -120,9 +120,9 @@ class BookBubble extends InfoBox {
         popMatrix();
       }
        
-      strokeWeight(1);
+      strokeWeight(0.5);
       stroke(150);
-      fill(0);
+      fill(0, 166);
 
       float x1, x2;
       if (xmax <= width) {
@@ -152,6 +152,10 @@ class BookBubble extends InfoBox {
       h += fontSize + 5;
       if (h < mainH.get()) text(chopString(authorStr), xt, yt + h);
       h += fontSize + 5;
+      if (showISBN) {
+        if (h < mainH.get()) text(chopString(isbnStr), xt, yt + h);
+        h += fontSize + 5;
+      }
       if (h < mainH.get()) text(chopString(langStr), xt, yt + h);
       h += fontSize + 5;
       if (h < mainH.get()) text(chopString(emoStr), xt, yt + h);
@@ -172,7 +176,7 @@ class BookBubble extends InfoBox {
     if (!visible) {
       super.open(x, y);      
       tailH.setTarget(bookBubbleTailH);
-      mainH.setTarget(4 * (fontSize + 5) + 7);
+      mainH.setTarget(numBookBubbleLines * (fontSize + 5) + 7);
       codeScale.setTarget(1);
     } 
     else {

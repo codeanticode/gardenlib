@@ -21,6 +21,7 @@ float langBarWLang =  10;//20;
 float langBarWBook =  10;//15;
 float bookPadding  =  0.3;//0.4;//0.3;
 int   sizeBookView = 100;//40;//40;
+boolean showISBN   = false;
 
 float maxBookHeight  = 10;
 float bookOutlineW   = 1;

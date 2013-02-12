@@ -34,6 +34,7 @@ SoftFloat bookHeightTimer;
 Language currLang;
 Emotion currEmo;
 boolean sortByLang = true;
+int numBookBubbleLines;
 
 // wheel
 boolean playingAnim;
@@ -45,7 +46,7 @@ SoftFloat wheelScale;
 
 // history
 float historyCircleX, historyCircleY;
-PGraphics historyCanvas;
+PGraphics[] historyCanvas;
 
 // News timebox
 NewsText[] timelineNews;
@@ -54,8 +55,8 @@ float newsX = 0;
 boolean newsRollover;
 int newsAlpha = 0;
 
-SoftFloat viewFadeinAlpha;      // View left margin 
-SoftFloat viewLeftMargin; // View left margin
+SoftFloat viewFadeinAlpha; 
+SoftFloat viewLeftMargin; 
 
 int noMouseActivityCount = 0;
 boolean mouseActivity = false;
@@ -173,9 +174,11 @@ void initialize(int task) {
     viewFadeinAlpha.set(255);
     viewLeftMargin = new SoftFloat();
 
+    numBookBubbleLines = showISBN ? 5 : 4;
+
     // Create UI    
-    viewMenu = new ViewMenu(10, height - 50, 180, 50);
-    timeline = new Timeline(205, height - 50, width - 200, 50); 
+    viewMenu = new ViewMenu(0, height - 50, 200, 50);
+    timeline = new Timeline(200, height - 50, width - 200, 50); 
     viewArea = new ViewArea(0, -8, width, height - 90);
     helpMenu = new HelpMenu(width - 60, 20, 70, 30);
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
@@ -195,6 +198,9 @@ void initialize(int task) {
     // Trigger initial fade-in animation.
     viewFadeinAlpha.set(0);
     viewFadeinAlpha.setTarget(255);
+    
+    historyCanvas = new PGraphics[2];
+    historyCanvas[0] = historyCanvas[1] = null;
   }
 }
 

@@ -76,7 +76,7 @@ class ViewArea extends InterfaceElement {
     dateInfo = new Message(selHistoryColor);
     langTab = new LanguageTab();
     emoTab = new EmotionTab();
-    langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + 5 * (fontSize + 5) + 5 + 10;
+    langBarY = y + bookshelfTop + bookBubbleTailH + fontSize + (numBookBubbleLines + 1) * (fontSize + 5) + 5 + 10;
   }
 
   void update() {
@@ -163,8 +163,13 @@ class ViewArea extends InterfaceElement {
       bookBubble.open(selBook);
       bookBubble.draw();
 
-      if (!mouseActivity && selBook == null && selLang == null && viewRegion.zoomLevel != VIEW_ALL) {
-        hintInfo.open("click anywhere above the language bar to zoom out");
+      if (!mouseActivity) {
+        if (selBook == null && selLang == null && viewRegion.zoomLevel != VIEW_ALL) {
+          hintInfo.open("click anywhere above the language bar to zoom out");
+        }
+        if (selBook != null) {
+          hintInfo.open("right click to search the book by ISBN on google books");
+        }
       }
 
       drawBookshelf(bounds, langBarY);
@@ -183,7 +188,7 @@ class ViewArea extends InterfaceElement {
       animatingTrails = drawWheel(bounds, wheelTop);
     } 
     else if (currentMode == MODE_HISTORY) {      
-      drawHistory(bounds, historyTop);
+      drawHistory(bounds, historyTop, w0);
 
       if (!histLocked && (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0)) {        
         if (contains(mouseX, mouseY)) {
@@ -220,8 +225,16 @@ class ViewArea extends InterfaceElement {
     if (!contains(mouseX, mouseY)) return false;
 
     selected = true;
+    if (currentMode == MODE_BOOKSHELF && !helpMenu.contains(mouseX, mouseY)) {
+      
+      if (mouseButton == RIGHT && selBook != null && showISBN) {
+        String isbn = selBook.book.ISBN;
+//      String isbn = "9780140285000";
+        String url = "https://www.google.com/search?tbo=p&tbm=bks&q=isbn:" + isbn + "&num=10";
+        link(url, "_new");
+        return selected;  
+      }
 
-    if (currentMode == MODE_BOOKSHELF && !helpMenu.contains(mouseX, mouseY)) { 
       setViewRegionBookshelf(mouseX, mouseY, bounds, langBarY);
     } 
     else if (currentMode == MODE_WHEEL) {      
@@ -624,7 +637,8 @@ class HelpMenu extends InterfaceElement {
 
 class Timeline extends InterfaceElement {
   float h2;
-  float margin;
+  float lmargin;
+  float rmargin;
   boolean compact;
   boolean animating;
   boolean insideDragArea;
@@ -632,7 +646,8 @@ class Timeline extends InterfaceElement {
   Timeline(float x, float y, float w, float h) {
     super(x, y, w, h);  
     h2 = h/2;
-    margin = 100;
+    lmargin = 5;
+    rmargin = 100;
     compact = false;
     animating = false;
   }
@@ -651,7 +666,9 @@ class Timeline extends InterfaceElement {
 
     fill(defTextColor);
 
-    float xm = bounds.x + bounds.w - margin + 10;
+    float x0 = getLeft();
+    float x1 = getRight();
+    float xm = x1 + 10;
     if (currentMode == MODE_WHEEL) {
       if (animating) {
         text("stop animation", xm, bounds.y + h2 + fontSize/2);
@@ -670,11 +687,8 @@ class Timeline extends InterfaceElement {
       }
     }   
 
-    float x0 = bounds.x;
-    float x1 = bounds.x + bounds.w - margin;
-
     if (currentMode == MODE_HISTORY) { // added expand timeline for history mode
-      x1 = bounds.x + bounds.w-20;
+      x1 = x0 + bounds.w - 20;
     }
 
     stroke(timelineColor);
@@ -710,6 +724,13 @@ class Timeline extends InterfaceElement {
       xc += x0 - (xc - dw/2);
     }        
     text(dstr, xc - dw/2, bounds.y + h2 - 15);
+    
+    if (!mouseActivity && contains(mouseX, mouseY)) { 
+      String url = urlInCurrNewsText();      
+      if (!url.equals("") && newsAlpha > 0 && !daysSinceStart.targeting) {
+        hintInfo.open("right click to open the news link");
+      }
+    }    
   }
 
   boolean mousePressed() {    
@@ -719,11 +740,19 @@ class Timeline extends InterfaceElement {
       selected = true;
       return true;
     }
-    
     if (!contains(mouseX, mouseY)) return false;
     selected = true;
-    if (mouseX > bounds.x + bounds.w - margin) {
-
+    
+    if (mouseButton == RIGHT && currNewsText != null && newsAlpha > 0) {   
+      String url = urlInCurrNewsText();
+      if (!url.equals("")) {
+        link(url, "_new");  
+      }
+    }
+    
+    float x0 = getLeft();
+    float x1 = getRight();
+    if (mouseX > x1) {
       if (currentMode == MODE_WHEEL) {
         animating = !animating;
 
@@ -755,9 +784,11 @@ class Timeline extends InterfaceElement {
     return true;
   }
 
-  boolean mouseDragged() {
-    if (!selected) return false;
-    if (bounds.x < mouseX && mouseX < bounds.x + bounds.w - margin && 
+  boolean mouseDragged() {    
+    if (!selected || mouseButton == RIGHT) return false;
+    float x0 = getLeft();
+    float x1 = getRight();    
+    if (x0 < mouseX && mouseX < x1 && 
         bounds.y < mouseY && mouseY < bounds.y + bounds.h) {
       setTime(mouseX);
     } else if (currentMode == MODE_HISTORY) {
@@ -767,7 +798,9 @@ class Timeline extends InterfaceElement {
   }
 
   void setTime(float mx) {
-    int days = int(map(mx, bounds.x, bounds.x + bounds.w - margin, 0, daysRunningTot));
+    float x0 = getLeft();
+    float x1 = getRight();
+    int days = int(constrain(map(mx, x0, x1, 0, daysRunningTot), 0, daysRunningTot));
     daysSinceStart.setTarget(days);
     if (currentMode == MODE_BOOKSHELF) {
       if (sortByLang) {
@@ -799,6 +832,19 @@ class Timeline extends InterfaceElement {
     super.resize(x, y, w, h);
     h2 = h/2;
   }   
+  
+  float getLeft() {
+    return bounds.x + lmargin;        
+  }
+  
+  float getRight() {
+    float x0 = getLeft();    
+    if (currentMode == MODE_HISTORY) {
+      return x0 + bounds.w - 20;
+    } else {
+      return x0 + bounds.w - rmargin; 
+    }    
+  }
 }
 
 class LegendArea extends InterfaceElement {
@@ -968,7 +1014,7 @@ class LegendArea extends InterfaceElement {
     closed = false;
     viewLeftMargin.setTarget(bounds.w);
     animTimer.set(0);
-    animTimer.setTarget(1);
+    animTimer.setTarget(1);    
   }
 
   void close() {
@@ -1166,7 +1212,7 @@ void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
 //  } 
 //  else
   
-  if (r1 < d && d < r1 + maxBookHeight) {
+  if (r0 < d && d < r1 + maxBookHeight) {
     selectBookInWheel(d, angle);
   } 
   else {
@@ -1808,14 +1854,15 @@ void timelineRollOver(float x, float y) {
 
 void checkResize() {
   if (WIDTH != width || HEIGHT != height) {
-    viewMenu.resize(10, height - 50, 180, 50);
-    timeline.resize(205, height - 50, width - 200, 50); 
+    viewMenu.resize(0, height - 50, 200, 50);
+    timeline.resize(200, height - 50, width - 200, 50); 
     viewArea.resize(0, -8, width, height - 90);
     helpMenu.resize(width - 60, 20, 70, 30);
     legendArea.resize(0, 0, 200, height - 100);
     
     WIDTH = width;
-    HEIGHT = height; 
+    HEIGHT = height;
+    historyCanvas[0] = historyCanvas[1] = null; 
   }   
 }
 

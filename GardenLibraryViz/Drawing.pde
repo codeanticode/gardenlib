@@ -239,35 +239,46 @@ void solidArc(float xc, float yc, float deg0, float deg1, float rad, float w) {
   endShape(CLOSE);
 }
 
-void drawHistory(Rectangle bounds, float yTop) {  
-  int historyW = int(bounds.w + viewLeftMargin.get());
-  int historyH = int(bounds.h - yTop - 20);  
-  if (historyCanvas == null) {
-    historyCanvas = createGraphics(historyW, historyH);
-
-    historyCanvas.beginDraw();
+void drawHistory(Rectangle bounds, float yTop, float w0) {
+  // We use to canvas to avoid resizing and slowing down rendering with JAVA2D  
+  int sel = 0;
+  float margin = viewLeftMargin.get();
+  int historyW, historyH;  
+  if (0 < margin) {
+    sel = 1;
+    historyW = int(w0 - viewLeftMargin.getTarget());
+  } else {
+    sel = 0;
+    historyW = int(bounds.w);  
+  }
+  historyH = int(bounds.h - yTop - 20);  
+  
+  if (historyCanvas[sel] == null) {   
+    PGraphics pg = createGraphics(historyW, historyH);
+    historyCanvas[sel] = pg;
+    pg.beginDraw();
 
     if (showSolidEmoHistory) {
       // Draw background for each emotion
-      historyCanvas.noStroke();
+      pg.noStroke();
       for (int i = 0; i < emotions1.size(); i++) {
         Emotion emo = emotions1.get(i);
 
         float minx = 1;
-        historyCanvas.fill(red(emo.argb), green(emo.argb), blue(emo.argb), emoBandAlpha);
+        pg.fill(red(emo.argb), green(emo.argb), blue(emo.argb), emoBandAlpha);
 
-        historyCanvas.beginShape(POLYGON);
+        pg.beginShape(POLYGON);
         if (i == 0) { // first
           for (int d7 = 0; d7 <= daysRunningTot + 7; d7 += 7) {
             int days = constrain(d7, 0, daysRunningTot);
             float x = map(days, 0, daysRunningTot, 0, 1);
-            historyCanvas.vertex(x * historyW, squeezeY(x, 0) * historyH);
+            pg.vertex(x * historyW, squeezeY(x, 0) * historyH);
           }
           minx = 0;
         } 
         else {
           for (PVector v: emo.border) {
-            historyCanvas.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
+            pg.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
             minx = min(v.x, minx);
           }
         }
@@ -276,7 +287,7 @@ void drawHistory(Rectangle bounds, float yTop) {
           for (int d7 = 0; d7 <= daysRunningTot + 7; d7 += 7) {
             int days = constrain(d7, 0, daysRunningTot);
             float x = map(days, 0, daysRunningTot, 1, 0);
-            historyCanvas.vertex(x * historyW, squeezeY(x, 1) * historyH);
+            pg.vertex(x * historyW, squeezeY(x, 1) * historyH);
           }
         } 
         else {      
@@ -285,7 +296,7 @@ void drawHistory(Rectangle bounds, float yTop) {
           Emotion emo1 = emotions1.get(i + 1);
           for (int j = emo1.border.size() - 1; j >= 0; j--) {
             PVector v = emo1.border.get(j);
-            historyCanvas.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
+            pg.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
             minx1 = min(v.x, minx1);
           }
 
@@ -296,19 +307,19 @@ void drawHistory(Rectangle bounds, float yTop) {
               if (j < emotions1.size()) {
                 emo1 = emotions1.get(j); 
                 PVector v = emo1.border.get(0);
-                historyCanvas.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
+                pg.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
                 minx1 = min(v.x, minx1);
                 if (minx1 == 0) break;
               } 
               else {
-                historyCanvas.vertex(0, squeezeY(0, 1) * historyH);
+                pg.vertex(0, squeezeY(0, 1) * historyH);
               }
             }
           }
         }
 
-        historyCanvas.endShape(CLOSE);
-      }
+        pg.endShape(CLOSE);
+      }      
     }
 
     // Draw each book
@@ -318,21 +329,24 @@ void drawHistory(Rectangle bounds, float yTop) {
       for (PVector pt: book.history) {
         if (book == sbook) continue;
         if (pt0 != null && pt0.z == pt.z) {        
-          historyCanvas.strokeWeight(1);
-          historyCanvas.stroke(replaceAlpha(int(pt0.z), bookStrokeAlpha));
-          historyCanvas.noFill();
-          historyCanvas.line(historyW * pt0.x, historyH * squeezeY(pt0.x, pt0.y), // option for stretching vertically
-          historyW * pt.x, historyH * squeezeY(pt.x, pt.y));
+          pg.strokeWeight(1);
+          pg.stroke(replaceAlpha(int(pt0.z), bookStrokeAlpha));
+          pg.noFill();
+          pg.line(historyW * pt0.x, historyH * squeezeY(pt0.x, pt0.y), // option for stretching vertically
+                  historyW * pt.x, historyH * squeezeY(pt.x, pt.y));
         }
         pt0 = pt;
       }
     }
+    pg.endDraw();
   }
-
-  historyCanvas.endDraw();
-  tint(255, viewFadeinAlpha.getInt());
-  image(historyCanvas, bounds.x, bounds.y + yTop, bounds.w, historyH);
-  //image(historyCanvas, bounds.x, bounds.y + yTop, bounds.w, historyH +30); // stretch bottom
+  
+  // Due to some bug in Java2D, the tint transparency must be set to 255, otherwise
+  // the image will be completely transparent all the time, apparently because
+  // was set as zero the first time.
+//  tint(255, viewFadeinAlpha.getInt());
+  tint(255, 255);
+  image(historyCanvas[sel], bounds.x, bounds.y + yTop, bounds.w, historyH);
 }  
 
 void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white line
@@ -380,7 +394,8 @@ void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white 
 void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
   timelineRollOver(x, y);
 
-  if (!daysSinceStart.targeting) {
+  //if (!daysSinceStart.targeting) {
+  if (abs(daysSinceStart.velocity) < 0.2) { // So the news text shows up faster        
     for (int i = 0; i < timelineNews.length; i++) {
       NewsText news = timelineNews[i];
       if (news.isBefore(selDate)) {     
