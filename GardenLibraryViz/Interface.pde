@@ -595,7 +595,6 @@ class HelpMenu extends InterfaceElement {
     if (currentMode == MODE_BOOKSHELF) {
       float xc = viewArea.bounds.x + viewArea.bounds.w/2;
       if (viewRegion.zoomLevel == VIEW_ALL) {
-        println("set lang region");
         setViewRegionLangBookshelf(xc, viewArea.bounds);
       } else if (viewRegion.zoomLevel == VIEW_LANG) {
         setViewRegionBookBookshelf(xc, viewArea.bounds);
@@ -617,6 +616,7 @@ class HelpMenu extends InterfaceElement {
         selectBookInWheel(d, angle);
       } else if (viewRegion.zoomLevel == VIEW_BOOK) {
         setViewRegionAllWheel();  
+        selBook = null;
       }
     }    
   }
