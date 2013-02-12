@@ -467,9 +467,13 @@ void drawHelpLayer() {
   textFont(helpFont);
   
   if (currentMode == MODE_BOOKSHELF) {
-    text("Bookshelf", width/2, height/2);  
+    text("Bookshelf", width/2, height/2);
+    drawHorizontalHelpArrow(width/2 - 100, width/2 - 10, height/2);
+    drawHorizontalHelpArrow(width/2 + 200, width/2 + 110, height/2);  
   } else if (currentMode == MODE_WHEEL) {
     text("Wheel", width/2, height/2);
+    drawVerticalHelpArrow(height/2 - 100, height/2 - 10, width/2 - 10);
+    drawVerticalHelpArrow(height/2 + 100, height/2 + 10, width/2 - 10);
   } else if (currentMode == MODE_HISTORY) {
     text("History", width/2, height/2);
   }
@@ -477,3 +481,24 @@ void drawHelpLayer() {
   textFont(defFont);
 }
 
+void drawHorizontalHelpArrow(float x0, float x1, float y) {
+  float trsize = 7;
+  float xt = x0 < x1 ? x1 - trsize: x1 + trsize;    
+  strokeWeight(1);
+  stroke(255, 2 * viewFadeinAlpha.getInt());
+  line(x0, y, xt, y);  
+  noStroke();
+  fill(255, 2 * viewFadeinAlpha.getInt());
+  triangle(xt, y + trsize, x1, y, xt, y - trsize);  
+} 
+
+void drawVerticalHelpArrow(float y0, float y1, float x) {
+  float trsize = 7;
+  float yt = y0 < y1 ? y1 - trsize: y1 + trsize;    
+  strokeWeight(1);
+  stroke(255, 2 * viewFadeinAlpha.getInt());
+  line(x, y0, x, y1);  
+  noStroke();
+  fill(255, 2 * viewFadeinAlpha.getInt());
+  triangle(x - trsize, yt, x + trsize, yt, x, y1);   
+} 
