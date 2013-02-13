@@ -467,15 +467,51 @@ void drawHelpLayer() {
   textFont(helpFont);
   
   if (currentMode == MODE_BOOKSHELF) {
-    text("Bookshelf", width/2, height/2);
-    drawHorizontalHelpArrow(width/2 - 100, width/2 - 10, height/2);
-    drawHorizontalHelpArrow(width/2 + 200, width/2 + 110, height/2);  
+    if (sortByLang) {
+      if (viewRegion.zoomLevel == VIEW_BOOK) {
+        if (compactTime) {
+          text("sort by lang, zoom level book, compact time", width/2, height/2);  
+        } else {
+          text("sort by lang, zoom level book, extend time", width/2, height/2);
+        }        
+      } else {
+        text("sort by lang, zoom level all/lang/emo", width/2, height/2);
+      }
+    } else {
+      if (viewRegion.zoomLevel == VIEW_BOOK) {
+        if (compactTime) {
+          text("sort by emo, zoom level book, compact time", width/2, height/2);  
+        } else {
+          text("sort by emo, zoom level book, extend time", width/2, height/2);
+        }        
+      } else {
+        text("sort by emo, zoom level all/lang/emo", width/2, height/2);
+      }
+    }
+    
+    
+    
+//    drawHorizontalHelpArrow(width/2 - 100, width/2 - 10, height/2);
+//    drawHorizontalHelpArrow(width/2 + 200, width/2 + 110, height/2);  
   } else if (currentMode == MODE_WHEEL) {
-    text("Wheel", width/2, height/2);
-    drawVerticalHelpArrow(height/2 - 100, height/2 - 10, width/2 - 10);
-    drawVerticalHelpArrow(height/2 + 100, height/2 + 10, width/2 - 10);
+    if (viewRegion.zoomLevel == VIEW_ALL) {
+      text("wheel view all", width/2, height/2);
+    } else {
+      text("wheel view book", width/2, height/2);
+    }
+    
+    
+//    text("Wheel", width/2, height/2);
+//    drawVerticalHelpArrow(height/2 - 100, height/2 - 10, width/2 - 10);
+//    drawVerticalHelpArrow(height/2 + 100, height/2 + 10, width/2 - 10);
+    
   } else if (currentMode == MODE_HISTORY) {
-    text("History", width/2, height/2);
+//    text("History", width/2, height/2);
+    if (selBook != null) {
+      text("history individual book selected", width/2, height/2);
+    } else {
+      text("history, no individual book selected", width/2, height/2);
+    }
   }
   
   textFont(defFont);
