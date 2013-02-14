@@ -469,58 +469,33 @@ void drawHelpLayer() {
   
   if (currentMode == MODE_BOOKSHELF) {
     if (sortByLang) {
-      if (viewRegion.zoomLevel == VIEW_BOOK) {
-        if (compactTime) {
-          text("sort by lang, zoom level book, compact time", width/2, height/2);  
-        } else {
-          text("sort by lang, zoom level book, extend time", width/2, height/2);
-        }        
+      if (viewRegion.zoomLevel != VIEW_BOOK) {
+        drawHelpBookshelfSortByLang(0);
       } else {
-        float x, y, w;
-        
-        x = viewArea.bounds.x;
-        y = viewArea.langBarY - langBarH.get() - 5;
-        fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
-        text("language categories", x, y);
-        w = textWidth("language categories");
-        drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
-        
-        x = viewArea.bounds.x + 50;
-        y = viewArea.langBarY + 50;
-        fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
-        text("emotional judgements", x, y);
-        drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
+        if (!compactTime) {
+          drawHelpBookshelfSortByLang(1);
+        } else {
+          drawHelpBookshelfSortByLang(2);
+        }        
       }
     } else {
-      if (viewRegion.zoomLevel == VIEW_BOOK) {
-        if (compactTime) {
-          text("sort by emo, zoom level book, compact time", width/2, height/2);  
-        } else {
-          text("sort by emo, zoom level book, extend time", width/2, height/2);
-        }        
+      if (viewRegion.zoomLevel != VIEW_BOOK) {
+        drawHelpBookshelfSortByEmo(0);
       } else {
-        text("sort by emo, zoom level all/lang/emo", width/2, height/2);
+        if (!compactTime) {
+          drawHelpBookshelfSortByEmo(1);  
+        } else {
+          drawHelpBookshelfSortByEmo(2);
+        }        
       }
     }
-    
-    
-    
-//    drawHorizontalHelpArrow(width/2 - 100, width/2 - 10, height/2);
-//    drawHorizontalHelpArrow(width/2 + 200, width/2 + 110, height/2);  
   } else if (currentMode == MODE_WHEEL) {
     if (viewRegion.zoomLevel == VIEW_ALL) {
       text("wheel view all", width/2, height/2);
     } else {
       text("wheel view book", width/2, height/2);
     }
-    
-    
-//    text("Wheel", width/2, height/2);
-//    drawVerticalHelpArrow(height/2 - 100, height/2 - 10, width/2 - 10);
-//    drawVerticalHelpArrow(height/2 + 100, height/2 + 10, width/2 - 10);
-    
   } else if (currentMode == MODE_HISTORY) {
-//    text("History", width/2, height/2);
     if (selBook != null) {
       text("history individual book selected", width/2, height/2);
     } else {
@@ -530,6 +505,120 @@ void drawHelpLayer() {
   
   textFont(defFont);
 }
+
+void drawHelpBookshelfSortByLang(int option) {
+  if (option == 0) {
+    float x, y, w;
+    
+    x = viewArea.bounds.x;
+    y = viewArea.langBarY - langBarH.get() - 5;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("language categories", x, y);
+    w = textWidth("language categories");
+    drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
+        
+    x = viewArea.bounds.x + 50;
+    y = viewArea.langBarY + 50;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("emotional judgements", x, y);
+    drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);    
+  } else if (option == 1 || option == 2) {
+    float x, y, w, wj;
+    
+    x = viewArea.bounds.x;
+    y = viewArea.langBarY;
+    w = textWidth("language categories");
+    wj = textWidth("current emotional judgements");
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("current emotional judgements", x + w + 100, y - langBarH.get() - bookTopHeight.get() - 30);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 100 + wj/2);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 100 + wj/2 - 30);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 100 + wj/2 + 30);
+        
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("language categories", x, y);
+    
+    drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
+
+    x = viewArea.bounds.x + 70;
+    y = viewArea.langBarY + 50;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("emotional judgements", x, y);
+    drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
+
+    x += 60;
+    y += 30;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("number of vertical segments indicates the number of times a book has been borrowed;", x, y);
+    if (option == 1) {
+      text("their length indicates the time a book has held to a particular emotional judgement", x, y + 20);
+    } else {      
+      text("each vertical segment represents one emotional judgement", x, y + 20);      
+    }
+  }
+}
+
+void drawHelpBookshelfSortByEmo(int option) {
+  if (option == 0) {
+    float x, y, w, wj;
+    
+    x = viewArea.bounds.x;
+    y = viewArea.langBarY;
+    w = textWidth("emotional categories");
+    wj = textWidth("languages");
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("languages", x + w + 200, y - langBarH.get() - bookTopHeight.get() - 30);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 - 30);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 + 30);
+        
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("emotional categories", x, y);
+    
+    drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
+        
+    x = viewArea.bounds.x + 50;
+    y = viewArea.langBarY + 50;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("emotional judgements", x, y);
+    drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);    
+  } else if (option == 1 || option == 2) {
+    float x, y, w, wj;
+    
+    x = viewArea.bounds.x;
+    y = viewArea.langBarY;
+    w = textWidth("emotional categories");
+    wj = textWidth("languages");
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("languages", x + w + 200, y - langBarH.get() - bookTopHeight.get() - 30);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 - 30);
+    drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 + 30);
+        
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("emotional categories", x, y);
+    
+    drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
+
+    x = viewArea.bounds.x + 70;
+    y = viewArea.langBarY + 50;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("emotional judgements", x, y);
+    drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
+
+    x += 60;
+    y += 30;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("number of vertical segments indicates the number of times a book has been borrowed;", x, y);
+    if (option == 1) {
+      text("their length indicates the time a book has held to a particular emotional judgement", x, y + 20);
+    } else {      
+      text("each vertical segment represents one emotional judgement", x, y + 20);      
+    }
+  }
+}
+
+
 
 void drawHorizontalHelpArrow(float x0, float x1, float y) {
   float trsize = 5;
