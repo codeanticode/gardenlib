@@ -188,7 +188,7 @@ void initialize(int task) {
     // Create UI    
     viewMenu = new ViewMenu(0, height - 50, 200, 50);
     timeline = new Timeline(200, height - 50, width - 200, 50); 
-    viewArea = new ViewArea(0, -8, width, height - 90);
+    viewArea = new ViewArea(20, -8, width, height - 90);
     helpMenu = new HelpMenu(width - 60, 20, 70, 30);
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
     ui = new ArrayList<InterfaceElement>();

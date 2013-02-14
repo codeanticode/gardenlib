@@ -57,7 +57,7 @@ class InterfaceElement {
 }  
 
 class ViewArea extends InterfaceElement {
-  float w0;
+  float x0, w0;
   float pressX0, pressY0;
   boolean animatingTrails;
   boolean draggingWheel;
@@ -71,6 +71,7 @@ class ViewArea extends InterfaceElement {
 
   ViewArea(float x, float y, float w, float h) {
     super(x, y, w, h);
+    x0 = x;
     w0 = w;
     bookBubble = new BookBubble();
     dateInfo = new Message(selHistoryColor);
@@ -139,8 +140,8 @@ class ViewArea extends InterfaceElement {
     viewLeftMargin.update();
 
     float xoff = viewLeftMargin.get();
-    bounds.x = xoff;
-    bounds.w = w0 - xoff;
+    bounds.x = x0 + xoff;
+    bounds.w = w0 - bounds.x;
   }
 
   void draw() {
