@@ -493,10 +493,10 @@ void drawHelpLayer() {
       drawHelpWheel(2);
     }
   } else if (currentMode == MODE_HISTORY) {
-    if (selBook != null) {
-      text("history individual book selected", width/2, height/2);
+    if (selBook == null) {
+      drawHelpHistory(1);
     } else {
-      text("history, no individual book selected", width/2, height/2);
+      drawHelpHistory(2);
     }
   }
   
@@ -643,6 +643,56 @@ void drawHelpWheel(int option) {
     text("each ray illustrates a borrowed book and its previous emotional judgement", x + 50, y + 85);
     text("spin the wheel to view book info", x + 50, y + 115);  
   }  
+}
+
+void drawHelpHistory(int option) {
+  if (option == 1) {
+    float x, y;
+    
+    x = viewArea.bounds.x;
+    y = viewArea.bounds.y + historyTop + (viewArea.bounds.h - historyTop - 20)/2;
+
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("the colored bands are formed by the books passing through each emotion at a specific point in time", x + 20, y);    
+  } else if (option == 2) {
+    Book book = selBook.book;
+    int l = book.history.size();
+    if (0 < l) {
+      float w = viewArea.bounds.w;
+      float h = viewArea.bounds.h - historyTop - 20;
+      float xc = viewArea.bounds.x;
+      float yc = viewArea.bounds.y + historyTop;  
+      int idx = constrain(l/2, 0, l - 1);
+  
+      PVector pt = book.history.get(idx);
+      float x = xc + w * pt.x;
+      float y = yc + h * squeezeY(pt.x, pt.y);
+      
+      fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+      
+      float xp = x;
+      float yp = y;
+      float y0;
+      
+      if (y < viewArea.bounds.y + historyTop + h - 100) {
+        y += 70;
+        y0 = y - helpFontSize;        
+        yp += 5; 
+      } else {
+        y -= 70;
+        y0 = y + 5;
+        yp -= 5;
+      }
+      
+      float tw = textWidth("a single book's history of emotional judgements");
+      if (viewArea.bounds.x + w < x + tw) {
+        x -= (x + tw) - (viewArea.bounds.x + w);    
+      }
+      
+      text("a single book's history of emotional judgements", x - 10, y);
+      drawVerticalHelpArrow(y0, yp, xp);
+    }
+  }
 }
 
 void drawHorizontalHelpArrow(float x0, float x1, float y) {
