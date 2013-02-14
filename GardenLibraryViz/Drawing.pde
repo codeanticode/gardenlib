@@ -475,7 +475,18 @@ void drawHelpLayer() {
           text("sort by lang, zoom level book, extend time", width/2, height/2);
         }        
       } else {
-        text("sort by lang, zoom level all/lang/emo", width/2, height/2);
+        float x, y, w;
+        
+        x = viewArea.bounds.x;
+        y = viewArea.langBarY - langBarH.get() - 5;
+        text("language categories", x, y);
+        w = textWidth("language categories");
+        drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
+        
+        x = viewArea.bounds.x + 50;
+        y = viewArea.langBarY + 50;
+        text("emotional judgements", x, y);
+        drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
       }
     } else {
       if (viewRegion.zoomLevel == VIEW_BOOK) {
@@ -518,7 +529,7 @@ void drawHelpLayer() {
 }
 
 void drawHorizontalHelpArrow(float x0, float x1, float y) {
-  float trsize = 7;
+  float trsize = 5;
   float xt = x0 < x1 ? x1 - trsize: x1 + trsize;    
   strokeWeight(1);
   stroke(255, 2 * viewFadeinAlpha.getInt());

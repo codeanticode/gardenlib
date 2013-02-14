@@ -54,6 +54,7 @@ String fontName = "Istok-Regular";
 //String fontName = "Droid Sans";
 //String fontName = "Helvetica";
 int fontSize    = 11;
+color defTextColor = color(175);
 
 String langFontName = "Istok-Bold";
 //String langFontName = "Droid Sans Bold";
@@ -65,7 +66,9 @@ String helpFontName = "Istok-Web";
 int helpFontSize    = 17;
 color helpFontColor = color(255);
 
-color defTextColor = color(175);
+String newsFontName = "Istok-Regular";
+int newsfontSize    = 11;
+color newsFontColor = color(255);
 
 // Colors
 color backgroundColor = color(0);
