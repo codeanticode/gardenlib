@@ -147,8 +147,6 @@ void drawBookshelfGroupByEmo(Rectangle bounds, float firstBook, float bookCount,
 }
 
 boolean drawWheel(Rectangle bounds, float yTop) {
-  //clip(bounds.x, bounds.y, bounds.w, bounds.h);
-
   boolean animatingTrails = false;
   float firstBook = 0;
   float bookCount = 0;
@@ -222,7 +220,6 @@ boolean drawWheel(Rectangle bounds, float yTop) {
   }  
 
   popMatrix();
-  //noClip();
   return animatingTrails;
 }
 
@@ -491,9 +488,9 @@ void drawHelpLayer() {
     }
   } else if (currentMode == MODE_WHEEL) {
     if (viewRegion.zoomLevel == VIEW_ALL) {
-      text("wheel view all", width/2, height/2);
+      drawHelpWheel(1);
     } else {
-      text("wheel view book", width/2, height/2);
+      drawHelpWheel(2);
     }
   } else if (currentMode == MODE_HISTORY) {
     if (selBook != null) {
@@ -618,7 +615,35 @@ void drawHelpBookshelfSortByEmo(int option) {
   }
 }
 
-
+void drawHelpWheel(int option) {
+  if (option == 1) {
+    float x, y, xc, yc, w1, w2;
+    
+    x = viewArea.bounds.x;
+    y = viewArea.bounds.y;
+    
+    xc = x + viewArea.bounds.w/2;
+    yc = y + wheelTop + viewArea.bounds.h/2;  
+    
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("each ray illustrates a borrowed book and its previous emotional judgement", x + 50, y + 85);
+  
+    text("current emotional judgements", xc - wheelRadius/2, yc);
+    drawHorizontalHelpArrow(xc - wheelRadius/2 - 5, xc - wheelRadius - wheelWidth.get(), yc - 0.25 * helpFontSize);
+    
+    w1 = textWidth("animations illustrate books wandering");
+    w2 = textWidth("between emotional categories");
+    text("animations illustrate books wandering", xc - w1/2, yc + 80);    
+    text("between emotional categories", xc - w2/2, yc + 80 + 30);
+  } else if (option == 2) {
+    float x, y;
+    x = viewArea.bounds.x;
+    y = viewArea.bounds.y + wheelTop + viewArea.bounds.h/2 - 50;
+    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    text("each ray illustrates a borrowed book and its previous emotional judgement", x + 50, y + 85);
+    text("spin the wheel to view book info", x + 50, y + 115);  
+  }  
+}
 
 void drawHorizontalHelpArrow(float x0, float x1, float y) {
   float trsize = 5;
