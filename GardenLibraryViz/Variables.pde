@@ -77,6 +77,7 @@ HintInfo hintInfo;
 PFont defFont;
 PFont langFont;
 PFont helpFont;
+PFont newsFont;
 
 float sinLUT[];
 float cosLUT[];
@@ -91,9 +92,13 @@ void initialize(int task) {
     defFont = createFont(fontName, fontSize, false);
     textFont(defFont);
 
+    // The font for the language code in the book bubble looks
+    // better with smoothing.
     langFont = createFont(langFontName, langFontSize);
 
     helpFont = createFont(helpFontName, helpFontSize, false);
+    
+    newsFont = createFont(newsFontName, newsFontSize, false);
 
     initLUT();
 

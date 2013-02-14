@@ -67,8 +67,8 @@ int helpFontSize    = 17;
 color helpFontColor = color(255);
 
 String newsFontName = "Istok-Regular";
-int newsfontSize    = 11;
-color newsFontColor = color(255);
+int newsFontSize    = 11;
+color newsFontColor = color(160);
 
 // Colors
 color backgroundColor = color(0);

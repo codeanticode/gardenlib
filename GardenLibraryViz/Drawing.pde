@@ -411,16 +411,17 @@ void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
   // to change the alpha of the text box
   if (newsRollover) {
     if (newsAlpha < 255) {
-      newsAlpha += newsAlphaSpeed;
+      newsAlpha = constrain(newsAlpha + newsAlphaSpeed, 0, 255);
     }
   } 
   else {
     if (newsAlpha > 0) {
-      newsAlpha -= newsAlphaSpeed;
+      newsAlpha = constrain(newsAlpha - newsAlphaSpeed, 0, 255);
     }
   }
 
   if (0 < newsAlpha && currNewsText != null) {
+    textFont(newsFont);
     float y0 = y;
     for (int i = currNewsText.length - 1; i >= 0 ; i--) {
       String par = currNewsText[i];
@@ -436,12 +437,13 @@ void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
       noStroke();
       fill(0, newsAlpha * 2);
       rect(boxPosX, boxPosY, boxWidth, boxHeight);
-      fill(160, newsAlpha);
+      fill(replaceAlpha(newsFontColor, newsAlpha));
       textLeading(newsLineSpace);
       text(par, boxPosX, boxPosY, boxWidth, boxHeight);
       
       y0 = y0 - boxHeight;
     }
+    textFont(defFont);
     fill(255, 0, 0, newsAlpha);
     ellipse(newsX, y + 15, 8, 8);
   }
@@ -462,8 +464,7 @@ void drawHelpLayer() {
   noStroke();
   fill(0, viewFadeinAlpha.getInt());
   rect(0, 0, width, height);  
-  
-  fill(255, 2 * viewFadeinAlpha.getInt());
+    
   textFont(helpFont);
   
   if (currentMode == MODE_BOOKSHELF) {
@@ -479,12 +480,14 @@ void drawHelpLayer() {
         
         x = viewArea.bounds.x;
         y = viewArea.langBarY - langBarH.get() - 5;
+        fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
         text("language categories", x, y);
         w = textWidth("language categories");
         drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
         
         x = viewArea.bounds.x + 50;
         y = viewArea.langBarY + 50;
+        fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
         text("emotional judgements", x, y);
         drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
       }
