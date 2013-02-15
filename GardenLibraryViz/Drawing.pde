@@ -494,19 +494,21 @@ void drawHelpLayer() {
 }
 
 void drawHelpBookshelfSortByLang(int option) {
+  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  
   if (option == 0) {
     float x, y, w;
     
     x = viewArea.bounds.x;
     y = viewArea.langBarY - langBarH.get() - 5;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("language categories", x, y);
     w = textWidth("language categories");
     drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
         
     x = viewArea.bounds.x + 50;
     y = viewArea.langBarY + 50;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("emotional judgements", x, y);
     drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);    
   } else if (option == 1 || option == 2) {
@@ -516,26 +518,26 @@ void drawHelpBookshelfSortByLang(int option) {
     y = viewArea.langBarY;
     w = textWidth("language categories");
     wj = textWidth("current emotional judgements");
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("current emotional judgements", x + w + 100, y - langBarH.get() - bookTopHeight.get() - 30);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 100 + wj/2);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 100 + wj/2 - 30);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 100 + wj/2 + 30);
         
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("language categories", x, y);
     
     drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
 
     x = viewArea.bounds.x + 70;
     y = viewArea.langBarY + 50;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("emotional judgements", x, y);
     drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
 
     x += 60;
     y += 30;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("number of vertical segments indicates the number of times a book has been borrowed;", x, y);
     if (option == 1) {
       text("their length indicates the time a book has held to a particular emotional judgement", x, y + 20);
@@ -546,6 +548,8 @@ void drawHelpBookshelfSortByLang(int option) {
 }
 
 void drawHelpBookshelfSortByEmo(int option) {
+  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  
   if (option == 0) {
     float x, y, w, wj;
     
@@ -553,20 +557,20 @@ void drawHelpBookshelfSortByEmo(int option) {
     y = viewArea.langBarY;
     w = textWidth("emotional categories");
     wj = textWidth("languages");
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("languages", x + w + 200, y - langBarH.get() - bookTopHeight.get() - 30);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 - 30);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 + 30);
         
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("emotional categories", x, y);
     
     drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
         
     x = viewArea.bounds.x + 50;
     y = viewArea.langBarY + 50;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("emotional judgements", x, y);
     drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);    
   } else if (option == 1 || option == 2) {
@@ -576,26 +580,26 @@ void drawHelpBookshelfSortByEmo(int option) {
     y = viewArea.langBarY;
     w = textWidth("emotional categories");
     wj = textWidth("languages");
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("languages", x + w + 200, y - langBarH.get() - bookTopHeight.get() - 30);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 - 30);
     drawVerticalHelpArrow(y - langBarH.get() - bookTopHeight.get() - 25, y - langBarH.get() - bookTopHeight.get() - 5, x + w + 200 + wj/2 + 30);
         
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("emotional categories", x, y);
     
     drawHorizontalHelpArrow(x + w + 5, x + w + 100, y - 0.25 * helpFontSize);
 
     x = viewArea.bounds.x + 70;
     y = viewArea.langBarY + 50;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("emotional judgements", x, y);
     drawVerticalHelpArrow(y + helpFontSize - 10, y + helpFontSize + 100, x + 50);
 
     x += 60;
     y += 30;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("number of vertical segments indicates the number of times a book has been borrowed;", x, y);
     if (option == 1) {
       text("their length indicates the time a book has held to a particular emotional judgement", x, y + 20);
@@ -606,6 +610,8 @@ void drawHelpBookshelfSortByEmo(int option) {
 }
 
 void drawHelpWheel(int option) {
+  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  
   if (option == 1) {
     float x, y, xc, yc, w1, w2;
     
@@ -615,7 +621,7 @@ void drawHelpWheel(int option) {
     xc = x + viewArea.bounds.w/2;
     yc = y + wheelTop + viewArea.bounds.h/2;  
     
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("each ray illustrates a borrowed book and its previous emotional judgement", x + 50, y + 85);
   
     text("current emotional judgements", xc - wheelRadius/2, yc);
@@ -629,20 +635,22 @@ void drawHelpWheel(int option) {
     float x, y;
     x = viewArea.bounds.x;
     y = viewArea.bounds.y + wheelTop + viewArea.bounds.h/2 - 50;
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("each ray illustrates a borrowed book and its previous emotional judgement", x + 50, y + 85);
     text("spin the wheel to view book info", x + 50, y + 115);  
   }  
 }
 
 void drawHelpHistory(int option) {
+  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  
   if (option == 1) {
     float x, y;
     
     x = viewArea.bounds.x;
     y = viewArea.bounds.y + historyTop + (viewArea.bounds.h - historyTop - 20)/2;
 
-    fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+    fill(replaceAlpha(helpFontColor, textAlpha));
     text("the colored bands are formed by the books passing through each emotion at a specific point in time", x + 20, y);    
   } else if (option == 2) {
     Book book = selBook.book;
@@ -658,7 +666,7 @@ void drawHelpHistory(int option) {
       float x = xc + w * pt.x;
       float y = yc + h * squeezeY(pt.x, pt.y);
       
-      fill(replaceAlpha(helpFontColor, 2 * viewFadeinAlpha.getInt()));
+      fill(replaceAlpha(helpFontColor, textAlpha));
       
       float xp = x;
       float yp = y;
@@ -686,23 +694,27 @@ void drawHelpHistory(int option) {
 }
 
 void drawHorizontalHelpArrow(float x0, float x1, float y) {
+  int arrowAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  
   float trsize = 5;
   float xt = x0 < x1 ? x1 - trsize: x1 + trsize;    
   strokeWeight(1);
-  stroke(255, 2 * viewFadeinAlpha.getInt());
+  stroke(255, arrowAlpha);
   line(x0, y, xt, y);  
   noStroke();
-  fill(255, 2 * viewFadeinAlpha.getInt());
+  fill(255, arrowAlpha);
   triangle(xt, y + trsize, x1, y, xt, y - trsize);  
 } 
 
 void drawVerticalHelpArrow(float y0, float y1, float x) {
+  int arrowAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  
   float trsize = 7;
   float yt = y0 < y1 ? y1 - trsize: y1 + trsize;    
   strokeWeight(1);
-  stroke(255, 2 * viewFadeinAlpha.getInt());
+  stroke(255, arrowAlpha);
   line(x, y0, x, y1);  
   noStroke();
-  fill(255, 2 * viewFadeinAlpha.getInt());
+  fill(255, arrowAlpha);
   triangle(x - trsize, yt, x + trsize, yt, x, y1);   
 } 

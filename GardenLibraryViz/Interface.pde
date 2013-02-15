@@ -550,7 +550,7 @@ class HelpMenu extends InterfaceElement {
       if (insideIcon(infoIcon[infoStatus], bounds.x + zoomIcon[zoomStatus].width + 5, bounds.y)) {
         showingHelp = true;
         viewFadeinAlpha.set(0);
-        viewFadeinAlpha.setTarget(127);
+        viewFadeinAlpha.setTarget(helpMaskAlpha);
       }     
       selected = true;
     } else {
