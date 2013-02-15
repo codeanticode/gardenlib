@@ -72,6 +72,18 @@ String newsFontName = "Istok-Regular";
 int newsFontSize    = 11;
 color newsFontColor = color(160);
 
+String infoFontRegName = "Istok-Regular";
+int infoFontRegSize    = 11;
+color infoFontRegColor = color(255);
+
+String infoFontTitleName = "Istok-Bold";
+int infoFontTitleSize    = 12;
+color infoFontTitleColor = color(255);
+
+String infoFontCaptName = "Istok-Italic";
+int infoFontCaptSize    = 10;
+color infoFontCaptColor = color(255);
+
 // Colors
 color backgroundColor = color(0);
 color selOptionColor = color(195, 224, 0);
@@ -90,7 +102,6 @@ color selHistoryColor = color(255);
 
 // Timeline news
 int newsAdjustY = 16;
-int newsLineSpace = 13;
 int newsAlphaSpeed = 10;
 
 

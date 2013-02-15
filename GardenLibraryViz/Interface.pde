@@ -1035,20 +1035,37 @@ class InfoArea extends InterfaceElement {
   }
   
   void draw() {
-    if (currentMode == MODE_INFO) {
-      fill(replaceAlpha(color(255, 255, 255), 2 * viewFadeinAlpha.getInt()));
+    if (currentMode == MODE_INFO) {      
       clip(bounds.x, bounds.y, bounds.w, bounds.h);
       
       XML data = showingMigrantInfo ? migrantInfo : catalogInfo;
       
+      float margin = bounds.w * 0.1;
+      float infoLineSpaceReg = infoFontRegSize + 2;
+      float infoLineSpaceTitle = infoFontTitleSize + 2;
+      float infoLineSpaceCapt = infoFontCaptSize + 2;
+       
+      float y = 0;      
       for (XML child: data.getChildren()) {
         String content = child.getContent().trim();
         if (!content.equals("")) {
           String type = child.getName();
           if (type.equals("title")) {
-            println("draw title");  
+            fill(replaceAlpha(infoFontTitleColor, 2 * viewFadeinAlpha.getInt()));
+            textFont(infoFontTitle);            
+            float len = textWidth(content);
+            float w = bounds.w - 2 * margin;
+            float h = ceil(len / w) * infoLineSpaceTitle + 3;            
+            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h);
+            y += h + infoLineSpaceTitle;
           } else if (type.equals("paragraph")) {
-            println("draw paragraph");
+            fill(replaceAlpha(infoFontRegColor, 2 * viewFadeinAlpha.getInt()));
+            textFont(infoFontReg);            
+            float len = textWidth(content);
+            float w = bounds.w - 2 * margin;
+            float h = ceil(len / w + 1) * infoLineSpaceTitle + 3;            
+            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5);
+            y += h + infoLineSpaceTitle;
           } else if (type.equals("image")) {
             String fn = child.getChild("filename").getContent().trim();
             String caption = child.getChild("caption").getContent().trim();
@@ -1060,12 +1077,23 @@ class InfoArea extends InterfaceElement {
             }
             println("draw image");            
           } else if (type.equals("link")) {
+//            fill(replaceAlpha(infoFontTitleColor, 2 * viewFadeinAlpha.getInt()));
+//            textFont(infoFontTitle);            
+//            float len = textWidth(content);
+//            float w = bounds.w - 2 * margin;
+//            float h = ceil(len / w) * infoLineSpaceTitle + 3;            
+//            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h);
+//            y += h + infoLineSpaceTitle;
+
+            
+            
             println("draw link");
           }            
         } 
       }
       println("--------------------------------------------");
                    
+      textFont(defFont);             
       noClip();       
     }
   }

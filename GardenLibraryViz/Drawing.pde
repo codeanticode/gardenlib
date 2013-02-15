@@ -407,6 +407,7 @@ void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
   }
 
   if (0 < newsAlpha && currNewsText != null) {
+    float newsLineSpace = newsFontSize + 2;
     textFont(newsFont);
     float y0 = y;
     for (int i = currNewsText.length - 1; i >= 0 ; i--) {

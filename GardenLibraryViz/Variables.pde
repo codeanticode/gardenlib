@@ -86,6 +86,9 @@ PFont defFont;
 PFont langFont;
 PFont helpFont;
 PFont newsFont;
+PFont infoFontReg;
+PFont infoFontTitle;
+PFont infoFontCapt;
 
 float sinLUT[];
 float cosLUT[];
@@ -107,6 +110,10 @@ void initialize(int task) {
     helpFont = createFont(helpFontName, helpFontSize, false);
     
     newsFont = createFont(newsFontName, newsFontSize, false);
+
+    infoFontReg = createFont(infoFontRegName, infoFontRegSize, false);    
+    infoFontTitle = createFont(infoFontTitleName, infoFontTitleSize);    
+    infoFontCapt = createFont(infoFontCaptName, infoFontCaptSize);
 
     initLUT();
 
