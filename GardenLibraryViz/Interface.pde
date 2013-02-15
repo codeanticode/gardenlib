@@ -1055,6 +1055,7 @@ class InfoArea extends InterfaceElement {
           if (type.equals("title")) {
             fill(replaceAlpha(infoFontTitleColor, 2 * viewFadeinAlpha.getInt()));
             textFont(infoFontTitle);            
+            textLeading(infoLineSpaceTitle);
             float len = textWidth(content);
             float w = bounds.w - 2 * margin;
             float h = ceil(len / w) * infoLineSpaceTitle + 3;            
@@ -1062,12 +1063,13 @@ class InfoArea extends InterfaceElement {
             y += h + infoLineSpaceTitle;
           } else if (type.equals("paragraph")) {
             fill(replaceAlpha(infoFontRegColor, 2 * viewFadeinAlpha.getInt()));
-            textFont(infoFontReg);            
+            textFont(infoFontReg);
+            textLeading(infoLineSpaceReg);
             float len = textWidth(content);
             float w = bounds.w - 2 * margin;
-            float h = ceil(len / w + 1) * infoLineSpaceTitle + 3;            
+            float h = ceil(len / w + 1) * infoLineSpaceReg + 3;            
             text(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5);
-            y += h + infoLineSpaceTitle;
+            y += h;
           } else if (type.equals("image")) {
             String fn = child.getChild("filename").getContent().trim();
             String caption = child.getChild("caption").getContent().trim();
