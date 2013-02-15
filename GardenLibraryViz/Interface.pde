@@ -1022,8 +1022,11 @@ class LegendArea extends InterfaceElement {
 }
 
 class InfoArea extends InterfaceElement {
+  HashMap<String, PImage> images;
+  
   InfoArea(float x, float y, float w, float h) {
-    super(x, y, w, h);  
+    super(x, y, w, h);
+    images = new HashMap<String, PImage>();  
   }  
   
   void update() {
@@ -1034,7 +1037,36 @@ class InfoArea extends InterfaceElement {
   void draw() {
     if (currentMode == MODE_INFO) {
       fill(replaceAlpha(color(255, 255, 255), 2 * viewFadeinAlpha.getInt()));
-      rect(bounds.x, bounds.y, bounds.w, bounds.h);        
+      clip(bounds.x, bounds.y, bounds.w, bounds.h);
+      
+      XML data = showingMigrantInfo ? migrantInfo : catalogInfo;
+      
+      for (XML child: data.getChildren()) {
+        String content = child.getContent().trim();
+        if (!content.equals("")) {
+          String type = child.getName();
+          if (type.equals("title")) {
+            println("draw title");  
+          } else if (type.equals("paragraph")) {
+            println("draw paragraph");
+          } else if (type.equals("image")) {
+            String fn = child.getChild("filename").getContent().trim();
+            String caption = child.getChild("caption").getContent().trim();
+            PImage img = images.get(fn);
+            if (img == null) {
+              img = loadImage(fn);
+              images.put(fn, img);
+              println("loading image " + fn);  
+            }
+            println("draw image");            
+          } else if (type.equals("link")) {
+            println("draw link");
+          }            
+        } 
+      }
+      println("--------------------------------------------");
+                   
+      noClip();       
     }
   }
   
@@ -1044,7 +1076,6 @@ class InfoArea extends InterfaceElement {
     if (currentMode != MODE_INFO) {
       return selected;  
     }
-    
     
     if (contains(mouseX, mouseY)) {
       setCurrentMode(previousMode);
@@ -1924,6 +1955,7 @@ void checkResize() {
     viewArea.resize(0, -8, width, height - 90);
     helpMenu.resize(width - 60, 20, 70, 30);
     legendArea.resize(0, 0, 200, height - 100);
+    infoArea.resize(200, 0, width - 200, height);
     
     WIDTH = width;
     HEIGHT = height;

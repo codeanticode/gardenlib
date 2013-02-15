@@ -120,6 +120,11 @@ void loadTimelineNews() {
   }
 }
 
+void loadInfoData() {
+  migrantInfo = loadXML(migrantInfoFilename);
+  catalogInfo = loadXML(catalogInfoFilename);
+}
+
 void loadWebLinks() {
   String[] data = loadStrings(linksFilename); 
 

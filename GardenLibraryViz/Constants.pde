@@ -4,11 +4,12 @@ int LOAD_EMOTIONS      = 1;
 int LOAD_LANGUAGES     = 2;
 int LOAD_BOOKS         = 3;
 int LOAD_TIMELINE_NEWS = 4;
-int GROUP_BY_LANG      = 5;
-int BUILD_HISTORY      = 6;
-int GROUP_BY_EMO       = 7;
-int FINISH_INIT        = 8;
-int RUNNING            = 9;
+int LOAD_INFO_DATA     = 5;
+int GROUP_BY_LANG      = 6;
+int BUILD_HISTORY      = 7;
+int GROUP_BY_EMO       = 8;
+int FINISH_INIT        = 9;
+int RUNNING            = 10;
 
 // Constants for view mode
 int MODE_BOOKSHELF = 0;

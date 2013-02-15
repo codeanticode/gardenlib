@@ -58,6 +58,11 @@ float newsX = 0;
 boolean newsRollover;
 int newsAlpha = 0;
 
+// Info
+XML migrantInfo;
+XML catalogInfo;
+
+// Global control of alpha and left margin
 SoftFloat viewFadeinAlpha; 
 SoftFloat viewLeftMargin; 
 
@@ -130,6 +135,10 @@ void initialize(int task) {
   } else if (task == LOAD_TIMELINE_NEWS) { 
     loadTimelineNews();
     
+    currentTask = LOAD_INFO_DATA;
+  } else if (task == LOAD_INFO_DATA) { 
+    loadInfoData();
+  
     currentTask = GROUP_BY_LANG;
   } else if (task == GROUP_BY_LANG) {
     groupBooksByLanguage();
@@ -189,7 +198,6 @@ void initialize(int task) {
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
     infoArea = new InfoArea(200, 0, width - 200, height);
     ui = new ArrayList<InterfaceElement>();
-     
 
     ui.add(legendArea);
     ui.add(helpMenu);
