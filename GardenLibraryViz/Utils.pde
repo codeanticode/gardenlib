@@ -51,8 +51,7 @@ void groupBooksByEmotion(int days, boolean init) {
           i0 += bemo.size();
         }
       }
-    } 
-    else {    
+    } else {    
       for (Emotion emo: emotions) {  
         for (Language lang: languages) {
           ArrayList<Book> blang = emo.booksPerLang.get(lang.id);
@@ -77,8 +76,7 @@ void groupBooksByEmotion(int days, boolean init) {
           Book book = blang.get(i);
           if (init) {
             book.initWheelPos(i + i0);
-          } 
-          else {
+          } else {
             book.setWheelPos(i + i0);
           }
         }
@@ -230,8 +228,7 @@ boolean intervalIntersect(float a, float b, float c, float d) {
   if (b < c || d < a) {
     // No intersection.
     return false;
-  } 
-  else {
+  } else {
     return true;
   }
 }
@@ -246,8 +243,7 @@ float centerIntersection(float a, float b, float c, float d) {
   if (a < c) {
     x = c;
     y = b < d ? b : d;
-  } 
-  else {
+  } else {
     x = a;
     y = b < d ? b : d;
   }    
@@ -262,8 +258,7 @@ String chopStringRight(String str, PFont font, float maxw) {
     int n = chopped.length() - 1;
     if (-1 < n) {
       chopped = chopped.substring(0, n);
-    } 
-    else {
+    } else {
       return "";
     }
     w = textWidth(chopped);
@@ -299,8 +294,7 @@ float squeezeY(float x, float y) {
   if (x < x0) {
     float f = bezierPoint(y0, 1, 1, 1.0, map(x, 0, x0, 0, 1));    
     return 0.5 + f * (y - 0.5);
-  } 
-  else {
+  } else {
     return y;
   }
 }

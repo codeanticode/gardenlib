@@ -73,8 +73,7 @@ class Date {
       hours = hr;
       minutes = min;
       seconds = sec;
-    } 
-    else {
+    } else {
       throw new RuntimeException("Invalid date string");
     }
   }
@@ -166,8 +165,7 @@ class Date {
     if (month < 12) {
       month++;
       day = min(day, DAYS[month]);
-    } 
-    else {      
+    } else {      
       day = min(day, DAYS[1]);
       month = 1;
       year++;
@@ -177,12 +175,10 @@ class Date {
   public void addDay() {
     if (isValid(year, month, day + 1)) {
       day++;
-    } 
-    else if (isValid(year, month + 1, 1)) {
+    } else if (isValid(year, month + 1, 1)) {
       day = 1;
       month++;
-    } 
-    else {
+    } else {
       day = 1;
       month = 1;
       year++;
@@ -192,8 +188,7 @@ class Date {
   void addHour() {
     if (hours < 23) {
       hours++;
-    } 
-    else {
+    } else {
       hours = 0;
       addDay();
     }
@@ -202,8 +197,7 @@ class Date {
   void addMinute() {
     if (minutes < 59) {
       minutes++;
-    } 
-    else {
+    } else {
       minutes = 0;
       addHour();
     }
@@ -212,8 +206,7 @@ class Date {
   void addSecond() {
     if (seconds < 59) {
       seconds++;
-    } 
-    else {
+    } else {
       seconds = 0;
       addMinute();
     }
@@ -230,23 +223,17 @@ class Date {
   float compareTo(Date b) {
     if (year != b.year) {
       return year - b.year;
-    } 
-    else if (month != b.month) {
+    } else if (month != b.month) {
       return month - b.month;
-    } 
-    else if (day != b.day) { 
+    } else if (day != b.day) { 
       return day - b.day;
-    } 
-    else if (hours != b.hours) {
+    } else if (hours != b.hours) {
       return hours - b.hours;
-    } 
-    else if (minutes != b.minutes) {
+    } else if (minutes != b.minutes) {
       return minutes - b.minutes;
-    } 
-    else if (0.001 <= abs(seconds - b.seconds)) {
+    } else if (0.001 <= abs(seconds - b.seconds)) {
       return seconds - b.seconds;
-    } 
-    else {
+    } else {
       return 0;
     }
   }
@@ -278,14 +265,12 @@ class Date {
   boolean isValid(int y, int m, int d, int hr, int min, float sec) {
     if (m < 1 || m > 12) {
       return false;
-    } 
-    else if (d < 1 || d > DAYS[m]) {
+    } else if (d < 1 || d > DAYS[m]) {
       return false;
     } 
     if (m == 2 && d == 29 && !isLeapYear(y)) {
       return false;
-    } 
-    else { 
+    } else { 
       return 0 <= hr && hr < 24 && 0 <= min && min < 60 && 0 <= sec && sec < 60;
     }
   }
@@ -293,11 +278,9 @@ class Date {
   boolean isLeapYear(int y) {
     if (y % 400 == 0) {
       return true;
-    } 
-    else if (y % 100 == 0) {
+    } else if (y % 100 == 0) {
       return false;
-    } 
-    else {
+    } else {
       return (y % 4 == 0);
     }
   }

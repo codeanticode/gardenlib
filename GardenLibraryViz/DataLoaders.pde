@@ -129,8 +129,7 @@ void loadWebLinks() {
     String[] parts = split(row, '\t');
     if (parts[0].equals("DEFAULT")) {
       defURL = parts[1];
-    } 
-    else {
+    } else {
       Language lang = languagesByCode.get(parts[0]);
       if (lang != null) {
         lang.url = parts[1];

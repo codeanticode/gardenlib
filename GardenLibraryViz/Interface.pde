@@ -97,8 +97,7 @@ class ViewArea extends InterfaceElement {
 
       langTab.update();
       emoTab.update();
-    } 
-    else if (currentMode == MODE_WHEEL) {
+    } else if (currentMode == MODE_WHEEL) {
       if (playingAnim) {
         float days0 = daysSinceStart.get();
 
@@ -128,8 +127,7 @@ class ViewArea extends InterfaceElement {
       wheelScale.update();
       
       wheelWidth.update();
-    } 
-    else {
+    } else {
       daysSinceStart.update();      
     }
 
@@ -151,8 +149,7 @@ class ViewArea extends InterfaceElement {
           selLang = getSelectedLangInBookshelf(mouseX, mouseY, bounds, langBarY);
           selEmo = null;
           selBook = getSelectedBookInBookshelfGroupByLang(mouseX, mouseY, bounds, langBarY);        
-        } 
-        else {
+        } else {
           selLang = getSelectedLangInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
           selEmo = getSelectedEmoInBookshelf(mouseX, mouseY, bounds, langBarY);                
           selBook = getSelectedBookInBookshelfGroupByEmo(mouseX, mouseY, bounds, langBarY);
@@ -176,8 +173,7 @@ class ViewArea extends InterfaceElement {
       }
 
       drawBookshelf(bounds, langBarY);
-    } 
-    else if (currentMode == MODE_WHEEL) {
+    } else if (currentMode == MODE_WHEEL) {
       if (!showingHelp) {
         if (viewRegion.zoomLevel == VIEW_BOOK) {
           selBook = getSelectedBookInWheel(bounds, selBook, wheelTop);
@@ -192,8 +188,7 @@ class ViewArea extends InterfaceElement {
       }
 
       animatingTrails = drawWheel(bounds, wheelTop);
-    } 
-    else if (currentMode == MODE_HISTORY) {      
+    } else if (currentMode == MODE_HISTORY) {      
       drawHistory(bounds, historyTop, w0);
 
       if (!showingHelp && !histLocked && (abs(pmouseX - mouseX) > 0 || abs(pmouseY - mouseY) > 0)) {        
@@ -242,8 +237,7 @@ class ViewArea extends InterfaceElement {
       }
 
       setViewRegionBookshelf(mouseX, mouseY, bounds, langBarY);
-    } 
-    else if (currentMode == MODE_WHEEL) {      
+    } else if (currentMode == MODE_WHEEL) {      
       pressX0 = mouseX;
       pressY0 = mouseY;
       draggingWheel = false;
@@ -260,8 +254,7 @@ class ViewArea extends InterfaceElement {
       if (langBarY - langBarH.get() <= mouseY && mouseY <= langBarY) { 
         dragViewRegion(pmouseX, mouseX);
       }
-    } 
-    else if (currentMode == MODE_WHEEL) {
+    } else if (currentMode == MODE_WHEEL) {
       if (viewRegion.zoomLevel == VIEW_EMO || viewRegion.zoomLevel == VIEW_BOOK) {
         dragWheel(pressX0, pressY0, mouseX, mouseY, bounds);
         draggingWheel = true;
@@ -275,8 +268,7 @@ class ViewArea extends InterfaceElement {
     if (!selected) return;
 
     if (currentMode == MODE_BOOKSHELF) {
-    } 
-    else if (currentMode == MODE_WHEEL) {
+    } else if (currentMode == MODE_WHEEL) {
       if (!draggingWheel && !helpMenu.contains(mouseX, mouseY)) {
         // An emotion can be selected only by a single
         // click that doesn't involve dragging.
@@ -357,8 +349,7 @@ class ViewMenu extends InterfaceElement {
     float yc = bounds.y + h2 - bw/2;
     if (currentMode == MODE_BOOKSHELF) {
       image(bookshelfSel, xc, yc);
-    } 
-    else { 
+    } else { 
       image(bookshelfUnsel, xc, yc);
     }     
 
@@ -366,8 +357,7 @@ class ViewMenu extends InterfaceElement {
     xc = xl + w5/2 - ww/2;
     if (currentMode == MODE_WHEEL) {
       image(wheelSel, xc, yc);
-    } 
-    else { 
+    } else { 
       image(wheelUnsel, xc, yc);
     }      
 
@@ -375,8 +365,7 @@ class ViewMenu extends InterfaceElement {
     xc = xl + w5/2 - hw/2;
     if (currentMode == MODE_HISTORY) {
       image(historySel, xc, yc);
-    } 
-    else { 
+    } else { 
       image(historyUnsel, xc, yc);
     }
 
@@ -412,17 +401,14 @@ class ViewMenu extends InterfaceElement {
       int p = int((mouseX - bounds.x) / w5);
       if (p == 0) {
         setCurrenMode(MODE_BOOKSHELF);
-      } 
-      else if (p == 1) {
+      } else if (p == 1) {
         setCurrenMode(MODE_WHEEL);
-      } 
-      else if (p == 2) {
+      } else if (p == 2) {
         setCurrenMode(MODE_HISTORY);
       } else if (currentMode == MODE_BOOKSHELF) {
         if (p == 3) {
           setGrouping(true);
-        }
-        else if (p == 4) {
+        } else if (p == 4) {
           setGrouping(false);
         }
       }
@@ -437,12 +423,10 @@ class ViewMenu extends InterfaceElement {
       if (mode == MODE_BOOKSHELF) {
         groupBooksByEmotion(days, true);
         setViewRegionAllBookshelf();
-      } 
-      else if (mode == MODE_WHEEL) {
+      } else if (mode == MODE_WHEEL) {
         groupBooksByEmotion(days, true);
         setViewRegionAllWheel();
-      } 
-      else if (mode == MODE_HISTORY) {
+      } else if (mode == MODE_HISTORY) {
         groupBooksByEmotion(daysRunningTot, true);
       }
       // Trigger fade-in animation.
@@ -680,17 +664,14 @@ class Timeline extends InterfaceElement {
     if (currentMode == MODE_WHEEL) {
       if (animating) {
         text("stop animation", xm, bounds.y + h2 + fontSize/2);
-      } 
-      else {
+      } else {
         text("play animation", xm, bounds.y + h2 + fontSize/2);
       }
-    } 
-    else if (currentMode == MODE_BOOKSHELF && viewRegion.zoomLevel == VIEW_BOOK) {
+    } else if (currentMode == MODE_BOOKSHELF && viewRegion.zoomLevel == VIEW_BOOK) {
       // } else if (currentMode == MODE_BOOKSHELF) {
       if (compactTime) {
         text("expand time", xm, bounds.y + h2 + fontSize/2);
-      } 
-      else {
+      } else {
         text("compact time", xm, bounds.y + h2 + fontSize/2);
       }
     }   
@@ -768,23 +749,19 @@ class Timeline extends InterfaceElement {
           //daysSinceStart.set(0);
           //groupBooksByEmotion(0, true);
           playingAnim = true;
-        } 
-        else {
+        } else {
           playingAnim = false;
         }
-      } 
-      else if (viewRegion.zoomLevel == VIEW_BOOK) {
+      } else if (viewRegion.zoomLevel == VIEW_BOOK) {
         compact = !compact;
 
         if (compactTime) {
           disableCompactTime();
-        } 
-        else {
+        } else {
           enableCompactTime();
         }
       }
-    } 
-    else {
+    } else {
       insideDragArea = true;
       setTime(mouseX);
     }
@@ -813,8 +790,7 @@ class Timeline extends InterfaceElement {
     if (currentMode == MODE_BOOKSHELF) {
       if (sortByLang) {
         groupBooksByEmotion(days, true);
-      } 
-      else {        
+      } else {        
         groupBooksByEmotion(days, false);
         viewRegion.update(numBooksWithEmo());        
         if (viewRegion.zoomLevel == VIEW_EMO && currEmo != null) {
@@ -822,8 +798,7 @@ class Timeline extends InterfaceElement {
           viewEmotion(currEmo);
         } 
       }
-    } 
-    else if (currentMode == MODE_WHEEL) {
+    } else if (currentMode == MODE_WHEEL) {
       groupBooksByEmotion(days, false);
     }
   }
@@ -902,8 +877,7 @@ class LegendArea extends InterfaceElement {
     fill(defTextColor);
     if (closed) {
       text("show legend", xc, yc);
-    } 
-    else {
+    } else {
       text("hide legend", xc, yc);
 
       float xlang = 0.4 * bounds.w;
@@ -964,8 +938,7 @@ class LegendArea extends InterfaceElement {
 
           //     y -= 0.7 * fontSize + 20;
           y -= 0.7 * fontSize + 22;// distance between sqs
-        } 
-        else {
+        } else {
           break;
         }
       }
@@ -977,14 +950,11 @@ class LegendArea extends InterfaceElement {
       selected = true;
       if (closed) {
         open();
-      } 
-      else {
+      } else {
         close();
       }   
       return true;
-    } 
-    else if (!closed) {     
-
+    } else if (!closed) {     
       float xlang = 0.4 * bounds.w;
       float h = bounds.h * animTimer.get();       
       float y = h - 20;
@@ -1008,8 +978,7 @@ class LegendArea extends InterfaceElement {
       }
 
       return false;
-    } 
-    else {
+    } else {
       return false;
     }
   }
@@ -1038,8 +1007,7 @@ class LegendArea extends InterfaceElement {
 void setViewRegionAll() {
   if (currentMode == MODE_BOOKSHELF) {
     setViewRegionAllBookshelf();
-  } 
-  else if (currentMode == MODE_WHEEL) {
+  } else if (currentMode == MODE_WHEEL) {
     setViewRegionAllWheel();
   }
 }
@@ -1056,8 +1024,7 @@ void setViewRegionBookshelf(float x, float y, Rectangle bounds, float yTop) {
   if (yTop - h < y && y < yTop) {
     if (viewRegion.zoomLevel != VIEW_ALL) return; // can select language only from fully zoomed-out view.
     setViewRegionLangBookshelf(x, bounds);
-  } 
-  else {
+  } else {
     setViewRegionBookBookshelf(x, bounds);
   }
 }
@@ -1078,8 +1045,7 @@ void setViewRegionAllBookshelf() {
 void setViewRegionLangBookshelf(float x, Rectangle bounds) {
   if (sortByLang) {
     setLanguage(x, bounds);
-  } 
-  else {
+  } else {
     setEmotion(x, bounds);
   }  
 }
@@ -1094,8 +1060,7 @@ void setViewRegionBookBookshelf(float x, Rectangle bounds) {
   // Set view region around selected book
   if (sortByLang) {
     setViewRegionBookshelfGroupByLang(x, bounds);
-  } 
-  else {
+  } else {
     setViewRegionBookshelfGroupByEmo(x, bounds);
   }  
 }
@@ -1222,8 +1187,7 @@ void setViewRegionWheel(float x, float y, Rectangle bounds, float yTop) {
   
   if (r0 < d && d < r1 + maxBookHeight) {
     selectBookInWheel(d, angle);
-  } 
-  else {
+  } else {
     setViewRegionAllWheel();
   }
 }
@@ -1503,8 +1467,7 @@ SelectedText selectDateInBookHistory(float mx, float my, SelectedBook sel, Recta
         Date retDate = dateAfter(startDate, days1);
         return new SelectedText("Returned on " + retDate.toNiceString(), x1 + 10, y1 + 10);
       }
-    } 
-    else {
+    } else {
       int days1 = int(map(pt.x, 0, 1, 0, daysRunningTot));
       float x1 = xc + historyW * pt.x;
       float y1 = yc + historyH * squeezeY(pt.x, pt.y);
@@ -1540,8 +1503,7 @@ void setLanguage(float x, Rectangle bounds) {
         // centering around the middle book and using
         int imid = (langCount0 + langCount)/2; 
         viewRegion.setTarget(imid - sizeBookView/2, imid + sizeBookView/2, books.size());
-      } 
-      else {
+      } else {
         viewRegion.setTarget(langCount0, langCount, books.size());
       }  
 
@@ -1573,8 +1535,7 @@ void setEmotion(float x, Rectangle bounds) {
         // centering around the middle book and using
         int imid = (emoCount0 + emoCount)/2; 
         viewRegion.setTarget(imid - sizeBookView/2, imid + sizeBookView/2, totCount);
-      } 
-      else {
+      } else {
         viewRegion.setTarget(emoCount0, emoCount, totCount);
       }  
 
@@ -1599,8 +1560,7 @@ void viewLanguage(Language selLang) {
         // centering around the middle book and using
         int imid = (langCount0 + langCount)/2; 
         viewRegion.setTarget(imid - sizeBookView/2, imid + sizeBookView/2, books.size());
-      } 
-      else {
+      } else {
         viewRegion.setTarget(langCount0, langCount, books.size());
       }  
       return;
@@ -1623,8 +1583,7 @@ void viewEmotion(Emotion selEmo) {
         // centering around the middle book and using
         int imid = (emoCount0 + emoCount)/2; 
         viewRegion.setTarget(imid - sizeBookView/2, imid + sizeBookView/2, totCount);
-      } 
-      else {
+      } else {
         viewRegion.setTarget(emoCount0, emoCount, totCount);
       }
       currLang = null;
@@ -1730,12 +1689,10 @@ void dragViewRegion(float px, float x) {
   if (viewRegion.zoomLevel == VIEW_LANG) {
     if (sortByLang) {
       dragViewRegionGroupByLang(px, x);
-    } 
-    else {
+    } else {
       dragViewRegionGroupByEmo(px, x);
     }
-  } 
-  else {
+  } else {
     currLang = null;
     currEmo = null;
 
@@ -1838,8 +1795,7 @@ void dragWheel(float x0, float y0, float x, float y, Rectangle bounds) {
 void checkMouseActivity() {
   if (abs(pmouseX - mouseX) == 0 && abs(pmouseY - mouseY) == 0 && !mousePressed) {
     noMouseActivityCount++;
-  } 
-  else {
+  } else {
     noMouseActivityCount = 0;
     mouseActivity = true;
     hintInfo.close();

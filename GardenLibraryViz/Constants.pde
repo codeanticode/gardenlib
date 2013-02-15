@@ -14,6 +14,7 @@ int RUNNING            = 9;
 int MODE_BOOKSHELF = 0;
 int MODE_WHEEL     = 1;
 int MODE_HISTORY   = 2;
+int MODE_INFO      = 3;
 
 // Constants for zoom level
 int VIEW_ALL  = 0;

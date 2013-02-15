@@ -166,8 +166,7 @@ class BookBubble extends InfoBox {
     if (isAnimating()) {
       String chopStr = chopStringRight(str, defFont, mainW.get());
       return chopStr;
-    } 
-    else {
+    } else {
       return str;
     }
   } 
@@ -178,8 +177,7 @@ class BookBubble extends InfoBox {
       tailH.setTarget(bookBubbleTailH);
       mainH.setTarget(numBookBubbleLines * (fontSize + 5) + 7);
       codeScale.setTarget(1);
-    } 
-    else {
+    } else {
       moveTo(x, y);
     }
   }
@@ -187,8 +185,7 @@ class BookBubble extends InfoBox {
   void open(SelectedBook sel) {
     if (sel == null) {
       close();
-    } 
-    else {
+    } else {
       setBook(sel);
       open(sel.x, sel.y);
     }
@@ -225,8 +222,7 @@ class InfoTab extends InfoBox {
     if (!visible) {
       super.open(x, y);      
       tabH.setTarget(2 * (fontSize + 5) + 5);
-    } 
-    else {
+    } else {
       moveTo(x, y);
     }
   }
@@ -298,8 +294,7 @@ class LanguageTab extends InfoTab {
   void open(SelectedLanguage sel) {
     if (sel == null) {
       close();
-    } 
-    else {
+    } else {
       setLanguage(sel);
       open(sel.x, sel.y);
     }
@@ -354,8 +349,7 @@ class EmotionTab extends InfoTab {
   void open(SelectedEmotion sel) {
     if (sel == null) {
       close();
-    } 
-    else {
+    } else {
       setEmotion(sel);
       open(sel.x, sel.y);
     }

@@ -1,9 +1,9 @@
-// Garden Library project
+// Garden Library visualization
 // Concept: Romy Achituv
 // Design: Romy Achituv, Andres Colubri
 // Development: Andres Colubri, Moon Jung Hyun
 // 
-// GardenLibraryViz app, version 12 (February 12th, 2013).
+// Version 13 (February 14th, 2013)
 
 void setup() {
   size(WIDTH, HEIGHT);
@@ -19,8 +19,7 @@ void draw() {
   if (currentTask < RUNNING) {
     initialize(currentTask);
     loadingAnimation();
-  } 
-  else {     
+  } else {     
     background(backgroundColor);
     
     checkResize();
@@ -61,30 +60,21 @@ void mousePressed() {
 }
 
 void mouseDragged() {
-  if (currentTask < RUNNING) return;
-  if (showingHelp) {
-    return;
-  }
+  if (currentTask < RUNNING || showingHelp) return;
   for (InterfaceElement e: ui) {
     e.mouseDragged();
   }
 }
 
 void mouseReleased() {
-  if (currentTask < RUNNING) return;
-  if (showingHelp) {
-    return;
-  }
+  if (currentTask < RUNNING || showingHelp) return;
   for (InterfaceElement e: ui) {
     e.mouseReleased();
   }
 }
 
 void mouseMoved() {
-  if (currentTask < RUNNING) return;
-  if (showingHelp) {
-    return;
-  }
+  if (currentTask < RUNNING || showingHelp) return;
   for (InterfaceElement e: ui) {
     e.mouseMoved();
   }

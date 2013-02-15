@@ -111,19 +111,16 @@ void initialize(int task) {
     daysRunningTot = daysBetween(startDate, endDate);
 
     currentTask = LOAD_EMOTIONS;
-  } 
-  else if (task == LOAD_EMOTIONS) {
+  } else if (task == LOAD_EMOTIONS) {
     loadEmotions();
 
     currentTask = LOAD_LANGUAGES;
-  } 
-  else if (task == LOAD_LANGUAGES) {
+  } else if (task == LOAD_LANGUAGES) {
     loadLanguages();
     loadWebLinks();
 
     currentTask = LOAD_BOOKS;
-  } 
-  else if (task == LOAD_BOOKS) {
+  } else if (task == LOAD_BOOKS) {
     loadBooks();
 
     currentTask = LOAD_TIMELINE_NEWS;
@@ -135,26 +132,22 @@ void initialize(int task) {
     groupBooksByLanguage();
 
     currentTask = BUILD_HISTORY;
-  } 
-  else if (task == BUILD_HISTORY) {
+  } else if (task == BUILD_HISTORY) {
     buildHistory(); 
 
     currentTask = GROUP_BY_EMO;
-  } 
-  else if (task == GROUP_BY_EMO) {
+  } else if (task == GROUP_BY_EMO) {
     daysSinceStart = new SoftFloat();
     daysSinceStart.setTarget(daysRunningTot);
     groupBooksByEmotion(daysSinceStart.getInt(), true);
 
     currentTask = FINISH_INIT;
-  } 
-  else if (task == FINISH_INIT) {
+  } else if (task == FINISH_INIT) {
     // Init viewing range:
     viewRegion = new ViewRegion();
     if (sortByLang) {
       viewRegion.setTarget(0, books.size());
-    } 
-    else {
+    } else {
       groupBooksByEmotion(int(daysSinceStart.getTarget()), true);
       viewRegion.setTarget(0, numBooksWithEmo());
     }

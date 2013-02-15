@@ -102,8 +102,7 @@ class Book {
   void update(int mode) {
     if (mode == MODE_BOOKSHELF) {
       updateBookshelfPos();
-    } 
-    else if (mode == MODE_WHEEL) {
+    } else if (mode == MODE_WHEEL) {
       updateWheelPos();
     }
   }
@@ -122,8 +121,7 @@ class Book {
     while (nmax < days.size () - 1) {
       if (days.get(nmax + 1) <= elapsed) {
         nmax++;
-      } 
-      else {
+      } else {
         break;
       }
     }
@@ -137,8 +135,7 @@ class Book {
         // represented in the book rect at the top, so we don't need to add it to the full 
         // history below.
         y0 = y1 = top;
-      } 
-      else {        
+      } else {        
         len0 = constrain(map(days.get(n), 0, elapsed, maxlen, 0), 0, maxlen);
         len1 = (nmax - n - 1) * maxBookHeight;       
         len = (1 - factor) * len0 + factor * len1;
@@ -146,8 +143,7 @@ class Book {
         if (n + 1 < nmax) {
           len0 = constrain(map(days.get(n + 1), 0, elapsed, maxlen, 0), 0, maxlen); 
           len1 = (nmax - n) * maxBookHeight;
-        } 
-        else {
+        } else {
           len0 = 0;
           len1 = (nmax - n) * maxBookHeight;
         }      
@@ -165,8 +161,7 @@ class Book {
       if (elapsed < days.get(n)) {
         e = emos.get(n - 1);
         last = true;
-      } 
-      else {
+      } else {
         e = emos.get(n);
         last = n == nmax - 1;
       }
@@ -239,8 +234,7 @@ class Book {
         rect(x1, y1, 5, 5);
       }
       rectMode(CORNER);
-    } 
-    else {
+    } else {
       if (arrived && viewRegion.zoomLevel != VIEW_BOOK) {
         wheelTrail.draw();
         wheelTrail.add(x1, y1);
@@ -275,8 +269,7 @@ class Book {
       while (nmax < days.size () - 1) {
         if (days.get(nmax + 1) <= elapsed) {
           nmax++;
-        } 
-        else {
+        } else {
           break;
         }
       }
@@ -290,8 +283,7 @@ class Book {
           // represented in the book rect at the top, so we don't need to add it to the full 
           // history below.
           y0 = y1 = top;
-        } 
-        else {        
+        } else {        
           len0 = constrain(map(days.get(n), 0, elapsed, maxlen, 0), 0, maxlen);
           len1 = (nmax - n - 1) * maxBookHeight;       
           len = (1 - factor) * len0 + factor * len1;
@@ -299,8 +291,7 @@ class Book {
           if (n + 1 < nmax) {
             len0 = constrain(map(days.get(n + 1), 0, elapsed, maxlen, 0), 0, maxlen); 
             len1 = (nmax - n) * maxBookHeight;
-          } 
-          else {
+          } else {
             len0 = 0;
             len1 = (nmax - n) * maxBookHeight;
           }      
@@ -318,8 +309,7 @@ class Book {
         if (elapsed < days.get(n)) {
           e = emos.get(n - 1);
           last = true;
-        } 
-        else {
+        } else {
           e = emos.get(n);
           last = n == nmax - 1;
         }
@@ -341,8 +331,7 @@ class Book {
         }
       }   
       return -1;
-    } 
-    else {
+    } else {
       return -1;
     }
   }
@@ -370,14 +359,12 @@ class Book {
         float t = constrain(map(wheelAngle.value, wheelAngle.source, wheelAngle.target, -1, +1), -1, +1);
         float range = abs(wheelAngle.target - wheelAngle.source) / TWO_PI;
         wheelRadius = constrain((1 - range) + range * t * t, 0, 1);
-      } 
-      else {
+      } else {
         wheelRadius = 1;
         traveling = false;
         arrived = true;
       }
-    } 
-    else {
+    } else {
       wheelHeight.update();
     }
   }
@@ -396,8 +383,7 @@ class Book {
       // does at its current position, without trail
       // animation.
       wheelAngle.set(a);
-    } 
-    else {
+    } else {
       wheelAngle.setTarget(a);
     }
     if (emotionChanged()) {
@@ -649,8 +635,7 @@ class ViewRegion {
     float last = lastBook.get();
     if (i1 < first || last < i0) {
       return false;
-    } 
-    else {
+    } else {
       return true;
     }
   }
@@ -681,8 +666,7 @@ class Trail {
   void add(float newx, float newy) {
     if (len == 0) {
       init(newx, newy);
-    } 
-    else {
+    } else {
       if (abs(newx - x[0]) < 0.001 && abs(newy - y[0]) < 0.001) return;
     }    
 

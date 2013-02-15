@@ -20,8 +20,7 @@ void drawBookshelf(Rectangle bounds, float yTop) {
 
   if (sortByLang) { // Grouping the books first by language, then by emotion.
     drawBookshelfGroupByLang(bounds, firstBook, bookCount, yTop, totLen, w, h);
-  } 
-  else { // Grouping the books first by emotion, then by language.
+  } else { // Grouping the books first by emotion, then by language.
     drawBookshelfGroupByEmo(bounds, firstBook, bookCount, yTop, totLen, w, h);
   }
 
@@ -62,14 +61,12 @@ void drawBookshelfGroupByLang(Rectangle bounds, float firstBook, float bookCount
       // Adding paddings between languages:
       if (bounds.x < x0) { // left padding
         x0 += bookPadding * w/2;
-      } 
-      else {
+      } else {
         x0 = bounds.x;
       }  
       if (x1 < bounds.x + bounds.w) { // right padding
         x1 -= bookPadding * w/2;
-      } 
-      else {
+      } else {
         x1 = bounds.x + bounds.w;
       }  
       noStroke();
@@ -128,14 +125,12 @@ void drawBookshelfGroupByEmo(Rectangle bounds, float firstBook, float bookCount,
       // Adding paddings between languages:
       if (bounds.x < x0) { // left padding
         x0 += bookPadding * w/2;
-      } 
-      else {
+      } else {
         x0 = bounds.x;
       } 
       if (x1 < bounds.x + bounds.w) { // right padding
         x1 -= bookPadding * w/2;
-      } 
-      else {
+      } else {
         x1 = bounds.x + bounds.w;
       }  
       noStroke();
@@ -272,8 +267,7 @@ void drawHistory(Rectangle bounds, float yTop, float w0) {
             pg.vertex(x * historyW, squeezeY(x, 0) * historyH);
           }
           minx = 0;
-        } 
-        else {
+        } else {
           for (PVector v: emo.border) {
             pg.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
             minx = min(v.x, minx);
@@ -286,9 +280,7 @@ void drawHistory(Rectangle bounds, float yTop, float w0) {
             float x = map(days, 0, daysRunningTot, 1, 0);
             pg.vertex(x * historyW, squeezeY(x, 1) * historyH);
           }
-        } 
-        else {      
-
+        } else {
           float minx1 = 1;
           Emotion emo1 = emotions1.get(i + 1);
           for (int j = emo1.border.size() - 1; j >= 0; j--) {
@@ -307,8 +299,7 @@ void drawHistory(Rectangle bounds, float yTop, float w0) {
                 pg.vertex(historyW * v.x, historyH * squeezeY(v.x, v.y));
                 minx1 = min(v.x, minx1);
                 if (minx1 == 0) break;
-              } 
-              else {
+              } else {
                 pg.vertex(0, squeezeY(0, 1) * historyH);
               }
             }
@@ -375,8 +366,7 @@ void drawBookHistory(SelectedBook sel, Rectangle bounds, float yTop) {  //white 
         fill(replaceAlpha(selHistoryColor, viewFadeinAlpha.getInt()));
         ellipse(x1, y1, 7, 7);
       }
-    } 
-    else {
+    } else {
       float x1 = xc + historyW * pt.x;
       float y1 = yc + historyH * squeezeY(pt.x, pt.y);
       noStroke();
@@ -410,8 +400,7 @@ void drawNewsBox(float x, float x0, float x1, float y, Date selDate) {
     if (newsAlpha < 255) {
       newsAlpha = constrain(newsAlpha + newsAlphaSpeed, 0, 255);
     }
-  } 
-  else {
+  } else {
     if (newsAlpha > 0) {
       newsAlpha = constrain(newsAlpha - newsAlphaSpeed, 0, 255);
     }
