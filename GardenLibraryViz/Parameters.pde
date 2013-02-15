@@ -101,7 +101,7 @@ color historyTrailsColor = color(255);
 color selHistoryColor = color(255);
 
 // Transparency of the alpha mask used when displaying help 
-float helpMaskAlpha = 127;
+float targetHelpMaskAlpha = 150;
 
 // Timeline news
 int newsAdjustY = 16;

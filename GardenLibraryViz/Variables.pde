@@ -65,6 +65,7 @@ XML catalogInfo;
 // Global control of alpha and left margin
 SoftFloat viewFadeinAlpha; 
 SoftFloat viewLeftMargin; 
+SoftFloat helpMaskAlpha;
 
 int noMouseActivityCount = 0;
 boolean mouseActivity = false;
@@ -194,6 +195,7 @@ void initialize(int task) {
     viewFadeinAlpha = new SoftFloat();
     viewFadeinAlpha.set(255);
     viewLeftMargin = new SoftFloat();
+    helpMaskAlpha = new SoftFloat();
 
     numBookBubbleLines = showISBN ? 5 : 4;
 

@@ -448,8 +448,10 @@ void loadingAnimation() {
 }
 
 void drawHelpLayer() {
+  // Draw mask
   noStroke();
-  fill(0, viewFadeinAlpha.getInt());
+  helpMaskAlpha.update();
+  fill(0, helpMaskAlpha.getInt());
   rect(0, 0, width, height);  
     
   textFont(helpFont);
@@ -494,7 +496,7 @@ void drawHelpLayer() {
 }
 
 void drawHelpBookshelfSortByLang(int option) {
-  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  int textAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   if (option == 0) {
     float x, y, w;
@@ -548,7 +550,7 @@ void drawHelpBookshelfSortByLang(int option) {
 }
 
 void drawHelpBookshelfSortByEmo(int option) {
-  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  int textAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   if (option == 0) {
     float x, y, w, wj;
@@ -610,7 +612,7 @@ void drawHelpBookshelfSortByEmo(int option) {
 }
 
 void drawHelpWheel(int option) {
-  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  int textAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   if (option == 1) {
     float x, y, xc, yc, w1, w2;
@@ -642,7 +644,7 @@ void drawHelpWheel(int option) {
 }
 
 void drawHelpHistory(int option) {
-  int textAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  int textAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   if (option == 1) {
     float x, y;
@@ -694,7 +696,7 @@ void drawHelpHistory(int option) {
 }
 
 void drawHorizontalHelpArrow(float x0, float x1, float y) {
-  int arrowAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  int arrowAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   float trsize = 5;
   float xt = x0 < x1 ? x1 - trsize: x1 + trsize;    
@@ -707,7 +709,7 @@ void drawHorizontalHelpArrow(float x0, float x1, float y) {
 } 
 
 void drawVerticalHelpArrow(float y0, float y1, float x) {
-  int arrowAlpha = int(constrain(map(viewFadeinAlpha.get(), 0, helpMaskAlpha, 0, 255), 0, 255));
+  int arrowAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   float trsize = 7;
   float yt = y0 < y1 ? y1 - trsize: y1 + trsize;    
