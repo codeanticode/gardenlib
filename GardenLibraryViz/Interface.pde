@@ -81,12 +81,13 @@ class ViewArea extends InterfaceElement {
   }
 
   void update() {
+    boolean timeChanged = daysSinceStart.update();
     if (currentMode == MODE_BOOKSHELF) {
       for (Book book: books) {
         book.update(currentMode);
       }
       viewRegion.update();
-      if (daysSinceStart.update()) {
+      if (timeChanged) {
         groupBooksByEmotion(daysSinceStart.getInt(), true);
       }  
       bookStrokeWeight.update();
@@ -117,7 +118,6 @@ class ViewArea extends InterfaceElement {
       for (Book book: books) {
         book.update(currentMode);
       }
-      daysSinceStart.update();
 
       bookStrokeWeight.update();
       bookTopHeight.update();
@@ -127,12 +127,14 @@ class ViewArea extends InterfaceElement {
       wheelScale.update();
       
       wheelWidth.update();
-    } else {
-      daysSinceStart.update();      
+    } else if (currentMode == MODE_INFO) {
+      
     }
 
-    dateInfo.update();
-    bookBubble.update();
+    if (currentMode != MODE_INFO) {
+      dateInfo.update();
+      bookBubble.update();
+    }
 
     viewFadeinAlpha.update();
     viewLeftMargin.update();
@@ -217,13 +219,21 @@ class ViewArea extends InterfaceElement {
       line(historyCircleX, 0, historyCircleX, historyCircleY + 5);
       fill(255);
       ellipse(historyCircleX, historyCircleY, 10, 10);
+    } else if (currentMode == MODE_INFO) {
+      
     }
-    bookBubble.draw();
-    dateInfo.draw();
+    
+    if (currentMode != MODE_INFO) {
+      bookBubble.draw();
+      dateInfo.draw();
+    }
   }
 
   boolean mousePressed() {
-    if (!contains(mouseX, mouseY)) return false;
+    if (!contains(mouseX, mouseY)) {
+      selected = false;
+      return selected;
+    }
 
     selected = true;
     if (currentMode == MODE_BOOKSHELF && !helpMenu.contains(mouseX, mouseY)) {
@@ -243,8 +253,12 @@ class ViewArea extends InterfaceElement {
       draggingWheel = false;
     } else if (currentMode == MODE_HISTORY) {
       histLocked = !histLocked;  
+    } else if (currentMode == MODE_INFO) {
+      setCurrentMode(previousMode);
+      selected = false;
     }
-    return true;
+    
+    return selected;
   }
 
   boolean mouseDragged() {
@@ -334,6 +348,8 @@ class ViewMenu extends InterfaceElement {
   }
 
   void draw() {
+    if (currentMode == MODE_INFO) return;
+    
     noStroke();
     fill(replaceAlpha(backgroundColor, 180));
     rect(bounds.x, bounds.y, bounds.w, bounds.h);
@@ -393,18 +409,20 @@ class ViewMenu extends InterfaceElement {
   boolean mousePressed() {
     hint.close();
     
-    if (!contains(mouseX, mouseY)) return false;
+    selected = false;
+    if (currentMode == MODE_INFO) return selected;    
+    if (!contains(mouseX, mouseY)) return selected;
     
     selected = true;
 
     if (contains(mouseX, mouseY)) {
       int p = int((mouseX - bounds.x) / w5);
       if (p == 0) {
-        setCurrenMode(MODE_BOOKSHELF);
+        setCurrentMode(MODE_BOOKSHELF);
       } else if (p == 1) {
-        setCurrenMode(MODE_WHEEL);
+        setCurrentMode(MODE_WHEEL);
       } else if (p == 2) {
-        setCurrenMode(MODE_HISTORY);
+        setCurrentMode(MODE_HISTORY);
       } else if (currentMode == MODE_BOOKSHELF) {
         if (p == 3) {
           setGrouping(true);
@@ -413,48 +431,12 @@ class ViewMenu extends InterfaceElement {
         }
       }
     }
-    return true;
-  }
-
-  void setCurrenMode(int mode) {
-    if (currentMode != mode) {
-      currentMode = mode;
-      int days = daysSinceStart.getInt();
-      if (mode == MODE_BOOKSHELF) {
-        groupBooksByEmotion(days, true);
-        setViewRegionAllBookshelf();
-      } else if (mode == MODE_WHEEL) {
-        groupBooksByEmotion(days, true);
-        setViewRegionAllWheel();
-      } else if (mode == MODE_HISTORY) {
-        groupBooksByEmotion(daysRunningTot, true);
-      }
-      // Trigger fade-in animation.
-      viewFadeinAlpha.set(0);
-      viewFadeinAlpha.setTarget(255);
-
-      // Be sure nothing remains selected.
-      selBook = null;
-      selLang = null;
-
-      // Animation is stopped.
-      playingAnim = false;
-    }
-  }
-  
-  void setGrouping(boolean byLang) {
-    int days = daysSinceStart.getInt(); 
-    if (byLang) {
-      sortByLang = true;
-      groupBooksByEmotion(days, true);    
-    } else {
-      sortByLang = false;
-      groupBooksByEmotion(days, false);
-    }
-    setViewRegionAllBookshelf();
+    return selected;
   }
   
   void mouseMoved() {
+    if (currentMode == MODE_INFO) return;
+    
     if (!contains(mouseX, mouseY)) {
       hint.close();
       return;
@@ -549,6 +531,8 @@ class HelpMenu extends InterfaceElement {
   }  
   
   void draw() {
+    if (currentMode == MODE_INFO) return;
+    
     if (currentMode != MODE_HISTORY) {
       image(zoomIcon[zoomStatus], bounds.x, bounds.y);
     }
@@ -556,6 +540,11 @@ class HelpMenu extends InterfaceElement {
   }
   
   boolean mousePressed() {
+    if (currentMode == MODE_INFO) {
+      selected = false;
+      return selected;
+    }
+    
     if (contains(mouseX, mouseY)) {     
       if (currentMode != MODE_HISTORY && insideIcon(zoomIcon[zoomStatus], bounds.x, bounds.y)) {
         cycleZoom();        
@@ -575,6 +564,8 @@ class HelpMenu extends InterfaceElement {
   }  
   
   void mouseMoved() {
+    if (currentMode == MODE_INFO) return;
+    
     if (contains(mouseX, mouseY)) {
       if (insideIcon(zoomIcon[zoomStatus], bounds.x, bounds.y)) {
         zoomStatus = 1;
@@ -652,6 +643,8 @@ class Timeline extends InterfaceElement {
   }
 
   void draw() {
+    if (currentMode == MODE_INFO) return;
+    
     noStroke();
     fill(replaceAlpha(backgroundColor, 180));
     rect(bounds.x, bounds.y, bounds.w, bounds.h);
@@ -722,14 +715,23 @@ class Timeline extends InterfaceElement {
     }    
   }
 
-  boolean mousePressed() {    
+  boolean mousePressed() {
+    if (currentMode == MODE_INFO) {
+      selected = false;
+      return selected;
+    }
+
     if (currentMode == MODE_HISTORY && dist(mouseX, mouseY, historyCircleX, historyCircleY) < 10) {
       // Hack to drag the white circle in the history view and control the timeline, part 1 
       // (see setTimeHistoryHack() function below for the rest) 
       selected = true;
-      return true;
+      return selected;
     }
-    if (!contains(mouseX, mouseY)) return false;
+    
+    if (!contains(mouseX, mouseY)) {
+      selected = false;
+      return selected;
+    }
     selected = true;
     
     if (mouseButton == RIGHT && currNewsText != null && newsAlpha > 0) {   
@@ -861,42 +863,37 @@ class LegendArea extends InterfaceElement {
   void draw() {
     float xc = bx + fontSize + 5;
     float yc = by + bh/2 + fontSize/2;
-
-    //    noStroke(); // backgroung rect of show/hide legend
-    //    fill(replaceAlpha(backgroundColor, 180));
-    //    rect(bx, by, bw, bh);
-
-    strokeWeight(1);
-    stroke(legendLineColor);
-    // stroke(143);
-    fill(255);
-    // rect(bx, by + bh/2 - fontSize/2, fontSize, fontSize);
-    rect(bx +1, by + bh/2 - fontSize/2, fontSize -1, fontSize -2);
-    line(bx + fontSize/2, bounds.y, bx + fontSize/2, by + bh/2 - fontSize/2);
-
-    fill(defTextColor);
-    if (closed) {
-      text("show legend", xc, yc);
-    } else {
-      text("hide legend", xc, yc);
-
-      float xlang = 0.4 * bounds.w;
-      float xemo = 0.6 * bounds.w;
-      float h = bounds.h * animTimer.get(); 
-
-      //      line(xlang, bounds.y, xlang, bounds.y + h);
-      //      line(xemo, bounds.y, xemo, bounds.y + h + animTimer.get() * 20);    
-      line(xlang, bounds.y, xlang, bounds.y + h - 85);
-      line(xemo, bounds.y, xemo, bounds.y + h + animTimer.get() * 20 - 42); 
-
-      //  float y = h - 20; // height of legend
-      float y = h - 55;
-      for (int i = languages.size() - 1; i >= 0; i--) {
-        int ri = languages.size() - 1 - i;
-        int ei = emotions.size() - ri - 1;
-
-        if (bounds.y + 20 < y) {         
-          Language lang = languages.get(i);  
+          
+      strokeWeight(1);
+      stroke(legendLineColor);
+      fill(255);
+      if (currentMode != MODE_INFO) {
+        rect(bx +1, by + bh/2 - fontSize/2, fontSize -1, fontSize -2);
+        line(bx + fontSize/2, bounds.y, bx + fontSize/2, by + bh/2 - fontSize/2);
+      }
+    
+      fill(defTextColor);
+      if (closed) {
+        text("show legend", xc, yc);
+      } else {
+        if (currentMode != MODE_INFO) {        
+          text("hide legend", xc, yc);
+        }
+  
+        float xlang = 0.4 * bounds.w;
+        float xemo = 0.6 * bounds.w;
+        float h = bounds.h * animTimer.get();   
+  
+        line(xlang, bounds.y, xlang, bounds.y + h - 85);
+        line(xemo, bounds.y, xemo, bounds.y + h + animTimer.get() * 20 - 42); 
+  
+        float y = h - 55; // height of legend
+        for (int i = languages.size() - 1; i >= 0; i--) {
+          int ri = languages.size() - 1 - i;
+          int ei = emotions.size() - ri - 1;
+  
+          if (bounds.y + 20 < y) {         
+            Language lang = languages.get(i);  
           if (lang.id == 0) continue;
 
           float x0 = xlang - 10;
@@ -904,48 +901,58 @@ class LegendArea extends InterfaceElement {
           float x1 = x0 + 20; 
           float y1 = y0 + 0.7 * fontSize;
 
-          fill(lang.argb);             
-          rect(x0, y0, x1 - x0, y1 - y0);   // lang rects       
+          fill(lang.argb);          
+          rect(x0, y0, x1 - x0, y1 - y0);   // lang rects
+          
           fill(defTextColor);
           float tw = textWidth(lang.name);
-          //text(lang.name, xlang - 15 - tw, y + 0.7 * fontSize/2 + fontSize/2); // location of lang text
           text(lang.name, xlang - 15 - tw, y0 + 0.7 * fontSize/2 + fontSize/2 -1); // location of lang text
+
+          if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1 && !mouseActivity && currentMode != MODE_INFO) {
+            hintInfo.open("click language to see information about the labor migration in Israel"); // rollover message
+          }
 
           if (0 <= ei) {
             Emotion emo = emotions.get(ei);
             fill(emo.argb);
-            //  rect(xemo - 0.7 * fontSize/2, y, 0.7 * fontSize, 0.7 * fontSize); // emo rects         
-            rect(xemo - 0.9 * fontSize/2, y, 0.95 * fontSize, 0.8 * fontSize);
+            x0 = xemo - 0.9 * fontSize/2;
+            y0 = y;
+            x1 = x0 + 0.95 * fontSize;
+            y1 = y0 + 0.8 * fontSize;         
+            rect(x0, y0, x1 - x0, y1 - y0);
             fill(defTextColor);
-            // text(emo.name, xemo + 0.7 * fontSize, y + 0.7 * fontSize/2 + fontSize/2);
             text(emo.name, xemo + 0.7 * fontSize+3, y + 0.7 * fontSize/2 + fontSize/2 -1); // locaton of emo text
+            
+            if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1 && !mouseActivity && currentMode != MODE_INFO) {
+              hintInfo.open("click emotion to see information about the cataloguing system"); // rollover message
+            }            
           }
-
-          if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1 && !mouseActivity) {
-            //  hintInfo.open("click language to open the webpage for the " + lang.name + " community"); // rollover message
-            hintInfo.open("click language to open the webpage for the " + lang.name + " community"); // rollover message
-
-            //            String msg = ;
-            //            tw = textWidth(msg);
-            //            noStroke();
-            //            fill(0, 180);
-            //            rect(x1 + 8, y - 0.5 * fontSize/2, tw + 4, 1.5 * fontSize);            
-            //            stroke(legendLineColor);
-            //            
-            //            fill(defTextColor);
-            //            text(msg, x1 + 10, y + 0.7 * fontSize/2 + fontSize/2);
-          }
-
-          //     y -= 0.7 * fontSize + 20;
+          
           y -= 0.7 * fontSize + 22;// distance between sqs
         } else {
           break;
         }
       }
+       
+      if (currentMode == MODE_INFO) {
+        // Fading out either language or emotion legends
+        noStroke();
+        fill(replaceAlpha(0, viewFadeinAlpha.getInt()));
+        if (showingMigrantInfo) {
+          rect(xemo - 20, bounds.y, bounds.w - xemo + 20, h + animTimer.get() * 20 - 42);
+        } else {
+          rect(bounds.x, bounds.y, xlang + 20 - bounds.x, h - 85);
+        }
+      }      
     }
   }
 
   boolean mousePressed() {
+    if (currentMode == MODE_INFO) {
+      selected = false;
+      return selected;
+    }
+    
     if (contains(mouseX, mouseY)) {
       selected = true;
       if (closed) {
@@ -956,25 +963,42 @@ class LegendArea extends InterfaceElement {
       return true;
     } else if (!closed) {     
       float xlang = 0.4 * bounds.w;
+      float xemo = 0.6 * bounds.w;
       float h = bounds.h * animTimer.get();       
-      float y = h - 20;
+      float y = h - 55;
       for (int i = languages.size() - 1; i >= 0; i--) {
-        Language lang = languages.get(i);  
-        if (lang.id == 0) continue;
+        int ri = languages.size() - 1 - i;
+        int ei = emotions.size() - ri - 1;
 
-        float x0 = xlang - 10;
-        float y0 = y - 60;
-        float x1 = x0 + 20; 
-        float y1 = y0 + 0.7 * fontSize;        
-        if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
-          if (!lang.url.equals("")) {
-            println("Open " + lang.url);
-            //     link(lang.url, "_new");  // hyperlink
+        if (bounds.y + 20 < y) {  
+          Language lang = languages.get(i);  
+          if (lang.id == 0) continue;
+          
+          float x0 = xlang - 10;
+          float y0 = y - 60;
+          float x1 = x0 + 20; 
+          float y1 = y0 + 0.7 * fontSize;        
+          if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
+            setCurrentMode(MODE_INFO);
+            showingMigrantInfo = true;
+            return true;
+          }          
+          
+          if (0 <= ei) {
+            Emotion emo = emotions.get(ei);
+            x0 = xemo - 0.9 * fontSize/2;
+            y0 = y;
+            x1 = x0 + 0.95 * fontSize;
+            y1 = y0 + 0.8 * fontSize;
+            if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
+              setCurrentMode(MODE_INFO);
+              showingMigrantInfo = false;
+              return true;
+            }            
           }
-          return true;
         }
-
-        y -= 0.7 * fontSize + 20;
+        
+        y -= 0.7 * fontSize + 22;
       }
 
       return false;
@@ -1790,6 +1814,52 @@ void dragWheel(float x0, float y0, float x, float y, Rectangle bounds) {
   }
 
   wheelRAngle.setTarget(wheelRAngle.get() + a1 - a0);
+}
+
+void setCurrentMode(int mode) {
+  if (currentMode != mode) {
+    previousMode = currentMode;
+    currentMode = mode;
+    int days = daysSinceStart.getInt();
+    if (mode == MODE_BOOKSHELF) {
+      groupBooksByEmotion(days, true);
+      setViewRegionAllBookshelf();
+    } else if (mode == MODE_WHEEL) {
+      groupBooksByEmotion(days, true);
+      setViewRegionAllWheel();
+    } else if (mode == MODE_HISTORY) {
+      groupBooksByEmotion(daysRunningTot, true);
+    } 
+    
+    if (mode == MODE_INFO) {
+      // Trigger fade-out animation.
+      viewFadeinAlpha.set(0);
+      viewFadeinAlpha.setTarget(127);      
+    } else {
+      // Trigger fade-in animation.
+      viewFadeinAlpha.set(0);
+      viewFadeinAlpha.setTarget(255);  
+    }   
+
+    // Be sure nothing remains selected.
+    selBook = null;
+    selLang = null;
+
+    // Animation is stopped.
+    playingAnim = false;
+  }
+}
+  
+void setGrouping(boolean byLang) {
+  int days = daysSinceStart.getInt(); 
+  if (byLang) {
+    sortByLang = true;
+    groupBooksByEmotion(days, true);    
+  } else {
+    sortByLang = false;
+    groupBooksByEmotion(days, false);
+  }
+  setViewRegionAllBookshelf();
 }
 
 void checkMouseActivity() {

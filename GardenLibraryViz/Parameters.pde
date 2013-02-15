@@ -1,7 +1,7 @@
 String startDateString = "2009-11-01"; // Date the library opened
 //String endDateString   = "2010-12-31";
 String endDateString   = "";           // Leave empty to use current date
-
+  
 int WIDTH  = 1155;
 int HEIGHT = 643;
 boolean RESIZE = true;
@@ -13,6 +13,8 @@ String booksFilename = "books.txt";
 String histoFilename = "history.txt";
 String linksFilename = "links.txt";
 String newsFilename  = "news.txt";
+String migrantInfoFilename = "migration.xml";
+String catalogInfoFilename = "cataloguing.xml";
 
 // Bookshelf parameters:
 int bookshelfTop   = 10; //0;

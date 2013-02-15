@@ -1,6 +1,8 @@
 int currentTask = -1;
 int currentMode = MODE_BOOKSHELF;
+int previousMode;
 boolean showingHelp = false; 
+boolean showingMigrantInfo = false;
 
 // Data:
 ArrayList<Emotion> emotions;  // All the emotions, including the null (0) emotion
