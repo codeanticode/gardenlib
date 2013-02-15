@@ -87,6 +87,7 @@ PFont defFont;
 PFont langFont;
 PFont helpFont;
 PFont newsFont;
+PFont dateFont;
 PFont infoFontReg;
 PFont infoFontTitle;
 PFont infoFontCapt;
@@ -111,6 +112,8 @@ void initialize(int task) {
     helpFont = createFont(helpFontName, helpFontSize, false);
     
     newsFont = createFont(newsFontName, newsFontSize, false);
+
+    dateFont = createFont(dateFontName, dateFontSize, false);
 
     infoFontReg = createFont(infoFontRegName, infoFontRegSize, false);    
     infoFontTitle = createFont(infoFontTitleName, infoFontTitleSize);    

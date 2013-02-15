@@ -693,6 +693,7 @@ class Timeline extends InterfaceElement {
         
     drawNewsBox(xc, x0, x1, bounds.y + h2 - 15, selDate);
     
+    textFont(dateFont);
     String dstr = selDate.toNiceString();    
     float dw = textWidth(dstr);
     fill(defTextColor);
@@ -701,8 +702,9 @@ class Timeline extends InterfaceElement {
     }
     if (x0 > xc - dw/2) {
       xc += x0 - (xc - dw/2);
-    }        
+    }
     text(dstr, xc - dw/2, bounds.y + h2 - 15);
+    textFont(defFont);
     
     if (!mouseActivity && contains(mouseX, mouseY)) { 
       String url = urlInCurrNewsText();      

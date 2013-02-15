@@ -72,6 +72,9 @@ String newsFontName = "Istok-Regular";
 int newsFontSize    = 11;
 color newsFontColor = color(160);
 
+String dateFontName = "Istok-Regular"; 
+int dateFontSize    = 10;
+
 String infoFontRegName = "Istok-Regular";
 int infoFontRegSize    = 11;
 color infoFontRegColor = color(255);
