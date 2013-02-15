@@ -230,7 +230,7 @@ class ViewArea extends InterfaceElement {
   }
 
   boolean mousePressed() {
-    if (!contains(mouseX, mouseY)) {
+    if (!contains(mouseX, mouseY) || currentMode == MODE_INFO) {
       selected = false;
       return selected;
     }
@@ -253,9 +253,6 @@ class ViewArea extends InterfaceElement {
       draggingWheel = false;
     } else if (currentMode == MODE_HISTORY) {
       histLocked = !histLocked;  
-    } else if (currentMode == MODE_INFO) {
-      setCurrentMode(previousMode);
-      selected = false;
     }
     
     return selected;
@@ -1021,6 +1018,40 @@ class LegendArea extends InterfaceElement {
   void close() {
     closed = true;
     viewLeftMargin.setTarget(0);
+  }
+}
+
+class InfoArea extends InterfaceElement {
+  InfoArea(float x, float y, float w, float h) {
+    super(x, y, w, h);  
+  }  
+  
+  void update() {
+    if (currentMode == MODE_INFO) {
+    }
+  }
+  
+  void draw() {
+    if (currentMode == MODE_INFO) {
+      fill(replaceAlpha(color(255, 255, 255), 2 * viewFadeinAlpha.getInt()));
+      rect(bounds.x, bounds.y, bounds.w, bounds.h);        
+    }
+  }
+  
+  boolean mousePressed() {
+    selected = false;
+    
+    if (currentMode != MODE_INFO) {
+      return selected;  
+    }
+    
+    
+    if (contains(mouseX, mouseY)) {
+      setCurrentMode(previousMode);
+      selected = true;  
+    }
+    
+    return selected;
   }
 }
 

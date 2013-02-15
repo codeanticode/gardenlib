@@ -73,6 +73,7 @@ ViewMenu viewMenu;
 Timeline timeline;
 HelpMenu helpMenu;
 LegendArea legendArea;
+InfoArea infoArea;
 ArrayList<InterfaceElement> ui;
 HintInfo hintInfo;
 
@@ -186,13 +187,16 @@ void initialize(int task) {
     viewArea = new ViewArea(20, -8, width, height - 90);
     helpMenu = new HelpMenu(width - 60, 20, 70, 30);
     legendArea = new LegendArea(150, 30, 100, 20, 0, 0, 200, height - 100);
+    infoArea = new InfoArea(200, 0, width - 200, height);
     ui = new ArrayList<InterfaceElement>();
+     
 
     ui.add(legendArea);
     ui.add(helpMenu);
     ui.add(viewArea);        
     ui.add(viewMenu);    
     ui.add(timeline); 
+    ui.add(infoArea);
 
     hintInfo = new HintInfo(600, 30);
 
