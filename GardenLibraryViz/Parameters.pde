@@ -84,7 +84,7 @@ int infoFontTitleSize    = 12;
 color infoFontTitleColor = color(255);
 
 String infoFontCaptName = "Istok-Italic";
-int infoFontCaptSize    = 10;
+int infoFontCaptSize    = 11;
 color infoFontCaptColor = color(255);
 
 // Colors

@@ -1047,7 +1047,8 @@ class InfoArea extends InterfaceElement {
           String type = child.getName();
           if (type.equals("title")) {
             fill(replaceAlpha(infoFontTitleColor, 2 * viewFadeinAlpha.getInt()));
-            textFont(infoFontTitle);            
+            textFont(infoFontTitle);        
+            textAlign(LEFT);    
             textLeading(infoLineSpaceTitle);
             float len = textWidth(content);
             float w = bounds.w - 2 * margin;
@@ -1057,6 +1058,7 @@ class InfoArea extends InterfaceElement {
           } else if (type.equals("paragraph")) {
             fill(replaceAlpha(infoFontRegColor, 2 * viewFadeinAlpha.getInt()));
             textFont(infoFontReg);
+            textAlign(LEFT);
             textLeading(infoLineSpaceReg);
             float len = textWidth(content);
             float w = bounds.w - 2 * margin;
@@ -1070,10 +1072,32 @@ class InfoArea extends InterfaceElement {
             if (img == null) {
               img = loadImage(fn);
               images.put(fn, img);
-            }            
+            }
+            float w = bounds.w - 2 * margin;
+            float x = bounds.x + margin;
+            if (img.width < w) {
+              w = img.width;
+              x = bounds.x + bounds.w/2 - w/2;
+            }
+            float h = (float(img.height) / float(img.width)) * w;
+            image(img, x, y, w, h);
+            y += h;
+           
+            // Caption
+            fill(replaceAlpha(infoFontCaptColor, 2 * viewFadeinAlpha.getInt()));
+            textFont(infoFontCapt);            
+            textAlign(CENTER);
+            textLeading(infoLineSpaceCapt);
+            float len = textWidth(caption);
+            w = bounds.w - 2 * margin;
+            h = ceil(len / w) * infoLineSpaceTitle + 3;            
+            text(caption, bounds.x + margin, y, bounds.w - 2 * margin, h);
+            y += h + infoLineSpaceCapt;           
+            
           } else if (type.equals("link")) {
             fill(replaceAlpha(color(0, 0, 255), 2 * viewFadeinAlpha.getInt()));
             textFont(infoFontReg);
+            textAlign(LEFT);
             textLeading(infoLineSpaceReg);
             float len = textWidth(content);
             float w = bounds.w - 2 * margin;
