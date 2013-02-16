@@ -980,6 +980,7 @@ class LegendArea extends InterfaceElement {
           if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
             setCurrentMode(MODE_INFO);
             showingMigrantInfo = true;
+            infoArea.restart();
             return true;
           }          
           
@@ -992,6 +993,7 @@ class LegendArea extends InterfaceElement {
             if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
               setCurrentMode(MODE_INFO);
               showingMigrantInfo = false;
+              infoArea.restart();
               return true;
             }            
           }
@@ -1025,15 +1027,26 @@ class LegendArea extends InterfaceElement {
 
 class InfoArea extends InterfaceElement {
   HashMap<String, PImage> images;
+  boolean showScrollUp, showScrollDown;
+  float startY;
+  float margin;
+  float infoLineSpaceReg, infoLineSpaceTitle, infoLineSpaceCapt;
   
   InfoArea(float x, float y, float w, float h) {
     super(x, y, w, h);
-    images = new HashMap<String, PImage>();  
+    images = new HashMap<String, PImage>();
+    showScrollUp = false;
+    showScrollDown = false;
+    startY = bounds.y;  
+    
+    margin = max(70, bounds.w * 0.1);
+    infoLineSpaceReg = infoFontRegSize + 2;
+    infoLineSpaceTitle = infoFontTitleSize + 2;
+    infoLineSpaceCapt = infoFontCaptSize + 2;    
   }  
   
-  void update() {
-    if (currentMode == MODE_INFO) {
-    }
+  void restart() {
+    startY = bounds.y;  
   }
   
   void draw() {
@@ -1041,13 +1054,8 @@ class InfoArea extends InterfaceElement {
       clip(bounds.x, bounds.y, bounds.w, bounds.h);
       
       XML data = showingMigrantInfo ? migrantInfo : catalogInfo;
-      
-      float margin = bounds.w * 0.1;
-      float infoLineSpaceReg = infoFontRegSize + 2;
-      float infoLineSpaceTitle = infoFontTitleSize + 2;
-      float infoLineSpaceCapt = infoFontCaptSize + 2;
        
-      float y = 0;      
+      float y = startY;      
       for (XML child: data.getChildren()) {
         String content = child.getContent().trim();
         if (!content.equals("")) {
@@ -1077,10 +1085,19 @@ class InfoArea extends InterfaceElement {
             if (img == null) {
               img = loadImage(fn);
               images.put(fn, img);
-              println("loading image " + fn);  
-            }
-            println("draw image");            
+            }            
           } else if (type.equals("link")) {
+            fill(replaceAlpha(color(0, 0, 255), 2 * viewFadeinAlpha.getInt()));
+            textFont(infoFontReg);
+            textLeading(infoLineSpaceReg);
+            float len = textWidth(content);
+            float w = bounds.w - 2 * margin;
+            float h = ceil(len / w + 1) * infoLineSpaceReg + 3;            
+            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5);
+            y += h;
+
+            
+            
 //            fill(replaceAlpha(infoFontTitleColor, 2 * viewFadeinAlpha.getInt()));
 //            textFont(infoFontTitle);            
 //            float len = textWidth(content);
@@ -1090,12 +1107,42 @@ class InfoArea extends InterfaceElement {
 //            y += h + infoLineSpaceTitle;
 
             
-            
-            println("draw link");
           }            
         } 
       }
-      println("--------------------------------------------");
+                 
+      showScrollDown = bounds.y + bounds.h < y;
+      showScrollUp = startY < bounds.y;      
+       
+      noStroke();
+      
+      float x1, y1, x2, y2, x3, y3;
+
+      x1 = bounds.x + bounds.w - 25;
+      y1 = bounds.y + bounds.h - 10;
+      x2 = bounds.x + bounds.w - 35;
+      y2 = bounds.y + bounds.h - 20;
+      x3 = bounds.x + bounds.w - 15;
+      y3 = bounds.y + bounds.h - 20;
+      if (showScrollDown) {        
+        fill(replaceAlpha(color(255), 2 * viewFadeinAlpha.getInt()));
+      } else {
+        fill(replaceAlpha(color(50), 2 * viewFadeinAlpha.getInt()));
+      }      
+      triangle(x1, y1, x2, y2, x3, y3);
+
+      x2 = bounds.x + bounds.w - 35;
+      y2 = bounds.y + bounds.h - 25;
+      x3 = bounds.x + bounds.w - 15;
+      y3 = bounds.y + bounds.h - 25;
+      x1 = bounds.x + bounds.w - 25;
+      y1 = bounds.y + bounds.h - 35;
+      if (showScrollUp) {        
+        fill(replaceAlpha(color(255), 2 * viewFadeinAlpha.getInt()));
+      } else {
+        fill(replaceAlpha(color(50), 2 * viewFadeinAlpha.getInt()));
+      }      
+      triangle(x1, y1, x2, y2, x3, y3);        
                    
       textFont(defFont);             
       noClip();       
@@ -1110,12 +1157,41 @@ class InfoArea extends InterfaceElement {
     }
     
     if (contains(mouseX, mouseY)) {
+      selected = true;
+      
+      if (insideDownButton()) {
+        if (showScrollDown) {
+          startY -= infoLineSpaceReg;          
+        }
+        return selected;
+      } else if (insideUpButton()) {
+        if (showScrollUp) {
+          startY += infoLineSpaceReg;            
+        }
+        return selected;
+      }
+      
       setCurrentMode(previousMode);
-      selected = true;  
     }
     
     return selected;
   }
+  
+  boolean insideDownButton() {
+    float x0 = bounds.x + bounds.w - 35;
+    float x1 = bounds.x + bounds.w - 15;    
+    float y0 = bounds.y + bounds.h - 20;
+    float y1 = bounds.y + bounds.h - 10;
+    return x0 < mouseX && mouseX < x1 && y0 < mouseY && mouseY < y1;  
+  }
+  
+  boolean insideUpButton() {
+    float x0 = bounds.x + bounds.w - 35;
+    float x1 = bounds.x + bounds.w - 15;    
+    float y0 = bounds.y + bounds.h - 35;
+    float y1 = bounds.y + bounds.h - 25;
+    return x0 < mouseX && mouseX < x1 && y0 < mouseY && mouseY < y1;  
+  }  
 }
 
 // -------------------------------------------------------------------------------------------------
