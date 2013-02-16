@@ -928,12 +928,12 @@ class LegendArea extends InterfaceElement {
   }
 
   boolean mousePressed() {
-    if (currentMode == MODE_INFO) {
-      selected = false;
-      return selected;
-    }
+//    if (currentMode == MODE_INFO) {
+//      selected = false;
+//      return selected;
+//    }
     
-    if (contains(mouseX, mouseY)) {
+    if (contains(mouseX, mouseY) && currentMode != MODE_INFO) {
       selected = true;
       if (closed) {
         open();
@@ -941,47 +941,84 @@ class LegendArea extends InterfaceElement {
         close();
       }   
       return true;
-    } else if (!closed) {     
+    } else if (!closed) {
       float xlang = 0.4 * bounds.w;
       float xemo = 0.6 * bounds.w;
       float h = bounds.h * animTimer.get();       
-      float y = h - 55;
-      for (int i = languages.size() - 1; i >= 0; i--) {
-        int ri = languages.size() - 1 - i;
-        int ei = emotions.size() - ri - 1;
-
-        if (bounds.y + 20 < y) {  
-          Language lang = languages.get(i);  
-          if (lang.id == 0) continue;
-          
-          float x0 = xlang - 10;
-          float y0 = y - 60;
-          float x1 = x0 + 20; 
-          float y1 = y0 + 0.7 * fontSize;        
-          if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
-            setCurrentMode(MODE_INFO);
-            showingMigrantInfo = true;
-            infoArea.restart();
-            return true;
-          }          
-          
-          if (0 <= ei) {
-            Emotion emo = emotions.get(ei);
-            x0 = xemo - 0.9 * fontSize/2;
-            y0 = y;
-            x1 = x0 + 0.95 * fontSize;
-            y1 = y0 + 0.8 * fontSize;
-            if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
-              setCurrentMode(MODE_INFO);
-              showingMigrantInfo = false;
-              infoArea.restart();
-              return true;
-            }            
-          }
-        }
-        
-        y -= 0.7 * fontSize + 22;
+      
+      float ex0 = xemo - 20; 
+      float ey0 = bounds.y;
+      float ex1 = ex0 + bounds.w;
+      float ey1 = ey0 + h + animTimer.get() * 20 - 42;
+      
+      float lx0 = bounds.x; 
+      float ly0 = bounds.y;
+      float lx1 = lx0 + xlang + 20; 
+      float ly1 = ly0 + h - 85;
+      
+      if (ex0 < mouseX && mouseX < ex1 && ey0 < mouseY && mouseY < ey1) {
+        if (currentMode == MODE_INFO) {
+          if (!showingMigrantInfo) setCurrentMode(previousMode);
+        } else {
+          setCurrentMode(MODE_INFO);
+          showingMigrantInfo = false;
+          infoArea.restart();
+        }        
+        return true;        
       }
+      
+      if (lx0 < mouseX && mouseX < lx1 && ly0 < mouseY && mouseY < ly1) {
+        if (currentMode == MODE_INFO) {
+          if (showingMigrantInfo) setCurrentMode(previousMode);
+        } else {
+          setCurrentMode(MODE_INFO);
+          showingMigrantInfo = true;
+          infoArea.restart();
+        }
+        return true;        
+      }      
+ 
+//      Clicking on the individual emo/lang boxes is disabled for now.
+//      float xlang = 0.4 * bounds.w;
+//      float xemo = 0.6 * bounds.w;
+//      float h = bounds.h * animTimer.get();       
+//      float y = h - 55;
+//      for (int i = languages.size() - 1; i >= 0; i--) {
+//        int ri = languages.size() - 1 - i;
+//        int ei = emotions.size() - ri - 1;
+//
+//        if (bounds.y + 20 < y) {  
+//          Language lang = languages.get(i);  
+//          if (lang.id == 0) continue;
+//          
+//          float x0 = xlang - 10;
+//          float y0 = y - 60;
+//          float x1 = x0 + 20; 
+//          float y1 = y0 + 0.7 * fontSize;        
+//          if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
+//            setCurrentMode(MODE_INFO);
+//            showingMigrantInfo = true;
+//            infoArea.restart();
+//            return true;
+//          }          
+//          
+//          if (0 <= ei) {
+//            Emotion emo = emotions.get(ei);
+//            x0 = xemo - 0.9 * fontSize/2;
+//            y0 = y;
+//            x1 = x0 + 0.95 * fontSize;
+//            y1 = y0 + 0.8 * fontSize;
+//            if (x0 < mouseX && mouseX <= x1 && y0 <= mouseY && mouseY <= y1) {
+//              setCurrentMode(MODE_INFO);
+//              showingMigrantInfo = false;
+//              infoArea.restart();
+//              return true;
+//            }            
+//          }
+//        }
+//        
+//        y -= 0.7 * fontSize + 22;
+//      }
 
       return false;
     } else {
@@ -1105,7 +1142,7 @@ class InfoArea extends InterfaceElement {
             text(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5);            
             links.add(new LinkRect(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5));
             y += h;
-          }            
+          }
         } 
       }
                  

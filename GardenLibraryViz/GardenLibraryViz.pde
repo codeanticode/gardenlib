@@ -10,6 +10,7 @@ void setup() {
   //smooth(8);
   
   frame.setResizable(RESIZE);
+  frame.setBackground(new java.awt.Color(0, 0, 0));
   
   // img = loadImage("media/header.gif");//added  
   initialize(LOADING);

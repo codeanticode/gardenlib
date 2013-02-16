@@ -699,7 +699,7 @@ void drawHorizontalHelpArrow(float x0, float x1, float y) {
   int arrowAlpha = int(constrain(map(helpMaskAlpha.get(), 0, targetHelpMaskAlpha, 0, 255), 0, 255));
   
   float trsize = 5;
-  float xt = x0 < x1 ? x1 - trsize: x1 + trsize;    
+  float xt = x0 < x1 ? x1 - trsize: x1 + trsize;   
   strokeWeight(1);
   stroke(255, arrowAlpha);
   line(x0, y, xt, y);  
