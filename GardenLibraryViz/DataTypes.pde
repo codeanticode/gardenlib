@@ -695,7 +695,6 @@ class Trail {
   }
 }
 
-
 class NewsText {
   Date date;
   String[] text;
@@ -710,4 +709,40 @@ class NewsText {
   }
 }
 
+class Rectangle {
+  float x, y, w, h;
+
+  Rectangle(float x, float y, float w, float h) {
+    set(x, y, w, h);
+  }
+
+  void set(float x, float y, float w, float h) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;    
+  }
+
+  boolean contains(float mx, float my) {
+    return x <= mx && mx <= x + w && y <= my && my <= y + h;
+  }
+}
+
+class LinkRect {
+  String url;
+  Rectangle rect;
+  
+  LinkRect(String url, float x, float y, float w, float h) {
+    this.url = url;
+    rect = new Rectangle(x, y, w, h);    
+  }
+  
+  boolean contains(float mx, float my) {
+    return rect.contains(mx, my);
+  }
+  
+  void open() {
+    link(url, "_new");  
+  }
+}
 

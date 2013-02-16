@@ -1,24 +1,5 @@
 // The interface classes.
 
-class Rectangle {
-  float x, y, w, h;
-
-  Rectangle(float x, float y, float w, float h) {
-    set(x, y, w, h);
-  }
-
-  void set(float x, float y, float w, float h) {
-    this.x = x;
-    this.y = y;
-    this.w = w;
-    this.h = h;    
-  }
-
-  boolean contains(float mx, float my) {
-    return x <= mx && mx <= x + w && y <= my && my <= y + h;
-  }
-}
-
 class InterfaceElement {
   Rectangle bounds;
   boolean selected;
@@ -1027,6 +1008,7 @@ class LegendArea extends InterfaceElement {
 
 class InfoArea extends InterfaceElement {
   HashMap<String, PImage> images;
+  ArrayList<LinkRect> links;
   boolean showScrollUp, showScrollDown;
   float startY;
   float margin;
@@ -1035,6 +1017,7 @@ class InfoArea extends InterfaceElement {
   InfoArea(float x, float y, float w, float h) {
     super(x, y, w, h);
     images = new HashMap<String, PImage>();
+    links = new ArrayList<LinkRect>(); 
     showScrollUp = false;
     showScrollDown = false;
     startY = bounds.y;  
@@ -1054,6 +1037,8 @@ class InfoArea extends InterfaceElement {
       clip(bounds.x, bounds.y, bounds.w, bounds.h);
       
       XML data = showingMigrantInfo ? migrantInfo : catalogInfo;
+      
+      links.clear();
        
       float y = startY;      
       for (XML child: data.getChildren()) {
@@ -1093,20 +1078,9 @@ class InfoArea extends InterfaceElement {
             float len = textWidth(content);
             float w = bounds.w - 2 * margin;
             float h = ceil(len / w + 1) * infoLineSpaceReg + 3;            
-            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5);
+            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5);            
+            links.add(new LinkRect(content, bounds.x + margin, y, bounds.w - 2 * margin, h + 5));
             y += h;
-
-            
-            
-//            fill(replaceAlpha(infoFontTitleColor, 2 * viewFadeinAlpha.getInt()));
-//            textFont(infoFontTitle);            
-//            float len = textWidth(content);
-//            float w = bounds.w - 2 * margin;
-//            float h = ceil(len / w) * infoLineSpaceTitle + 3;            
-//            text(content, bounds.x + margin, y, bounds.w - 2 * margin, h);
-//            y += h + infoLineSpaceTitle;
-
-            
           }            
         } 
       }
@@ -1158,6 +1132,13 @@ class InfoArea extends InterfaceElement {
     
     if (contains(mouseX, mouseY)) {
       selected = true;
+      
+      for (LinkRect link: links) {
+        if (link.contains(mouseX, mouseY)) {
+          link.open();
+          return selected;
+        }  
+      }
       
       if (insideDownButton()) {
         if (showScrollDown) {
