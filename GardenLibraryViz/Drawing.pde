@@ -449,10 +449,13 @@ void loadingAnimation() {
 
 void drawHelpLayer() {
   // Draw mask
+  float h = timeline.bounds.h;  
   noStroke();
   helpMaskAlpha.update();
   fill(0, helpMaskAlpha.getInt());
-  rect(0, 0, width, height);  
+  rect(0, 0, width, height - h);   
+  fill(0, map(helpMaskAlpha.getInt(), 0, helpMaskAlpha.getTarget(), 0, 255));
+  rect(0, height - h, width, h);   
     
   textFont(helpFont);
   
