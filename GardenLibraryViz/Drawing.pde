@@ -505,7 +505,7 @@ void drawHelpBookshelfSortByLang(int option) {
     float x, y, w;
     
     fill(replaceAlpha(helpFontColor, textAlpha));
-    text("DISTRIBUTION OF EMOTIONAL JUDGEMENTS WITHIN LANGUAGE CATEGORIES (overview)", 10, height - 50);
+    text(emoWithinLangHelpStr1, helpTitleX, height - helpTitleY);
     
     x = viewArea.bounds.x;
     y = viewArea.langBarY - langBarH.get() - 5;
@@ -524,9 +524,9 @@ void drawHelpBookshelfSortByLang(int option) {
     
     fill(replaceAlpha(helpFontColor, textAlpha));
     if (option == 1) {
-      text("DISTRIBUTION OF EMOTIONAL JUDGEMENTS WITHIN LANGUAGE CATEGORIES zoomed-in view (extended)", 10, height - 50);          
+      text(emoWithinLangHelpStr2, helpTitleX, height - helpTitleY);
     } else if (option == 2) {
-      text("DISTRIBUTION OF EMOTIONAL JUDGEMENTS WITHIN LANGUAGE CATEGORIES zoomed-in view (compact)", 10, height - 50);
+      text(emoWithinLangHelpStr3, helpTitleX, height - helpTitleY);
     } 
     
     x = viewArea.bounds.x;
@@ -569,7 +569,7 @@ void drawHelpBookshelfSortByEmo(int option) {
     float x, y, w, wj;
     
     fill(replaceAlpha(helpFontColor, textAlpha));
-    text("DISTRIBUTION OF OF LANGUAGES WITHIN EMOTIONAL CATEGORIES (overview)", 10, height - 50);
+    text(langWithinEmoHelpStr1, helpTitleX, height - helpTitleY);
         
     x = viewArea.bounds.x;
     y = viewArea.langBarY;
@@ -596,9 +596,9 @@ void drawHelpBookshelfSortByEmo(int option) {
     
     fill(replaceAlpha(helpFontColor, textAlpha));
     if (option == 1) {
-      text("DISTRIBUTION OF OF LANGUAGES WITHIN EMOTIONAL CATEGORIES zoomed-in view (extended)", 10, height - 50);          
+      text(langWithinEmoHelpStr2, helpTitleX, height - helpTitleY);
     } else if (option == 2) {
-      text("DISTRIBUTION OF OF LANGUAGES WITHIN EMOTIONAL CATEGORIES zoomed-in view (compact)", 10, height - 50);
+      text(langWithinEmoHelpStr3, helpTitleX, height - helpTitleY);
     }     
     
     x = viewArea.bounds.x;
@@ -641,7 +641,7 @@ void drawHelpWheel(int option) {
     float x, y, xc, yc, w1, w2;
     
     fill(replaceAlpha(helpFontColor, textAlpha));
-    text("BOOKS JOURNEYING BETWEEN EMOTIONAL CATEGORIES (overview)", 10, height - 50); 
+    text(wheelHelpStr1, helpTitleX, height - helpTitleY); 
     
     x = viewArea.bounds.x;
     y = viewArea.bounds.y;
@@ -663,7 +663,7 @@ void drawHelpWheel(int option) {
     float x, y;
     
     fill(replaceAlpha(helpFontColor, textAlpha));
-    text("BOOKS JOURNEYING BETWEEN EMOTIONAL CATEGORIES (zoomed-in view)", 10, height - 50);    
+    text(wheelHelpStr2, helpTitleX, height - helpTitleY);    
     
     x = viewArea.bounds.x;
     y = viewArea.bounds.y + wheelTop + viewArea.bounds.h/2 - 50;
@@ -680,7 +680,7 @@ void drawHelpHistory(int option) {
     float x, y;
 
     fill(replaceAlpha(helpFontColor, textAlpha));
-    text("INDIVDUAL BOOK'S PATHWAYS THROUGH EMOTIONAL CATEGORIES (no book selected)", 10, height - 50);
+    text(historyHelpStr1, helpTitleX, height - helpTitleY);
 
     x = viewArea.bounds.x;
     y = viewArea.bounds.y + historyTop + (viewArea.bounds.h - historyTop - 20)/2;
@@ -689,7 +689,7 @@ void drawHelpHistory(int option) {
     text("the colored bands are formed by the books passing through each emotion at a specific point in time", x + 20, y);    
   } else if (option == 2) {
     fill(replaceAlpha(helpFontColor, textAlpha));
-    text("INDIVDUAL BOOK'S PATHWAYS THROUGH EMOTIONAL CATEGORIES (book selected)", 10, height - 50);     
+    text(historyHelpStr2, helpTitleX, height - helpTitleY);     
         
     Book book = selBook.book;
     int l = book.history.size();

@@ -110,4 +110,19 @@ float targetHelpMaskAlpha = 150;
 int newsAdjustY = 16;
 int newsAlphaSpeed = 10;
 
+// Help titles
+int helpTitleX = 10; // counted from the left margin  
+int helpTitleY = 50; // counted from the bottom margin
+String emoWithinLangHelpStr1 = "DISTRIBUTION OF EMOTIONAL JUDGEMENTS WITHIN LANGUAGE CATEGORIES (overview)";
+String emoWithinLangHelpStr2 = "DISTRIBUTION OF EMOTIONAL JUDGEMENTS WITHIN LANGUAGE CATEGORIES zoomed-in view (extended)";
+String emoWithinLangHelpStr3 = "DISTRIBUTION OF EMOTIONAL JUDGEMENTS WITHIN LANGUAGE CATEGORIES zoomed-in view (compact)";
+String langWithinEmoHelpStr1 = "DISTRIBUTION OF OF LANGUAGES WITHIN EMOTIONAL CATEGORIES (overview)";
+String langWithinEmoHelpStr2 = "DISTRIBUTION OF OF LANGUAGES WITHIN EMOTIONAL CATEGORIES zoomed-in view (extended)";
+String langWithinEmoHelpStr3 = "DISTRIBUTION OF OF LANGUAGES WITHIN EMOTIONAL CATEGORIES zoomed-in view (compact)";
+String wheelHelpStr1 = "BOOKS JOURNEYING BETWEEN EMOTIONAL CATEGORIES (overview)";
+String wheelHelpStr2 = "BOOKS JOURNEYING BETWEEN EMOTIONAL CATEGORIES (zoomed-in view)"; 
+String historyHelpStr1 = "INDIVDUAL BOOK'S PATHWAYS THROUGH EMOTIONAL CATEGORIES (no book selected)";
+String historyHelpStr2 = "INDIVDUAL BOOK'S PATHWAYS THROUGH EMOTIONAL CATEGORIES (book selected)";
+
+
 
