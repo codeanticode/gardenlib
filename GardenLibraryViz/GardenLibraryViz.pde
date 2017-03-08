@@ -5,11 +5,15 @@
 // 
 // Version 13 (February 14th, 2013)
 
-void setup() {
+void settings() {
   size(WIDTH, HEIGHT);
+}
+
+void setup() {
   //smooth(8);
   
-  frame.setResizable(RESIZE);
+  //frame.setResizable(RESIZE);
+  surface.setResizable(RESIZE);
   frame.setBackground(new java.awt.Color(0, 0, 0));
 
   // img = loadImage("media/header.gif");//added  
@@ -80,4 +84,3 @@ void mouseMoved() {
     e.mouseMoved();
   }
 }
-

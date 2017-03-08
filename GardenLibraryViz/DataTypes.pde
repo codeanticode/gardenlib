@@ -742,7 +742,6 @@ class LinkRect {
   }
   
   void open() {
-    link(url, "_new");  
+    link(url);  
   }
 }
-

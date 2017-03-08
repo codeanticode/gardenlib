@@ -316,4 +316,3 @@ void printFrameRate() {
     println("fps: " + frate);
   }
 }
-

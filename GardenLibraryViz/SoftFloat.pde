@@ -67,4 +67,3 @@ class SoftFloat {
     return targeting ? target : value;
   }
 }
-

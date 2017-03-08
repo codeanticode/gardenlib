@@ -22,4 +22,3 @@ int VIEW_ALL  = 0;
 int VIEW_LANG = 1;
 int VIEW_EMO  = 1;
 int VIEW_BOOK = 2;
-

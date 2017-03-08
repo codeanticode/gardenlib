@@ -497,4 +497,3 @@ class Message extends InfoBox {
     return animating;
   }
 }
-

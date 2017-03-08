@@ -223,7 +223,7 @@ class ViewArea extends InterfaceElement {
         String isbn = selBook.book.ISBN;
 //      String isbn = "9780140285000";
         String url = "https://www.google.com/search?tbo=p&tbm=bks&q=isbn:" + isbn + "&num=10";
-        link(url, "_new");
+        link(url);
         return selected;  
       }
 
@@ -717,7 +717,7 @@ class Timeline extends InterfaceElement {
     if (mouseButton == RIGHT && currNewsText != null && newsAlpha > 0) {   
       String url = urlInCurrNewsText();
       if (!url.equals("")) {
-        link(url, "_new");  
+        link(url);  
       }
     }
     
@@ -2112,4 +2112,3 @@ void checkResize() {
     historyCanvas[0] = historyCanvas[1] = null; 
   }   
 }
-

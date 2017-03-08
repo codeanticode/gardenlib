@@ -241,4 +241,3 @@ void initLUT() {
     cosLUT[i] = (float) Math.cos(i * DEG_TO_RAD * SINCOS_PRECISION);
   }
 }
-
